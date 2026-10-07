@@ -1,0 +1,15 @@
+dimension,allowed_labels
+Mistake_Identification,Yes | To some extent | No
+Mistake_Location,Yes | To some extent | No
+Revealing_of_the_Answer,Yes (correct) | Yes (incorrect) | No
+Providing_Guidance,Yes | To some extent | No
+Actionability,Yes | To some extent | No
+Coherence,Yes | To some extent | No
+Tutor_Tone,Encouraging | Neutral | Offensive
+Humanlikeness,Yes | To some extent | No
+Cognitive_Demand,High | Medium | Low | None
+Conceptual_Depth,Conceptual | Procedural only | None
+Praise_Calibration,Calibrated | Inflated | None | Discouraging
+Expectation_Level,At level | Simplified below | Condescending
+Math_Correctness,Yes | No
+Language_Match,Yes | Partly | No

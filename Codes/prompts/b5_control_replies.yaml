@@ -1,7 +1,7 @@
 # Generic re-try reply used as the B5 control (docs/deviations.md D4). It carries no
 # teaching content. A native speaker must approve HI, BN, HI-EN and BN-EN before the run.
 EN: "That is not correct. Please try the question again."
-HI: "यह सही नहीं है। कृपया प्रश्न फिर से हल करने की कोशिश करो।"
+HI: "यह सही नहीं है। कृपया प्रश्न फिर से हल करने की कोशिश कीजिए।"   # native reviewer AS (2026-10-04)
 BN: "এটা ঠিক নয়। প্রশ্নটা আবার চেষ্টা করো।"
 HI-EN: "Yeh sahi nahi hai. Question phir se try karo."
 BN-EN: "Eta thik noy. Question ta abar try koro."

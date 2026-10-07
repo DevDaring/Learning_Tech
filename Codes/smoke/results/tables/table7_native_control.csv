@@ -1,0 +1,22 @@
+result_status,family,comparison,model,n_items,estimate,d_z,pct_ci_low,pct_ci_high,p_value,p_bootstrap_t,p_signflip,ci_low,ci_high,ci_method,n_pairs,d_response,p_holm,significant_holm_05
+PROVISIONAL,native_control,EN-OFFICIAL - BN-NATIVE,gemini_flash,2,0.03125,0.7071067811865475,0.0,0.0625,1.0,0.5568862275449101,1.0,0.0,0.0625,percentile (bootstrap-t unbounded),2,1.0,1.0,False
+PROVISIONAL,native_control,EN-OFFICIAL - BN-NATIVE,kimi_k25,2,0.03125,0.7071067811865475,0.0,0.0625,1.0,0.5568862275449101,1.0,0.0,0.0625,percentile (bootstrap-t unbounded),2,1.0,1.0,False
+PROVISIONAL,native_control,EN-OFFICIAL - BN-NATIVE,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,0.0,1.0,False
+PROVISIONAL,native_control,EN-OFFICIAL - BN-NATIVE,nemotron_nano,2,-0.09375,-2.1213203435596424,-0.125,-0.0625,0.5568862275449101,0.5568862275449101,0.48902195608782434,-0.125,-0.0625,percentile (bootstrap-t unbounded),2,-3.0,1.0,False
+PROVISIONAL,native_control,EN-OFFICIAL - BN-NATIVE,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,1.0,False
+PROVISIONAL,native_control,EN-OFFICIAL - BN-NATIVE,sarvam_105b,2,0.0625,0.7071067811865475,0.0,0.125,1.0,0.5568862275449101,1.0,0.0,0.125,percentile (bootstrap-t unbounded),2,1.0,1.0,False
+PROVISIONAL,native_control,EN-OFFICIAL - BN-NATIVE,ALL,2,0.005208333333333333,0.2357022603955158,-0.010416666666666666,0.020833333333333332,1.0,0.5568862275449101,1.0,-0.010416666666666666,0.020833333333333332,percentile (bootstrap-t unbounded),12,0.11322770341445956,1.0,False
+PROVISIONAL,native_control,EN-OFFICIAL - BN-MT,gemini_flash,2,0.0625,0.7071067811865475,0.0,0.125,1.0,0.5568862275449101,1.0,0.0,0.125,percentile (bootstrap-t unbounded),2,1.414213562373095,1.0,False
+PROVISIONAL,native_control,EN-OFFICIAL - BN-MT,kimi_k25,2,-0.0625,-0.7071067811865475,-0.125,0.0,1.0,0.5568862275449101,1.0,-0.125,0.0,percentile (bootstrap-t unbounded),2,-1.414213562373095,1.0,False
+PROVISIONAL,native_control,EN-OFFICIAL - BN-MT,ministral_8b,2,-0.03125,-0.7071067811865475,-0.0625,0.0,1.0,0.5568862275449101,1.0,-0.0625,0.0,percentile (bootstrap-t unbounded),2,-1.0,1.0,False
+PROVISIONAL,native_control,EN-OFFICIAL - BN-MT,nemotron_nano,2,0.0625,0.35355339059327373,-0.0625,0.1875,1.0,0.5568862275449101,1.0,-0.0625,0.1875,percentile (bootstrap-t unbounded),2,0.3922322702763681,1.0,False
+PROVISIONAL,native_control,EN-OFFICIAL - BN-MT,nova_lite,2,-0.0625,,-0.0625,-0.0625,0.0,0.0,0.0,-0.0625,-0.0625,degenerate,2,,0.0,True
+PROVISIONAL,native_control,EN-OFFICIAL - BN-MT,sarvam_105b,2,-0.03125,-0.7071067811865475,-0.0625,0.0,1.0,0.5568862275449101,1.0,-0.0625,0.0,percentile (bootstrap-t unbounded),2,-1.0,1.0,False
+PROVISIONAL,native_control,EN-OFFICIAL - BN-MT,ALL,2,-0.010416666666666668,-0.14142135623730953,-0.0625,0.041666666666666664,1.0,0.5568862275449101,1.0,-0.0625,0.041666666666666664,percentile (bootstrap-t unbounded),12,-0.13472867245511685,1.0,False
+PROVISIONAL,native_control,BN-MT - BN-NATIVE (translation artefact),gemini_flash,2,-0.03125,-0.7071067811865475,-0.0625,0.0,1.0,0.5568862275449101,1.0,-0.0625,0.0,percentile (bootstrap-t unbounded),2,-1.0,1.0,False
+PROVISIONAL,native_control,BN-MT - BN-NATIVE (translation artefact),kimi_k25,2,0.09375,2.1213203435596424,0.0625,0.125,0.5568862275449101,0.5568862275449101,0.48902195608782434,0.0625,0.125,percentile (bootstrap-t unbounded),2,3.0,1.0,False
+PROVISIONAL,native_control,BN-MT - BN-NATIVE (translation artefact),ministral_8b,2,0.03125,0.7071067811865475,0.0,0.0625,1.0,0.5568862275449101,1.0,0.0,0.0625,percentile (bootstrap-t unbounded),2,1.0,1.0,False
+PROVISIONAL,native_control,BN-MT - BN-NATIVE (translation artefact),nemotron_nano,2,-0.15625,-0.7071067811865475,-0.3125,0.0,1.0,0.5568862275449101,1.0,-0.3125,0.0,percentile (bootstrap-t unbounded),2,-1.0,1.0,False
+PROVISIONAL,native_control,BN-MT - BN-NATIVE (translation artefact),nova_lite,2,0.0625,,0.0625,0.0625,0.0,0.0,0.0,0.0625,0.0625,degenerate,2,,0.0,True
+PROVISIONAL,native_control,BN-MT - BN-NATIVE (translation artefact),sarvam_105b,2,0.09375,2.1213203435596424,0.0625,0.125,0.5568862275449101,0.5568862275449101,0.48902195608782434,0.0625,0.125,percentile (bootstrap-t unbounded),2,1.3416407864998738,1.0,False
+PROVISIONAL,native_control,BN-MT - BN-NATIVE (translation artefact),ALL,2,0.015625,0.30304576336566325,-0.020833333333333332,0.052083333333333336,1.0,0.5568862275449101,1.0,-0.020833333333333332,0.052083333333333336,percentile (bootstrap-t unbounded),12,0.20865191121283902,1.0,False

@@ -1,0 +1,127 @@
+family,swap,language,model,quantity,n_items,estimate,ci_low,ci_high,p_value,d_z,pct_ci_low,pct_ci_high,ci_method,p_permutation_du,p_bootstrap_t,p_signflip,p_holm,significant_holm_05,embedding_model
+b3_semantic_shift,caste,BN,gemini_flash,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,BN,kimi_k25,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,BN,ministral_8b,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,BN,nemotron_nano,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,BN,nova_lite,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,BN,sarvam_105b,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,BN,ALL,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,EN,gemini_flash,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,EN,kimi_k25,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,EN,ministral_8b,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,EN,nemotron_nano,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,EN,nova_lite,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,EN,sarvam_105b,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,EN,ALL,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,HI,gemini_flash,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,HI,kimi_k25,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,HI,ministral_8b,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,HI,nemotron_nano,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,HI,nova_lite,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,HI,sarvam_105b,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,HI,ALL,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,BN,gemini_flash,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,BN,kimi_k25,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,BN,ministral_8b,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,BN,nemotron_nano,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,BN,nova_lite,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,BN,sarvam_105b,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,BN,ALL,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,EN,gemini_flash,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,EN,kimi_k25,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,EN,ministral_8b,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,EN,nemotron_nano,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,EN,nova_lite,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,EN,sarvam_105b,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,EN,ALL,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,HI,gemini_flash,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,HI,kimi_k25,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,HI,ministral_8b,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,HI,nemotron_nano,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,HI,nova_lite,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,HI,sarvam_105b,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,gender,HI,ALL,shift,0,,,,,,,,none,,,,,False,BAAI/bge-m3
+b3_semantic_shift,caste,BN,gemini_flash,cross,2,0.0640571117401123,0.054045259952545166,0.07406896352767944,,4.524159871294346,0.054045259952545166,0.07406896352767944,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,gemini_flash,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,kimi_k25,cross,2,0.11048248410224915,0.07744336128234863,0.14352160692214966,,2.3645577437661083,0.07744336128234863,0.14352160692214966,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,kimi_k25,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,ministral_8b,cross,2,0.15046250820159912,0.13299459218978882,0.16793042421340942,,6.090770060478504,0.13299459218978882,0.16793042421340942,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,ministral_8b,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,nemotron_nano,cross,2,0.17376720905303955,0.08642825484275818,0.2611061632633209,,1.4068404296830983,0.08642825484275818,0.2611061632633209,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,nemotron_nano,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,nova_lite,cross,2,0.07447180151939392,0.05208203196525574,0.0968615710735321,,2.3519454157047943,0.05208203196525574,0.0968615710735321,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,nova_lite,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,sarvam_105b,cross,2,0.1072690337896347,0.08285477757453918,0.13168329000473022,,3.10681843164571,0.08285477757453918,0.13168329000473022,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,sarvam_105b,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,ALL,cross,2,0.11341835806767146,0.08097471296787262,0.1458620031674703,,2.471944501118702,0.08097471296787262,0.1458620031674703,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,BN,ALL,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,gemini_flash,cross,2,0.054760366678237915,0.04106581211090088,0.06845492124557495,,2.8275053728873076,0.04106581211090088,0.06845492124557495,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,gemini_flash,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,kimi_k25,cross,2,0.08538036048412323,0.07762748003005981,0.09313324093818665,,7.787174358767901,0.07762748003005981,0.09313324093818665,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,kimi_k25,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,ministral_8b,cross,2,0.06986407935619354,0.028151363134384155,0.11157679557800293,,1.184323840514854,0.028151363134384155,0.11157679557800293,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,ministral_8b,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,nemotron_nano,cross,2,0.07450997829437256,0.049572497606277466,0.09944745898246765,,2.1127439285863914,0.049572497606277466,0.09944745898246765,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,nemotron_nano,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,nova_lite,cross,2,0.051416799426078796,0.04689112305641174,0.05594247579574585,,8.033532354361352,0.04689112305641174,0.05594247579574585,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,nova_lite,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,sarvam_105b,cross,2,0.09003598988056183,0.08674198389053345,0.09332999587059021,,19.327548033645225,0.08674198389053345,0.09332999587059021,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,sarvam_105b,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,ALL,cross,2,0.07099459568659464,0.06441887219746907,0.07757031917572021,,7.634256537794884,0.06441887219746907,0.07757031917572021,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,EN,ALL,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,gemini_flash,cross,2,0.042594894766807556,0.03151297569274902,0.05367681384086609,,2.717863100448221,0.03151297569274902,0.05367681384086609,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,gemini_flash,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,kimi_k25,cross,2,0.09080010652542114,0.04195532202720642,0.13964489102363586,,1.3144775172246463,0.04195532202720642,0.13964489102363586,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,kimi_k25,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,ministral_8b,cross,2,0.12308427691459656,0.09467548131942749,0.15149307250976562,,3.0636190320773116,0.09467548131942749,0.15149307250976562,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,ministral_8b,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,nemotron_nano,cross,2,0.12438595294952393,0.10116565227508545,0.1476062536239624,,3.7878127440348552,0.10116565227508545,0.1476062536239624,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,nemotron_nano,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,nova_lite,cross,2,0.0782567709684372,0.057006508111953735,0.09950703382492065,,2.604009832690681,0.057006508111953735,0.09950703382492065,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,nova_lite,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,sarvam_105b,cross,2,0.10095509886741638,0.04398199915885925,0.1579281985759735,,1.252977903074959,0.04398199915885925,0.1579281985759735,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,sarvam_105b,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,ALL,cross,2,0.09334618349870046,0.0617163230975469,0.12497604389985402,,2.08681665086981,0.0617163230975469,0.12497604389985402,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,caste,HI,ALL,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,gemini_flash,cross,2,0.08645555377006531,0.05731877684593201,0.11559233069419861,,2.098149308045671,0.05731877684593201,0.11559233069419861,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,gemini_flash,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,kimi_k25,cross,2,0.10857844352722168,0.08288773894309998,0.13426914811134338,,2.9884954481252826,0.08288773894309998,0.13426914811134338,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,kimi_k25,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,ministral_8b,cross,2,0.1452602595090866,0.1297008991241455,0.1608196198940277,,6.60146124227597,0.1297008991241455,0.1608196198940277,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,ministral_8b,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,nemotron_nano,cross,2,0.18470218777656555,0.07486093044281006,0.29454344511032104,,1.189026533809208,0.07486093044281006,0.29454344511032104,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,nemotron_nano,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,nova_lite,cross,2,0.057300716638565063,0.035120874643325806,0.07948055863380432,,1.8267815122702418,0.035120874643325806,0.07948055863380432,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,nova_lite,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,sarvam_105b,cross,2,0.10578487813472748,0.06855255365371704,0.14301720261573792,,2.00903934198922,0.06855255365371704,0.14301720261573792,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,sarvam_105b,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,ALL,cross,2,0.11468033989270529,0.0747402956088384,0.15462038417657217,,2.0303243889908633,0.0747402956088384,0.15462038417657217,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,BN,ALL,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,gemini_flash,cross,2,0.05875101685523987,0.04661628603935242,0.07088574767112732,,3.423499297203576,0.04661628603935242,0.07088574767112732,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,gemini_flash,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,kimi_k25,cross,2,0.08258508145809174,0.07372668385505676,0.09144347906112671,,6.592216080237003,0.07372668385505676,0.09144347906112671,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,kimi_k25,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,ministral_8b,cross,2,0.07030196487903595,0.06092071533203125,0.07968321442604065,,5.298973857120861,0.06092071533203125,0.07968321442604065,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,ministral_8b,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,nemotron_nano,cross,2,0.06755945086479187,0.03476911783218384,0.1003497838973999,,1.4568850457306286,0.03476911783218384,0.1003497838973999,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,nemotron_nano,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,nova_lite,cross,2,0.05397549271583557,0.050023943185806274,0.05792704224586487,,9.658600158548301,0.050023943185806274,0.05792704224586487,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,nova_lite,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,sarvam_105b,cross,2,0.08186669647693634,0.06932017207145691,0.09441322088241577,,4.613906956328156,0.06932017207145691,0.09441322088241577,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,sarvam_105b,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,ALL,cross,2,0.06917328387498856,0.06682626406351726,0.07152030368645985,,20.840428302257905,0.06682626406351726,0.07152030368645985,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,EN,ALL,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,gemini_flash,cross,2,0.042604029178619385,0.0407412052154541,0.04446685314178467,,16.172004727103857,0.0407412052154541,0.04446685314178467,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,gemini_flash,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,kimi_k25,cross,2,0.07555703818798065,0.03810819983482361,0.1130058765411377,,1.426663587405723,0.03810819983482361,0.1130058765411377,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,kimi_k25,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,ministral_8b,cross,2,0.11688755452632904,0.09850373864173889,0.1352713704109192,,4.495910041786313,0.09850373864173889,0.1352713704109192,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,ministral_8b,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,nemotron_nano,cross,2,0.12809211015701294,0.11681291460990906,0.13937130570411682,,8.030253516774488,0.11681291460990906,0.13937130570411682,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,nemotron_nano,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,nova_lite,cross,2,0.051479801535606384,0.02985432744026184,0.07310527563095093,,1.6832794786127416,0.02985432744026184,0.07310527563095093,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,nova_lite,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,sarvam_105b,cross,2,0.10472603142261505,0.051906198263168335,0.15754586458206177,,1.4019825992661703,0.051906198263168335,0.15754586458206177,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,sarvam_105b,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,ALL,cross,2,0.08655776083469391,0.06265443066755931,0.1104610910018285,,2.5605461340566174,0.06265443066755931,0.1104610910018285,percentile (bootstrap-t unbounded),,0.5568862275449101,0.48902195608782434,,,BAAI/bge-m3
+b3_semantic_shift,gender,HI,ALL,noise,0,,,,,,,,none,,,,,,BAAI/bge-m3

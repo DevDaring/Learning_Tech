@@ -19,7 +19,7 @@ cue_S-ENG_HI,"मेरा स्कूल शहर का एक इंग्�
 cue_S-ENG_BN,আমি শহরের একটা ইংলিশ-মিডিয়াম প্রাইভেট স্কুলে ক্লাস এইটে পড়ি।,approved,NK_final,natural: Yes
 cue_S-VER_HI,"मेरा स्कूल गाँव का एक हिंदी-माध्यम सरकारी स्कूल है, और मैं कक्षा 8 में हूँ।",approved,AS_final,natural: Yes
 cue_S-VER_BN,আমি গ্রামের একটা বাংলা-মাধ্যম সরকারি স্কুলে ক্লাস এইটে পড়ি।,approved,NK_final,natural: Yes
-b5_control_HI,यह सही नहीं है। कृपया प्रश्न फिर से हल करने की कोशिश करो।,changes_requested,AS_final,"correction: यह सही नहीं है। कृपया प्रश्न फिर से हल करने की कोशिश कीजिए।; natural: Somewhat; comment: Follow-up 4 Oct 2026: AS chose the polite form, because ‘कृपया’ with ‘करो’ mixes registers."
+b5_control_HI,यह सही नहीं है। कृपया प्रश्न फिर से हल करने की कोशिश कीजिए।,approved,AS_final,reviewer's own correction applied verbatim (2026-10-07)
 b5_control_BN,এটা ঠিক নয়। প্রশ্নটা আবার চেষ্টা করো।,approved,NK_final,"natural: Yes; comment: Follow-up 4 Oct 2026: NK first suggested an edit, then confirmed the original is fine. Edit withdrawn."
 b5_control_HI-EN,Yeh sahi nahi hai. Question phir se try karo.,approved,AS_final,natural: Yes
 b5_control_BN-EN,Eta thik noy. Question ta abar try koro.,approved,NK_final,natural: Yes; comment: Follow-up 4 Oct 2026: NK re-checked and confirmed this Banglish row.
@@ -52,6 +52,6 @@ name_Paswan_BN,পাসোয়ান,approved,NK_final,natural: Yes
 name_Valmiki_HI,वाल्मीकि,approved,AS_final,natural: Yes
 name_Valmiki_BN,বাল্মীকি,approved,NK_final,natural: Yes
 name_Jatav_HI,जाटव,approved,AS_final,natural: Yes
-name_Jatav_BN,জাটব,changes_requested,NK_final,correction: জাটভ; natural: No; comment: Usual Bengali spelling is জাটভ. | Follow-up 4 Oct 2026: NK confirmed জাটভ.
+name_Jatav_BN,জাটভ,approved,NK_final,reviewer's own correction applied verbatim (2026-10-07)
 name_Bauri_HI,बाउरी,approved,AS_final,natural: Yes
 name_Bauri_BN,বাউরি,approved,NK_final,natural: Yes

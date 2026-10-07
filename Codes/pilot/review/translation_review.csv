@@ -40,8 +40,8 @@ P=4^{k}
 \)
 
 What is the value of \( P \) when \( k=-3 \)?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1294-A,HI,question,auto_ok,,1.0,\( (-6)-(-8)= \),\( (-6)-(-8)= \),\( (-6)-(-8)= \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1390-B,HI,question,auto_ok,,1.0,\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1294-A,HI,question,flagged,latex_changed,0.9723,\( (-6)-(-8)= \),\ ((-6)-(-8) =\),\ ((-6) - (-8) =\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1390-B,HI,question,flagged,latex_changed,0.7916,\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),\ (\frac {1} {3} + \frac {1} {2} \thes\frac {1} {3} =\),\ (\ frac {1} {3} +\ frac {1} {2}\ thes\ frac {1} {3} =\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-1410-B,HI,question,auto_ok,,1.0,"The median of these four numbers is \( 5 \).
 \(
 \begin{array}{cccc}
@@ -61,9 +61,9 @@ Find the value of the missing number.","इन चार संख्याओ�
 \end{array}
 \)
 Find the value of the missing number.",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1440-A,HI,question,auto_ok,,1.0,\( 0.2=\frac{1}{5}=? \% \),\( 0.2=\frac{1}{5}=? \% \),\( 0.2=\frac{1}{5}=? \% \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1449-B,HI,question,review_sample,,1.0,\( -4+(-5) \times 3= \),\( -4+(-5) \times 3= \),\( -4+(-5) \times 3= \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1460-C,HI,question,review_sample,,0.9384,"\[
+eedi-1440-A,HI,question,flagged,latex_changed,0.832,\( 0.2=\frac{1}{5}=? \% \),\ (0.2 = \frac {1} {5} =? \%\),\ (0. 2 =\ frac {1} {5} =?) \%\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1449-B,HI,question,flagged,latex_changed,0.9215,\( -4+(-5) \times 3= \),\ (-4 + (-5)\3 =\),\ (-4 + (-5)\ 3 =\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1460-C,HI,question,auto_ok,,0.9384,"\[
 650 \text { centilitres }=\bigstar \text { litres }
 \]
 What should replace the star?","\[
@@ -75,8 +75,8 @@ What should replace the star?","\[
 Who should take the star's place?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-1620-C,HI,question,auto_ok,,1.0,What is the 11th term of this sequence? \( u_{n}=2-5 n \),इस अनुक्रम का 11वाँ पद क्या है? \( u_{n}=2-5 n \),What is the 11th term of this sequence? \( u_{n}=2-5 n \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-1647-A,HI,question,auto_ok,,0.9862,"Which of the following is the correct way of writing: \( p \) divided by \( q \), then add \( 3 \) using algebraic convention?","निम्नलिखित में से कौन सा लिखने का सही तरीका हैः \( p \) को \( q \) से विभाजित करें, फिर बीजगणितीय परंपरा का उपयोग करके \( 3 \) जोड़ें?","Which of the following is the correct way to write: divide \( p \) by \( q \), then add \( 3 \) using the algebraic convention?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1655-C,HI,question,auto_ok,,1.0,\( \sqrt[3]{216}= \),\( \sqrt[3]{216}= \),\( \sqrt[3]{216}= \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1672-C,HI,question,auto_ok,,0.9155,What is \( \mathbf{1 1 . 4 7 8 1} \) rounded to \( 2 \) decimal places?,\( 2 \) दशमलव स्थानों के लिए कौन सा \( \mathbf{1 1 . 4 7 8 1} \) गोल है?,Which \( \mathbf{1 1 . 4 7 8 1} \) round for \( 2 \) decimal places?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1655-C,HI,question,flagged,latex_changed,0.9329,\( \sqrt[3]{216}= \),\ (\sqrt [3] {216} =\),\ (\ sqrt [3] {216} =\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1672-C,HI,question,review_sample,,0.9155,What is \( \mathbf{1 1 . 4 7 8 1} \) rounded to \( 2 \) decimal places?,\( 2 \) दशमलव स्थानों के लिए कौन सा \( \mathbf{1 1 . 4 7 8 1} \) गोल है?,Which \( \mathbf{1 1 . 4 7 8 1} \) round for \( 2 \) decimal places?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-1724-D,HI,question,review_sample,,0.9978,"What is the value of the \( 4 \) in this number?
 \( 31405 \)","इस संख्या में \( 4 \) का मान क्या है?
 \( 31405 \)","What is the value of \( 4 \) in this number?
@@ -91,7 +91,7 @@ eedi-1801-D,HI,question,auto_ok,,1.0,"What is the solution to the following ineq
 \(
 -5<2 x+1<5
 \)",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1821-A,HI,question,review_sample,,0.9413,A common factor of \( 8 \) and \( 20 \) is...,\( 8 \) और \( 20 \) का एक सामान्य कारक है...,\( 8 \) and \( 20 \) have a common factor...,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1821-A,HI,question,auto_ok,,0.9413,A common factor of \( 8 \) and \( 20 \) is...,\( 8 \) और \( 20 \) का एक सामान्य कारक है...,\( 8 \) and \( 20 \) have a common factor...,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-22-C,HI,question,auto_ok,,0.985,"Tom and Katie are discussing related calculations
 Tom says if you know that \( 3748+426=4174 \), then \( 3748+427 \) must equal \( \mathbf{4 1 7 5} \)
 
@@ -105,9 +105,9 @@ Tom says that if you know that \( 3748+426=4174 \), then \( 3748+427 \) should b
 
 Katie says that if you know that \( 3748-426=3322 \), then \( 3748 \) - \( 427 \) should be equal to \( \mathbf{3 3 2 3} \).
 Who's right?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-298-C,HI,question,auto_ok,,1.0,\( 5 p^{2} \times 2 p q \equiv \),\( 5 p^{2} \times 2 p q \equiv \),\( 5 p^{2} \times 2 p q \equiv \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-390-C,HI,question,review_sample,,0.9951,What is \( 5.5 \% \) of \( 400 \) ?,\( 400 \) का \( 5.5 \% \) क्या है?,What is the \( 5.5 \% \) of \( 400 \)?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-417-D,HI,question,auto_ok,,0.9632,"Jo and Paul are discussing \( 3^{2} \times 4^{2} \)
+eedi-298-C,HI,question,flagged,latex_changed,0.9201,\( 5 p^{2} \times 2 p q \equiv \),\ (5 पी ^ {2}\गुना 2 पी क्यू \इक्विव\),\ (5 p ^ {2}\ times 2 p q\ equal\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-390-C,HI,question,auto_ok,,0.9506,What is \( 5.5 \% \) of \( 400 \) ?,\( 400 \) का \( 5.5 \% \) क्या है?,What is\ (5.5\%\) of\ (400\)?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-417-D,HI,question,review_sample,,0.9632,"Jo and Paul are discussing \( 3^{2} \times 4^{2} \)
 Jo says \( 3^{2} \times 4^{2}=12^{4} \)
 Paul says \( 3^{2} \times 4^{2}=12^{2} \)
 Who is correct?","जो और पॉल चर्चा कर रहे हैं \( 3^{2} \times 4^{2} \)
@@ -142,11 +142,11 @@ eedi-585-B,HI,question,auto_ok,,0.9692,"What is a correct solution for the follo
 \[3x+2y=4\]","What is the correct solution for the following pair of concurrent equations:
 \[4x+y=7\]
 \[3x+2y=4\]",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-7-C,HI,question,auto_ok,,1.0,\( 43.2 \div 10= \),\( 43.2 \div 10= \),\( 43.2 \div 10= \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-719-B,HI,question,auto_ok,,0.9372,What is \( \mathbf{3 2 0} 050 \) rounded to the nearest hundred?,निकटतम सौ के लिए \( \mathbf{3 2 0} 050 \) क्या है?,What is \( \mathbf{3 2 0} 050 \) for the nearest hundred?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-835-D,HI,question,auto_ok,,1.0,\( 1 \mathrm{~km} \approx 0.6 \) miles \( 3 \mathrm{~km} \approx \square \) miles,\( 1 \mathrm{~km} \approx 0.6 \) मील \( 3 \mathrm{~km} \approx \square \) मील,\( 1 \mathrm{~km} \approx 0.6 \) miles \( 3 \mathrm{~km} \approx \square \) miles,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-7-C,HI,question,flagged,latex_changed,0.8366,\( 43.2 \div 10= \),\ (43.2 \div 10 =\),\ (43. 2\ div 10 =\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-719-B,HI,question,review_sample,,0.9372,What is \( \mathbf{3 2 0} 050 \) rounded to the nearest hundred?,निकटतम सौ के लिए \( \mathbf{3 2 0} 050 \) क्या है?,What is \( \mathbf{3 2 0} 050 \) for the nearest hundred?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-835-D,HI,question,auto_ok,,0.9067,\( 1 \mathrm{~km} \approx 0.6 \) miles \( 3 \mathrm{~km} \approx \square \) miles,\( 1 \mathrm{~km} \approx 0.6 \) मील \( 3 \mathrm{~km} \approx \square \) मील,\ (1\ mathrm {~ km}\ approx 0.6\) mile\ (3\ mathrm {~ km}\ approx\ square\) mile,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-851-D,HI,question,auto_ok,,1.0,Write \( 0.07 \) as a percentage.,प्रतिशत के रूप में \( 0.07 \) लिखें।,Write \( 0.07 \) as a percentage.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-86-B,HI,question,auto_ok,,0.9346,"Work out:
+eedi-86-B,HI,question,review_sample,,0.9346,"Work out:
 \(
 \frac{4}{11}+\frac{7}{11}
 \)
@@ -166,8 +166,8 @@ Who is correct?","टॉम और केटी फैक्टराइजि�
 कौन सही है?","Tom and Katie are arguing about factorizing. Tom says \( x^{2}+5 x+6 \equiv(x+3)(x+2) \)
 Katie says \( x^{2}-5 x-6 \equiv(x-3)(x-2) \)
 Who's right?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-961-A,HI,question,review_sample,,0.9979,A school trip lasted \( 5 \) hours and \( 25 \) minutes. How long is this in minutes?,एक स्कूल यात्रा \( 5 \) घंटे और \( 25 \) मिनट तक चली। यह मिनटों में कितना लंबा है?,A school trip lasted \( 5 \) hours and \( 25 \) minutes. How long is it in minutes?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1042-A,HI,student_answer,review_sample,,1.0,"Only
+eedi-961-A,HI,question,auto_ok,,0.9979,A school trip lasted \( 5 \) hours and \( 25 \) minutes. How long is this in minutes?,एक स्कूल यात्रा \( 5 \) घंटे और \( 25 \) मिनट तक चली। यह मिनटों में कितना लंबा है?,A school trip lasted \( 5 \) hours and \( 25 \) minutes. How long is it in minutes?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1042-A,HI,student_answer,auto_ok,,1.0,"Only
 Tom","केवल
 टॉम","Only
 Tom",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
@@ -188,7 +188,7 @@ eedi-1821-A,HI,student_answer,auto_ok,,,\( 40 \),\( 40 \),,,,,unchanged(maths),
 eedi-22-C,HI,student_answer,auto_ok,,1.0,Both Tom and Katie,टॉम और केटी दोनों,Both Tom and Katie,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-298-C,HI,student_answer,auto_ok,,,\( 7 p^{3} q \),\( 7 p^{3} q \),,,,,unchanged(maths),
 eedi-390-C,HI,student_answer,auto_ok,,,\( 5.5 \),\( 5.5 \),,,,,unchanged(maths),
-eedi-417-D,HI,student_answer,review_sample,,0.8725,Neither is correct,दोनों में से कोई भी सही नहीं है।,Neither of the two is correct.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-417-D,HI,student_answer,auto_ok,,0.8725,Neither is correct,दोनों में से कोई भी सही नहीं है।,Neither of the two is correct.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-462-B,HI,student_answer,auto_ok,,,\( x=0 \),\( x=0 \),,,,,unchanged(maths),
 eedi-56-D,HI,student_answer,auto_ok,,0.916,None of these,इनमें से कोई नहीं।,None of these.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-580-B,HI,student_answer,auto_ok,,0.9308,Only Katie,केवल केटी,It's only Katie,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
@@ -218,7 +218,7 @@ eedi-1821-A,HI,correct_answer,auto_ok,,,\( 4 \),\( 4 \),,,,,unchanged(maths),
 eedi-22-C,HI,correct_answer,auto_ok,,1.0,Only Tom,केवल टॉम,Only Tom,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-298-C,HI,correct_answer,auto_ok,,,\( 10 p^{3} q \),\( 10 p^{3} q \),,,,,unchanged(maths),
 eedi-390-C,HI,correct_answer,auto_ok,,,\( 22 \),\( 22 \),,,,,unchanged(maths),
-eedi-417-D,HI,correct_answer,auto_ok,,1.0,"Only
+eedi-417-D,HI,correct_answer,review_sample,,1.0,"Only
 Paul","केवल
 पॉल","Only
 Paul",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
@@ -232,8 +232,8 @@ eedi-835-D,HI,correct_answer,auto_ok,,,\( 1.8 \),\( 1.8 \),,,,,unchanged(maths),
 eedi-851-D,HI,correct_answer,auto_ok,,,\( 7 \% \),\( 7 \% \),,,,,unchanged(maths),
 eedi-86-B,HI,correct_answer,auto_ok,,,\( 1 \),\( 1 \),,,,,unchanged(maths),
 eedi-936-C,HI,correct_answer,auto_ok,,1.0,Only Tom,केवल टॉम,Only Tom,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-961-A,HI,correct_answer,auto_ok,,1.0,\( 325 \) minutes,\( 325 \) मिनट,\( 325 \) minutes,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1042-A,BN,question,auto_ok,,0.9807,"Tom and Katie are discussing how to solve this quadratic equation:
+eedi-961-A,HI,correct_answer,review_sample,,1.0,\( 325 \) minutes,\( 325 \) मिनट,\( 325 \) minutes,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1042-A,BN,question,review_sample,,0.9807,"Tom and Katie are discussing how to solve this quadratic equation:
 \(
 (5 x+2)(2 x-5)=0
 \)
@@ -274,8 +274,8 @@ P=4^{k}
 \)
 
 If \( k=-3 \), what is the value of \( P \)?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1294-A,BN,question,auto_ok,,1.0,\( (-6)-(-8)= \),\( (-6)-(-8)= \),\( (-6)-(-8)= \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1390-B,BN,question,auto_ok,,1.0,\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1294-A,BN,question,flagged,latex_changed,0.9723,\( (-6)-(-8)= \),\ ((-6)-(-8) =\),\ ((-6) - (-8) =\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1390-B,BN,question,flagged,latex_changed,0.7916,\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),\ (\frac {1} {3} + \frac {1} {2} \thes\frac {1} {3} =\),\ (\ frac {1} {3} +\ frac {1} {2}\ thes\ frac {1} {3} =\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-1410-B,BN,question,auto_ok,,1.0,"The median of these four numbers is \( 5 \).
 \(
 \begin{array}{cccc}
@@ -295,8 +295,8 @@ Find the value of the missing number.","এই চারটি সংখ্য�
 \end{array}
 \)
 Find the value of the missing number.",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1440-A,BN,question,auto_ok,,1.0,\( 0.2=\frac{1}{5}=? \% \),\( 0.2=\frac{1}{5}=? \% \),\( 0.2=\frac{1}{5}=? \% \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1449-B,BN,question,auto_ok,,1.0,\( -4+(-5) \times 3= \),\( -4+(-5) \times 3= \),\( -4+(-5) \times 3= \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1440-A,BN,question,flagged,latex_changed,0.832,\( 0.2=\frac{1}{5}=? \% \),\ (0.2 = \frac {1} {5} =? \%\),\ (0. 2 =\ frac {1} {5} =?) \%\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1449-B,BN,question,flagged,latex_changed,0.9451,\( -4+(-5) \times 3= \),\ (-4 + (-5)\গুণ 3 =\),\ (-4 + (-5)\ times 3 =\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-1460-C,BN,question,auto_ok,,0.9934,"\[
 650 \text { centilitres }=\bigstar \text { litres }
 \]
@@ -309,7 +309,7 @@ What should replace the star?","\[
 What should be substituted for the star?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-1620-C,BN,question,auto_ok,,0.9965,What is the 11th term of this sequence? \( u_{n}=2-5 n \),এই ক্রমের 11তম পদটি কী? \( u_{n}=2-5 n \),What is the 11th term in this sequence? \( u_{n}=2-5 n \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-1647-A,BN,question,auto_ok,,0.9292,"Which of the following is the correct way of writing: \( p \) divided by \( q \), then add \( 3 \) using algebraic convention?","নিচের কোনটি লেখার সঠিক উপায়ঃ \( p \) কে \( q \) দ্বারা ভাগ করে, তারপর বীজগাণিতিক ধারা ব্যবহার করে \( 3 \) যোগ করুন?","Which of the following is the correct way to write: divide \( p \) by \( q \), then add \( 3 \) using algebraic clauses?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1655-C,BN,question,auto_ok,,1.0,\( \sqrt[3]{216}= \),\( \sqrt[3]{216}= \),\( \sqrt[3]{216}= \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1655-C,BN,question,flagged,latex_changed,0.9329,\( \sqrt[3]{216}= \),\ (\sqrt [3] {216} =\),\ (\ sqrt [3] {216} =\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-1672-C,BN,question,auto_ok,,0.9542,What is \( \mathbf{1 1 . 4 7 8 1} \) rounded to \( 2 \) decimal places?,\( \mathbf{1 1 . 4 7 8 1} \) কে \( 2 \) দশমিক স্থানে বৃত্তাকার করা হয়?,\( \mathbf{1 1 . 4 7 8 1} \) is rounded to the \( 2 \) decimal place?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-1724-D,BN,question,auto_ok,,0.9908,"What is the value of the \( 4 \) in this number?
 \( 31405 \)","এই সংখ্যার \( 4 \)-এর মান কত?
@@ -339,7 +339,7 @@ Tom says that if you know that \( 3748+426=4174 \), then \( 3748+427 \) must be 
 
 Katie says that if you know that \( 3748-426=3322 \), then \( 3748 \) - \( 427 \) must be equal to \( \mathbf{3 3 2 3} \).
 Who's right?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-298-C,BN,question,auto_ok,,1.0,\( 5 p^{2} \times 2 p q \equiv \),\( 5 p^{2} \times 2 p q \equiv \),\( 5 p^{2} \times 2 p q \equiv \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-298-C,BN,question,flagged,latex_changed,0.9263,\( 5 p^{2} \times 2 p q \equiv \),\ (5 পি ^ {2}\বার 2 পি কিউ \ইকুইভ\),\ (5 p ^ {2}\ times 2 p q\ equiv\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-390-C,BN,question,auto_ok,,0.9951,What is \( 5.5 \% \) of \( 400 \) ?,\( 400 \) এর \( 5.5 \% \) কি?,What is the \( 5.5 \% \) of \( 400 \)?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-417-D,BN,question,auto_ok,,0.9606,"Jo and Paul are discussing \( 3^{2} \times 4^{2} \)
 Jo says \( 3^{2} \times 4^{2}=12^{4} \)
@@ -351,8 +351,8 @@ Who is correct?","জো এবং পল আলোচনা করছে \( 3^{
 Joe says \( 3^{2} \times 4^{2}=12^{4} \)
 Paul said \( 3^{2} \times 4^{2}=12^{2} \)
 Who's right?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-462-B,BN,question,review_sample,,0.9982,What is the solution for this equation? \( 4(3 x-2)=2(6 x-8) \),এই সমীকরণের সমাধান কী? \( 4(3 x-2)=2(6 x-8) \),What is the solution of this equation? \( 4(3 x-2)=2(6 x-8) \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-56-D,BN,question,review_sample,,0.9633,"For every \( 5 \) marbles Karen has, Marty has three times as many.
+eedi-462-B,BN,question,auto_ok,,0.9982,What is the solution for this equation? \( 4(3 x-2)=2(6 x-8) \),এই সমীকরণের সমাধান কী? \( 4(3 x-2)=2(6 x-8) \),What is the solution of this equation? \( 4(3 x-2)=2(6 x-8) \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-56-D,BN,question,auto_ok,,0.9633,"For every \( 5 \) marbles Karen has, Marty has three times as many.
 
 Write the number of marbles Karen and Marty have as a ratio, with Karen's part first.","কারেন-এর প্রতিটি \( 5 \) মার্বেলের জন্য মার্টি-র তিনগুণ বেশি মার্বেল থাকে।
 
@@ -376,11 +376,11 @@ eedi-585-B,BN,question,auto_ok,,0.9727,"What is a correct solution for the follo
 \[3x+2y=4\]","What is the exact solution of the following pair of simultaneous equations:
 \[4x+y=7\]
 \[3x+2y=4\]",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-7-C,BN,question,auto_ok,,1.0,\( 43.2 \div 10= \),\( 43.2 \div 10= \),\( 43.2 \div 10= \),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-7-C,BN,question,flagged,latex_changed,0.8366,\( 43.2 \div 10= \),\ (43.2 \div 10 =\),\ (43. 2\ div 10 =\),,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-719-B,BN,question,auto_ok,,0.9824,What is \( \mathbf{3 2 0} 050 \) rounded to the nearest hundred?,\( \mathbf{3 2 0} 050 \) কে নিকটতম শত দিয়ে বৃত্তাকার করা হয়?,\( \mathbf{3 2 0} 050 \) is rounded to the nearest hundred?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-835-D,BN,question,auto_ok,,1.0,\( 1 \mathrm{~km} \approx 0.6 \) miles \( 3 \mathrm{~km} \approx \square \) miles,\( 1 \mathrm{~km} \approx 0.6 \) মাইল \( 3 \mathrm{~km} \approx \square \) মাইল,\( 1 \mathrm{~km} \approx 0.6 \) miles \( 3 \mathrm{~km} \approx \square \) miles,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-851-D,BN,question,review_sample,,0.9596,Write \( 0.07 \) as a percentage.,শতাংশ হিসাবে \( 0.07 \) লিখুন।,Enter \( 0.07 \) as a percentage.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-86-B,BN,question,review_sample,,0.9352,"Work out:
+eedi-851-D,BN,question,auto_ok,,0.9596,Write \( 0.07 \) as a percentage.,শতাংশ হিসাবে \( 0.07 \) লিখুন।,Enter \( 0.07 \) as a percentage.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-86-B,BN,question,auto_ok,,0.9352,"Work out:
 \(
 \frac{4}{11}+\frac{7}{11}
 \)
@@ -424,8 +424,8 @@ eedi-298-C,BN,student_answer,auto_ok,,,\( 7 p^{3} q \),\( 7 p^{3} q \),,,,,uncha
 eedi-390-C,BN,student_answer,auto_ok,,,\( 5.5 \),\( 5.5 \),,,,,unchanged(maths),
 eedi-417-D,BN,student_answer,auto_ok,,0.8204,Neither is correct,দুটোর কোনোটিই সঠিক নয়।,Both are not correct.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-462-B,BN,student_answer,auto_ok,,,\( x=0 \),\( x=0 \),,,,,unchanged(maths),
-eedi-56-D,BN,student_answer,auto_ok,,0.916,None of these,এগুলোর কোনোটিই নয়।,None of these.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-580-B,BN,student_answer,auto_ok,,0.9308,Only Katie,কেবল কেটি,It's only Katie,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-56-D,BN,student_answer,review_sample,,0.916,None of these,এগুলোর কোনোটিই নয়।,None of these.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-580-B,BN,student_answer,review_sample,,0.9308,Only Katie,কেবল কেটি,It's only Katie,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-585-B,BN,student_answer,auto_ok,,,\( \begin{array}{l}x=3 \\ y=-5\end{array} \),\( \begin{array}{l}x=3 \\ y=-5\end{array} \),,,,,unchanged(maths),
 eedi-7-C,BN,student_answer,auto_ok,,,\( 33.2 \),\( 33.2 \),,,,,unchanged(maths),
 eedi-719-B,BN,student_answer,auto_ok,,,\( 320050 \),\( 320050 \),,,,,unchanged(maths),
@@ -433,7 +433,7 @@ eedi-835-D,BN,student_answer,auto_ok,,,\( 0.18 \),\( 0.18 \),,,,,unchanged(maths
 eedi-851-D,BN,student_answer,auto_ok,,,\( 0.07 \% \),\( 0.07 \% \),,,,,unchanged(maths),
 eedi-86-B,BN,student_answer,auto_ok,,,\( \frac{1}{2} \),\( \frac{1}{2} \),,,,,unchanged(maths),
 eedi-936-C,BN,student_answer,auto_ok,,1.0,Both Tom and Katie,টম এবং কেটি উভয়ই,Both Tom and Katie,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-961-A,BN,student_answer,auto_ok,,1.0,\( 525 \) minutes,\( 525 \) মিনিট,\( 525 \) minutes,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-961-A,BN,student_answer,auto_ok,,0.9289,\( 525 \) minutes,\( 525 \) মিনিট,\ (525\) minutes,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-1042-A,BN,correct_answer,auto_ok,,0.8204,Neither is correct,দুটোর কোনোটিই সঠিক নয়।,Both are not correct.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-1206-B,BN,correct_answer,auto_ok,,,\( \frac{1}{64} \),\( \frac{1}{64} \),,,,,unchanged(maths),
 eedi-1294-A,BN,correct_answer,auto_ok,,,\( 2 \),\( 2 \),,,,,unchanged(maths),
@@ -456,9 +456,9 @@ eedi-417-D,BN,correct_answer,auto_ok,,0.9107,"Only
 Paul","শুধুমাত্র
 পল","It's only
 Paul",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-462-B,BN,correct_answer,auto_ok,,0.9759,This equation is impossible to solve,এই সমীকরণটি সমাধান করা অসম্ভব।,It is impossible to solve this equation.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-462-B,BN,correct_answer,review_sample,,0.9759,This equation is impossible to solve,এই সমীকরণটি সমাধান করা অসম্ভব।,It is impossible to solve this equation.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-56-D,BN,correct_answer,auto_ok,,,\( 1: 3 \),\( 1: 3 \),,,,,unchanged(maths),
-eedi-580-B,BN,correct_answer,auto_ok,,1.0,Both Tom and Katie,টম এবং কেটি উভয়ই,Both Tom and Katie,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-580-B,BN,correct_answer,review_sample,,1.0,Both Tom and Katie,টম এবং কেটি উভয়ই,Both Tom and Katie,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 eedi-585-B,BN,correct_answer,auto_ok,,,\( \begin{array}{l}x=2 \\ y=-1\end{array} \),\( \begin{array}{l}x=2 \\ y=-1\end{array} \),,,,,unchanged(maths),
 eedi-7-C,BN,correct_answer,auto_ok,,,\( 4.32 \),\( 4.32 \),,,,,unchanged(maths),
 eedi-719-B,BN,correct_answer,auto_ok,,,\( 320100 \),\( 320100 \),,,,,unchanged(maths),
@@ -466,74 +466,74 @@ eedi-835-D,BN,correct_answer,auto_ok,,,\( 1.8 \),\( 1.8 \),,,,,unchanged(maths),
 eedi-851-D,BN,correct_answer,auto_ok,,,\( 7 \% \),\( 7 \% \),,,,,unchanged(maths),
 eedi-86-B,BN,correct_answer,auto_ok,,,\( 1 \),\( 1 \),,,,,unchanged(maths),
 eedi-936-C,BN,correct_answer,auto_ok,,0.8483,Only Tom,শুধু টম।,Just Tom.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-961-A,BN,correct_answer,review_sample,,1.0,\( 325 \) minutes,\( 325 \) মিনিট,\( 325 \) minutes,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-10th-Math-176,BN-MT,question,auto_ok,,0.8609,"Which one is the general term of the sequence \frac{1}{2}, \frac{2}{3}, \frac{3}{4}, .....?","কোনটি হল ক্রমের সাধারণ পদ \frac {1} {2}, \frac {2} {3}, \frac {3} {4},.....?","Which is the general term of the sequence\ frac {1} {2},\ frac {2} {3},\ frac {3} {4},.....?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-10th-Math-285,BN-MT,question,flagged,numbers_changed;similarity<0.75,0.619,Which one is the 10th term of the series 3 - 3 + 3 - 3 + .....?,3-3 + 3-3 +................................................................................................................................................................................................,3- 3 + 3 - 3 +............................................................................................................................................................................................................................................................,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-961-A,BN,correct_answer,auto_ok,,0.9055,\( 325 \) minutes,\( 325 \) মিনিট,\ (325\) minutes,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-176,BN-MT,question,flagged,similarity<0.75,0.6216,"Which one is the general term of the sequence \frac{1}{2}, \frac{2}{3}, \frac{3}{4}, .....?","\frac{1}{2}, \frac{2}{3}, \frac{3}{4},......................................................................................................................................................................................","\ frac {1} {2},\ frac {2} {3},\ frac {3} {4},\ frac {1} {2},\ frac {2} {3},\ frac {3} {4},\ frac {3} {4},\ frac {1} {2},\ frac {1} {2},\ frac {2} {3},\ frac {3} {4},\ frac {1} {2},\ frac {1} {2},\ frac {2} {3},\ frac {3} {4},\ frac {1} {2},\ frac {1} {2},\ frac {2} {2},\ frac {2} {3},\ frac {3} {4},\ frac {1} {2},\ frac {2} {2},\ frac {2} {2},\",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-285,BN-MT,question,auto_ok,,0.9781,Which one is the 10th term of the series 3 - 3 + 3 - 3 + .....?,3 - 3 + 3 - 3 + ..... সিরিজের 10ম পদ কোনটি?,What is the 10th term in the 3 - 3 + 3 - 3 + ..... series?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-37,BN-MT,question,auto_ok,,0.954,If the radius of base and the height a cylinder are 3 cm and 7 cm respectively then what is the area of its curved surface?,যদি ভিত্তির ব্যাসার্ধ এবং একটি সিলিন্ডারের উচ্চতা যথাক্রমে 3 সেমি এবং 7 সেমি হয় তবে এর বাঁকা পৃষ্ঠের আয়তন কত?,"If the radius of the base and the height of a cylinder are 3 cm and 7 cm respectively, what is the volume of its curved surface?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-372,BN-MT,question,auto_ok,,0.9606,What is the distance between two centres of the circles with radius 3 cm and 5 cm respectively when they touch internally?,3 সেমি এবং 5 সেমি ব্যাসার্ধের বৃত্তের দুটি কেন্দ্রের মধ্যে দূরত্ব কত যখন তারা অভ্যন্তরীণভাবে স্পর্শ করে?,What is the distance between the two centers of the circle of radius 3 cm and 5 cm when they touch internally?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-10th-Math-II-222,BN-MT,question,review_sample,,1.0,What is the probability of getting a prime number or a number divisible by 3 in a single throw of a dice?,একটি পাশার একক নিক্ষেপের মধ্যে একটি মৌলিক সংখ্যা বা 3 দ্বারা বিভাজ্য একটি সংখ্যা পাওয়ার সম্ভাবনা কত?,What is the probability of getting a prime number or a number divisible by 3 in a single throw of a dice?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-10th-Math-II-238,BN-MT,question,auto_ok,,0.824,"In the expension of (x - \frac{1}{x})^{6} - 
+benqa-10th-Math-II-222,BN-MT,question,auto_ok,,1.0,What is the probability of getting a prime number or a number divisible by 3 in a single throw of a dice?,একটি পাশার একক নিক্ষেপের মধ্যে একটি মৌলিক সংখ্যা বা 3 দ্বারা বিভাজ্য একটি সংখ্যা পাওয়ার সম্ভাবনা কত?,What is the probability of getting a prime number or a number divisible by 3 in a single throw of a dice?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-II-238,BN-MT,question,auto_ok,,0.8768,"In the expension of (x - \frac{1}{x})^{6} - 
  i. number of the term is 7
  ii. third term is 15x^{2}
  iii. x - free term is 200
- Which one of the following is correct?","(x-\frac {1} {x}) ^ {6}-এর সম্প্রসারণে -
+ Which one of the following is correct?","(x-\frac{1}{x}) ^ {6}-এর সম্প্রসারণে -
 i। শব্দের সংখ্যা হল 7
 ii। তৃতীয় পদ হল 15x ^ {2}
 iii। x-মুক্ত শব্দ হল 200
-নিচের কোনটি সঠিক?","In the expansion (x -\ frac {1} {x}) ^ {6} -
+নিচের কোনটি সঠিক?","In the extension (x - \frac{1}{x}) ^ {6} -
 i. The number of words is 7.
 ii. The third term is 15x ^ {2}
 iii. The x-free word is 200
 Which one of the following is correct?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-10th-Math-II-285,BN-MT,question,auto_ok,,0.8745,"3 - 3 + 3 - 3 + … Infinite Geometric Series:
+benqa-10th-Math-II-285,BN-MT,question,auto_ok,,0.9141,"3 - 3 + 3 - 3 + … Infinite Geometric Series:
 i. Common Ratio - 1
 ii. 11th term 3
 iii. Infinite Sum \frac{3}{2}
-Which of the following is correct?","3-3 + 3-3 +... অসীম জ্যামিতিক সিরিজঃ
+Which of the following is correct?","3 - 3 + 3 - 3 +... অসীম জ্যামিতিক সিরিজঃ
 i। সাধারণ অনুপাত-1
 ii। 11তম মেয়াদ 3
-iii। অসীম যোগফল \frac {3} {2}
-নিচের কোনটি সঠিক?","3 - 3 + 3 - 3 +... Infinite geometric series:
+iii। অসীম যোগফল \frac{3}{2}
+নিচের কোনটি সঠিক?","3 - 3 + 3 - 3 +... infinite geometric series:
 i. Normalized Ratio - 1
 ii. 11th Term 3
-iii. The infinite sum\ frac {3} {2}
+iii. Infinite sum \frac{3}{2}
 Which one of the following is correct?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-10th-Math-II-40,BN-MT,question,auto_ok,,0.9678,What is the slope of straight line y - \sqrt{3}x + 3 = 0?,সরলরেখার ঢাল কি y-\sqrt {3} x + 3 = 0?,Is the slope of the straight line y -\ sqrt {3} x + 3 = 0?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-II-40,BN-MT,question,auto_ok,,0.997,What is the slope of straight line y - \sqrt{3}x + 3 = 0?,সরলরেখা y-\sqrt{3} x + 3 = 0 এর ঢাল কত?,What is the slope of the straight line y - \sqrt{3} x + 3 = 0?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-8th-Math-152,BN-MT,question,auto_ok,,0.8008,"What is the simple prifit if Tk. 2,500 in 7 years at the rate of simple profit of 15%","টাকা হলে সহজ মূল্য কী? 15 শতাংশ সাধারণ লাভের হারে 7 বছরে 2,500 টাকা","What is easy value for money? 2,500 in 7 years at an ordinary rate of profit of 15%.",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-8th-Math-36,BN-MT,question,flagged,numbers_changed,0.8793,"If A = [3, 4, 5} and B = {4, 5, 7} , then - 
+benqa-8th-Math-36,BN-MT,question,flagged,numbers_changed,0.9295,"If A = [3, 4, 5} and B = {4, 5, 7} , then - 
  i. A \cup B = {3, 4, 5, 7}
  ii.A \cap B = {4, 5}
  iii. A \subset B
  Which one is correct?","যদি A = [3,4,5} এবং B = {4,5,7} হয়, তাহলে -
-i। এ \কাপ বি = {3,4,5,7}
-ii. এ \ক্যাপ বি = {4,5}
-iii। এ \উপসেট বি
+i। A \cup B = {3,4,5,7}
+ii. A \cap B = {4,5}
+iii। A \subset B
 কোনটা সঠিক?","If A = [3,4,5} and B = {4,5,7}, then
-i. A\ cup b = {3,4,5, 7}
-ii. A\ cap b = {4,5}
-iii. A\ Upset B
+i. A \cup B = {3,4,5, 7}
+ii. A \cap B = {4,5}
+iii. A \subset B
 Which is correct?",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-176,BN-MT,student_answer,auto_ok,,0.7895,\frac{1}{n},\frac {1} {n},\ frac {1} {n},,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-285,BN-MT,student_answer,auto_ok,,1.0,30,30,30,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-37,BN-MT,student_answer,auto_ok,,0.9477,63\pi,63\পাই,63\ pi,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-372,BN-MT,student_answer,auto_ok,,1.0,3 cm,3 সেমি,3 cm,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-10th-Math-II-222,BN-MT,student_answer,review_sample,,0.7963,\frac{1}{3},\frac {1} {3},\ frac {1} {3},,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-10th-Math-II-238,BN-MT,student_answer,auto_ok,,1.0,i and iii,i এবং iii,i and iii,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-II-222,BN-MT,student_answer,auto_ok,,0.7963,\frac{1}{3},\frac {1} {3},\ frac {1} {3},,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-II-238,BN-MT,student_answer,review_sample,,1.0,i and iii,i এবং iii,i and iii,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-II-285,BN-MT,student_answer,auto_ok,,0.9142,"i, ii ও iii","i, এবং iii","i, and iii",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-10th-Math-II-40,BN-MT,student_answer,review_sample,,0.8766,- \frac{1}{\sqrt{3}},- \frac {1} {\sqrt {3}},-\ frac {1} {\ sqrt {3}},,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-8th-Math-152,BN-MT,student_answer,review_sample,,1.0,105,105,105,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-8th-Math-36,BN-MT,student_answer,auto_ok,,1.0,i and iii,i এবং iii,i and iii,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-II-40,BN-MT,student_answer,auto_ok,,0.8766,- \frac{1}{\sqrt{3}},- \frac {1} {\sqrt {3}},-\ frac {1} {\ sqrt {3}},,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-8th-Math-152,BN-MT,student_answer,auto_ok,,1.0,105,105,105,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-8th-Math-36,BN-MT,student_answer,review_sample,,1.0,i and iii,i এবং iii,i and iii,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-176,BN-MT,correct_answer,auto_ok,,0.8284,\frac{n}{n + 1},\frac {n} {n + 1},\ frac {n} {n + 1},,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-10th-Math-285,BN-MT,correct_answer,review_sample,,0.8678,-3,- 3,-3.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-285,BN-MT,correct_answer,auto_ok,,0.8678,-3,- 3,-3.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-37,BN-MT,correct_answer,auto_ok,,0.9466,42\pi,42\পাই,42\ pi,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-372,BN-MT,correct_answer,auto_ok,,1.0,2 cm,2 সেমি,2 cm,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-II-222,BN-MT,correct_answer,auto_ok,,0.7903,\frac{2}{3},\frac {2} {3},\ frac {2} {3},,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-II-238,BN-MT,correct_answer,auto_ok,,1.0,i and ii,i এবং ii,i and ii,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-10th-Math-II-285,BN-MT,correct_answer,flagged,similarity<0.75,0.7389,i ও ii,আমি ii,I am ii,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-II-285,BN-MT,correct_answer,flagged,similarity<0.75,0.6511,i ও ii,আমি ও দ্বিতীয়,Me and the second.,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-10th-Math-II-40,BN-MT,correct_answer,auto_ok,,0.952,\sqrt{3},\sqrt {3},\ sqrt {3},,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
 benqa-8th-Math-152,BN-MT,correct_answer,auto_ok,,1.0,2625,2625,2625,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-benqa-8th-Math-36,BN-MT,correct_answer,auto_ok,,1.0,i and ii,i এবং ii,i and ii,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
-eedi-1042-A,HI-EN,question,review_sample,,1.0,"Tom and Katie are discussing how to solve this quadratic equation:
+benqa-8th-Math-36,BN-MT,correct_answer,review_sample,,1.0,i and ii,i এবং ii,i and ii,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1042-A,HI-EN,question,auto_ok,,1.0,"Tom and Katie are discussing how to solve this quadratic equation:
 \(
 (5 x+2)(2 x-5)=0
 \)
@@ -574,10 +574,10 @@ P=4^{k}
 \)?",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-1206-B,HI-EN,student_answer,auto_ok,,,\( -64 \),\( -64 \),,,,,unchanged(english),
 eedi-1206-B,HI-EN,correct_answer,auto_ok,,,\( \frac{1}{64} \),\( \frac{1}{64} \),,,,,unchanged(english),
-eedi-1294-A,HI-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;similarity<0.75,0.5064,\( (-6)-(-8)= \),Mujhe wo maths ka question bhejo jo tumhe rewrite karwana hai.,Send me the maths question that you want to have rewritten.,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1294-A,HI-EN,question,auto_ok,,,\( (-6)-(-8)= \),\( (-6)-(-8)= \),,,,,unchanged(maths only),
 eedi-1294-A,HI-EN,student_answer,auto_ok,,,\( 14 \),\( 14 \),,,,,unchanged(english),
 eedi-1294-A,HI-EN,correct_answer,auto_ok,,,\( 2 \),\( 2 \),,,,,unchanged(english),
-eedi-1390-B,HI-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;similarity<0.75,0.3831,\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),Mujhe question nazar nahi aa raha. Kripya woh maths question yahan paste karo taaki main use Hindi sentence structure mein Roman letters mein type kar doon (math terms aur numbers English mein waise hi rahenge).,I can't see the question. Please paste that maths question here so that I type it in Hindi sentence structure in Roman letters (math terms aur numbers English mein waise hi rahenge).,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1390-B,HI-EN,question,auto_ok,,,\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),,,,,unchanged(maths only),
 eedi-1390-B,HI-EN,student_answer,auto_ok,,,\( \frac{5}{18} \),\( \frac{5}{18} \),,,,,unchanged(english),
 eedi-1390-B,HI-EN,correct_answer,auto_ok,,,\( \frac{1}{2} \),\( \frac{1}{2} \),,,,,unchanged(english),
 eedi-1410-B,HI-EN,question,auto_ok,,0.9973,"The median of these four numbers is \( 5 \).
@@ -597,10 +597,10 @@ Find the value of the missing number.","In chaar numbers ka median \( 5 \). \(
 \). Find the value of the missing number.",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-1410-B,HI-EN,student_answer,auto_ok,,,\( 4 \),\( 4 \),,,,,unchanged(english),
 eedi-1410-B,HI-EN,correct_answer,auto_ok,,,\( 7 \),\( 7 \),,,,,unchanged(english),
-eedi-1440-A,HI-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;similarity<0.75,0.5219,\( 0.2=\frac{1}{5}=? \% \),Mujhe woh maths question do jo mujhe rewrite karna hai.,Give me the maths question that I have to rewrite.,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1440-A,HI-EN,question,auto_ok,,,\( 0.2=\frac{1}{5}=? \% \),\( 0.2=\frac{1}{5}=? \% \),,,,,unchanged(maths only),
 eedi-1440-A,HI-EN,student_answer,auto_ok,,,\( 15 \% \),\( 15 \% \),,,,,unchanged(english),
 eedi-1440-A,HI-EN,correct_answer,auto_ok,,,\( 20 \% \),\( 20 \% \),,,,,unchanged(english),
-eedi-1449-B,HI-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;similarity<0.75,0.448,\( -4+(-5) \times 3= \),Mujhe woh maths question bhejo jo rewrite karwana hai — abhi question diya nahi gaya hai.,Send me that maths question which you want to have rewritten — the question has not been given yet.,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1449-B,HI-EN,question,auto_ok,,,\( -4+(-5) \times 3= \),\( -4+(-5) \times 3= \),,,,,unchanged(maths only),
 eedi-1449-B,HI-EN,student_answer,auto_ok,,,\( -27 \),\( -27 \),,,,,unchanged(english),
 eedi-1449-B,HI-EN,correct_answer,auto_ok,,,\( -19 \),\( -19 \),,,,,unchanged(english),
 eedi-1460-C,HI-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;similarity<0.75,0.6379,"\[
@@ -609,13 +609,13 @@ eedi-1460-C,HI-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;si
 What should replace the star?",Star ki jagah kya aayega?,What will come in place of the star?,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-1460-C,HI-EN,student_answer,auto_ok,,,\( 65000 \),\( 65000 \),,,,,unchanged(english),
 eedi-1460-C,HI-EN,correct_answer,auto_ok,,,\( 6.5 \),\( 6.5 \),,,,,unchanged(english),
-eedi-1620-C,HI-EN,question,auto_ok,,1.0,What is the 11th term of this sequence? \( u_{n}=2-5 n \),Is sequence ka 11th term kya hai? \( u_{n}=2-5 n \),What is the 11th term of this sequence? \( u_{n}=2-5 n \),,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1620-C,HI-EN,question,review_sample,,1.0,What is the 11th term of this sequence? \( u_{n}=2-5 n \),Is sequence ka 11th term kya hai? \( u_{n}=2-5 n \),What is the 11th term of this sequence? \( u_{n}=2-5 n \),,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-1620-C,HI-EN,student_answer,auto_ok,,,\( -57 \),\( -57 \),,,,,unchanged(english),
 eedi-1620-C,HI-EN,correct_answer,auto_ok,,,\( -53 \),\( -53 \),,,,,unchanged(english),
 eedi-1647-A,HI-EN,question,review_sample,,0.9962,"Which of the following is the correct way of writing: \( p \) divided by \( q \), then add \( 3 \) using algebraic convention?","Inmein se kaunsa sahi tarika hai likhne ka: \( p \) divided by \( q \), then add \( 3 \) using algebraic convention?","Which of these is the correct way to write: \( p \) divided by \( q \), then add \( 3 \) using algebraic convention?",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-1647-A,HI-EN,student_answer,auto_ok,,,\( p q+3 \),\( p q+3 \),,,,,unchanged(english),
 eedi-1647-A,HI-EN,correct_answer,auto_ok,,,\( \frac{p}{q}+3 \),\( \frac{p}{q}+3 \),,,,,unchanged(english),
-eedi-1655-C,HI-EN,question,auto_ok,,1.0,\( \sqrt[3]{216}= \),\( \sqrt[3]{216}= \),\( \sqrt[3]{216}= \),,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1655-C,HI-EN,question,auto_ok,,,\( \sqrt[3]{216}= \),\( \sqrt[3]{216}= \),,,,,unchanged(maths only),
 eedi-1655-C,HI-EN,student_answer,auto_ok,,,\( 108 \),\( 108 \),,,,,unchanged(english),
 eedi-1655-C,HI-EN,correct_answer,auto_ok,,,\( 6 \),\( 6 \),,,,,unchanged(english),
 eedi-1672-C,HI-EN,question,auto_ok,,0.939,What is \( \mathbf{1 1 . 4 7 8 1} \) rounded to \( 2 \) decimal places?,\( \mathbf{1 1 . 4 7 8 1} \) ko \( 2 \) decimal places tak round karne par kya hoga?,What will \( \mathbf{1 1 . 4 7 8 1} \) be when rounded to \( 2 \) decimal places?,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
@@ -625,7 +625,7 @@ eedi-1724-D,HI-EN,question,auto_ok,,0.9978,"What is the value of the \( 4 \) in 
 \( 31405 \)",Is number mein \( 4 \) ki value kya hai? \( 31405 \),What is the value of \( 4 \) in this number? \( 31405 \),,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-1724-D,HI-EN,student_answer,auto_ok,,,\( 4000 \),\( 4000 \),,,,,unchanged(english),
 eedi-1724-D,HI-EN,correct_answer,auto_ok,,,\( 400 \),\( 400 \),,,,,unchanged(english),
-eedi-1801-D,HI-EN,question,auto_ok,,0.9844,"What is the solution to the following inequality?
+eedi-1801-D,HI-EN,question,review_sample,,0.9844,"What is the solution to the following inequality?
 \(
 -5<2 x+1<5
 \)","Is inequality ka solution kya hai? \(
@@ -655,7 +655,7 @@ Katie says that if you know that \( 3748-426=3322 \), then \( 3748 \) - \( 427 \
 Who is correct?",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-22-C,HI-EN,student_answer,auto_ok,,,Both Tom and Katie,Both Tom and Katie,,,,,unchanged(english),
 eedi-22-C,HI-EN,correct_answer,auto_ok,,,Only Tom,Only Tom,,,,,unchanged(english),
-eedi-298-C,HI-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;similarity<0.75,0.4408,\( 5 p^{2} \times 2 p q \equiv \),Kya aap wo maths question paste kar sakte ho jise mujhe rewrite karna hai?,Can you paste the maths question that I have to rewrite?,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-298-C,HI-EN,question,auto_ok,,,\( 5 p^{2} \times 2 p q \equiv \),\( 5 p^{2} \times 2 p q \equiv \),,,,,unchanged(maths only),
 eedi-298-C,HI-EN,student_answer,auto_ok,,,\( 7 p^{3} q \),\( 7 p^{3} q \),,,,,unchanged(english),
 eedi-298-C,HI-EN,correct_answer,auto_ok,,,\( 10 p^{3} q \),\( 10 p^{3} q \),,,,,unchanged(english),
 eedi-390-C,HI-EN,question,auto_ok,,0.9951,What is \( 5.5 \% \) of \( 400 \) ?,\( 400 \) ka \( 5.5 \% \) kya hai?,What is the \( 5.5 \% \) of \( 400 \)?,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
@@ -697,7 +697,7 @@ Katie first does \( 60 \times 4 \) and then subtracts \( 4 \) from the answer
 Who will get the correct answer?",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-580-B,HI-EN,student_answer,auto_ok,,,Only Katie,Only Katie,,,,,unchanged(english),
 eedi-580-B,HI-EN,correct_answer,auto_ok,,,Both Tom and Katie,Both Tom and Katie,,,,,unchanged(english),
-eedi-585-B,HI-EN,question,auto_ok,,0.9828,"What is a correct solution for the following pair of simultaneous equations:
+eedi-585-B,HI-EN,question,review_sample,,0.9828,"What is a correct solution for the following pair of simultaneous equations:
 \[4x+y=7\]
 \[3x+2y=4\]","Niche diye gaye simultaneous equations ka correct solution kya hai:
 \[4x+y=7\]
@@ -706,7 +706,7 @@ eedi-585-B,HI-EN,question,auto_ok,,0.9828,"What is a correct solution for the fo
 \[3x+2y=4\]",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-585-B,HI-EN,student_answer,auto_ok,,,\( \begin{array}{l}x=3 \\ y=-5\end{array} \),\( \begin{array}{l}x=3 \\ y=-5\end{array} \),,,,,unchanged(english),
 eedi-585-B,HI-EN,correct_answer,auto_ok,,,\( \begin{array}{l}x=2 \\ y=-1\end{array} \),\( \begin{array}{l}x=2 \\ y=-1\end{array} \),,,,,unchanged(english),
-eedi-7-C,HI-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;similarity<0.75,0.424,\( 43.2 \div 10= \),Mujhe woh maths ka question paste karo (jo tum chahte ho main Roman Hindi mein likhu).,Paste that maths question for me (which you want me to write in Roman Hindi).,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-7-C,HI-EN,question,auto_ok,,,\( 43.2 \div 10= \),\( 43.2 \div 10= \),,,,,unchanged(maths only),
 eedi-7-C,HI-EN,student_answer,auto_ok,,,\( 33.2 \),\( 33.2 \),,,,,unchanged(english),
 eedi-7-C,HI-EN,correct_answer,auto_ok,,,\( 4.32 \),\( 4.32 \),,,,,unchanged(english),
 eedi-719-B,HI-EN,question,auto_ok,,0.9608,What is \( \mathbf{3 2 0} 050 \) rounded to the nearest hundred?,\( \mathbf{3 2 0} 050 \) ko rounded to the nearest hundred karne par kya hoga?,What will \( \mathbf{3 2 0} 050 \) be when rounded to the nearest hundred?,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
@@ -715,7 +715,7 @@ eedi-719-B,HI-EN,correct_answer,auto_ok,,,\( 320100 \),\( 320100 \),,,,,unchange
 eedi-835-D,HI-EN,question,auto_ok,,1.0,\( 1 \mathrm{~km} \approx 0.6 \) miles \( 3 \mathrm{~km} \approx \square \) miles,\( 1 \mathrm{~km} \approx 0.6 \) miles \( 3 \mathrm{~km} \approx \square \) miles,\( 1 \mathrm{~km} \approx 0.6 \) miles \( 3 \mathrm{~km} \approx \square \) miles,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-835-D,HI-EN,student_answer,auto_ok,,,\( 0.18 \),\( 0.18 \),,,,,unchanged(english),
 eedi-835-D,HI-EN,correct_answer,auto_ok,,,\( 1.8 \),\( 1.8 \),,,,,unchanged(english),
-eedi-851-D,HI-EN,question,auto_ok,,0.971,Write \( 0.07 \) as a percentage.,Isse percentage ke roop mein likho: \( 0.07 \),Write this as a percentage: \( 0.07 \),,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-851-D,HI-EN,question,review_sample,,0.971,Write \( 0.07 \) as a percentage.,Isse percentage ke roop mein likho: \( 0.07 \),Write this as a percentage: \( 0.07 \),,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-851-D,HI-EN,student_answer,auto_ok,,,\( 0.07 \% \),\( 0.07 \% \),,,,,unchanged(english),
 eedi-851-D,HI-EN,correct_answer,auto_ok,,,\( 7 \% \),\( 7 \% \),,,,,unchanged(english),
 eedi-86-B,HI-EN,question,auto_ok,,0.8753,"Work out:
@@ -733,7 +733,7 @@ Write your answer in its simplest form.","Solve this and tell me:
 Write your answer in its simplest form.",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-86-B,HI-EN,student_answer,auto_ok,,,\( \frac{1}{2} \),\( \frac{1}{2} \),,,,,unchanged(english),
 eedi-86-B,HI-EN,correct_answer,auto_ok,,,\( 1 \),\( 1 \),,,,,unchanged(english),
-eedi-936-C,HI-EN,question,review_sample,,0.9985,"Tom and Katie are arguing about factorising. Tom says \( x^{2}+5 x+6 \equiv(x+3)(x+2) \) 
+eedi-936-C,HI-EN,question,auto_ok,,0.9985,"Tom and Katie are arguing about factorising. Tom says \( x^{2}+5 x+6 \equiv(x+3)(x+2) \) 
 Katie says \( x^{2}-5 x-6 \equiv(x-3)(x-2) \) 
 Who is correct?",Tom aur Katie factorising ke baare mein argue kar rahe hain. Tom kehta hai \( x^{2}+5 x+6 \equiv(x+3)(x+2) \) Katie kehti hai \( x^{2}-5 x-6 \equiv(x-3)(x-2) \) Kaun sahi hai?,Tom and Katie are arguing about factorising. Tom says \( x^{2}+5 x+6 \equiv(x+3)(x+2) \) Katie says \( x^{2}-5 x-6 \equiv(x-3)(x-2) \) Who is right?,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-936-C,HI-EN,student_answer,auto_ok,,,Both Tom and Katie,Both Tom and Katie,,,,,unchanged(english),
@@ -780,13 +780,13 @@ P=4^{k}
 What is the value of \( P \) when \( k=-3 \) ?","Jokhon \( k=-3 \), tokhon \( P \)-er maan koto?","When \( k=-3 \), what is the value of \( P \)?",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-1206-B,BN-EN,student_answer,auto_ok,,,\( -64 \),\( -64 \),,,,,unchanged(english),
 eedi-1206-B,BN-EN,correct_answer,auto_ok,,,\( \frac{1}{64} \),\( \frac{1}{64} \),,,,,unchanged(english),
-eedi-1294-A,BN-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;similarity<0.75,0.3833,\( (-6)-(-8)= \),"Apni je maths question ta rewrite korte bolchen, seita ekhono pathano hoyni — question ta diye bolben?",The maths question that you asked to rewrite has not been sent yet — will you send the question?,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1294-A,BN-EN,question,auto_ok,,,\( (-6)-(-8)= \),\( (-6)-(-8)= \),,,,,unchanged(maths only),
 eedi-1294-A,BN-EN,student_answer,auto_ok,,,\( 14 \),\( 14 \),,,,,unchanged(english),
 eedi-1294-A,BN-EN,correct_answer,auto_ok,,,\( 2 \),\( 2 \),,,,,unchanged(english),
-eedi-1390-B,BN-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;similarity<0.75,0.4263,\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),I don't have the math question — please paste the exact question you want rewritten.,I don't have the math question — please paste the exact question you want rewritten.,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1390-B,BN-EN,question,auto_ok,,,\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),\( \frac{1}{3}+\frac{1}{2} \times \frac{1}{3}= \),,,,,unchanged(maths only),
 eedi-1390-B,BN-EN,student_answer,auto_ok,,,\( \frac{5}{18} \),\( \frac{5}{18} \),,,,,unchanged(english),
 eedi-1390-B,BN-EN,correct_answer,auto_ok,,,\( \frac{1}{2} \),\( \frac{1}{2} \),,,,,unchanged(english),
-eedi-1410-B,BN-EN,question,review_sample,,1.0,"The median of these four numbers is \( 5 \).
+eedi-1410-B,BN-EN,question,auto_ok,,1.0,"The median of these four numbers is \( 5 \).
 \(
 \begin{array}{cccc}
 3&12&1&?
@@ -803,10 +803,10 @@ Find the value of the missing number.","Ei chaar number-er median holo \( 5 \). 
 \) Find the value of the missing number.",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-1410-B,BN-EN,student_answer,auto_ok,,,\( 4 \),\( 4 \),,,,,unchanged(english),
 eedi-1410-B,BN-EN,correct_answer,auto_ok,,,\( 7 \),\( 7 \),,,,,unchanged(english),
-eedi-1440-A,BN-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;similarity<0.75,0.4026,\( 0.2=\frac{1}{5}=? \% \),"Apni je question ta rewrite korte bolchen seta please ekhane paste korun — ami tarpor Bengali sentence structure (Roman letters) use kore, math terms o numbers English-e rekhe rewrite kore debo.","Please paste here the question that you want me to rewrite — I will then rewrite it using Bengali sentence structure (Roman letters), keeping math terms and numbers in English.",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1440-A,BN-EN,question,auto_ok,,,\( 0.2=\frac{1}{5}=? \% \),\( 0.2=\frac{1}{5}=? \% \),,,,,unchanged(maths only),
 eedi-1440-A,BN-EN,student_answer,auto_ok,,,\( 15 \% \),\( 15 \% \),,,,,unchanged(english),
 eedi-1440-A,BN-EN,correct_answer,auto_ok,,,\( 20 \% \),\( 20 \% \),,,,,unchanged(english),
-eedi-1449-B,BN-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;similarity<0.75,0.5061,\( -4+(-5) \times 3= \),I can't see the maths question — please paste the exact question you want rewritten.,I can't see the maths question — please paste the exact question you want rewritten.,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1449-B,BN-EN,question,auto_ok,,,\( -4+(-5) \times 3= \),\( -4+(-5) \times 3= \),,,,,unchanged(maths only),
 eedi-1449-B,BN-EN,student_answer,auto_ok,,,\( -27 \),\( -27 \),,,,,unchanged(english),
 eedi-1449-B,BN-EN,correct_answer,auto_ok,,,\( -19 \),\( -19 \),,,,,unchanged(english),
 eedi-1460-C,BN-EN,question,flagged,similarity<0.75,0.642,"\[
@@ -824,17 +824,17 @@ eedi-1620-C,BN-EN,correct_answer,auto_ok,,,\( -53 \),\( -53 \),,,,,unchanged(eng
 eedi-1647-A,BN-EN,question,auto_ok,,0.9879,"Which of the following is the correct way of writing: \( p \) divided by \( q \), then add \( 3 \) using algebraic convention?","Nicher moddhe kon ta thik bhabe lekha uchit: \( p \) divided by \( q \), then add \( 3 \) using algebraic convention?","Among the following, which should be written correctly: \( p \) divided by \( q \), then add \( 3 \) using algebraic convention?",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-1647-A,BN-EN,student_answer,auto_ok,,,\( p q+3 \),\( p q+3 \),,,,,unchanged(english),
 eedi-1647-A,BN-EN,correct_answer,auto_ok,,,\( \frac{p}{q}+3 \),\( \frac{p}{q}+3 \),,,,,unchanged(english),
-eedi-1655-C,BN-EN,question,auto_ok,,0.8158,\( \sqrt[3]{216}= \),I don’t have the text of \( \sqrt[3]{216}= \). Please paste the exact maths question you want rewritten.,I don’t have the text of \( \sqrt[3]{216}= \). Please paste the exact maths question you want rewritten.,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1655-C,BN-EN,question,auto_ok,,,\( \sqrt[3]{216}= \),\( \sqrt[3]{216}= \),,,,,unchanged(maths only),
 eedi-1655-C,BN-EN,student_answer,auto_ok,,,\( 108 \),\( 108 \),,,,,unchanged(english),
 eedi-1655-C,BN-EN,correct_answer,auto_ok,,,\( 6 \),\( 6 \),,,,,unchanged(english),
-eedi-1672-C,BN-EN,question,review_sample,,0.9251,What is \( \mathbf{1 1 . 4 7 8 1} \) rounded to \( 2 \) decimal places?,"Bolo, \( \mathbf{1 1 . 4 7 8 1} \) rounded to \( 2 \) decimal places koto?","Tell me, how much is \( \mathbf{1 1 . 4 7 8 1} \) rounded to \( 2 \) decimal places?",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1672-C,BN-EN,question,auto_ok,,0.9251,What is \( \mathbf{1 1 . 4 7 8 1} \) rounded to \( 2 \) decimal places?,"Bolo, \( \mathbf{1 1 . 4 7 8 1} \) rounded to \( 2 \) decimal places koto?","Tell me, how much is \( \mathbf{1 1 . 4 7 8 1} \) rounded to \( 2 \) decimal places?",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-1672-C,BN-EN,student_answer,auto_ok,,,\( 11.58 \),\( 11.58 \),,,,,unchanged(english),
 eedi-1672-C,BN-EN,correct_answer,auto_ok,,,\( 11.48 \),\( 11.48 \),,,,,unchanged(english),
 eedi-1724-D,BN-EN,question,auto_ok,,0.9978,"What is the value of the \( 4 \) in this number?
 \( 31405 \)",Ei number-e \( 4 \) er value ta koto? \( 31405 \),What is the value of \( 4 \) in this number? \( 31405 \),,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-1724-D,BN-EN,student_answer,auto_ok,,,\( 4000 \),\( 4000 \),,,,,unchanged(english),
 eedi-1724-D,BN-EN,correct_answer,auto_ok,,,\( 400 \),\( 400 \),,,,,unchanged(english),
-eedi-1801-D,BN-EN,question,review_sample,,0.9981,"What is the solution to the following inequality?
+eedi-1801-D,BN-EN,question,auto_ok,,0.9981,"What is the solution to the following inequality?
 \(
 -5<2 x+1<5
 \)","Nimnolikito inequality-er solution ta ki? \(
@@ -864,7 +864,7 @@ Katie says if you know \( 3748-426=3322 \), then \( 3748 \) - \( 427 \) must equ
 Who is right?",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-22-C,BN-EN,student_answer,auto_ok,,,Both Tom and Katie,Both Tom and Katie,,,,,unchanged(english),
 eedi-22-C,BN-EN,correct_answer,auto_ok,,,Only Tom,Only Tom,,,,,unchanged(english),
-eedi-298-C,BN-EN,question,auto_ok,,0.7937,\( 5 p^{2} \times 2 p q \equiv \),I need the actual text of the question (the content for \( 5 p^{2} \times 2 p q \equiv \)) to rewrite it — please paste it here.,I need the actual text of the question (the content for \( 5 p^{2} \times 2 p q \equiv \)) to rewrite it — please paste it here.,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-298-C,BN-EN,question,auto_ok,,,\( 5 p^{2} \times 2 p q \equiv \),\( 5 p^{2} \times 2 p q \equiv \),,,,,unchanged(maths only),
 eedi-298-C,BN-EN,student_answer,auto_ok,,,\( 7 p^{3} q \),\( 7 p^{3} q \),,,,,unchanged(english),
 eedi-298-C,BN-EN,correct_answer,auto_ok,,,\( 10 p^{3} q \),\( 10 p^{3} q \),,,,,unchanged(english),
 eedi-390-C,BN-EN,question,auto_ok,,0.9951,What is \( 5.5 \% \) of \( 400 \) ?,\( 400 \)-er \( 5.5 \% \) ta koto?,What is the \( 5.5 \% \) of \( 400 \)?,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
@@ -894,7 +894,7 @@ Karen ebong Marty er marbles er songkhya ke ratio hisebe likho, with Karen's par
 Write the number of Karen and Marty’s marbles as a ratio, with Karen's part first.",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-56-D,BN-EN,student_answer,auto_ok,,,None of these,None of these,,,,,unchanged(english),
 eedi-56-D,BN-EN,correct_answer,auto_ok,,,\( 1: 3 \),\( 1: 3 \),,,,,unchanged(english),
-eedi-580-B,BN-EN,question,auto_ok,,0.9798,"Tom and Katie are discussing ways to calculate \( 59 \times 4 \) mentally
+eedi-580-B,BN-EN,question,review_sample,,0.9798,"Tom and Katie are discussing ways to calculate \( 59 \times 4 \) mentally
 Tom doubles \( 59 \) and then doubles the answer
 Katie does \( 60 \times 4 \) and then subtracts \( 4 \) from the answer
 Who would get the correct answer?","Tom ar Katie \( 59 \times 4 \) mentally calculate korar upay niye alochona korche.
@@ -915,16 +915,16 @@ eedi-585-B,BN-EN,question,auto_ok,,0.9766,"What is a correct solution for the fo
 \[3x+2y=4\]",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-585-B,BN-EN,student_answer,auto_ok,,,\( \begin{array}{l}x=3 \\ y=-5\end{array} \),\( \begin{array}{l}x=3 \\ y=-5\end{array} \),,,,,unchanged(english),
 eedi-585-B,BN-EN,correct_answer,auto_ok,,,\( \begin{array}{l}x=2 \\ y=-1\end{array} \),\( \begin{array}{l}x=2 \\ y=-1\end{array} \),,,,,unchanged(english),
-eedi-7-C,BN-EN,question,flagged,latex_lost:1;latex_changed;numbers_changed;similarity<0.75,0.4542,\( 43.2 \div 10= \),I don't see the maths question—please paste the question you want rewritten.,I don't see the maths question—please paste the question you want rewritten.,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-7-C,BN-EN,question,auto_ok,,,\( 43.2 \div 10= \),\( 43.2 \div 10= \),,,,,unchanged(maths only),
 eedi-7-C,BN-EN,student_answer,auto_ok,,,\( 33.2 \),\( 33.2 \),,,,,unchanged(english),
 eedi-7-C,BN-EN,correct_answer,auto_ok,,,\( 4.32 \),\( 4.32 \),,,,,unchanged(english),
 eedi-719-B,BN-EN,question,auto_ok,,0.959,What is \( \mathbf{3 2 0} 050 \) rounded to the nearest hundred?,\( \mathbf{3 2 0} 050 \) ke rounded to the nearest hundred korle koto hobe?,"If \( \mathbf{3 2 0} 050 \) is rounded to the nearest hundred, what will it be?",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-719-B,BN-EN,student_answer,auto_ok,,,\( 320050 \),\( 320050 \),,,,,unchanged(english),
 eedi-719-B,BN-EN,correct_answer,auto_ok,,,\( 320100 \),\( 320100 \),,,,,unchanged(english),
-eedi-835-D,BN-EN,question,auto_ok,,0.976,\( 1 \mathrm{~km} \approx 0.6 \) miles \( 3 \mathrm{~km} \approx \square \) miles,\( 1 \mathrm{~km} \approx 0.6 \) miles ar \( 3 \mathrm{~km} \approx \square \) miles,\( 1 \mathrm{~km} \approx 0.6 \) miles and \( 3 \mathrm{~km} \approx \square \) miles,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-835-D,BN-EN,question,review_sample,,0.976,\( 1 \mathrm{~km} \approx 0.6 \) miles \( 3 \mathrm{~km} \approx \square \) miles,\( 1 \mathrm{~km} \approx 0.6 \) miles ar \( 3 \mathrm{~km} \approx \square \) miles,\( 1 \mathrm{~km} \approx 0.6 \) miles and \( 3 \mathrm{~km} \approx \square \) miles,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-835-D,BN-EN,student_answer,auto_ok,,,\( 0.18 \),\( 0.18 \),,,,,unchanged(english),
 eedi-835-D,BN-EN,correct_answer,auto_ok,,,\( 1.8 \),\( 1.8 \),,,,,unchanged(english),
-eedi-851-D,BN-EN,question,review_sample,,1.0,Write \( 0.07 \) as a percentage.,\( 0.07 \) ke percentage hishebe likho.,Write \( 0.07 \) as a percentage.,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-851-D,BN-EN,question,auto_ok,,1.0,Write \( 0.07 \) as a percentage.,\( 0.07 \) ke percentage hishebe likho.,Write \( 0.07 \) as a percentage.,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-851-D,BN-EN,student_answer,auto_ok,,,\( 0.07 \% \),\( 0.07 \% \),,,,,unchanged(english),
 eedi-851-D,BN-EN,correct_answer,auto_ok,,,\( 7 \% \),\( 7 \% \),,,,,unchanged(english),
 eedi-86-B,BN-EN,question,auto_ok,,1.0,"Work out:
@@ -943,6 +943,6 @@ Katie says \( x^{2}-5 x-6 \equiv(x-3)(x-2) \)
 Who is correct?",Tom ar Katie factorising niye argue korche. Tom bole \( x^{2}+5 x+6 \equiv(x+3)(x+2) \). Katie bole \( x^{2}-5 x-6 \equiv(x-3)(x-2) \). Ke thik?,Tom and Katie are arguing about factorising. Tom says \( x^{2}+5 x+6 \equiv(x+3)(x+2) \). Katie says \( x^{2}-5 x-6 \equiv(x-3)(x-2) \). Who is right?,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-936-C,BN-EN,student_answer,auto_ok,,,Both Tom and Katie,Both Tom and Katie,,,,,unchanged(english),
 eedi-936-C,BN-EN,correct_answer,auto_ok,,,Only Tom,Only Tom,,,,,unchanged(english),
-eedi-961-A,BN-EN,question,auto_ok,,0.9728,A school trip lasted \( 5 \) hours and \( 25 \) minutes. How long is this in minutes?,School trip \( 5 \) hours ebong \( 25 \) minutes chhilo. Eita total koto minutes hobe?,The school trip was \( 5 \) hours and \( 25 \) minutes. How many minutes is that in total?,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-961-A,BN-EN,question,review_sample,,0.9728,A school trip lasted \( 5 \) hours and \( 25 \) minutes. How long is this in minutes?,School trip \( 5 \) hours ebong \( 25 \) minutes chhilo. Eita total koto minutes hobe?,The school trip was \( 5 \) hours and \( 25 \) minutes. How many minutes is that in total?,,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
 eedi-961-A,BN-EN,student_answer,auto_ok,,,\( 525 \) minutes,\( 525 \) minutes,,,,,unchanged(english),
 eedi-961-A,BN-EN,correct_answer,auto_ok,,,\( 325 \) minutes,\( 325 \) minutes,,,,,unchanged(english),

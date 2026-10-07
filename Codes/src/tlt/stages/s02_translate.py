@@ -93,12 +93,15 @@ def run_stage(run: Run) -> dict:
                          "source_en": it[f"{field}_en"], "translation": t, "missing": miss,
                          "route": tr.model_id_en_indic})
     # Code-mixed (utility model, Section 7.5); answers stay in English (D7).
+    from concurrent.futures import ThreadPoolExecutor
+    pool = ThreadPoolExecutor(8)  # independent utility calls; results kept in item order
     for lang, (region, matrix) in CODEMIX.items():
-        for it in (x for x in items if x["source"] == "eedi"):
-            cid = f"codemix|{lang}|{it['item_id']}"
-            text, rec, miss = protected_utility(llm, ulog, cid, "codemix", "question_en", it["question_en"],
-                                                {"role": "codemix", "item_id": it["item_id"], "lang": lang},
-                                                region=region, matrix_language=matrix)
+        eedi = [x for x in items if x["source"] == "eedi"]
+        futs = [pool.submit(protected_utility, llm, ulog, f"codemix|{lang}|{it['item_id']}", "codemix",
+                            "question_en", it["question_en"], {"role": "codemix", "item_id": it["item_id"], "lang": lang},
+                            region=region, matrix_language=matrix) for it in eedi]
+        for it, fut in zip(eedi, futs):
+            text, rec, miss = fut.result()
             rows.append({"item_id": it["item_id"], "lang": lang, "field": "question",
                          "source_en": it["question_en"], "translation": text,
                          "missing": miss, "route": rec.get("route_used") or "FAILED"})
@@ -118,12 +121,15 @@ def run_stage(run: Run) -> dict:
         for r, b in zip(sel, backs):
             r["back_translation"], r["back_route"] = b, tr.model_id_indic_en
     for lang in CODEMIX:
-        for r in (x for x in rows if x["lang"] == lang and is_transformed(x)):
-            cid = f"backtr|{lang}|{r['item_id']}|{r['field']}"
-            text, rec, _ = protected_utility(llm, ulog, cid, "utility_translate_to_en", "text", r["translation"],
-                                             {"role": "back_translation", "item_id": r["item_id"], "lang": lang},
-                                             source_description=CM_SOURCE[lang])
+        sel = [x for x in rows if x["lang"] == lang and is_transformed(x)]
+        futs = [pool.submit(protected_utility, llm, ulog, f"backtr|{lang}|{r['item_id']}|{r['field']}",
+                            "utility_translate_to_en", "text", r["translation"],
+                            {"role": "back_translation", "item_id": r["item_id"], "lang": lang},
+                            source_description=CM_SOURCE[lang]) for r in sel]
+        for r, fut in zip(sel, futs):
+            text, rec, _ = fut.result()
             r["back_translation"], r["back_route"] = text, rec.get("route_used")
+    pool.shutdown()
 
     gated = [r for r in rows if is_transformed(r)]
     if gated:

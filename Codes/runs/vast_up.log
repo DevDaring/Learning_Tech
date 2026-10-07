@@ -1,0 +1,12 @@
+trying offer 48399575: RTX 3090 $0.240/h
+{"event": "rented", "contract": 54681593, "gpu": "RTX 3090", "dph": 0.23997037037037036}
+CUDA True NVIDIA GeForce RTX 3090
+install: ok
+flash-attn: WHEEL https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
+PIP 0 unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+FA_OK True
+
+download: 4bharat/indictrans2-en-indic-1B', revision='10e65a9951a1e922cd109a95e8aba9357b62144b')"; python -c "from huggingface_hub import snapshot_download as s; s('ai4bharat/indictrans2-indic-en-1B', revision='ac3daf0ecd37be3b6957764a9179ab2b07fa9d6a')"" 2>&1 | tail -2; rm -f /root/.cache/huggingface/token'
+
+exit=143

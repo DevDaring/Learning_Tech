@@ -1,0 +1,526 @@
+row_id,question_en,correct_answer,student_answer,misconception,student_wrote_in,tutor_reply,Mistake_Identification,Mistake_Location,Revealing_of_the_Answer,Providing_Guidance,Actionability,Coherence,Tutor_Tone,Humanlikeness,Cognitive_Demand,Conceptual_Depth,Praise_Calibration,Expectation_Level,Math_Correctness,Language_Match,annotator,notes
+H0001,What is the 11th term of this sequence? \( u_{n}=2-5 n \),\( -53 \),\( -57 \),"When subtracting past zero, adds the absolute values and then writes the answer with a negative sign",English,"Hi there!
+
+Let's find the 11th term of the sequence \( u_{n} = 2 - 5n \).
+
+To do this, we need to substitute \( n = 11 \) into the formula:
+
+\[ u_{11} = 2 - 5(11) \]
+
+Now, let's perform the multiplication and subtraction:
+
+\[ u_{11} = 2 - 55 \]
+\[ u_{11} = -53 \]
+
+So, the 11th term of the sequence is \( -53 \).
+
+Your answer of \( -57 \) is incorrect. The correct answer is \( -53 \).
+
+If you have any further questions, feel free to ask!
+
+Best regards,
+[Your Name]",,,,,,,,,,,,,,,,
+H0002,"Tom and Katie are discussing related calculations
+Tom says if you know that \( 3748+426=4174 \), then \( 3748+427 \) must equal \( \mathbf{4 1 7 5} \)
+
+Katie says if you know that \( 3748-426=3322 \), then \( 3748 \) - \( 427 \) must equal \( \mathbf{3 3 2 3} \)
+Who is correct?",Only Tom,Both Tom and Katie,Does not realise that subtracting a larger number will give a smaller answer,Bengali (Bengali script),"তোমার উত্তরের জন্য ধন্যবাদ! তবে একটু ভুল হয়ে গেছে—এখানে **শুধু টম-এর কথাই ঠিক**, কেটির কথা ঠিক নয়। 
+
+চলো সহজভাবে বুঝে নেওয়া যাক কেন এমন হলো:
+
+---
+
+### ১. টমের ক্ষেত্রে (যোগ):
+* দেওয়া আছে: $3748 + 426 = 4174$
+* বের করতে হবে: $3748 + 427$
+
+এখানে আমরা আগের চেয়ে **$1$ বেশি** যোগ করছি ($426$-এর জায়গায় $427$)। তাই যোগফলও $1$ বেড়ে যাবে:
+$$4174 + 1 = 4175$$
+👉 **টমের যুক্তি একেবারে সঠিক!**
+
+---
+
+### ২. কেটির ক্ষেত্রে (বিয়োগ):
+* দেওয়া আছে: $3748 - 426 = 3322$
+* বের করতে হবে: $3748 - 427$
+
+এখানে লক্ষ্য করো, আমরা কিন্তু যোগ করছি না, **বিয়োগ** করছি। কোনো সংখ্যা থেকে তুমি যখন আগের চেয়ে **$1$ বেশি বাদ (বিয়োগ)** দেবে, তখন অবশিষ্ট ফলটি তো আগের চেয়ে **$1$ কমে যাবে**, তাই না? 
+
+যেমন: 
+* তোমার কাছে ১০টি চকলেট আছে। ৪টি দিয়ে দিলে থাকে ৬টি ($10 - 4 = 6$)।
+* কিন্তু তুমি যদি ৪টির জায়গায় ৫টি দিয়ে দাও, তবে তোমার কাছে থাকবে ৫টি ($10 - 5 = 5$), অর্থাৎ মান কমে যাবে, বাড়বে না!
+
+ঠিক একইভাবে:
+যেহেতু $426$-এর জায়গায় $427$ (অর্থাৎ $1$ বেশি) বিয়োগ করা হচ্ছে, তাই উত্তরটি হবে $1$ কম:
+$$3322 - 1 = 3321$$
+
+কিন্তু কেটি বলেছিল উত্তর হবে $3323$, যা ভুল। 
+
+---
+
+**সঠিক উত্তর:** শুধু **টম** ঠিক বলেছে। 
+
+আশা করি এবার বিষয়টি বুঝতে পেরেছ! তোমার কি এই নিয়ে আর কোনো প্রশ্ন আছে?",,,,,,,,,,,,,,,,
+H0003,\( 43.2 \div 10= \),\( 4.32 \),\( 33.2 \),Subtracts instead of divides,English,"Not quite, but I can see what happened! It looks like you **subtracted** 10 instead of **dividing** by 10 (since $43.2 - 10 = 33.2$).
+
+When you **divide** by 10, the digits don't change, but each digit's place value becomes 10 times smaller. A handy trick to remember is:
+
+> **Dividing by 10 moves the decimal point one place to the left.**
+
+Let's try that with $43.2$:
+
+* Start at: $43.2$
+* Move the decimal point one step to the left: $4.32$
+
+So:
+$$43.2 \div 10 = 4.32$$
+
+Does that make sense? What do you think you would get if you did $43.2 \div 100$?",,,,,,,,,,,,,,,,
+H0004,What is \( \mathbf{1 1 . 4 7 8 1} \) rounded to \( 2 \) decimal places?,\( 11.48 \),\( 11.58 \),Rounds incorrectly by changing multiple place values,"Banglish (Bengali written in Roman script, maths terms in English)","Bolo, tumi \( \mathbf{1 1 . 4 7 8 1} \) ko \( 2 \) decimal places e round kora cha. Rounding e, mane tumi keu decimal point er porer dui number e dekhte hobe.
+
+1. First, tumi dekhte hobe \( 11.4781 \) er shete decimal point er porer dui number, mane \( 78 \).
+2. Onno ghor, mane \( 7 \) e dekhte hobe. Onno ghor \( 8 \) er upor, tumi \( 7 \) ke 1 kora besi round up korte hobe.
+3. So, \( 78 \) er upor \( 79 \) e round up kora hoe \( 7 \) holo \( 8 \).
+4. Ekhon \( 4 \) er upor \( 5 \) e round up kora hoe \( 11.48 \).
+
+So, \( 11.4781 \) ko \( 2 \) decimal places e round kora holo \( 11.48 \).
+
+Tumi \( 11.58 \) likhechho, kintu seta theke boshlo. The correct answer should be \( 11.48 \). 
+
+Ekhon tomar mote dekhte parbo, \( 11.58 \) theke \( 11.48 \) holo theke boshlo.
+
+Hope this helps! If you have any more questions, feel free to ask.",,,,,,,,,,,,,,,,
+H0005,"Tom and Katie are discussing related calculations
+Tom says if you know that \( 3748+426=4174 \), then \( 3748+427 \) must equal \( \mathbf{4 1 7 5} \)
+
+Katie says if you know that \( 3748-426=3322 \), then \( 3748 \) - \( 427 \) must equal \( \mathbf{3 3 2 3} \)
+Who is correct?",Only Tom,Both Tom and Katie,Does not realise that subtracting a larger number will give a smaller answer,"Banglish (Bengali written in Roman script, maths terms in English)","Hello there! Let's break down the calculations that Tom and Katie are discussing.
+
+**Tom's Calculation:**
+
+Tom says if you know that \( 3748 + 426 = 4174 \), then \( 3748 + 427 \) must equal \( 4175 \).
+
+Let's verify this:
+- If \( 3748 + 426 = 4174 \), we can add 1 to 426 to get 427. So, we need to add 1 to 4174 to get the next sum:
+  \( 4174 + 1 = 4175 \)
+
+So, Tom's statement is correct. If \( 3748 + 426 = 4174 \), then \( 3748 + 427 = 4175 \).
+
+**Katie's Calculation:**
+
+Katie says if you know that \( 3748 - 426 = 3322 \), then \( 3748 - 427 \) must equal \( 3323 \).
+
+Let's verify this:
+- If \( 3748 - 426 = 3322 \), we can subtract 1 from 426 to get 427. So, we need to subtract 1 from 3322 to get the next difference:
+  \( 3322 - 1 = 3321 \)
+
+So, Katie's statement is incorrect. If \( 3748 - 426 = 3322 \), then \( 3748 - 427 = 3321 \).
+
+**Conclusion:**
+
+- Tom's reasoning is correct.
+- Katie's reasoning is incorrect.
+
+Your conclusion that both Tom and Katie are correct is not accurate. Only Tom's logic is correct. 
+
+If you have any more questions or need further clarification, feel free to ask!",,,,,,,,,,,,,,,,
+H0006,"\(
+P=4^{k}
+\)
+
+What is the value of \( P \) when \( k=-3 \) ?",\( \frac{1}{64} \),\( -64 \),Believes a negative power results in a negative answer,Hindi (Devanagari script),"नमस्ते! आपका प्रयास अच्छा था, लेकिन आपका उत्तर **$-64$ सही नहीं है**। 
+
+आइए देखते हैं कि ऐसा क्यों है और सही मान कैसे निकाला जाता है:
+
+जब किसी संख्या की घात (power / exponent) ऋणात्मक (negative) होती है, तो उसका नियम यह होता है:
+$$a^{-n} = \frac{1}{a^n}$$
+
+ऋणात्मक घात संख्या को ऋणात्मक (negative) नहीं बनाती, बल्कि उसे व्युत्क्रम (reciprocal या भिन्न के हर / denominator में) कर देती है।
+
+अब आपके सवाल को हल करते हैं:
+1. दिया गया समीकरण है: 
+   $$P = 4^k$$
+2. अब $k = -3$ रखने पर:
+   $$P = 4^{-3}$$
+3. नियम के अनुसार, इसे हम ऐसे लिखेंगे:
+   $$P = \frac{1}{4^3}$$
+4. अब $4^3$ का मान निकालते हैं ($4 \times 4 \times 4 = 64$):
+   $$P = \frac{1}{64}$$
+
+(दशमलव में इसका मान $0.015625$ होगा।)
+
+इसलिए, $P$ का सही उत्तर **$\frac{1}{64}$** है, न कि $-64$।
+
+क्या यह नियम आपको समझ आया? यदि कोई शंका हो, तो बेझिझक पूछें!",,,,,,,,,,,,,,,,
+H0007,"Tom and Katie are arguing about factorising. Tom says \( x^{2}+5 x+6 \equiv(x+3)(x+2) \) 
+Katie says \( x^{2}-5 x-6 \equiv(x-3)(x-2) \) 
+Who is correct?",Only Tom,Both Tom and Katie,Believes multiplying two negatives gives a negative answer,"Hinglish (Hindi written in Roman script, maths terms in English)","Nahi, **sirf Tom sahi hai**! Katie galat hai. Chalo dono ko step-by-step expand karke check karte hain ki aisa kyun hai:
+
+---
+
+### 1. Tom ka check karte hain:
+Expression: **\((x + 3)(x + 2)\)**
+
+Isse expand (bracket open) karke dekhte hain:
+\[
+(x + 3)(x + 2) = x(x + 2) + 3(x + 2)
+\]
+\[
+= x^2 + 2x + 3x + 6
+\]
+\[
+= x^2 + 5x + 6
+\]
+
+Yeh bilkul match kar raha hai! Isliye **Tom bilkul sahi hai.**
+
+---
+
+### 2. Katie ka check karte hain:
+Expression: **\((x - 3)(x - 2)\)**
+
+Isse expand karte hain:
+\[
+(x - 3)(x - 2) = x(x - 2) - 3(x - 2)
+\]
+\[
+= x^2 - 2x - 3x + 6
+\]
+\[
+= x^2 - 5x + 6
+\]
+
+Dhyan se dekho: Katie ke answer mein constant term **$+6$** aa raha hai (kyunki $(-3) \times (-2) = +6$), jabki use chahiye tha **$-6$** ($x^2 - 5x - 6$).
+
+---
+
+### Katie ki galti aur sahi factorization:
+Katie ko do aise numbers chahiye the:
+- Jinka **product (guna)** $= -6$ ho
+- Aur **sum (jod)** $= -5$ ho
+
+Agar hum $-3$ aur $-2$ lenge:
+- Sum: $(-3) + (-2) = -5$ (yeh toh theek hai)
+- Par Product: $(-3) \times (-2) = \mathbf{+6}$ (galat ho gaya!)
+
+Sahi numbers honge **$-6$** aur **$+1$**:
+- Sum: $(-6) + 1 = -5$
+- Product: $(-6) \times 1 = -6$
+
+Toh $x^2 - 5x - 6$ ka sahi factorization hoga:
+\[
+\mathbf{(x - 6)(x + 1)}
+\]
+
+---
+
+### Final Answer:
+**Sirf Tom sahi hai.**",,,,,,,,,,,,,,,,
+H0008,\( 5 p^{2} \times 2 p q \equiv \),\( 10 p^{3} q \),\( 7 p^{3} q \),Adds instead of multiplies when multiplying algebraic terms,"Banglish (Bengali written in Roman script, maths terms in English)","Tomar answer-e variables gulo thik ache, kintu coefficient (shongkhya)-tay ektu bhul hoyeche!
+
+Cholo dekhi step-by-step:
+
+1. **Numbers (Coefficients) gulo gun koro:**
+   \( 5 \times 2 = \mathbf{10} \) 
+   *(Tumi hoyto 5 + 2 = 7 jog kore felechile, kintu ekhane **gun (multiplication)** korte hobe)*
+
+2. **\( p \) variable-er power gulo jog koro:**
+   \( p^{2} \times p^{1} = p^{2+1} = \mathbf{p^{3}} \) *(eta tumi ekdom thik korecho!)*
+
+3. **\( q \) variable:**
+   Shudhu \( \mathbf{q} \) thakbe.
+
+Shob eksathe korle shothik answer hobe:
+\[ \mathbf{10p^{3}q} \]
+
+Bujhte perecho ki bhul hoyechilo? Kono proshno thakle bolte paro!",,,,,,,,,,,,,,,,
+H0009,\( 5 p^{2} \times 2 p q \equiv \),\( 10 p^{3} q \),\( 7 p^{3} q \),Adds instead of multiplies when multiplying algebraic terms,"Hinglish (Hindi written in Roman script, maths terms in English)","Hello there!
+
+Let's break down the given expression step by step. The expression you provided is:
+
+\[ 5p^2 \times 2pq \]
+
+To simplify this, we need to multiply the coefficients and then multiply the variables.
+
+1. **Multiply the coefficients:**
+   \[ 5 \times 2 = 10 \]
+
+2. **Multiply the variables:**
+   - For \( p \): \( p^2 \times p = p^{2+1} = p^3 \)
+   - For \( q \): There is only one \( q \) in the second term, so it remains \( q \).
+
+Putting it all together, we get:
+\[ 5p^2 \times 2pq = 10p^3q \]
+
+So the correct simplified form of the expression is:
+\[ 10p^3q \]
+
+Your answer \( 7p^3q \) is not correct. The correct simplified form is \( 10p^3q \).
+
+If you have any more questions or need further clarification, feel free to ask!
+
+Best regards,
+[Your Name]",,,,,,,,,,,,,,,,
+H0010,What is \( 5.5 \% \) of \( 400 \) ?,\( 22 \),\( 5.5 \),Does not understand a percentage can be applied to something not out of 100,English,"Not quite, but you're on the right track by thinking about the numbers involved!
+
+Remember that **percent** means **""out of 100""** (or per hundred). 
+
+So, $5.5\%$ means:
+$$\frac{5.5}{100} = 0.055$$
+
+If the total was $100$, then $5.5\%$ would indeed be $5.5$. But here, the total is **$400$**, which is $4$ times bigger than $100$.
+
+Here are two easy ways to find the answer:
+
+---
+
+### Method 1: Convert to a decimal and multiply
+1. Turn $5.5\%$ into a decimal by dividing by $100$: 
+   $$5.5 \div 100 = 0.055$$
+2. Multiply by $400$:
+   $$0.055 \times 400 = 22$$
+
+---
+
+### Method 2: Break it down using ""per 100""
+* $5.5\%$ of $100$ is **$5.5$**.
+* Since $400$ has four $100$s:
+  $$5.5 \times 4 = 22$$
+
+---
+
+So, $5.5\%$ of $400$ is actually **$22$**. 
+
+Does that make sense? Let me know if you want to try another one together!",,,,,,,,,,,,,,,,
+H0011,"Jo and Paul are discussing \( 3^{2} \times 4^{2} \)
+Jo says \( 3^{2} \times 4^{2}=12^{4} \)
+Paul says \( 3^{2} \times 4^{2}=12^{2} \)
+Who is correct?","Only
+Paul",Neither is correct,Does not realise that multiplication can be broken down into factors,"Hinglish (Hindi written in Roman script, maths terms in English)","Namaste! Aapka doubt samajh aaya. Chaliye, is problem ko step-by-step solve karte hain.
+
+Sabse pehle, hum \( 3^{2} \times 4^{2} \) ka value nikalenge.
+
+\[ 3^{2} = 9 \]
+\[ 4^{2} = 16 \]
+
+Ab hum in dono ka gunafal nikalenge:
+
+\[ 3^{2} \times 4^{2} = 9 \times 16 = 144 \]
+
+Ab, Jo ka kehte hain \( 3^{2} \times 4^{2} = 12^{4} \):
+
+\[ 12^{4} = (12 \times 12 \times 12 \times 12) = 20736 \]
+
+Aur Paul ka kehna hai \( 3^{2} \times 4^{2} = 12^{2} \):
+
+\[ 12^{2} = 144 \]
+
+Isliye, Paul ka kehna sahi hai:
+
+\[ 3^{2} \times 4^{2} = 144 = 12^{2} \]
+
+To, Paul sahi hai aur Jo galat hain.
+
+Agar aapko aur koi sawal ya doubt hai, to zaroor puchhiye!",,,,,,,,,,,,,,,,
+H0012,"Work out:
+\(
+\frac{4}{11}+\frac{7}{11}
+\)
+Write your answer in its simplest form.",\( 1 \),\( \frac{1}{2} \),"When adding fractions, adds the numerators and denominators",Bengali (Bengali script),"তোমার চেষ্টা করার জন্য ধন্যবাদ! তবে তোমার উত্তরটি **সঠিক নয়**। চলো, একসাথে দেখে নিই কীভাবে এটা সমাধান করতে হয়:
+
+এখানে আমাদের ভগ্নাংশ দুটির যোগ করতে হবে:
+\[
+\frac{4}{11} + \frac{7}{11}
+\]
+
+**ধাপ ১: হর (denominator) লক্ষ্য করো**
+উভয় ভগ্নাংশের হর একই, অর্থাৎ **$11$**। যেহেতু হর সমান, তাই আমরা হর অপরিবর্তিত রেখে শুধু লব (numerator) দুটি যোগ করব:
+\[
+= \frac{4 + 7}{11}
+\]
+
+**ধাপ ২: লব যোগ করো**
+$4 + 7 = 11$
+সুতরাং,
+\[
+= \frac{11}{11}
+\]
+
+**ধাপ ৩: সহজতম আকারে প্রকাশ করো**
+যেকোনো সংখ্যাকে সেই সংখ্যা দিয়েই ভাগ করলে ফলাফল হয় **$1$**:
+\[
+= 1
+\]
+
+---
+
+**সঠিক উত্তর হলো: $1$**
+
+তুমি হয়তো $4$ আর $7$ যোগ বা হরের হিসেব করতে গিয়ে কোথাও একটু গুলিয়ে ফেলেছিলে। কোনো সমস্যা নেই, আশা করি এখন পুরো নিয়মটি বুঝতে পেরেছ! আর কোনো প্রশ্ন থাকলে নির্দ্বিধায় বলতে পারো।",,,,,,,,,,,,,,,,
+H0013,"Work out:
+\(
+\frac{4}{11}+\frac{7}{11}
+\)
+Write your answer in its simplest form.",\( 1 \),\( \frac{1}{2} \),"When adding fractions, adds the numerators and denominators","Hinglish (Hindi written in Roman script, maths terms in English)","Aapka guess $\frac{1}{2}$ sahi **nahi** hai, lekin chinta mat kijiye! Chaliye isko step-by-step samajhte hain:
+
+Jab do fractions (bhinn) ka **denominator (neeche wala number)** same hota hai, toh hum denominators ko add nahi karte, sirf **numerators (upar wale numbers)** ko add karte hain.
+
+Yahan:
+$$ \frac{4}{11} + \frac{7}{11} $$
+
+**Step 1: Numerators ko add kijiye:**
+$$ \frac{4 + 7}{11} $$
+
+**Step 2: Solve kijiye:**
+$$ \frac{11}{11} $$
+
+**Step 3: Simplest form me likhiye:**
+Jab kisi fraction me upar aur neeche same number ho, toh uska matlab hota hai $1$ (kyunki $11 \div 11 = 1$).
+
+$$ \frac{11}{11} = 1 $$
+
+---
+
+**Sahi Answer:** **$1$**
+
+Aapne lagta hai $\frac{11}{22}$ jaisa kuch soch kar simplify kiya hoga jahan denominators ko bhi add kar diya gaya ho. Yaad rakhein: **Addition me common denominator waisa hi rehta hai, change nahi hota!**",,,,,,,,,,,,,,,,
+H0014,A common factor of \( 8 \) and \( 20 \) is...,\( 4 \),\( 40 \),Confuses factors and multiples,Bengali (Bengali script),"হ্যাঁ, আপনার উত্তরটা ঠিক। আসুন দেখি কিভাবে:
+
+সংখ্যা \( 8 \) এবং \( 20 \) এর সাধারণ ফ্যাক্টরগুলি হল সেই সংখ্যাগুলি যা এই দুটি সংখ্যাকে ঠিক ভাগ করে।
+
+১. \( 8 \) এর ফ্যাক্টরগুলি হল: \( 1, 2, 4, 8 \)
+২. \( 20 \) এর ফ্যাক্টরগুলি হল: \( 1, 2, 4, 5, 10, 20 \)
+
+উভয় সংখ্যার জন্য যে সাধারণ ফ্যাক্টরগুলি রয়েছে সেগুলি হল: \( 1, 2, 4 \)
+
+সাধারণ ফ্যাক্টরগুলির মধ্যে সর্বোচ্চ ফ্যাক্টর হল \( 4 \)। 
+
+তবে, আপনি বলেছেন যে একটি সাধারণ ফ্যাক্টর হল \( 40 \)। এটি ঠিক নয় কারণ \( 40 \) হল একটি সাধারণ গুণনীয় যা \( 8 \) এবং \( 20 \) দুটিকে ভাগ করে, তবে এটি তাদের সাধারণ ফ্যাক্টর নয়।
+
+সুতরাং, আপনার উত্তর \( 40 \) ঠিক নয়। ঠিক উত্তরগুলি হল \( 1, 2, \) এবং \( 4 \)।
+
+যদি আপনার আর কোন প্রশ্ন থাকে, তাহলে জানাতেন।",,,,,,,,,,,,,,,,
+H0015,\( 1 \mathrm{~km} \approx 0.6 \) miles \( 3 \mathrm{~km} \approx \square \) miles,\( 1.8 \),\( 0.18 \),"When multiplying decimals, ignores place value and just multiplies the digits",English,"Hi there! Let's break down the problem step by step.
+
+You know that 1 km is approximately equal to 0.6 miles. Now you want to find out how many miles are in 3 km.
+
+To do this, you simply multiply the number of kilometers by the conversion factor (0.6 miles per kilometer):
+
+\[ 3 \mathrm{~km} \times 0.6 \frac{\mathrm{miles}}{\mathrm{km}} = 1.8 \mathrm{~miles} \]
+
+So, 3 km is approximately 1.8 miles.
+
+Your answer of 0.18 miles is incorrect. The correct answer is 1.8 miles.
+
+Keep practicing, and let me know if you have any more questions!",,,,,,,,,,,,,,,,
+H0016,Write \( 0.07 \) as a percentage.,\( 7 \% \),\( 0.07 \% \),Thinks you need to just add a % sign to a decimal to convert to a percentage,Hindi (Devanagari script),"नमस्ते!
+
+धन्यवाद आपके सवाल के लिए। जब हम प्रतिशत के रूप में \( 0.07 \) को लिखना चाहते हैं, तो हम वास्तविक संख्या को 100 से गुणा करके और फिर प्रतिशत चिह्न (%) जोड़कर उसे प्रतिशत में बदलते हैं।
+
+इसलिए, \( 0.07 \) को प्रतिशत के रूप में लिखने के लिए, हम निम्नलिखित चरणों का पालन करते हैं:
+
+\[ 0.07 \times 100 = 7 \]
+
+इसलिए, \( 0.07 \) प्रतिशत के रूप में \( 7\% \) लिखा जाता है।
+
+इसलिए, आपका उत्तर \( 0.07\% \) नहीं है, बल्कि यह \( 7\% \) होना चाहिए।
+
+अगर आपको कोई और मदद चाहिए हो, तो कृपया बताएं!",,,,,,,,,,,,,,,,
+H0017,\( -4+(-5) \times 3= \),\( -19 \),\( -27 \),Carries out operations from left to right regardless of priority order,Hindi (Devanagari script),"नमस्ते! आपका प्रयास बहुत अच्छा था, लेकिन आपका उत्तर **\( -27 \)** सही नहीं है। 
+
+आइए इसे चरण-दर-चरण (step-by-step) हल करते हैं ताकि समझ आ सके कि सही उत्तर क्या होगा:
+
+सवाल है:
+\[ (-4 + (-5))^3 \]
+
+### **चरण 1: कोष्ठक (Bracket/Parentheses) के अंदर का हिस्सा हल करें**
+गणित के नियमों (BODMAS/PEMDAS) के अनुसार, हमें सबसे पहले सबसे अंदर वाले कोष्ठक को हल करना होता है:
+\[ -4 + (-5) \]
+
+जब दो ऋणात्मक (negative) संख्याओं को जोड़ा जाता है, तो उनके मान जुड़ जाते हैं और चिह्न ऋण (\(-\)) का ही रहता है:
+\[ -4 - 5 = -9 \]
+
+---
+
+### **चरण 2: घात (Exponent/Power) को हल करें**
+अब हमें \(-9\) की घात \(3\) (घन / cube) निकालनी है:
+\[ (-9)^3 = (-9) \times (-9) \times (-9) \]
+
+1. पहले दो पदों का गुणा करें:
+   \[ (-9) \times (-9) = +81 \] 
+   *(ऋण गुणा ऋण = धन)*
+
+2. अब परिणाम को तीसरे \((-9)\) से गुणा करें:
+   \[ 81 \times (-9) = -729 \]
+
+---
+
+### **सही उत्तर:**
+\[ (-4 + (-5))^3 = \mathbf{-729} \]
+
+**नोट:** शायद आपने गलती से \(-9 \times 3 = -27\) कर दिया था। याद रखें कि घात (power) \(3\) का मतलब संख्या को \(3\) से गुणा करना नहीं, बल्कि उसी संख्या को **खुद से \(3\) बार गुणा करना** होता है। 
+
+क्या आपको यह समझ आया? यदि कोई संदेह हो, तो बेझिझक पूछें!",,,,,,,,,,,,,,,,
+H0018,"Jo and Paul are discussing \( 3^{2} \times 4^{2} \)
+Jo says \( 3^{2} \times 4^{2}=12^{4} \)
+Paul says \( 3^{2} \times 4^{2}=12^{2} \)
+Who is correct?","Only
+Paul",Neither is correct,Does not realise that multiplication can be broken down into factors,Bengali (Bengali script),"আপনার উত্তর ঠিক। উভয়েরই কথা সঠিক নয়। এখানে কিছু গণিত ব্যাখ্যা করা যাক।
+
+আমরা নিম্নলিখিত অভিব্যক্তি নিয়ে কাজ করছি: \( 3^{2} \times 4^{2} \)
+
+প্রথমে, আমরা প্রতিটি অঙ্কের বর্গ গণনা করি:
+\[ 3^2 = 9 \]
+\[ 4^2 = 16 \]
+
+এখন এই দুটি ফলাফল যোগ করি:
+\[ 3^2 \times 4^2 = 9 \times 16 \]
+
+অবশ্য আমরা একে একটি অঙ্কের বর্গ হিসেবে লিখতে পারি:
+\[ 9 \times 16 = (3 \times 4)^2 = 12^2 = 144 \]
+
+তাই সঠিক উত্তরটি হল:
+\[ 3^2 \times 4^2 = 12^2 \]
+
+পলের কথা সঠিক। তবে জো যে বলেছেন \( 3^2 \times 4^2 = 12^4 \), তা ভুল।
+
+যদি আপনি আরও কোনও প্রশ্ন থাকে, অনুগ্রহপূর্বক জানান।",,,,,,,,,,,,,,,,
+H0019,Write \( 0.07 \) as a percentage.,\( 7 \% \),\( 0.07 \% \),Thinks you need to just add a % sign to a decimal to convert to a percentage,"Banglish (Bengali written in Roman script, maths terms in English)","Tomar proshno korar jonno dhonnobad! Kintu tomar uttor ta **thik hoyni**—tobe chinta korar kisu nei, eta khub sadharon ekta bhul. Cholo bujhe neoa jak eta kivabe korte hoy:
+
+---
+
+### Niyom:
+Kono doshomik (decimal) shongkha-ke percentage (%) e nite hole, shetake **$100$ diye gun (multiply)** korte hoy ebong pashe $\%$ chinho dite hoy.
+
+Karon ""Percent"" kothatar mane holo **""proti $100$ er moddhe""** (per hundred).
+
+---
+
+### Step-by-step hishab:
+
+$$0.07 \times 100\% = 7\%$$
+
+*(Shortcut: Doshomik bindu/decimal point-ke $2$ ghor dane shoriye dilei hoy!)*
+
+---
+
+### Tahole:
+* Shothik uttor holo: **$7\%$**
+* $0.07\%$ hoto jodi shongkhata $0.0007$ thakto.
+
+Bujhte kono osubidha ache ki? Chaile aro ekta practice korte paro, bolo to **$0.25$** er percentage koto hobe?",,,,,,,,,,,,,,,,
+H0020,What is \( \mathbf{1 1 . 4 7 8 1} \) rounded to \( 2 \) decimal places?,\( 11.48 \),\( 11.58 \),Rounds incorrectly by changing multiple place values,Hindi (Devanagari script),"नमस्ते!
+
+आपने बहुत अच्छा प्रयास किया है। लेकिन, माफ़ करें, उत्तर \( 11.58 \) सही नहीं है। 
+
+हम \( 2 \) दशमलव स्थानों के लिए संख्या को गोल करना चाहते हैं। संख्या \( 11.4781 \) में, दूसरा दशमलव स्थान \( 7 \) है। इस स्थिति में, हम तीसरे दशमलव स्थान पर नज़र डालते हैं, जो \( 8 \) है।
+
+चूंकि तीसरा दशमलव स्थान \( 5 \) या उससे अधिक है, हम दूसरे दशमलव स्थान को \( 1 \) से बढ़ाते हैं। इसलिए,
+
+\[ 11.4781 \] को \( 2 \) दशमलव स्थानों के लिए गोल करने पर हम प्राप्त करते हैं:
+
+\[ 11.48 \]
+
+इसलिए, सही उत्तर \( 11.48 \) है।
+
+क्या और कोई मदद चाहिए हो तो कृपया बताएं!",,,,,,,,,,,,,,,,

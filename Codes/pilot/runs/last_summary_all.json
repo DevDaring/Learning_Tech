@@ -1,0 +1,205 @@
+{
+  "verify": {
+    "routes": 29,
+    "failing": []
+  },
+  "build_items": {
+    "eedi_option_rows": 4370,
+    "dropped_picture": 1907,
+    "after_one_per_question": 1062,
+    "after_construct_cap": 855,
+    "core": 30,
+    "block_b": 15,
+    "block_c": 10,
+    "subjects_in_core": 30,
+    "benqa_rows": 982,
+    "benqa_after_picture_filter": 957,
+    "block_d": 10,
+    "written": 40
+  },
+  "translate": {
+    "rows": 390,
+    "flagged": 21,
+    "review_sample": 27,
+    "reviewed": 0,
+    "translation_model": "ai4bharat/indictrans2-en-indic-1B",
+    "back_translation_model": "ai4bharat/indictrans2-indic-en-1B",
+    "embedding_model": "BAAI/bge-m3"
+  },
+  "build_prompts": {
+    "prompts": {
+      "A": 150,
+      "B": 270,
+      "C": 20,
+      "D": 30
+    },
+    "generations": {
+      "A": 300,
+      "B": 540,
+      "C": 40,
+      "D": 60
+    },
+    "total_generations": 940,
+    "judge_calls": 2820,
+    "templates_not_approved": 46,
+    "translation_reviews_pending": 48,
+    "names_confirmed": false
+  },
+  "generate": {
+    "submitted": 126,
+    "already_done_or_exhausted": 814,
+    "ok": 126,
+    "error": 0,
+    "records": 1132,
+    "ok_total": 1132,
+    "failed_total": 0,
+    "empty_text": 0,
+    "truncated": 0,
+    "fallback_used": 0
+  },
+  "mask_and_judge": {
+    "submitted": 378,
+    "already_done_or_exhausted": 2442,
+    "ok": 378,
+    "error": 0,
+    "targets": 940,
+    "judge_records": 2820,
+    "unparseable": 0,
+    "json_repair_fired": 193,
+    "residual_name_hits": 0,
+    "pqi_missing": 2
+  },
+  "judge_validation": {
+    "submitted": 0,
+    "already_done_or_exhausted": 60,
+    "ok": 0,
+    "error": 0,
+    "sampled": 20,
+    "unparseable": 0
+  },
+  "translated_judging": {
+    "submitted": 408,
+    "already_done_or_exhausted": 0,
+    "ok": 408,
+    "error": 0,
+    "pool": 680,
+    "sampled": 136,
+    "translation_failed_excluded": 0,
+    "utility_routed": 22
+  },
+  "repair": {
+    "submitted": 540,
+    "already_done_or_exhausted": 0,
+    "ok": 540,
+    "error": 0,
+    "cells": 270,
+    "generations": 540,
+    "judged": {
+      "submitted": 1620,
+      "already_done_or_exhausted": 0,
+      "ok": 1620,
+      "error": 0
+    },
+    "r3_format_failures": 0,
+    "r5_plan_parse_failures": 0,
+    "r5_plan_schema_failures": 0,
+    "r5_plan_retried": 0
+  },
+  "auto_metrics": {
+    "auto_metrics": {
+      "rows": 940,
+      "failed_calls": 0,
+      "empty": 0,
+      "refusal": 0,
+      "truncated": 0,
+      "leak_exact": 689,
+      "cue_echo": 1,
+      "degenerate": 0
+    },
+    "repair_auto_metrics": {
+      "rows": 540,
+      "failed_calls": 0,
+      "empty": 0,
+      "refusal": 0,
+      "truncated": 0,
+      "leak_exact": 189,
+      "cue_echo": 1,
+      "degenerate": 0
+    }
+  },
+  "baselines": {
+    "B1": {
+      "rows": 24
+    },
+    "B2": {
+      "marked_words": 5,
+      "labelled": 140,
+      "submitted": 140,
+      "already_done_or_exhausted": 0,
+      "ok": 140,
+      "error": 0
+    },
+    "B3": {
+      "rows": 54
+    },
+    "B5": {
+      "submitted": 650,
+      "already_done_or_exhausted": 0,
+      "ok": 650,
+      "error": 0,
+      "scored": 650,
+      "undecided_dropped": 0
+    }
+  },
+  "export_human": {
+    "exported": 20,
+    "judged_table_exists": true
+  },
+  "analysis": {
+    "status": "PROVISIONAL",
+    "mixed_models": {
+      "A": "ok",
+      "B_EN": "ok",
+      "B_HI": "ok",
+      "B_BN": "ok"
+    },
+    "tables": [
+      "expectation_indicator_tests.csv",
+      "expectation_indicators.csv",
+      "inter_judge_alpha.csv",
+      "operational_counts.csv",
+      "route_by_block_condition.csv",
+      "table1_models.csv",
+      "table2_judge_validation_mrbench.csv",
+      "table3_judge_human_agreement.csv",
+      "table4_language_gaps.csv",
+      "table4a_pqi_by_language_producer.csv",
+      "table4b_language_gaps_no_truncation.csv",
+      "table4c_truncation_rate_by_language.csv",
+      "table4d_language_gaps_PQI_R.csv",
+      "table5_identity_gaps.csv",
+      "table5b_identity_language_interaction.csv",
+      "table5c_identity_sensitivity.csv",
+      "table5d_hi_gender_marking_rate.csv",
+      "table5e_identity_gaps_PQI_R.csv",
+      "table6_decomposition.csv",
+      "table7_native_control.csv",
+      "table7a_block_d_means.csv",
+      "table8_baselines_vs_pqi.csv",
+      "table9_repair.csv",
+      "table9b_repair_identity.csv",
+      "translated_judging.csv"
+    ]
+  },
+  "checks": {
+    "verification_log": true,
+    "paired_prompt_diff": true,
+    "masking_scan": true,
+    "refusals_and_empty_counted": true,
+    "repair_and_fallback_reported": true,
+    "pilot_completed": true,
+    "significance_uses_holm": true,
+    "secret_scan": true,
+    "all_pass": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "verification_log": {
+    "exists": true,
+    "automated_section_present": true,
+    "unresolved_mentions": 24,
+    "pass": true
+  },
+  "paired_prompt_diff": {
+    "pairs_tested": 200,
+    "failures": [],
+    "pass": true
+  },
+  "masking_scan": {
+    "judge_records_scanned": 5226,
+    "residual_hits": [],
+    "n_residual": 0,
+    "loose_candidates_for_review": [],
+    "pass": true
+  },
+  "refusals_and_empty_counted": {
+    "generations": 940,
+    "auto_metric_rows": 940,
+    "empty": 0,
+    "refusal": 0,
+    "failed_calls": 0,
+    "pass": true
+  },
+  "repair_and_fallback_reported": {
+    "operational_table": true,
+    "pass": true
+  },
+  "pilot_completed": {
+    "pass": true
+  },
+  "significance_uses_holm": {
+    "tables_without_holm": [],
+    "pass": true
+  },
+  "secret_scan": {
+    "files_with_secret_values": [],
+    "pass": true
+  },
+  "all_pass": true
+}

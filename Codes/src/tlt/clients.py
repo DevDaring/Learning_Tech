@@ -109,6 +109,7 @@ class _Pool:
         self.creds = creds
         self._cycle = itertools.cycle(range(max(1, len(creds))))
         self._until = [0.0] * len(creds)
+        self._dead = [False] * len(creds)
         self._lock = threading.Lock()
 
     def order(self) -> list[int]:
@@ -116,10 +117,14 @@ class _Pool:
             return []
         with self._lock:
             start = next(self._cycle)
-        idx = [(start + i) % len(self.creds) for i in range(len(self.creds))]
+        idx = [(start + i) % len(self.creds) for i in range(len(self.creds)) if not self._dead[(start + i) % len(self.creds)]]
         now = time.time()
         ready = [i for i in idx if self._until[i] <= now]
-        return ready or idx  # if every credential is cooling down, try anyway
+        return ready or idx  # if every live credential is cooling down, try anyway
+
+    def kill(self, i: int) -> None:
+        with self._lock:
+            self._dead[i] = True
 
     def cool(self, i: int, seconds: float) -> None:
         with self._lock:
@@ -180,11 +185,21 @@ def _anthropic(base: str, key: str, workspace: str | None, body: dict, timeout: 
             "out": int(usage.get("output_tokens") or 0), "reasoning_tokens": 0}
 
 
+_OUT_OF_CREDIT = ("额度不足", "insufficient_user_quota", "insufficient_quota", "insufficient balance",
+                  "insufficient credits", "out of credits", "exceeded your current quota", "payment required")
+
+
+class OutOfCredit(BadCredential):
+    """The account behind this credential has no balance: skip it, do not retry."""
+
+
 def _raise_for_status(r: requests.Response) -> None:
     if r.status_code == 200:
         return
     body = r.text[:500]
     low = body.lower()
+    if r.status_code in (402, 403, 429) and any(m in low or m in body for m in _OUT_OF_CREDIT):
+        raise OutOfCredit(f"HTTP {r.status_code}: account out of credit")
     if r.status_code == 429 or any(t in low for t in _THROTTLE):
         raise Throttled(f"HTTP {r.status_code}: {body}")
     if r.status_code in (401, 403) or (r.status_code == 400 and ("api key" in low or "api_key" in low)):
@@ -309,6 +324,9 @@ class LLM:
             kind = route["kind"]
             provider = "bedrock" if kind == "bedrock" else route["provider"]
             pool = self._pool(provider)
+            if pool.creds and not pool.order():
+                res.attempts.append({"route": f"{provider}:{route['model']}", "error": "all credentials out of credit"})
+                continue
             if not pool.creds:
                 res.attempts.append({"route": f"{provider}:{route['model']}", "error": "no credentials"})
                 continue
@@ -335,6 +353,11 @@ class LLM:
                         pool.cool(ci, 1800 if daily else 10 * (rnd + 1))
                         res.attempts.append({"route": f"{provider}:{route['model']}", "credential": cred_name,
                                              "error": "throttled: " + scrub(e)})
+                        continue
+                    except OutOfCredit as e:
+                        pool.kill(ci)  # no balance: never retried in this run
+                        res.attempts.append({"route": f"{provider}:{route['model']}", "credential": cred_name,
+                                             "error": "out of credit: " + scrub(e)})
                         continue
                     except BadCredential as e:
                         pool.cool(ci, 6 * 3600)

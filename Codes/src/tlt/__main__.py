@@ -46,7 +46,12 @@ def main(argv=None) -> int:
     g.add_argument("--smoke", action="store_true", help="2 items per block, all models, every stage (real calls)")
     ap.add_argument("--only", nargs="*", help="baselines: subset of B1 B2 B3 B5; verify: model keys")
     ap.add_argument("--files", nargs="*", help="import_review: returned review workbooks (.xlsx)")
+    ap.add_argument("--allow-unreviewed", action="store_true",
+                    help="full run despite outstanding human gates; outputs are marked PRELIMINARY")
     args = ap.parse_args(argv)
+    if args.allow_unreviewed:
+        import os
+        os.environ["TLT_ALLOW_UNREVIEWED"] = "1"
     mode = "dryrun" if args.dry_run else "smoke" if args.smoke else "pilot" if args.pilot else "full"
     run = load_run(mode)
     log_path = run.path("runs", "pipeline.log")

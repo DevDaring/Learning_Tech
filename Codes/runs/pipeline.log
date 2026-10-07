@@ -202,3 +202,18 @@ TOTAL                                      463.24               463.24          
 2026-10-07 12:09:05,243 INFO tlt: stage prepilot done in 1331.4s
 2026-10-07 12:09:09,637 INFO tlt.prepilot: prepilot decision: {'A_feasibility_met': True, 'B_measurement_met': False, 'C7_power_met': True, 'C8_signal_met': True, 'verdict': 'GO with changes'}
 2026-10-07 12:09:09,638 INFO tlt: stage prepilot done in 4.1s
+2026-10-07 18:36:41,457 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 19.3, 'remaining_usd': 289.53}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 7.04, 'remaining_usd': 76.39}}
+2026-10-07 18:37:26,671 INFO tlt: stage verify done in 67.2s
+2026-10-07 18:37:27,488 INFO tlt.s01: items: {'eedi_option_rows': 4370, 'dropped_picture': 1907, 'after_one_per_question': 1062, 'after_construct_cap': 855, 'core': 300, 'block_b': 150, 'block_c': 100, 'subjects_in_core': 101, 'benqa_rows': 982, 'benqa_after_picture_filter': 957, 'block_d': 150, 'written': 450}
+2026-10-07 18:37:27,491 INFO tlt: stage build_items done in 0.8s
+2026-10-07 18:37:35,996 INFO tlt.translate: remote-translated 512/637 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 18:37:38,795 INFO tlt.translate: remote-translated 637/637 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 18:37:40,017 INFO tlt.translate: remote-translated 72/72 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 18:37:41,107 INFO tlt.translate: remote-translated 31/31 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 18:37:49,652 INFO tlt.translate: remote-translated 512/637 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 18:37:52,277 INFO tlt.translate: remote-translated 637/637 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 18:37:53,469 INFO tlt.translate: remote-translated 72/72 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 18:37:54,503 INFO tlt.translate: remote-translated 31/31 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 18:38:05,421 INFO tlt.translate: remote-translated 319/319 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 18:38:07,106 INFO tlt.translate: remote-translated 136/136 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 18:38:12,388 INFO tlt.translate: remote-translated 105/105 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)

@@ -31,7 +31,7 @@ from tlt.config import load_yaml  # noqa: E402
 STATE = ROOT / "runs" / "vast_translator.json"
 API = "https://console.vast.ai/api/v0"
 KEYFILE = str(Path.home() / ".ssh" / "id_ed25519")
-IMAGE = "pytorch/pytorch:2.5.1-cuda12.4-cudnn9-devel"   # proven on Vast in an earlier project
+IMAGE = "pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime"  # small image; all deps are pre-built wheels
 GPU_OK = ("RTX 3090", "RTX 4090", "RTX A5000", "RTX A6000", "A10", "L4", "A40", "RTX 4080", "RTX 6000Ada", "L40")
 LOCAL_PORT = 18000
 SSH_OPTS = ["-o", "StrictHostKeyChecking=no", "-o", "UserKnownHostsFile=/dev/null", "-o", "LogLevel=ERROR",
@@ -69,13 +69,15 @@ def ssh(st: dict, cmd: str, timeout: int = 1800) -> subprocess.CompletedProcess:
 
 def offers(max_dph: float = 0.6) -> list[dict]:
     q = {"verified": {"eq": True}, "rentable": {"eq": True}, "rented": {"eq": False}, "num_gpus": {"eq": 1},
-         "gpu_ram": {"gte": 16000}, "reliability2": {"gte": 0.98}, "inet_down": {"gte": 500},
+         "gpu_ram": {"gte": 16000}, "reliability2": {"gte": 0.98}, "inet_down": {"gte": 1000},
          "disk_space": {"gte": 50}, "direct_port_count": {"gte": 1}, "dph_total": {"lte": max_dph},
          "cuda_max_good": {"gte": 12.4}, "order": [["dph_total", "asc"]], "type": "on-demand", "limit": 200}
     r = json.loads(urllib.request.urlopen(urllib.request.Request(
         f"{API}/bundles/?q=" + urllib.parse.quote(json.dumps(q)),
         headers={"Authorization": f"Bearer {key()}"}), timeout=90).read())["offers"]
-    return [o for o in r if any(o["gpu_name"].startswith(g) for g in GPU_OK)]
+    badf = ROOT / "runs" / "vast_bad_machines.json"
+    bad = set(json.loads(badf.read_text())) if badf.exists() else set()   # hosts that failed before
+    return [o for o in r if any(o["gpu_name"].startswith(g) for g in GPU_OK) and o.get("machine_id") not in bad]
 
 
 def up() -> None:
@@ -100,7 +102,17 @@ def up() -> None:
         st = {}
     if not st.get("ip"):
         raise SystemExit("no offer passed verification")
-    setup(st)
+    safe_setup(st)
+
+
+def safe_setup(st: dict) -> None:
+    """Run setup; on ANY failure destroy the instance so nothing is left billing."""
+    try:
+        setup(st)
+    except BaseException as e:
+        print(f"setup failed ({type(e).__name__}: {e}); destroying the instance", flush=True)
+        down()
+        raise
 
 
 def wait_ready(st: dict) -> bool:
@@ -134,8 +146,9 @@ def resume() -> None:
     if not st.get("contract"):
         raise SystemExit("no instance recorded")
     if not st.get("ip") and not wait_ready(st):
-        raise SystemExit("instance never became reachable; run `down`")
-    setup(st)
+        down()
+        raise SystemExit("instance never became reachable; destroyed")
+    safe_setup(st)
 
 
 def setup(st: dict) -> None:
@@ -145,8 +158,15 @@ def setup(st: dict) -> None:
     # install and start the service
     subprocess.run(["scp", "-i", KEYFILE, "-P", str(st["port"]), *SSH_OPTS, str(ROOT / "scripts" / "indictrans_server.py"),
                     f"root@{st['ip']}:/root/indictrans_server.py"], check=True, capture_output=True, timeout=120)
-    inst = ssh(st, "pip install -q 'transformers==4.46.0' sentencepiece 'indictranstoolkit==1.1.1' 2>&1 | tail -2", 1800)
-    print("install:", inst.stdout[-300:], inst.stderr[-300:], flush=True)
+    for attempt in range(3):
+        inst = ssh(st, "pip install -q --retries 10 --timeout 60 'transformers==4.46.0' sentencepiece "
+                       "'indictranstoolkit==1.1.1' >/dev/null 2>&1; python -c 'import transformers, IndicTransToolkit; "
+                       "print(\"PKG_OK\")'", 1800)
+        if "PKG_OK" in inst.stdout:
+            break
+    print("install:", "ok" if "PKG_OK" in inst.stdout else "FAILED " + inst.stderr[-200:], flush=True)
+    if "PKG_OK" not in inst.stdout:
+        raise SystemExit("package install failed (bad host network?)")
     # Pre-built FlashAttention-2 wheel matching the box's python / torch / CUDA / C++ ABI
     # (no compilation). Falls back to PyTorch SDPA attention if no wheel fits.
     fa = ssh(st, "python - <<'PY'\n"
@@ -165,16 +185,36 @@ def setup(st: dict) -> None:
     attn = "flash_attention_2" if "FA_OK True" in fa.stdout else "sdpa"
     st["attn"] = attn
     save(st)
+    # download the gated models with a script file (no nested shell quoting); the token is
+    # only in this command's environment and the cached token file is removed afterwards
+    script = "from huggingface_hub import snapshot_download as s\n" + "".join(
+        f"print(s('{m}', revision='{revs.get(m) or 'main'}'))\n" for m in models)
+    local = STATE.parent / "dl_models.py"
+    local.write_text(script)
+    subprocess.run(["scp", "-i", KEYFILE, "-P", str(st["port"]), *SSH_OPTS, str(local), f"root@{st['ip']}:/root/dl.py"],
+                   check=True, capture_output=True, timeout=120)
     hf = secrets.get("HUGGINGFACE_TOKEN")
-    dl = "; ".join(f"python -c \"from huggingface_hub import snapshot_download as s; s('{m}', revision='{revs.get(m) or 'main'}')\""
-                   for m in models)
-    # token only in this one command's environment; removed from disk afterwards
-    r = ssh(st, f"HF_TOKEN={hf} bash -c \"{dl}\" 2>&1 | tail -2; rm -f /root/.cache/huggingface/token", 3600)
-    print("download:", (r.stdout + r.stderr)[-300:].replace(hf, "***"), flush=True)
+    r = ssh(st, f"cd /root && HF_TOKEN={hf} python dl.py 2>&1 | tail -2; rm -f /root/.cache/huggingface/token", 3600)
+    print("download:", (r.stdout + r.stderr)[-200:].replace(hf, "***"), flush=True)
+    if "snapshots" not in r.stdout:
+        raise SystemExit("model download failed")
+    serve(st, attn)
+
+
+def serve(st: dict | None = None, attn: str | None = None) -> None:
+    """Start the translation service and the SSH tunnel on an instance that has the models."""
+    st = st or load()
+    attn = attn or st.get("attn", "flash_attention_2")
+    tcfg = load_yaml(ROOT / "config" / "models.yaml")["translation"]
+    models = [tcfg["en_indic"], tcfg["indic_en"]]
+    revs = tcfg.get("revisions", {})
     preload = " ".join(f"{m}@{revs.get(m, '')}" for m in models)
-    ssh(st, f"cd /root && TLT_TOKEN={st['token']} TLT_DTYPE=float16 TLT_ATTN={attn} HF_HUB_OFFLINE=1 "
-            f"setsid nohup python indictrans_server.py "
-            f"--port 8000 --preload {preload} > /root/server.log 2>&1 < /dev/null &", 60)
+    try:  # ssh may keep the channel open on the detached job; the health check below decides
+        ssh(st, f"cd /root && TLT_TOKEN={st['token']} TLT_DTYPE=float16 TLT_ATTN={attn} HF_HUB_OFFLINE=1 "
+                f"setsid nohup python indictrans_server.py "
+                f"--port 8000 --preload {preload} > /root/server.log 2>&1 < /dev/null &", 30)
+    except subprocess.TimeoutExpired:
+        pass
     tun = subprocess.Popen(["ssh", "-i", KEYFILE, "-p", str(st["port"]), *SSH_OPTS, "-N", "-L",
                             f"{LOCAL_PORT}:127.0.0.1:8000", f"root@{st['ip']}"],
                            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, start_new_session=True)
@@ -192,7 +232,7 @@ def setup(st: dict) -> None:
         except Exception:
             pass
     print("service did not become ready; server log tail:", ssh(st, "tail -20 /root/server.log", 60).stdout)
-    raise SystemExit(1)
+    raise SystemExit("service did not become ready")
 
 
 def status() -> None:
@@ -226,4 +266,4 @@ def down(quiet: bool = False) -> None:
 
 
 if __name__ == "__main__":
-    {"up": up, "resume": resume, "status": status, "down": down}[sys.argv[1] if len(sys.argv) > 1 else "status"]()
+    {"up": up, "resume": resume, "serve": serve, "status": status, "down": down}[sys.argv[1] if len(sys.argv) > 1 else "status"]()

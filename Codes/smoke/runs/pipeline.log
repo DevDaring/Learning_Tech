@@ -1,0 +1,95 @@
+2026-10-07 17:45:26,406 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 16.15, 'remaining_usd': 292.69}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 5.99, 'remaining_usd': 77.44}}
+2026-10-07 17:46:05,411 INFO tlt: stage verify done in 60.9s
+2026-10-07 17:46:06,186 INFO tlt.s01: items: {'eedi_option_rows': 4370, 'dropped_picture': 1907, 'after_one_per_question': 1062, 'after_construct_cap': 855, 'core': 2, 'block_b': 2, 'block_c': 2, 'subjects_in_core': 2, 'benqa_rows': 982, 'benqa_after_picture_filter': 957, 'block_d': 2, 'written': 4}
+2026-10-07 17:46:06,189 INFO tlt: stage build_items done in 0.8s
+2026-10-07 17:46:06,734 INFO tlt.translate: remote-translated 4/4 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:46:07,455 INFO tlt.translate: remote-translated 4/4 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:46:09,068 INFO tlt.translate: remote-translated 2/2 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:46:09,759 INFO tlt.translate: remote-translated 2/2 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:46:10,464 INFO tlt.translate: remote-translated 2/2 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:46:22,528 INFO tlt.translate: remote-translated 4/4 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:46:23,245 INFO tlt.translate: remote-translated 4/4 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:46:26,459 INFO tlt.translate: remote-translated 6/6 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:46:40,154 INFO datasets: PyTorch version 2.13.0 available.
+2026-10-07 17:46:52,917 INFO tlt.s02: translate: {'rows': 30, 'flagged': 1, 'review_sample': 4, 'reviewed': 0, 'translation_model': 'ai4bharat/indictrans2-en-indic-1B', 'back_translation_model': 'ai4bharat/indictrans2-indic-en-1B', 'embedding_model': 'BAAI/bge-m3'}
+2026-10-07 17:46:52,918 INFO tlt: stage translate done in 46.7s
+2026-10-07 17:46:52,927 WARNING tlt.s03: human gates outstanding (allowed in smoke mode): {'templates_not_approved': 46, 'translation_reviews_pending': 5, 'names_confirmed': False}
+2026-10-07 17:46:52,930 INFO tlt.s03: prompts: {'prompts': {'A': 10, 'B': 36, 'C': 4, 'D': 6}, 'generations': {'A': 60, 'B': 216, 'C': 24, 'D': 36}, 'total_generations': 336, 'judge_calls': 1008, 'templates_not_approved': 46, 'translation_reviews_pending': 5, 'names_confirmed': False}
+2026-10-07 17:46:52,930 INFO tlt: stage build_prompts done in 0.0s
+2026-10-07 17:46:53,733 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 16.15, 'remaining_usd': 292.69}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 5.99, 'remaining_usd': 77.44}}
+2026-10-07 17:47:15,579 INFO tlt.runner: generate 200/336 (8.8/s, errors=0)
+2026-10-07 17:49:27,387 INFO tlt.runner: generate 336/336 (2.2/s, errors=0)
+2026-10-07 17:49:27,393 INFO tlt.s04: generate: {'submitted': 336, 'already_done_or_exhausted': 0, 'ok': 336, 'error': 0, 'records': 336, 'ok_total': 336, 'failed_total': 0, 'empty_text': 0, 'truncated': 1, 'fallback_used': 0}
+2026-10-07 17:49:27,398 INFO tlt: stage generate done in 154.5s
+2026-10-07 17:49:29,329 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 16.22, 'remaining_usd': 292.62}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 5.99, 'remaining_usd': 77.44}}
+2026-10-07 17:49:48,137 INFO tlt.runner: judge 200/1008 (10.1/s, errors=0)
+2026-10-07 17:50:05,915 INFO tlt.runner: judge 400/1008 (10.7/s, errors=0)
+2026-10-07 17:50:28,602 INFO tlt.runner: judge 600/1008 (10.0/s, errors=0)
+2026-10-07 17:50:49,281 INFO tlt.runner: judge 800/1008 (9.9/s, errors=0)
+2026-10-07 17:51:12,043 INFO tlt.runner: judge 1000/1008 (9.6/s, errors=0)
+2026-10-07 17:51:17,450 INFO tlt.runner: judge 1008/1008 (9.2/s, errors=0)
+2026-10-07 17:51:18,305 INFO tlt.s05: judge: {'submitted': 1008, 'already_done_or_exhausted': 0, 'ok': 1008, 'error': 0, 'targets': 336, 'judge_records': 1008, 'unparseable': 0, 'json_repair_fired': 25, 'residual_name_hits': 0, 'pqi_missing': 0}
+2026-10-07 17:51:18,324 INFO tlt: stage mask_and_judge done in 110.9s
+2026-10-07 17:51:19,311 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 16.87, 'remaining_usd': 291.97}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 6.25, 'remaining_usd': 77.18}}
+2026-10-07 17:51:23,110 INFO tlt.runner: mrbench 12/12 (2.5/s, errors=0)
+2026-10-07 17:51:23,280 INFO tlt.s06: judge validation: {'submitted': 12, 'already_done_or_exhausted': 0, 'ok': 12, 'error': 0, 'sampled': 4, 'unparseable': 0}
+2026-10-07 17:51:23,283 INFO tlt: stage judge_validation done in 5.0s
+2026-10-07 17:52:16,027 INFO tlt.translate: remote-translated 286/286 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:52:26,642 INFO tlt.translate: remote-translated 493/493 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:52:27,907 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 16.87, 'remaining_usd': 291.96}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 6.25, 'remaining_usd': 77.18}}
+2026-10-07 17:52:46,122 INFO tlt.runner: translated-judge 200/216 (10.5/s, errors=0)
+2026-10-07 17:52:50,193 INFO tlt.runner: translated-judge 216/216 (9.3/s, errors=0)
+2026-10-07 17:52:51,242 INFO tlt.s07: translated judging: {'submitted': 216, 'already_done_or_exhausted': 0, 'ok': 216, 'error': 0, 'pool': 240, 'sampled': 72, 'translation_failed_excluded': 0, 'utility_routed': 9}
+2026-10-07 17:52:51,249 INFO tlt: stage translated_judging done in 88.0s
+2026-10-07 17:52:51,784 INFO tlt.translate: remote-translated 4/4 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:52:52,494 INFO tlt.translate: remote-translated 4/4 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:52:53,581 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 17.06, 'remaining_usd': 291.78}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 6.25, 'remaining_usd': 77.18}}
+2026-10-07 17:52:58,134 INFO tlt.translate: remote-translated 14/14 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:52:59,203 INFO tlt.translate: remote-translated 14/14 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:00,136 INFO tlt.translate: remote-translated 10/10 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:01,089 INFO tlt.translate: remote-translated 9/9 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:03,469 INFO tlt.translate: remote-translated 43/43 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:04,384 INFO tlt.translate: remote-translated 11/11 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:05,274 INFO tlt.translate: remote-translated 13/13 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:10,468 INFO tlt.translate: remote-translated 14/14 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:11,704 INFO tlt.translate: remote-translated 22/22 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:13,133 INFO tlt.translate: remote-translated 21/21 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:17,970 INFO tlt.translate: remote-translated 13/13 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:18,931 INFO tlt.translate: remote-translated 10/10 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:20,502 INFO tlt.translate: remote-translated 10/10 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:21,436 INFO tlt.translate: remote-translated 18/18 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:22,399 INFO tlt.translate: remote-translated 17/17 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:23,372 INFO tlt.translate: remote-translated 9/9 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:24,407 INFO tlt.translate: remote-translated 12/12 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:24,637 INFO tlt.runner: repair 200/324 (6.2/s, errors=0)
+2026-10-07 17:53:27,131 INFO tlt.translate: remote-translated 11/11 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:28,795 INFO tlt.translate: remote-translated 15/15 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:30,881 INFO tlt.translate: remote-translated 12/12 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:31,665 INFO tlt.translate: remote-translated 8/8 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:34,197 INFO tlt.translate: remote-translated 5/5 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:35,220 INFO tlt.translate: remote-translated 14/14 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:53:55,237 INFO tlt.translate: remote-translated 12/12 segments (cuda:0 NVIDIA GeForce RTX 3090 float16 flash_attention_2)
+2026-10-07 17:54:19,160 INFO tlt.runner: repair 324/324 (3.7/s, errors=0)
+2026-10-07 17:54:41,458 INFO tlt.runner: repair-judge 200/972 (9.3/s, errors=0)
+2026-10-07 17:55:00,608 INFO tlt.runner: repair-judge 400/972 (9.8/s, errors=0)
+2026-10-07 17:55:19,200 INFO tlt.runner: repair-judge 600/972 (10.1/s, errors=0)
+2026-10-07 17:55:39,646 INFO tlt.runner: repair-judge 800/972 (10.0/s, errors=0)
+2026-10-07 17:56:01,024 INFO tlt.runner: repair-judge 972/972 (9.6/s, errors=0)
+2026-10-07 17:56:01,825 INFO tlt.s11: repair: {'submitted': 324, 'already_done_or_exhausted': 0, 'ok': 324, 'error': 0, 'cells': 54, 'generations': 324, 'judged': {'submitted': 972, 'already_done_or_exhausted': 0, 'ok': 972, 'error': 0}, 'r3_format_failures': 0, 'r5_plan_parse_failures': 0, 'r5_plan_schema_failures': 8, 'r5_plan_retried': 9}
+2026-10-07 17:56:01,839 INFO tlt: stage repair done in 190.6s
+2026-10-07 17:56:02,756 INFO tlt.s08: auto metrics: {'auto_metrics': {'rows': 336, 'failed_calls': 0, 'empty': 0, 'refusal': 0, 'truncated': 1, 'leak_exact': 269, 'cue_echo': 5, 'degenerate': 1}, 'repair_auto_metrics': {'rows': 324, 'failed_calls': 0, 'empty': 0, 'refusal': 0, 'truncated': 0, 'leak_exact': 141, 'cue_echo': 2, 'degenerate': 0}}
+2026-10-07 17:56:02,758 INFO tlt: stage auto_metrics done in 0.9s
+2026-10-07 17:56:03,474 INFO tlt.s10: B1: {'rows': 72}
+2026-10-07 17:57:04,841 INFO tlt.runner: b2 84/84 (1.4/s, errors=0)
+2026-10-07 17:57:05,281 INFO tlt.s10: B2: {'marked_words': 0, 'labelled': 84, 'submitted': 84, 'already_done_or_exhausted': 0, 'ok': 84, 'error': 0}
+2026-10-07 17:58:56,636 INFO tlt.s10: B3: {'rows': 126}
+2026-10-07 18:00:08,965 INFO tlt.runner: b5 200/370 (2.8/s, errors=0)
+2026-10-07 18:01:23,536 INFO tlt.runner: b5 370/370 (2.5/s, errors=0)
+2026-10-07 18:01:24,433 INFO tlt.s10: B5: {'submitted': 370, 'already_done_or_exhausted': 0, 'ok': 370, 'error': 0, 'scored': 370, 'undecided_dropped': 0}
+2026-10-07 18:01:24,434 INFO tlt: stage baselines done in 321.7s
+2026-10-07 18:01:24,553 INFO tlt.s12: human export: {'exported': 30, 'judged_table_exists': True}
+2026-10-07 18:01:24,555 INFO tlt: stage export_human done in 0.1s
+2026-10-07 18:01:45,595 INFO tlt.s09: analysis: {'status': 'PROVISIONAL', 'mixed_models': {'A': 'too little data for mixed models (pilot)', 'B_EN': 'too little data for mixed models (pilot)', 'B_HI': 'too little data for mixed models (pilot)', 'B_BN': 'too little data for mixed models (pilot)'}, 'tables': ['expectation_indicator_tests.csv', 'expectation_indicators.csv', 'inter_judge_alpha.csv', 'operational_counts.csv', 'route_by_block_condition.csv', 'table1_models.csv', 'table2_judge_validation_mrbench.csv', 'table3_judge_human_agreement.csv', 'table4_language_gaps.csv', 'table4a_pqi_by_language_producer.csv', 'table4b_language_gaps_no_truncation.csv', 'table4c_truncation_rate_by_language.csv', 'table4d_language_gaps_PQI_R.csv', 'table5_identity_gaps.csv', 'table5b_identity_language_interaction.csv', 'table5c_identity_sensitivity.csv', 'table5d_hi_gender_marking_rate.csv', 'table5e_identity_gaps_PQI_R.csv', 'table6_decomposition.csv', 'table7_native_control.csv', 'table7a_block_d_means.csv', 'table8_baselines_vs_pqi.csv', 'table9_repair.csv', 'table9b_repair_identity.csv', 'translated_judging.csv']}
+2026-10-07 18:01:45,596 INFO tlt: stage analysis done in 21.0s
+2026-10-07 18:01:47,175 INFO tlt.checks: acceptance: all_pass=True
+2026-10-07 18:01:47,177 INFO tlt: stage checks done in 1.6s

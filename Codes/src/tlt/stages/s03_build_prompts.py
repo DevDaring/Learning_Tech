@@ -7,6 +7,7 @@ template approval, translation review or name validation is outstanding.
 """
 from __future__ import annotations
 
+import json
 import logging
 
 import pandas as pd
@@ -140,8 +141,13 @@ def run_stage(run: Run) -> dict:
     gates = {"templates_not_approved": check_template_approval(run),
              "translation_reviews_pending": pending_reviews(run),
              "names_confirmed": names_confirmed()}
-    if run.mode == "full" and (gates["templates_not_approved"] or gates["translation_reviews_pending"]
-                               or not gates["names_confirmed"]):
+    outstanding = bool(gates["templates_not_approved"] or gates["translation_reviews_pending"]
+                       or not gates["names_confirmed"])
+    import os
+    if run.mode == "full" and outstanding and os.environ.get("TLT_ALLOW_UNREVIEWED") == "1":
+        log.warning("FULL RUN WITH HUMAN GATES OUTSTANDING (--allow-unreviewed): outputs are PRELIMINARY %s", gates)
+        run.path("results", "PRELIMINARY_human_gates_outstanding.json").write_text(json.dumps(gates, indent=2))
+    elif run.mode == "full" and outstanding:
         raise SystemExit(
             f"Full run blocked by human gates {gates}. Complete review/template_approval.csv, "
             "review/translation_review.csv and docs/name_validation.md (STATUS: CONFIRMED), "

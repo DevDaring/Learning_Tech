@@ -1,0 +1,75 @@
+item_id,lang,field,status,flag_reasons,similarity,source_en,translation,back_translation,corrected_text,reviewer,notes,route,back_route
+eedi-1724-D,HI,question,review_sample,,0.9978,"What is the value of the \( 4 \) in this number?
+\( 31405 \)","इस संख्या में \( 4 \) का मान क्या है?
+\( 31405 \)","What is the value of \( 4 \) in this number?
+\( 31405 \)",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-305-A,HI,question,auto_ok,,1.0,"Solve the equation:
+\(
+5 p=\frac{1}{10}
+\)","समीकरण को हल कीजिएः
+\(
+5 p=\frac{1}{10}
+\)","Solve the equation:
+\(
+5 p=\frac{1}{10}
+\)",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1724-D,HI,student_answer,auto_ok,,,\( 4000 \),\( 4000 \),,,,,unchanged(maths),
+eedi-305-A,HI,student_answer,auto_ok,,,\( p=\frac{1}{2} \),\( p=\frac{1}{2} \),,,,,unchanged(maths),
+eedi-1724-D,HI,correct_answer,auto_ok,,,\( 400 \),\( 400 \),,,,,unchanged(maths),
+eedi-305-A,HI,correct_answer,auto_ok,,,\( p=\frac{1}{50} \),\( p=\frac{1}{50} \),,,,,unchanged(maths),
+eedi-1724-D,BN,question,auto_ok,,0.9908,"What is the value of the \( 4 \) in this number?
+\( 31405 \)","এই সংখ্যার \( 4 \)-এর মান কত?
+\( 31405 \)","What is the \( 4 \) value of this number?
+\( 31405 \)",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-305-A,BN,question,auto_ok,,1.0,"Solve the equation:
+\(
+5 p=\frac{1}{10}
+\)","সমীকরণটি সমাধান করুনঃ
+\(
+5 p=\frac{1}{10}
+\)","Solve the equation:
+\(
+5 p=\frac{1}{10}
+\)",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1724-D,BN,student_answer,auto_ok,,,\( 4000 \),\( 4000 \),,,,,unchanged(maths),
+eedi-305-A,BN,student_answer,auto_ok,,,\( p=\frac{1}{2} \),\( p=\frac{1}{2} \),,,,,unchanged(maths),
+eedi-1724-D,BN,correct_answer,auto_ok,,,\( 400 \),\( 400 \),,,,,unchanged(maths),
+eedi-305-A,BN,correct_answer,auto_ok,,,\( p=\frac{1}{50} \),\( p=\frac{1}{50} \),,,,,unchanged(maths),
+benqa-10th-Math-176,BN-MT,question,flagged,similarity<0.75,0.6216,"Which one is the general term of the sequence \frac{1}{2}, \frac{2}{3}, \frac{3}{4}, .....?","\frac{1}{2}, \frac{2}{3}, \frac{3}{4},......................................................................................................................................................................................","\ frac {1} {2},\ frac {2} {3},\ frac {3} {4},\ frac {1} {2},\ frac {2} {3},\ frac {3} {4},\ frac {3} {4},\ frac {1} {2},\ frac {1} {2},\ frac {2} {3},\ frac {3} {4},\ frac {1} {2},\ frac {1} {2},\ frac {2} {3},\ frac {3} {4},\ frac {1} {2},\ frac {1} {2},\ frac {2} {2},\ frac {2} {3},\ frac {3} {4},\ frac {1} {2},\ frac {2} {2},\ frac {2} {2},\",,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-II-222,BN-MT,question,auto_ok,,1.0,What is the probability of getting a prime number or a number divisible by 3 in a single throw of a dice?,একটি পাশার একক নিক্ষেপের মধ্যে একটি মৌলিক সংখ্যা বা 3 দ্বারা বিভাজ্য একটি সংখ্যা পাওয়ার সম্ভাবনা কত?,What is the probability of getting a prime number or a number divisible by 3 in a single throw of a dice?,,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-176,BN-MT,student_answer,auto_ok,,0.7895,\frac{1}{n},\frac {1} {n},\ frac {1} {n},,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-II-222,BN-MT,student_answer,review_sample,,0.7963,\frac{1}{3},\frac {1} {3},\ frac {1} {3},,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-176,BN-MT,correct_answer,review_sample,,0.8284,\frac{n}{n + 1},\frac {n} {n + 1},\ frac {n} {n + 1},,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+benqa-10th-Math-II-222,BN-MT,correct_answer,auto_ok,,0.7903,\frac{2}{3},\frac {2} {3},\ frac {2} {3},,,,ai4bharat/indictrans2-en-indic-1B,ai4bharat/indictrans2-indic-en-1B
+eedi-1724-D,HI-EN,question,auto_ok,,0.9978,"What is the value of the \( 4 \) in this number?
+\( 31405 \)","Is number mein \( 4 \) ki value kya hai?
+\( 31405 \)","What is the value of \( 4 \) in this number?
+\( 31405 \)",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1724-D,HI-EN,student_answer,auto_ok,,,\( 4000 \),\( 4000 \),,,,,unchanged(english),
+eedi-1724-D,HI-EN,correct_answer,auto_ok,,,\( 400 \),\( 400 \),,,,,unchanged(english),
+eedi-305-A,HI-EN,question,auto_ok,,0.9942,"Solve the equation:
+\(
+5 p=\frac{1}{10}
+\)","Is equation ko solve karo:
+\(
+5 p=\frac{1}{10}
+\)","Solve this equation:
+\(
+5 p=\frac{1}{10}
+\)",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-305-A,HI-EN,student_answer,auto_ok,,,\( p=\frac{1}{2} \),\( p=\frac{1}{2} \),,,,,unchanged(english),
+eedi-305-A,HI-EN,correct_answer,auto_ok,,,\( p=\frac{1}{50} \),\( p=\frac{1}{50} \),,,,,unchanged(english),
+eedi-1724-D,BN-EN,question,auto_ok,,0.9978,"What is the value of the \( 4 \) in this number?
+\( 31405 \)",Ei number-e \( 4 \)-er value koto? \( 31405 \),What is the value of \( 4 \) in this number? \( 31405 \),,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-1724-D,BN-EN,student_answer,auto_ok,,,\( 4000 \),\( 4000 \),,,,,unchanged(english),
+eedi-1724-D,BN-EN,correct_answer,auto_ok,,,\( 400 \),\( 400 \),,,,,unchanged(english),
+eedi-305-A,BN-EN,question,review_sample,,1.0,"Solve the equation:
+\(
+5 p=\frac{1}{10}
+\)","Equation ta solve korun: \(
+5 p=\frac{1}{10}
+\)","Solve the equation: \(
+5 p=\frac{1}{10}
+\)",,,,linkapi:gpt-5-mini,linkapi:gpt-5-mini
+eedi-305-A,BN-EN,student_answer,auto_ok,,,\( p=\frac{1}{2} \),\( p=\frac{1}{2} \),,,,,unchanged(english),
+eedi-305-A,BN-EN,correct_answer,auto_ok,,,\( p=\frac{1}{50} \),\( p=\frac{1}{50} \),,,,,unchanged(english),

@@ -1,0 +1,6 @@
+pair,model,direction,word,count_1,count_2,total,delta,z
+schooling,gemini_flash,marked_for_disadvantaged,times,55,53,108,0.41652234782610176,3.7486297095988923
+schooling,gemini_flash,marked_for_disadvantaged,x,39,38,77,0.4080476989543098,3.1008649920537916
+schooling,gemini_flash,marked_for_disadvantaged,frac,30,24,54,0.47140976962272507,2.9979750611603246
+schooling,gemini_flash,marked_for_disadvantaged,y,20,15,35,0.4896763948444409,2.5059988448417974
+schooling,ALL,marked_for_disadvantaged,y,40,26,66,0.29456994701627526,2.0672961117912503

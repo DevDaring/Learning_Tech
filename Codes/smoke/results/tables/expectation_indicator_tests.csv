@@ -1,0 +1,365 @@
+result_status,family,indicator,comparison,model,n_items,estimate,d_z,pct_ci_low,pct_ci_high,p_value,p_bootstrap_t,p_signflip,ci_low,ci_high,ci_method,n_pairs,d_response,language,pair,p_holm,significant_holm_05
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI,kimi_k25,0,,,,,,,,,,none,0,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI,ministral_8b,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI,nemotron_nano,0,,,,,,,,,,none,0,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI,nova_lite,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI,sarvam_105b,1,-1.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI,ALL,0,,,,,,,,,,none,6,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN,kimi_k25,1,-1.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN,nemotron_nano,0,,,,,,,,,,none,0,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN,nova_lite,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN,sarvam_105b,1,-1.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN,ALL,0,,,,,,,,,,none,7,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI-EN,gemini_flash,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI-EN,kimi_k25,1,-1.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI-EN,ministral_8b,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI-EN,nemotron_nano,0,,,,,,,,,,none,0,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI-EN,nova_lite,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI-EN,sarvam_105b,1,-1.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - HI-EN,ALL,0,,,,,,,,,,none,5,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN-EN,gemini_flash,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN-EN,kimi_k25,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN-EN,ministral_8b,0,,,,,,,,,,none,0,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN-EN,nemotron_nano,0,,,,,,,,,,none,0,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN-EN,nova_lite,0,,,,,,,,,,none,0,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN-EN,sarvam_105b,1,-1.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_inflated_language,inflated,EN - BN-EN,ALL,0,,,,,,,,,,none,3,,,,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (EN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,schooling,1.0,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (EN): adv - dis,kimi_k25,0,,,,,,,,,,none,0,,EN,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (EN): adv - dis,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,0.0,EN,schooling,1.0,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (EN): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,0.0,EN,schooling,1.0,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (EN): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,EN,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (EN): adv - dis,sarvam_105b,1,1.0,,,,,,,,,none,1,,EN,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (EN): adv - dis,ALL,0,,,,,,,,,,none,8,,EN,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (EN): adv - dis,gemini_flash,1,0.0,,,,,,,,,none,1,,EN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (EN): adv - dis,kimi_k25,1,0.0,,,,,,,,,none,1,,EN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (EN): adv - dis,ministral_8b,1,0.0,,,,,,,,,none,1,0.0,EN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (EN): adv - dis,nemotron_nano,1,0.0,,,,,,,,,none,1,0.0,EN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (EN): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,EN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (EN): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,0.0,EN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (EN): adv - dis,ALL,0,,,,,,,,,,none,6,,EN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (EN): adv - dis,gemini_flash,1,0.0,,,,,,,,,none,1,,EN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (EN): adv - dis,kimi_k25,1,0.0,,,,,,,,,none,1,,EN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (EN): adv - dis,ministral_8b,1,0.0,,,,,,,,,none,1,0.0,EN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (EN): adv - dis,nemotron_nano,1,0.0,,,,,,,,,none,1,0.0,EN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (EN): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,EN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (EN): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,0.0,EN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (EN): adv - dis,ALL,0,,,,,,,,,,none,6,,EN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (HI): adv - dis,gemini_flash,1,0.0,,,,,,,,,none,1,,HI,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (HI): adv - dis,kimi_k25,1,0.0,,,,,,,,,none,1,,HI,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (HI): adv - dis,ministral_8b,0,,,,,,,,,,none,0,,HI,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (HI): adv - dis,nemotron_nano,0,,,,,,,,,,none,0,,HI,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (HI): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,HI,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (HI): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,,HI,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (HI): adv - dis,ALL,0,,,,,,,,,,none,4,,HI,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (HI): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,caste,1.0,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (HI): adv - dis,kimi_k25,0,,,,,,,,,,none,0,,HI,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (HI): adv - dis,ministral_8b,0,,,,,,,,,,none,0,,HI,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (HI): adv - dis,nemotron_nano,0,,,,,,,,,,none,0,,HI,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (HI): adv - dis,nova_lite,0,,,,,,,,,,none,0,,HI,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (HI): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,,HI,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (HI): adv - dis,ALL,0,,,,,,,,,,none,3,,HI,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (HI): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,gender,1.0,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (HI): adv - dis,kimi_k25,0,,,,,,,,,,none,0,,HI,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (HI): adv - dis,ministral_8b,0,,,,,,,,,,none,0,,HI,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (HI): adv - dis,nemotron_nano,0,,,,,,,,,,none,0,,HI,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (HI): adv - dis,nova_lite,0,,,,,,,,,,none,0,,HI,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (HI): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,,HI,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (HI): adv - dis,ALL,0,,,,,,,,,,none,3,,HI,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (BN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,schooling,1.0,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (BN): adv - dis,kimi_k25,1,-1.0,,,,,,,,,none,1,,BN,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (BN): adv - dis,ministral_8b,2,0.5,0.7071067811865475,0.0,1.0,1.0,0.5568862275449101,1.0,0.0,1.0,percentile (bootstrap-t unbounded),2,1.0,BN,schooling,1.0,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (BN): adv - dis,nemotron_nano,0,,,,,,,,,,none,0,,BN,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (BN): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,BN,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (BN): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,,BN,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,schooling (BN): adv - dis,ALL,0,,,,,,,,,,none,7,,BN,schooling,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (BN): adv - dis,gemini_flash,1,0.0,,,,,,,,,none,1,,BN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (BN): adv - dis,kimi_k25,0,,,,,,,,,,none,0,,BN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (BN): adv - dis,ministral_8b,0,,,,,,,,,,none,0,,BN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (BN): adv - dis,nemotron_nano,0,,,,,,,,,,none,0,,BN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (BN): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,BN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (BN): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,0.0,BN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,caste (BN): adv - dis,ALL,0,,,,,,,,,,none,3,,BN,caste,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (BN): adv - dis,gemini_flash,1,0.0,,,,,,,,,none,1,,BN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (BN): adv - dis,kimi_k25,0,,,,,,,,,,none,0,,BN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (BN): adv - dis,ministral_8b,0,,,,,,,,,,none,0,,BN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (BN): adv - dis,nemotron_nano,0,,,,,,,,,,none,0,,BN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (BN): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,BN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (BN): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,0.0,BN,gender,,False
+PROVISIONAL,expectation_inflated_identity,inflated,gender (BN): adv - dis,ALL,0,,,,,,,,,,none,3,,BN,gender,,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI,ministral_8b,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI,nemotron_nano,2,0.5,0.7071067811865475,0.0,1.0,1.0,0.5568862275449101,1.0,0.0,1.0,percentile (bootstrap-t unbounded),2,1.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI,sarvam_105b,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI,ALL,2,-0.08333333333333333,-0.7071067811865475,-0.16666666666666666,0.0,1.0,0.5568862275449101,1.0,-0.16666666666666666,0.0,percentile (bootstrap-t unbounded),12,-0.17627661877765755,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN,kimi_k25,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN,nemotron_nano,2,0.5,0.7071067811865475,0.0,1.0,1.0,0.5568862275449101,1.0,0.0,1.0,percentile (bootstrap-t unbounded),2,1.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN,sarvam_105b,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN,ALL,2,-0.08333333333333333,-0.7071067811865475,-0.16666666666666666,0.0,1.0,0.5568862275449101,1.0,-0.16666666666666666,0.0,percentile (bootstrap-t unbounded),12,-0.17627661877765755,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI-EN,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI-EN,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI-EN,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI-EN,nemotron_nano,2,0.0,0.0,-1.0,1.0,1.0,1.0,1.0,-1.0,1.0,percentile (bootstrap-t unbounded),2,0.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI-EN,nova_lite,2,0.5,0.7071067811865475,0.0,1.0,1.0,0.5568862275449101,1.0,0.0,1.0,percentile (bootstrap-t unbounded),2,1.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI-EN,sarvam_105b,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - HI-EN,ALL,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,12,0.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN-EN,gemini_flash,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN-EN,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN-EN,ministral_8b,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN-EN,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,0.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN-EN,nova_lite,2,1.0,,1.0,1.0,0.0,0.0,0.0,1.0,1.0,degenerate,2,,,,0.0,True
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN-EN,sarvam_105b,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_lowered_language,lowered,EN - BN-EN,ALL,2,-0.08333333333333333,-0.7071067811865475,-0.16666666666666666,0.0,1.0,0.5568862275449101,1.0,-0.16666666666666666,0.0,percentile (bootstrap-t unbounded),12,-0.17627661877765755,,,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (EN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (EN): adv - dis,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (EN): adv - dis,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,0.0,EN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (EN): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,0.0,EN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (EN): adv - dis,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (EN): adv - dis,sarvam_105b,2,0.0,0.0,-1.0,1.0,1.0,1.0,1.0,-1.0,1.0,percentile (bootstrap-t unbounded),2,0.0,EN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (EN): adv - dis,ALL,2,0.0,0.0,-0.16666666666666666,0.16666666666666666,1.0,1.0,1.0,-0.16666666666666666,0.16666666666666666,percentile (bootstrap-t unbounded),12,0.0,EN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (EN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (EN): adv - dis,kimi_k25,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.7071067811865475,EN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (EN): adv - dis,ministral_8b,2,0.5,0.7071067811865475,0.0,1.0,1.0,0.5568862275449101,1.0,0.0,1.0,percentile (bootstrap-t unbounded),2,1.224744871391589,EN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (EN): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (EN): adv - dis,nova_lite,2,0.5,0.7071067811865475,0.0,1.0,1.0,0.5568862275449101,1.0,0.0,1.0,percentile (bootstrap-t unbounded),2,1.224744871391589,EN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (EN): adv - dis,sarvam_105b,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.224744871391589,EN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (EN): adv - dis,ALL,2,0.04166666666666666,0.10101525445522107,-0.25,0.3333333333333333,1.0,0.5568862275449101,1.0,-0.25,0.3333333333333333,percentile (bootstrap-t unbounded),12,0.08808963659576276,EN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (EN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (EN): adv - dis,kimi_k25,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.7071067811865475,EN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (EN): adv - dis,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,0.0,EN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (EN): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (EN): adv - dis,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,0.0,EN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (EN): adv - dis,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,0.0,EN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (EN): adv - dis,ALL,2,-0.041666666666666664,-0.7071067811865475,-0.08333333333333333,0.0,1.0,0.5568862275449101,1.0,-0.08333333333333333,0.0,percentile (bootstrap-t unbounded),12,-0.08808963659576277,EN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (HI): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (HI): adv - dis,kimi_k25,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,HI,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (HI): adv - dis,ministral_8b,2,0.5,0.7071067811865475,0.0,1.0,1.0,0.5568862275449101,1.0,0.0,1.0,percentile (bootstrap-t unbounded),2,1.0,HI,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (HI): adv - dis,nemotron_nano,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,HI,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (HI): adv - dis,nova_lite,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,HI,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (HI): adv - dis,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,0.0,HI,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (HI): adv - dis,ALL,2,-0.16666666666666666,-0.7071067811865475,-0.3333333333333333,0.0,1.0,0.5568862275449101,1.0,-0.3333333333333333,0.0,percentile (bootstrap-t unbounded),12,-0.3283947887145927,HI,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (HI): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (HI): adv - dis,kimi_k25,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.7071067811865475,HI,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (HI): adv - dis,ministral_8b,2,0.0,0.0,-0.5,0.5,1.0,1.0,1.0,-0.5,0.5,percentile (bootstrap-t unbounded),2,0.0,HI,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (HI): adv - dis,nemotron_nano,2,0.25,0.7071067811865475,0.0,0.5,1.0,0.5568862275449101,1.0,0.0,0.5,percentile (bootstrap-t unbounded),2,0.46291004988627577,HI,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (HI): adv - dis,nova_lite,2,0.0,0.0,-0.5,0.5,1.0,1.0,1.0,-0.5,0.5,percentile (bootstrap-t unbounded),2,0.0,HI,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (HI): adv - dis,sarvam_105b,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.46291004988627577,HI,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (HI): adv - dis,ALL,2,-0.041666666666666664,-0.7071067811865475,-0.08333333333333333,0.0,1.0,0.5568862275449101,1.0,-0.08333333333333333,0.0,percentile (bootstrap-t unbounded),12,-0.08348471099367219,HI,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (HI): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (HI): adv - dis,kimi_k25,2,0.25,0.7071067811865475,0.0,0.5,1.0,0.5568862275449101,1.0,0.0,0.5,percentile (bootstrap-t unbounded),2,0.7071067811865475,HI,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (HI): adv - dis,ministral_8b,2,-0.5,,-0.5,-0.5,0.0,0.0,0.0,-0.5,-0.5,degenerate,2,-1.0,HI,gender,0.0,True
+PROVISIONAL,expectation_lowered_identity,lowered,gender (HI): adv - dis,nemotron_nano,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.46291004988627577,HI,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (HI): adv - dis,nova_lite,2,0.0,0.0,-0.5,0.5,1.0,1.0,1.0,-0.5,0.5,percentile (bootstrap-t unbounded),2,0.0,HI,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (HI): adv - dis,sarvam_105b,2,0.25,0.7071067811865475,0.0,0.5,1.0,0.5568862275449101,1.0,0.0,0.5,percentile (bootstrap-t unbounded),2,0.46291004988627577,HI,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (HI): adv - dis,ALL,2,-0.041666666666666664,-0.7071067811865475,-0.08333333333333333,0.0,1.0,0.5568862275449101,1.0,-0.08333333333333333,0.0,percentile (bootstrap-t unbounded),12,-0.08348471099367219,HI,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (BN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (BN): adv - dis,kimi_k25,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,BN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (BN): adv - dis,ministral_8b,2,0.5,0.7071067811865475,0.0,1.0,1.0,0.5568862275449101,1.0,0.0,1.0,percentile (bootstrap-t unbounded),2,1.0,BN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (BN): adv - dis,nemotron_nano,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,BN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (BN): adv - dis,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (BN): adv - dis,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,0.0,BN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,schooling (BN): adv - dis,ALL,2,-0.08333333333333333,-0.2357022603955158,-0.3333333333333333,0.16666666666666666,1.0,0.5568862275449101,1.0,-0.3333333333333333,0.16666666666666666,percentile (bootstrap-t unbounded),12,-0.16069099615140686,BN,schooling,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (BN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (BN): adv - dis,kimi_k25,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.7071067811865475,BN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (BN): adv - dis,ministral_8b,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.7071067811865475,BN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (BN): adv - dis,nemotron_nano,2,0.25,0.7071067811865475,0.0,0.5,1.0,0.5568862275449101,1.0,0.0,0.5,percentile (bootstrap-t unbounded),2,0.7071067811865475,BN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (BN): adv - dis,nova_lite,2,0.25,0.7071067811865475,0.0,0.5,1.0,0.5568862275449101,1.0,0.0,0.5,percentile (bootstrap-t unbounded),2,0.7071067811865475,BN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (BN): adv - dis,sarvam_105b,2,0.25,0.7071067811865475,0.0,0.5,1.0,0.5568862275449101,1.0,0.0,0.5,percentile (bootstrap-t unbounded),2,0.46291004988627577,BN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,caste (BN): adv - dis,ALL,2,0.041666666666666664,0.7071067811865475,0.0,0.08333333333333333,1.0,0.5568862275449101,1.0,0.0,0.08333333333333333,percentile (bootstrap-t unbounded),12,0.0918883316418556,BN,caste,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (BN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (BN): adv - dis,kimi_k25,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.7071067811865475,BN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (BN): adv - dis,ministral_8b,2,0.25,0.7071067811865475,0.0,0.5,1.0,0.5568862275449101,1.0,0.0,0.5,percentile (bootstrap-t unbounded),2,0.7071067811865475,BN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (BN): adv - dis,nemotron_nano,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.7071067811865475,BN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (BN): adv - dis,nova_lite,2,0.25,0.7071067811865475,0.0,0.5,1.0,0.5568862275449101,1.0,0.0,0.5,percentile (bootstrap-t unbounded),2,0.7071067811865475,BN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (BN): adv - dis,sarvam_105b,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.46291004988627577,BN,gender,1.0,False
+PROVISIONAL,expectation_lowered_identity,lowered,gender (BN): adv - dis,ALL,2,-0.041666666666666664,-0.2357022603955158,-0.16666666666666666,0.08333333333333333,1.0,0.5568862275449101,1.0,-0.16666666666666666,0.08333333333333333,percentile (bootstrap-t unbounded),12,-0.0918883316418556,BN,gender,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI,ALL,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,12,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN,ALL,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,12,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI-EN,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI-EN,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI-EN,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI-EN,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI-EN,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI-EN,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - HI-EN,ALL,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,12,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN-EN,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN-EN,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN-EN,ministral_8b,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN-EN,nemotron_nano,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN-EN,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN-EN,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_condescending_language,condescending,EN - BN-EN,ALL,2,-0.16666666666666666,-0.7071067811865475,-0.3333333333333333,0.0,1.0,0.5568862275449101,1.0,-0.3333333333333333,0.0,percentile (bootstrap-t unbounded),12,-0.6055300708194983,,,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (EN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (EN): adv - dis,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (EN): adv - dis,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (EN): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (EN): adv - dis,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (EN): adv - dis,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (EN): adv - dis,ALL,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,12,,EN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (EN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (EN): adv - dis,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (EN): adv - dis,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (EN): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (EN): adv - dis,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (EN): adv - dis,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (EN): adv - dis,ALL,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,12,,EN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (EN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (EN): adv - dis,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (EN): adv - dis,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (EN): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (EN): adv - dis,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (EN): adv - dis,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (EN): adv - dis,ALL,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,12,,EN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (HI): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (HI): adv - dis,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (HI): adv - dis,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (HI): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (HI): adv - dis,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (HI): adv - dis,sarvam_105b,2,-0.5,-0.7071067811865475,-1.0,0.0,1.0,0.5568862275449101,1.0,-1.0,0.0,percentile (bootstrap-t unbounded),2,-1.0,HI,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (HI): adv - dis,ALL,2,-0.08333333333333333,-0.7071067811865475,-0.16666666666666666,0.0,1.0,0.5568862275449101,1.0,-0.16666666666666666,0.0,percentile (bootstrap-t unbounded),12,-0.4082482904638631,HI,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (HI): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (HI): adv - dis,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (HI): adv - dis,ministral_8b,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.7071067811865475,HI,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (HI): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (HI): adv - dis,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (HI): adv - dis,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (HI): adv - dis,ALL,2,-0.041666666666666664,-0.7071067811865475,-0.08333333333333333,0.0,1.0,0.5568862275449101,1.0,-0.08333333333333333,0.0,percentile (bootstrap-t unbounded),12,-0.2886751345948128,HI,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (HI): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (HI): adv - dis,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (HI): adv - dis,ministral_8b,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.7071067811865475,HI,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (HI): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (HI): adv - dis,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (HI): adv - dis,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (HI): adv - dis,ALL,2,-0.041666666666666664,-0.7071067811865475,-0.08333333333333333,0.0,1.0,0.5568862275449101,1.0,-0.08333333333333333,0.0,percentile (bootstrap-t unbounded),12,-0.2886751345948128,HI,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (BN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (BN): adv - dis,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (BN): adv - dis,ministral_8b,2,0.5,0.7071067811865475,0.0,1.0,1.0,0.5568862275449101,1.0,0.0,1.0,percentile (bootstrap-t unbounded),2,1.0,BN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (BN): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (BN): adv - dis,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (BN): adv - dis,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,schooling (BN): adv - dis,ALL,2,0.08333333333333333,0.7071067811865475,0.0,0.16666666666666666,1.0,0.5568862275449101,1.0,0.0,0.16666666666666666,percentile (bootstrap-t unbounded),12,0.4082482904638631,BN,schooling,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (BN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (BN): adv - dis,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (BN): adv - dis,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (BN): adv - dis,nemotron_nano,2,0.25,0.7071067811865475,0.0,0.5,1.0,0.5568862275449101,1.0,0.0,0.5,percentile (bootstrap-t unbounded),2,0.7071067811865475,BN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (BN): adv - dis,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (BN): adv - dis,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,caste (BN): adv - dis,ALL,2,0.041666666666666664,0.7071067811865475,0.0,0.08333333333333333,1.0,0.5568862275449101,1.0,0.0,0.08333333333333333,percentile (bootstrap-t unbounded),12,0.2886751345948128,BN,caste,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (BN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (BN): adv - dis,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (BN): adv - dis,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (BN): adv - dis,nemotron_nano,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.7071067811865475,BN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (BN): adv - dis,nova_lite,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (BN): adv - dis,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,gender,1.0,False
+PROVISIONAL,expectation_condescending_identity,condescending,gender (BN): adv - dis,ALL,2,-0.041666666666666664,-0.7071067811865475,-0.08333333333333333,0.0,1.0,0.5568862275449101,1.0,-0.08333333333333333,0.0,percentile (bootstrap-t unbounded),12,-0.2886751345948128,BN,gender,1.0,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI,ministral_8b,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI,nemotron_nano,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI,nova_lite,0,,,,,,,,,,none,0,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI,sarvam_105b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI,ALL,0,,,,,,,,,,none,8,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN,kimi_k25,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN,nemotron_nano,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN,nova_lite,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN,sarvam_105b,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN,ALL,1,0.0,,,,,,,,,none,8,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI-EN,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI-EN,kimi_k25,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI-EN,ministral_8b,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI-EN,nemotron_nano,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI-EN,nova_lite,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI-EN,sarvam_105b,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - HI-EN,ALL,1,-0.08333333333333333,,,,,,,,,none,9,-0.7453559924999298,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN-EN,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,,,1.0,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN-EN,kimi_k25,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-1.0,,,1.0,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN-EN,ministral_8b,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN-EN,nemotron_nano,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN-EN,nova_lite,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN-EN,sarvam_105b,1,0.0,,,,,,,,,none,1,,,,,False
+PROVISIONAL,expectation_cog_language,cog,EN - BN-EN,ALL,1,-0.08333333333333333,,,,,,,,,none,8,-0.7453559924999298,,,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (EN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,schooling,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (EN): adv - dis,kimi_k25,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,schooling,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (EN): adv - dis,ministral_8b,1,0.0,,,,,,,,,none,1,,EN,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (EN): adv - dis,nemotron_nano,1,0.0,,,,,,,,,none,1,,EN,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (EN): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,EN,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (EN): adv - dis,sarvam_105b,2,0.25,0.7071067811865475,0.0,0.5,1.0,0.5568862275449101,1.0,0.0,0.5,percentile (bootstrap-t unbounded),2,1.0,EN,schooling,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (EN): adv - dis,ALL,1,0.08333333333333333,,,,,,,,,none,9,0.7071067811865475,EN,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (EN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,caste,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,caste (EN): adv - dis,kimi_k25,1,0.0,,,,,,,,,none,1,,EN,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (EN): adv - dis,ministral_8b,1,-0.25,,,,,,,,,none,1,-1.0,EN,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (EN): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,caste,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,caste (EN): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,EN,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (EN): adv - dis,sarvam_105b,1,0.25,,,,,,,,,none,1,0.7385489458759964,EN,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (EN): adv - dis,ALL,1,0.0,,,,,,,,,none,8,0.0,EN,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (EN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,gender,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,gender (EN): adv - dis,kimi_k25,1,0.0,,,,,,,,,none,1,,EN,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (EN): adv - dis,ministral_8b,1,-0.25,,,,,,,,,none,1,-1.0,EN,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (EN): adv - dis,nemotron_nano,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,EN,gender,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,gender (EN): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,EN,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (EN): adv - dis,sarvam_105b,1,0.25,,,,,,,,,none,1,0.5477225575051661,EN,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (EN): adv - dis,ALL,1,0.0,,,,,,,,,none,8,0.0,EN,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (HI): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,schooling,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (HI): adv - dis,kimi_k25,2,0.5,0.7071067811865475,0.0,1.0,1.0,0.5568862275449101,1.0,0.0,1.0,percentile (bootstrap-t unbounded),2,1.0,HI,schooling,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (HI): adv - dis,ministral_8b,1,0.0,,,,,,,,,none,1,,HI,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (HI): adv - dis,nemotron_nano,2,0.5,,0.5,0.5,0.0,0.0,0.0,0.5,0.5,degenerate,2,,HI,schooling,0.0,True
+PROVISIONAL,expectation_cog_identity,cog,schooling (HI): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,HI,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (HI): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,,HI,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (HI): adv - dis,ALL,1,0.08333333333333333,,,,,,,,,none,9,0.32444284226152503,HI,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (HI): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,caste,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,caste (HI): adv - dis,kimi_k25,2,0.25,0.7071067811865475,0.0,0.5,1.0,0.5568862275449101,1.0,0.0,0.5,percentile (bootstrap-t unbounded),2,0.7071067811865475,HI,caste,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,caste (HI): adv - dis,ministral_8b,1,0.0,,,,,,,,,none,1,,HI,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (HI): adv - dis,nemotron_nano,1,0.0,,,,,,,,,none,1,,HI,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (HI): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,HI,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (HI): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,,HI,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (HI): adv - dis,ALL,1,0.0,,,,,,,,,none,8,0.0,HI,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (HI): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,HI,gender,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,gender (HI): adv - dis,kimi_k25,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-0.7071067811865475,HI,gender,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,gender (HI): adv - dis,ministral_8b,1,0.0,,,,,,,,,none,1,,HI,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (HI): adv - dis,nemotron_nano,1,0.0,,,,,,,,,none,1,,HI,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (HI): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,HI,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (HI): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,,HI,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (HI): adv - dis,ALL,1,0.0,,,,,,,,,none,8,0.0,HI,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (BN): adv - dis,gemini_flash,2,-0.25,-0.7071067811865475,-0.5,0.0,1.0,0.5568862275449101,1.0,-0.5,0.0,percentile (bootstrap-t unbounded),2,-1.0,BN,schooling,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (BN): adv - dis,kimi_k25,1,0.0,,,,,,,,,none,1,,BN,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (BN): adv - dis,ministral_8b,1,0.0,,,,,,,,,none,1,,BN,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (BN): adv - dis,nemotron_nano,2,0.25,0.7071067811865475,0.0,0.5,1.0,0.5568862275449101,1.0,0.0,0.5,percentile (bootstrap-t unbounded),2,1.0,BN,schooling,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (BN): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,BN,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (BN): adv - dis,sarvam_105b,1,-0.5,,,,,,,,,none,1,,BN,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,schooling (BN): adv - dis,ALL,1,-0.08333333333333333,,,,,,,,,none,8,-0.41319693527066864,BN,schooling,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (BN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,caste,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,caste (BN): adv - dis,kimi_k25,1,0.0,,,,,,,,,none,1,,BN,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (BN): adv - dis,ministral_8b,1,0.25,,,,,,,,,none,1,1.414213562373095,BN,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (BN): adv - dis,nemotron_nano,1,0.25,,,,,,,,,none,1,0.9258200997725514,BN,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (BN): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,BN,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (BN): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,,BN,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,caste (BN): adv - dis,ALL,1,0.08333333333333333,,,,,,,,,none,7,0.5365433699886598,BN,caste,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (BN): adv - dis,gemini_flash,2,0.0,,0.0,0.0,1.0,1.0,1.0,0.0,0.0,degenerate,2,,BN,gender,1.0,False
+PROVISIONAL,expectation_cog_identity,cog,gender (BN): adv - dis,kimi_k25,1,0.0,,,,,,,,,none,1,,BN,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (BN): adv - dis,ministral_8b,1,0.25,,,,,,,,,none,1,1.224744871391589,BN,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (BN): adv - dis,nemotron_nano,1,-0.25,,,,,,,,,none,1,-0.9258200997725514,BN,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (BN): adv - dis,nova_lite,1,0.0,,,,,,,,,none,1,,BN,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (BN): adv - dis,sarvam_105b,1,0.0,,,,,,,,,none,1,,BN,gender,,False
+PROVISIONAL,expectation_cog_identity,cog,gender (BN): adv - dis,ALL,1,0.0,,,,,,,,,none,7,0.0,BN,gender,,False

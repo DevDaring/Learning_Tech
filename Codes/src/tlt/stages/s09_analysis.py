@@ -35,6 +35,8 @@ class Ctx:
         self.B = int(run.design["bootstrap"]["resamples"])
         self.seed = run.seed
         self.status = "PROVISIONAL" if run.provisional else "FINAL"
+        if run.path("results", "PRELIMINARY_human_gates_outstanding.json").exists():
+            self.status = "PRELIMINARY (human review of translations/templates/names outstanding)"
         self.tdir = run.path("results", "tables", "x").parent
         self.fdir = run.path("results", "figures", "x").parent
 

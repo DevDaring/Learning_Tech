@@ -1,0 +1,23 @@
+block,outcome,model_type,test,chisq,df,p_value,note,family,p_holm,significant_holm_05
+B_HI,PQI,lmm,condition:model,3.64274453491731,6,0.724891397487513,,lmm | condition:model,0.724891397487513,False
+B_HI,PQI,lmm,condition (main),4.03236204313322,6,0.672296785083275,,lmm | condition (main),0.672296785083275,False
+B_HI,Mistake_Location,clmm,condition:model,3.29069849705225,6,0.77157542957337,,clmm | condition:model,1.0,False
+B_HI,Mistake_Location,clmm,condition (main),10.3166704467526,6,0.111934286885578,,clmm | condition (main),0.895474295084624,False
+B_HI,Providing_Guidance,clmm,condition:model,-7.9991906432042e-09,6,1.0,,clmm | condition:model,1.0,False
+B_HI,Providing_Guidance,clmm,condition (main),10.0612798267584,6,0.122095001195358,,clmm | condition (main),0.895474295084624,False
+B_HI,Actionability,clmm,condition:model,3.64508423444931e-10,6,1.0,,clmm | condition:model,1.0,False
+B_HI,Actionability,clmm,condition (main),7.93897559455999,6,0.242608299010862,,clmm | condition (main),1.0,False
+B_HI,Coherence,clmm,condition:model,1.34358231207443e-08,6,1.0,,clmm | condition:model,1.0,False
+B_HI,Coherence,clmm,condition (main),6.58267396529693,6,0.361169218158282,,clmm | condition (main),1.0,False
+B_HI,Tutor_Tone,clmm,condition:model,2.94686230972729e-09,6,1.0,,clmm | condition:model,1.0,False
+B_HI,Tutor_Tone,clmm,condition (main),2.9946379854718,6,0.809519519473237,,clmm | condition (main),1.0,False
+B_HI,Cognitive_Demand,clmm,condition:model,-4.89618639676337e-06,6,1.0,,clmm | condition:model,1.0,False
+B_HI,Cognitive_Demand,clmm,condition (main),11.644187548556,6,0.0703938606214112,,clmm | condition (main),0.6335447455927008,False
+B_HI,Conceptual_Depth,clmm,condition:model,10.4299646049994,6,0.107674349660964,,clmm | condition:model,0.969069146948676,False
+B_HI,Conceptual_Depth,clmm,condition (main),3.84482455425331,6,0.697666389716785,,clmm | condition (main),1.0,False
+B_HI,Expectation_Level,clmm,condition:model,2.88546766839252,6,0.823078517731254,,clmm | condition:model,1.0,False
+B_HI,Expectation_Level,clmm,condition (main),7.89459491321597,6,0.245927737922501,,clmm | condition (main),1.0,False
+B_HI,Math_Correctness,clmm,condition:model,2.88790547386952e-06,6,1.0,,clmm | condition:model,1.0,False
+B_HI,Math_Correctness,clmm,condition (main),1.11742361510602,6,0.98076690743443,,clmm | condition (main),1.0,False
+B_HI,Inflated__bad,glmm,condition:model,12.4498753123864,6,0.0526530229637509,,glmm | condition:model,0.0526530229637509,False
+B_HI,Inflated__bad,glmm,condition (main),14.1993650503348,6,0.0274867226731977,,glmm | condition (main),0.0274867226731977,True
