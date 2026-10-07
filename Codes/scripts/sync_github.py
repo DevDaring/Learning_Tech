@@ -36,13 +36,15 @@ def git(*args, env=None, check=True) -> subprocess.CompletedProcess:
 def main() -> int:
     if not (REPO / ".git").exists():
         git("init", "-b", "main")
+    if "origin" not in git("remote").stdout.split():
         git("remote", "add", "origin", REMOTE)
     git("config", "user.name", AUTHOR[0])
     git("config", "user.email", AUTHOR[1])
     git("add", "-A")
     staged = [l for l in git("diff", "--cached", "--name-only").stdout.splitlines() if l]
-    if not staged:
-        print("nothing to commit")
+    if not staged and not git("log", "origin/main..main", "--oneline", check=False).stdout.strip() \
+            and git("rev-parse", "--verify", "origin/main", check=False).returncode == 0:
+        print("nothing to commit or push")
         return 0
     # secret scan of everything about to be committed
     values = secrets.all_secret_values()
@@ -59,8 +61,9 @@ def main() -> int:
         git("reset", "-q")
         print("ABORTED: secret values or excluded files staged in:", leaks)
         return 2
-    msg = sys.argv[1] if len(sys.argv) > 1 else f"Sync results and logs {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC"
-    git("commit", "-q", "-m", msg + TRAILER)
+    if staged:
+        msg = sys.argv[1] if len(sys.argv) > 1 else f"Sync results and logs {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC"
+        git("commit", "-q", "-m", msg + TRAILER)
     token = secrets.get("Github_Classic_Token")
     with tempfile.NamedTemporaryFile("w", delete=False, suffix=".sh") as f:
         f.write("#!/bin/sh\ncase \"$1\" in *Username*) echo x-access-token ;; *) echo \"$GH_TOKEN_FOR_PUSH\" ;; esac\n")
