@@ -1,0 +1,77 @@
+2026-10-04 07:50:58,631 INFO tlt.cost: cost estimate (pilot, USD):
+scenario                   as_configured  claude_thinking_off  thinking_off_plus_judge_caching
+provider                                                                                      
+AWS Bedrock                         0.09                 0.09                             0.09
+Anthropic                          29.08                15.86                            10.43
+Google (Gemini API                  2.20                 2.20                             2.20
+LinkAPI (GPT-5 mini)                0.92                 0.92                             0.92
+OpenAI                              1.76                 1.76                             1.20
+OpenRouter (Llama 3.1 8B)           0.02                 0.02                             0.02
+xAI                                 6.40                 6.40                             3.11
+TOTAL                              40.47                27.25                            17.97
+2026-10-04 07:50:58,632 INFO tlt: stage estimate_cost done in 0.5s
+2026-10-04 08:34:57,658 INFO tlt.cost: cost estimate (pilot, USD):
+scenario                       as_configured  claude_thinking_off  thinking_off_plus_judge_caching
+provider                                                                                          
+AWS Bedrock                             7.01                 7.01                             7.01
+Google (Gemini API, keys 3-4)           2.20                 2.20                             2.20
+LinkAPI (GPT-5 mini)                    0.92                 0.92                             0.92
+OpenRouter (Llama 3.1 8B)               0.02                 0.02                             0.02
+TOTAL                                  10.15                10.15                            10.15
+2026-10-04 08:34:57,659 INFO tlt: stage estimate_cost done in 0.4s
+2026-10-07 12:39:10,863 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 13.86, 'remaining_usd': 294.98}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 5.66, 'remaining_usd': 77.77}}
+2026-10-07 12:40:06,044 INFO tlt: stage verify done in 74.8s
+2026-10-07 12:40:06,940 INFO tlt.s01: items: {'eedi_option_rows': 4370, 'dropped_picture': 1398, 'after_one_per_question': 1270, 'after_construct_cap': 1019, 'core': 30, 'block_b': 15, 'block_c': 10, 'subjects_in_core': 30, 'benqa_rows': 982, 'benqa_after_picture_filter': 957, 'block_d': 10, 'written': 40}
+2026-10-07 12:40:06,943 INFO tlt: stage build_items done in 0.9s
+2026-10-07 12:41:56,327 INFO tlt.translate: loaded ai4bharat/indictrans2-en-indic-1B on cpu
+2026-10-07 13:09:12,902 INFO tlt.translate: loaded ai4bharat/indictrans2-indic-en-1B on cpu
+2026-10-07 13:35:36,644 INFO datasets: PyTorch version 2.13.0 available.
+2026-10-07 13:36:34,072 INFO tlt.s02: translate: {'rows': 390, 'flagged': 71, 'review_sample': 19, 'reviewed': 0, 'translation_model': 'ai4bharat/indictrans2-en-indic-1B', 'back_translation_model': 'ai4bharat/indictrans2-indic-en-1B', 'embedding_model': 'BAAI/bge-m3'}
+2026-10-07 13:36:34,379 INFO tlt: stage translate done in 3387.4s
+2026-10-07 13:36:34,406 WARNING tlt.s03: human gates outstanding (allowed in pilot mode): {'templates_not_approved': 46, 'translation_reviews_pending': 90, 'names_confirmed': False}
+2026-10-07 13:36:34,424 INFO tlt.s03: prompts: {'prompts': {'A': 150, 'B': 270, 'C': 20, 'D': 30}, 'generations': {'A': 300, 'B': 540, 'C': 40, 'D': 60}, 'total_generations': 940, 'judge_calls': 2820, 'templates_not_approved': 46, 'translation_reviews_pending': 90, 'names_confirmed': False}
+2026-10-07 13:36:34,425 INFO tlt: stage build_prompts done in 0.0s
+2026-10-07 13:36:35,308 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 13.86, 'remaining_usd': 294.98}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 5.66, 'remaining_usd': 77.77}}
+2026-10-07 13:39:37,909 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 13.86, 'remaining_usd': 294.97}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 5.66, 'remaining_usd': 77.77}}
+2026-10-07 13:40:18,715 INFO tlt: stage verify done in 60.9s
+2026-10-07 13:40:19,666 INFO tlt.s01: items: {'eedi_option_rows': 4370, 'dropped_picture': 1907, 'after_one_per_question': 1062, 'after_construct_cap': 855, 'core': 30, 'block_b': 15, 'block_c': 10, 'subjects_in_core': 30, 'benqa_rows': 982, 'benqa_after_picture_filter': 957, 'block_d': 10, 'written': 40}
+2026-10-07 13:40:19,669 INFO tlt: stage build_items done in 1.0s
+2026-10-07 13:40:26,183 INFO tlt.translate: loaded ai4bharat/indictrans2-en-indic-1B on cpu
+2026-10-07 13:52:15,554 INFO tlt.translate: loaded ai4bharat/indictrans2-indic-en-1B on cpu
+2026-10-07 14:04:02,052 INFO datasets: PyTorch version 2.13.0 available.
+2026-10-07 14:04:51,273 INFO tlt.s02: translate: {'rows': 390, 'flagged': 18, 'review_sample': 29, 'reviewed': 0, 'translation_model': 'ai4bharat/indictrans2-en-indic-1B', 'back_translation_model': 'ai4bharat/indictrans2-indic-en-1B', 'embedding_model': 'BAAI/bge-m3'}
+2026-10-07 14:04:51,481 INFO tlt: stage translate done in 1471.8s
+2026-10-07 14:04:51,506 WARNING tlt.s03: human gates outstanding (allowed in pilot mode): {'templates_not_approved': 46, 'translation_reviews_pending': 47, 'names_confirmed': False}
+2026-10-07 14:04:51,517 INFO tlt.s03: prompts: {'prompts': {'A': 150, 'B': 270, 'C': 20, 'D': 30}, 'generations': {'A': 300, 'B': 540, 'C': 40, 'D': 60}, 'total_generations': 940, 'judge_calls': 2820, 'templates_not_approved': 46, 'translation_reviews_pending': 47, 'names_confirmed': False}
+2026-10-07 14:04:51,517 INFO tlt: stage build_prompts done in 0.0s
+2026-10-07 14:04:52,505 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 13.86, 'remaining_usd': 294.97}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 5.66, 'remaining_usd': 77.77}}
+2026-10-07 14:07:09,870 INFO tlt.runner: generate 200/935 (1.4/s, errors=0)
+2026-10-07 14:09:28,129 INFO tlt.runner: generate 400/935 (1.4/s, errors=0)
+2026-10-07 14:11:30,133 INFO tlt.runner: generate 600/935 (1.5/s, errors=0)
+2026-10-07 14:13:28,543 INFO tlt.runner: generate 800/935 (1.5/s, errors=0)
+2026-10-07 14:14:50,482 INFO tlt.runner: generate 935/935 (1.6/s, errors=0)
+2026-10-07 14:14:50,489 INFO tlt.s04: generate: {'submitted': 935, 'already_done_or_exhausted': 5, 'ok': 935, 'error': 0, 'records': 1006, 'ok_total': 1006, 'failed_total': 0, 'empty_text': 0, 'truncated': 0, 'fallback_used': 0}
+2026-10-07 14:14:50,496 INFO tlt: stage generate done in 599.0s
+2026-10-07 14:14:54,188 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 13.91, 'remaining_usd': 294.93}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 5.66, 'remaining_usd': 77.77}}
+2026-10-07 14:15:24,921 INFO tlt.runner: judge 200/2820 (6.3/s, errors=0)
+2026-10-07 14:16:11,089 INFO tlt.runner: judge 400/2820 (5.1/s, errors=0)
+2026-10-07 14:16:47,539 INFO tlt.runner: judge 600/2820 (5.2/s, errors=0)
+2026-10-07 14:17:36,620 INFO tlt.runner: judge 800/2820 (4.9/s, errors=0)
+2026-10-07 14:18:15,933 INFO tlt.runner: judge 1000/2820 (4.9/s, errors=0)
+2026-10-07 14:18:52,452 INFO tlt.runner: judge 1200/2820 (5.0/s, errors=0)
+2026-10-07 14:19:21,811 INFO tlt.runner: judge 1400/2820 (5.2/s, errors=0)
+2026-10-07 14:20:07,727 INFO tlt.runner: judge 1600/2820 (5.1/s, errors=0)
+2026-10-07 14:20:35,874 INFO tlt.runner: judge 1800/2820 (5.3/s, errors=0)
+2026-10-07 14:21:45,334 INFO tlt.runner: judge 2000/2820 (4.9/s, errors=0)
+2026-10-07 14:24:08,515 INFO tlt.runner: judge 2200/2820 (4.0/s, errors=0)
+2026-10-07 14:24:53,656 INFO tlt.runner: judge 2400/2820 (4.0/s, errors=0)
+2026-10-07 14:25:39,789 INFO tlt.runner: judge 2600/2820 (4.0/s, errors=0)
+2026-10-07 14:26:16,435 INFO tlt.runner: judge 2800/2820 (4.1/s, errors=0)
+2026-10-07 14:26:49,597 INFO tlt.runner: judge 2820/2820 (3.9/s, errors=0)
+2026-10-07 14:26:51,783 INFO tlt.s05: judge: {'submitted': 2820, 'already_done_or_exhausted': 0, 'ok': 2820, 'error': 0, 'targets': 940, 'judge_records': 2820, 'unparseable': 0, 'json_repair_fired': 219, 'residual_name_hits': 0, 'pqi_missing': 0}
+2026-10-07 14:26:51,811 INFO tlt: stage mask_and_judge done in 721.3s
+2026-10-07 14:26:52,857 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 16.12, 'remaining_usd': 292.71}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 5.99, 'remaining_usd': 77.44}}
+2026-10-07 14:27:04,118 INFO tlt.runner: mrbench 60/60 (4.9/s, errors=0)
+2026-10-07 14:27:04,306 INFO tlt.s06: judge validation: {'submitted': 60, 'already_done_or_exhausted': 0, 'ok': 60, 'error': 0, 'sampled': 20, 'unparseable': 0}
+2026-10-07 14:27:04,313 INFO tlt: stage judge_validation done in 12.5s
+2026-10-07 14:32:42,435 INFO tlt.translate: loaded ai4bharat/indictrans2-indic-en-1B on cpu

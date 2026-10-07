@@ -1,0 +1,12 @@
+{
+  "review_pack": {
+    "build_dir": "/home/Debz/Research/Learning_Tech/Codes/review/outgoing/build",
+    "zip": "/home/Debz/Research/Learning_Tech/Codes/review/outgoing/TLT_human_review_pack_2026-10-03.zip",
+    "files": [
+      "INSTRUCTIONS.md",
+      "Hindi_template_review.xlsx",
+      "Bengali_template_review.xlsx",
+      "Name_survey.xlsx"
+    ]
+  }
+}

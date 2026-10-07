@@ -1,0 +1,145 @@
+{
+  "prepilot": {
+    "generated_utc": "2026-10-07T12:09:06+00:00",
+    "A_feasibility": {
+      "generation_success": 1.0,
+      "generations": 3360,
+      "judge_calls": 20160,
+      "judge_fully_valid": 0.9936507936507937,
+      "json_repair_rate": 0.027182539682539683,
+      "max_truncation_cell": 0.05357142857142857,
+      "max_truncation_cell_excluding_degenerate_loops": 0.010714285714285714,
+      "degenerate_loops": {
+        "ministral_8b|BN": 1,
+        "nemotron_nano|BN": 14
+      },
+      "empty_replies": 0,
+      "refusals": 0,
+      "fallback_rate_generation": 0.0,
+      "measured_usd_total": 24.81,
+      "measured_usd_per_generation_incl_judging": 0.00738,
+      "projected_full_main_audit_usd": 571.0
+    },
+    "B_measurement": {
+      "alpha_PQI_components": {
+        "BN": {
+          "Actionability": 0.214,
+          "Cognitive_Demand": -0.056,
+          "Conceptual_Depth": 0.183,
+          "Math_Correctness": 0.7,
+          "Mistake_Identification": 0.583,
+          "Mistake_Location": 0.562,
+          "Providing_Guidance": 0.652,
+          "Revealing_of_the_Answer": 0.641
+        },
+        "EN": {
+          "Actionability": 0.012,
+          "Cognitive_Demand": -0.004,
+          "Conceptual_Depth": 0.225,
+          "Math_Correctness": 0.632,
+          "Mistake_Identification": 0.445,
+          "Mistake_Location": 0.448,
+          "Providing_Guidance": 0.633,
+          "Revealing_of_the_Answer": 0.573
+        }
+      },
+      "components_below_0.40": [
+        {
+          "language": "BN",
+          "dimension": "Actionability",
+          "alpha": 0.214
+        },
+        {
+          "language": "BN",
+          "dimension": "Cognitive_Demand",
+          "alpha": -0.056
+        },
+        {
+          "language": "BN",
+          "dimension": "Conceptual_Depth",
+          "alpha": 0.183
+        },
+        {
+          "language": "EN",
+          "dimension": "Actionability",
+          "alpha": 0.012
+        },
+        {
+          "language": "EN",
+          "dimension": "Cognitive_Demand",
+          "alpha": -0.004
+        },
+        {
+          "language": "EN",
+          "dimension": "Conceptual_Depth",
+          "alpha": 0.225
+        }
+      ],
+      "per_judge_EN_minus_BN_PQI": [
+        {
+          "judge": "gpt41_mini",
+          "EN_minus_BN": 0.0471,
+          "ci_low": 0.0192,
+          "ci_high": 0.0821
+        },
+        {
+          "judge": "deepseek_v32",
+          "EN_minus_BN": 0.0687,
+          "ci_low": 0.0398,
+          "ci_high": 0.1278
+        },
+        {
+          "judge": "qwen3_next",
+          "EN_minus_BN": 0.0815,
+          "ci_low": 0.0459,
+          "ci_high": 0.1299
+        }
+      ],
+      "max_judge_divergence": 0.034375
+    },
+    "C_signal": {
+      "language_gap_pooled": {
+        "estimate": 0.0672,
+        "ci_low": 0.0381,
+        "ci_high": 0.108,
+        "p_value": 0.0012
+      },
+      "item_level_sd_of_pooled_gap": 0.1048,
+      "mde_pooled_full_design_worst_case_holm": 0.024,
+      "mde_per_producer_full_design_worst_case_holm": 0.0489,
+      "gaps_ge_0.03_with_ci_excluding_0": [
+        {
+          "family": "language_gap",
+          "comparison": "EN - BN (C0)",
+          "estimate": 0.0672,
+          "ci_low": 0.0381,
+          "ci_high": 0.108,
+          "p_holm": 0.0072
+        },
+        {
+          "family": "identity_gap",
+          "comparison": "schooling (EN)",
+          "estimate": 0.0326,
+          "ci_low": 0.0172,
+          "ci_high": 0.0508,
+          "p_holm": 0.0648
+        },
+        {
+          "family": "identity_gap",
+          "comparison": "schooling_vs_none (EN)",
+          "estimate": 0.0323,
+          "ci_low": 0.018,
+          "ci_high": 0.0487,
+          "p_holm": 0.0168
+        }
+      ]
+    },
+    "decision": {
+      "A_feasibility_met": true,
+      "B_measurement_met": false,
+      "C7_power_met": true,
+      "C8_signal_met": true,
+      "verdict": "GO with changes"
+    }
+  }
+}

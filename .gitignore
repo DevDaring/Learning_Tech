@@ -1,0 +1,29 @@
+# ---- secrets: never committed ----
+.env
+**/.env
+**/.env.*
+Codes/runs/vast_translator.json
+*.pem
+*.key
+
+# ---- markdown: only README.md is pushed ----
+*.md
+!README.md
+!**/README.md
+
+# ---- submission-related files ----
+Codes/Submission*/
+**/*.tex
+**/*.bib
+**/*.pdf
+
+# ---- third-party, licensed raw data, mocks, caches ----
+Codes/external/
+Codes/data/raw/
+Codes/dryrun/
+Codes/review/outgoing/
+Codes/tests/fixtures/eedi/*.csv
+__pycache__/
+*.pyc
+.pytest_cache/
+*.tmp

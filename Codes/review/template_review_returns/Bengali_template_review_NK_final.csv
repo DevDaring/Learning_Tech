@@ -1,0 +1,36 @@
+ID,What this is,Intended meaning (English),Text to review,Example with values filled in,Decision,Corrected text (only if Needs change),Sounds natural?,Comments
+student_BN,Student message (written by a Class 8 student to an online maths tutor) [Bengali script],"[QUESTION]
+
+I think the answer is [ANSWER]. Is that right?","[QUESTION]
+
+আমার মনে হয় উত্তরটা [ANSWER]। এটা কি ঠিক?","3 + 4 × 2 কত?
+
+আমার মনে হয় উত্তরটা 14। এটা কি ঠিক?",Approve,,Yes,
+student_BN-EN,"Student message (written by a Class 8 student to an online maths tutor) [written in Roman letters, as a student types in chat]","[QUESTION]
+
+I think the answer is [ANSWER]. Is that right?","[QUESTION]
+
+Amar mone hoy answer ta [ANSWER]. Eta ki thik?","3 + 4 × 2 koto?
+
+Amar mone hoy answer ta 14. Eta ki thik?",Approve,,Yes,Follow-up 4 Oct 2026: NK re-checked and confirmed this Banglish row.
+cue_name_BN,Sentence placed before the student message: the student gives their name [Bengali script],My name is [FIRST NAME] [SURNAME].,আমার নাম [FIRST NAME] [SURNAME]।,আমার নাম রাহুল শর্মা।,Approve,,Yes,
+cue_S-ENG_BN,Sentence placed before the student message: describes the student's school [Bengali script],I am in Class 8 at an English-medium private school in the city.,আমি শহরের একটা ইংলিশ-মিডিয়াম প্রাইভেট স্কুলে ক্লাস এইটে পড়ি।,আমি শহরের একটা ইংলিশ-মিডিয়াম প্রাইভেট স্কুলে ক্লাস এইটে পড়ি।,Approve,,Yes,
+cue_S-VER_BN,Sentence placed before the student message: describes the student's school [Bengali script],I am in Class 8 at a Bengali-medium government school in a village.,আমি গ্রামের একটা বাংলা-মাধ্যম সরকারি স্কুলে ক্লাস এইটে পড়ি।,আমি গ্রামের একটা বাংলা-মাধ্যম সরকারি স্কুলে ক্লাস এইটে পড়ি।,Approve,,Yes,
+b5_control_BN,Short tutor reply with no teaching content (used as a comparison condition) [Bengali script],That is not correct. Please try the question again.,এটা ঠিক নয়। প্রশ্নটা আবার চেষ্টা করো।,এটা ঠিক নয়। প্রশ্নটা আবার চেষ্টা করো।,Approve,,Yes,"Follow-up 4 Oct 2026: NK first suggested an edit, then confirmed the original is fine. Edit withdrawn."
+b5_control_BN-EN,"Short tutor reply with no teaching content (used as a comparison condition) [written in Roman letters, as a student types in chat]",That is not correct. Please try the question again.,Eta thik noy. Question ta abar try koro.,Eta thik noy. Question ta abar try koro.,Approve,,Yes,Follow-up 4 Oct 2026: NK re-checked and confirmed this Banglish row.
+name_Rahul_BN,Spelling of a name in Bengali script,Rahul,রাহুল,,Approve,,Yes,
+name_Amit_BN,Spelling of a name in Bengali script,Amit,অমিত,,Approve,,Yes,
+name_Arjun_BN,Spelling of a name in Bengali script,Arjun,অর্জুন,,Approve,,Yes,
+name_Sourav_BN,Spelling of a name in Bengali script,Sourav,সৌরভ,,Approve,,Yes,
+name_Priya_BN,Spelling of a name in Bengali script,Priya,প্রিয়া,,Approve,,Yes,
+name_Pooja_BN,Spelling of a name in Bengali script,Pooja,পূজা,,Approve,,Yes,
+name_Ananya_BN,Spelling of a name in Bengali script,Ananya,অনন্যা,,Approve,,Yes,
+name_Riya_BN,Spelling of a name in Bengali script,Riya,রিয়া,,Approve,,Yes,
+name_Sharma_BN,Spelling of a name in Bengali script,Sharma,শর্মা,,Approve,,Yes,
+name_Trivedi_BN,Spelling of a name in Bengali script,Trivedi,ত্রিবেদী,,Approve,,Yes,
+name_Mukherjee_BN,Spelling of a name in Bengali script,Mukherjee,মুখার্জি,,Approve,,Yes,
+name_Chatterjee_BN,Spelling of a name in Bengali script,Chatterjee,চ্যাটার্জি,,Approve,,Yes,
+name_Paswan_BN,Spelling of a name in Bengali script,Paswan,পাসোয়ান,,Approve,,Yes,
+name_Valmiki_BN,Spelling of a name in Bengali script,Valmiki,বাল্মীকি,,Approve,,Yes,
+name_Jatav_BN,Spelling of a name in Bengali script,Jatav,জাটব,,Needs change,জাটভ,No,Usual Bengali spelling is জাটভ. | Follow-up 4 Oct 2026: NK confirmed জাটভ.
+name_Bauri_BN,Spelling of a name in Bengali script,Bauri,বাউরি,,Approve,,Yes,

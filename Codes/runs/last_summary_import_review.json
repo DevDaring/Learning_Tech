@@ -1,0 +1,34 @@
+{
+  "import_review": {
+    "imported": [
+      {
+        "file": "Bengali_template_review_NK_final.xlsx",
+        "language": "BN",
+        "reviewer": "NK_final",
+        "approved": 22,
+        "changes_requested": 1,
+        "unanswered": 0,
+        "stale": 0
+      },
+      {
+        "file": "Hindi_template_review_AS_final.xlsx",
+        "language": "HI",
+        "reviewer": "AS_final",
+        "approved": 21,
+        "changes_requested": 2,
+        "unanswered": 0,
+        "stale": 0
+      },
+      {
+        "file": "Name_survey_AB.xlsx",
+        "annotator": "AB",
+        "surnames_answered": 14
+      },
+      {
+        "file": "Name_survey_SP.xlsx",
+        "annotator": "SP",
+        "surnames_answered": 14
+      }
+    ]
+  }
+}

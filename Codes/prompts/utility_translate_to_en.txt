@@ -1,0 +1,5 @@
+Translate the text below into English. It is written in {source_description}.
+Keep every number, symbol, variable and LaTeX expression exactly as written.
+Do not add, remove, correct or explain anything. Return only the translation.
+
+{text}

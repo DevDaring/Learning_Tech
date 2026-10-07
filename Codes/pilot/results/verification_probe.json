@@ -1,0 +1,292 @@
+{
+  "gemini_flash#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "gemini-3.8-flash",
+    "reasoning": false,
+    "out_tokens": 232,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "Not quite, but it's a very common mistake! \n\nIt looks like you calculated it from left to right:\n1. $3 + 4 = 7$\n2. $7 \\times 2 = 14$\n\nIn mathematics, we have a rule called the **order of operations** "
+  },
+  "gemini_flash#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "gemini-3.8-flash",
+    "reasoning": false,
+    "out_tokens": 147,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "Not quite, but it's a very common mistake! \n\nIt looks like you did $3 + 4 = 7$ first, and then multiplied by $2$ to get $14$. \n\nHowever, in maths, we have to follow the **order of operations** (often "
+  },
+  "gemini_flash#2": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "google/gemini-3.8-flash",
+    "reasoning": true,
+    "out_tokens": 511,
+    "reasoning_tokens": 339,
+    "error": null,
+    "text": "Not quite, but I can see exactly what you did! \n\nIt looks like you added $3 + 4$ first to get $7$, and then multiplied by $2$ to get $14$. \n\nHowever, in maths, we have to follow the **order of operati"
+  },
+  "sarvam_105b#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "sarvam-105b",
+    "reasoning": false,
+    "out_tokens": 189,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "Your answer of **14** is **not** quite right. You made a very common mistake!\n\nThe correct answer is **11**.\n\nHere is why:\n\nWe have to follow the **order of operations** (PEMDAS / BODMAS). Multiplicat"
+  },
+  "kimi_k25#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "moonshotai.kimi-k2.5",
+    "reasoning": false,
+    "out_tokens": 109,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": " I can see where you got 14 from - you likely worked left to right: 3 + 4 = 7, then 7 × 2 = 14.\n\nBut that's not quite right! You need to follow the **order of operations** (sometimes called BODMAS/BID"
+  },
+  "kimi_k25#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "moonshotai/kimi-k2.5",
+    "reasoning": false,
+    "out_tokens": 158,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "Not quite — the answer is actually **11**, not 14.\n\nIt looks like you might have worked from left to right: 3 + 4 = 7, then 7 × 2 = 14.\n\nBut we need to follow the **order of operations** (sometimes ca"
+  },
+  "nova_lite#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "amazon.nova-lite-v1:0",
+    "reasoning": false,
+    "out_tokens": 161,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "Hello!\n\nLet's go through the expression step by step to ensure we get the correct answer.\n\nThe expression you've given is \\( 3 + 4 \\times 2 \\).\n\nAccording to the order of operations (PEMDAS/BODMAS), w"
+  },
+  "nova_lite#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "amazon/nova-lite-v1",
+    "reasoning": false,
+    "out_tokens": 193,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "Hi there!\n\nGreat job on attempting the problem! However, there's a small mistake in your calculation.\n\nWhen you have an expression like \\( 3 + 4 \\times 2 \\), you need to follow the order of operations"
+  },
+  "ministral_8b#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "mistral.ministral-3-8b-instruct",
+    "reasoning": false,
+    "out_tokens": 152,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "Great job working through the problem! Almost there, though. Let's review the order of operations (PEMDAS/BODMAS):\n\n1. **Parentheses/Brackets**\n2. **Exponents/Orders**\n3. **Multiplication and Division"
+  },
+  "ministral_8b#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "mistralai/ministral-8b-2512",
+    "reasoning": false,
+    "out_tokens": 142,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "Hello! Great question!\n\nThe expression \\( 3 + 4 \\times 2 \\) involves both addition and multiplication. According to the **order of operations** (often remembered by the acronym PEMDAS/BODMAS), multipl"
+  },
+  "nemotron_nano#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "nvidia.nemotron-nano-3-30b",
+    "reasoning": false,
+    "out_tokens": 161,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "No, that’s not the correct result if we follow the standard order of operations (PEMDAS/BODMAS).  \n\n**Step‑by‑step:**\n\n1. **Multiplication comes before addition.**  \n   Compute \\(4 \\times 2 = 8\\).\n\n2."
+  },
+  "nemotron_nano#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "nvidia/nemotron-3-nano-30b-a3b",
+    "reasoning": false,
+    "out_tokens": 197,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "Great question! Let’s work through the expression step by step.\n\nThe expression is  \n\n\\[\n3 + 4 \\times 2\n\\]\n\nAccording to the order of operations (often remembered by the acronym **PEMDAS/BODMAS**), mu"
+  },
+  "gpt41_mini#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "gpt-4.1-mini-2025-04-14",
+    "reasoning": false,
+    "out_tokens": 1,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "gpt41_mini#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "openai/gpt-4.1-mini",
+    "reasoning": false,
+    "out_tokens": 2,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "glm47#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "zai.glm-4.7",
+    "reasoning": false,
+    "out_tokens": 2,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "glm47#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "z-ai/glm-4.7",
+    "reasoning": false,
+    "out_tokens": 2,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "deepseek_v32#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "deepseek.v3.2",
+    "reasoning": false,
+    "out_tokens": 2,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "deepseek_v32#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "deepseek/deepseek-v3.2",
+    "reasoning": false,
+    "out_tokens": 2,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "qwen3_next#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "qwen.qwen3-next-80b-a3b",
+    "reasoning": false,
+    "out_tokens": 2,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "qwen3_next#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "qwen/qwen3-next-80b-a3b-instruct",
+    "reasoning": false,
+    "out_tokens": 2,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "claude_sonnet5#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "claude-sonnet-5",
+    "reasoning": false,
+    "out_tokens": 4,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "claude_sonnet5#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "anthropic/claude-sonnet-5",
+    "reasoning": false,
+    "out_tokens": 4,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "grok_420#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "grok-4.20-0309-non-reasoning",
+    "reasoning": false,
+    "out_tokens": 1,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "grok_420#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "x-ai/grok-4.20",
+    "reasoning": false,
+    "out_tokens": 1,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "gpt56_luna#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "gpt-5.6-luna",
+    "reasoning": false,
+    "out_tokens": 4,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "gpt56_luna#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "openai/gpt-5.6-luna",
+    "reasoning": false,
+    "out_tokens": 5,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "utility#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "gpt-5-mini-2025-08-07",
+    "reasoning": false,
+    "out_tokens": 10,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "utility#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "openai/gpt-5-mini",
+    "reasoning": false,
+    "out_tokens": 61,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "student#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "meta-llama/llama-3.1-8b-instruct",
+    "reasoning": false,
+    "out_tokens": 2,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  }
+}

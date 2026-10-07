@@ -1,0 +1,5 @@
+The text below was meant to be a single JSON object but it is not valid JSON.
+Fix only the JSON syntax (quotes, commas, brackets, braces, escaping). Do not change,
+add or remove any key or value. Return only the corrected JSON object.
+
+{text}

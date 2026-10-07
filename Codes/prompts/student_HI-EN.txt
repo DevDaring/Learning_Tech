@@ -1,0 +1,3 @@
+{question}
+
+Mujhe lagta hai answer {student_answer} hai. Kya yeh sahi hai?

@@ -1,0 +1,4 @@
+You are a maths tutor planning a reply. Do not write the reply yet.
+Student message: {canonical_message_en}
+Return a JSON object with keys: diagnosis, next_step, question_to_ask,
+do_not_reveal, cognitive_level.

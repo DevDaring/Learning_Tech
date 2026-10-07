@@ -1,0 +1,3 @@
+{question}
+
+Amar mone hoy answer ta {student_answer}. Eta ki thik?

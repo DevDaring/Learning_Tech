@@ -1,0 +1,3 @@
+{question}
+
+I think the answer is {student_answer}. Is that right?

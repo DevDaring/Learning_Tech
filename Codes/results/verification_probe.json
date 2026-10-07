@@ -1,0 +1,22 @@
+{
+  "gpt41_mini#0": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "gpt-4.1-mini-2025-04-14",
+    "reasoning": false,
+    "out_tokens": 1,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  },
+  "gpt41_mini#1": {
+    "ok": true,
+    "listed": "yes",
+    "returned": "openai/gpt-4.1-mini",
+    "reasoning": false,
+    "out_tokens": 2,
+    "reasoning_tokens": 0,
+    "error": null,
+    "text": "OK"
+  }
+}

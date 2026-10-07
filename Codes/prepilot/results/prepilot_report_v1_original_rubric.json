@@ -1,0 +1,143 @@
+{
+  "generated_utc": "2026-10-07T11:45:46+00:00",
+  "A_feasibility": {
+    "generation_success": 1.0,
+    "generations": 3360,
+    "judge_calls": 10080,
+    "judge_fully_valid": 0.9995039682539683,
+    "json_repair_rate": 0.02748015873015873,
+    "max_truncation_cell": 0.05357142857142857,
+    "max_truncation_cell_excluding_degenerate_loops": 0.010714285714285714,
+    "degenerate_loops": {
+      "ministral_8b|BN": 1,
+      "nemotron_nano|BN": 14
+    },
+    "empty_replies": 0,
+    "refusals": 0,
+    "fallback_rate_generation": 0.0,
+    "measured_usd_total": 12.95,
+    "measured_usd_per_generation_incl_judging": 0.00385,
+    "projected_full_main_audit_usd": 298.0
+  },
+  "B_measurement": {
+    "alpha_PQI_components": {
+      "BN": {
+        "Actionability": 0.332,
+        "Cognitive_Demand": 0.034,
+        "Conceptual_Depth": 0.194,
+        "Math_Correctness": 0.678,
+        "Mistake_Identification": 0.576,
+        "Mistake_Location": 0.541,
+        "Providing_Guidance": 0.635,
+        "Revealing_of_the_Answer": 0.645
+      },
+      "EN": {
+        "Actionability": 0.166,
+        "Cognitive_Demand": 0.0,
+        "Conceptual_Depth": 0.226,
+        "Math_Correctness": 0.624,
+        "Mistake_Identification": 0.479,
+        "Mistake_Location": 0.444,
+        "Providing_Guidance": 0.633,
+        "Revealing_of_the_Answer": 0.564
+      }
+    },
+    "components_below_0.40": [
+      {
+        "language": "BN",
+        "dimension": "Actionability",
+        "alpha": 0.332
+      },
+      {
+        "language": "BN",
+        "dimension": "Cognitive_Demand",
+        "alpha": 0.034
+      },
+      {
+        "language": "BN",
+        "dimension": "Conceptual_Depth",
+        "alpha": 0.194
+      },
+      {
+        "language": "EN",
+        "dimension": "Actionability",
+        "alpha": 0.166
+      },
+      {
+        "language": "EN",
+        "dimension": "Cognitive_Demand",
+        "alpha": 0.0
+      },
+      {
+        "language": "EN",
+        "dimension": "Conceptual_Depth",
+        "alpha": 0.226
+      }
+    ],
+    "per_judge_EN_minus_BN_PQI": [
+      {
+        "judge": "gpt41_mini",
+        "EN_minus_BN": 0.05,
+        "ci_low": 0.0238,
+        "ci_high": 0.0856
+      },
+      {
+        "judge": "deepseek_v32",
+        "EN_minus_BN": 0.0953,
+        "ci_low": 0.0582,
+        "ci_high": 0.1393
+      },
+      {
+        "judge": "qwen3_next",
+        "EN_minus_BN": 0.0974,
+        "ci_low": 0.0561,
+        "ci_high": 0.1526
+      }
+    ],
+    "max_judge_divergence": 0.04739583333333333
+  },
+  "C_signal": {
+    "language_gap_pooled": {
+      "estimate": 0.0794,
+      "ci_low": 0.0459,
+      "ci_high": 0.1253,
+      "p_value": 0.0012
+    },
+    "item_level_sd_of_pooled_gap": 0.1195,
+    "mde_pooled_full_design_worst_case_holm": 0.0274,
+    "mde_per_producer_full_design_worst_case_holm": 0.0528,
+    "gaps_ge_0.03_with_ci_excluding_0": [
+      {
+        "family": "language_gap",
+        "comparison": "EN - BN (C0)",
+        "estimate": 0.0794,
+        "ci_low": 0.0459,
+        "ci_high": 0.1253,
+        "p_holm": 0.0072
+      },
+      {
+        "family": "identity_gap",
+        "comparison": "schooling (EN)",
+        "estimate": 0.0336,
+        "ci_low": 0.0175,
+        "ci_high": 0.0588,
+        "p_holm": 0.4015
+      },
+      {
+        "family": "identity_gap",
+        "comparison": "schooling_vs_none (EN)",
+        "estimate": 0.0357,
+        "ci_low": 0.0211,
+        "ci_high": 0.0544,
+        "p_holm": 0.0336
+      }
+    ]
+  },
+  "decision": {
+    "A_feasibility_met": true,
+    "B_measurement_met": false,
+    "C7_power_met": true,
+    "C8_signal_met": true,
+    "verdict": "GO with changes"
+  }
+}

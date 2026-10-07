@@ -1,0 +1,28 @@
+You are assessing one reply written by a maths tutor to a student who made a mistake.
+Judge only the teaching in the reply.
+
+{definitions_block}
+
+CONVERSATION HISTORY:
+{conversation_history}
+
+GROUND-TRUTH SOLUTION:
+{ground_truth_solution}
+
+TUTOR REPLY:
+{tutor_response}
+
+Rate the reply on each dimension using exactly one of the allowed labels.
+
+Mistake_Identification: Yes | To some extent | No
+Mistake_Location: Yes | To some extent | No
+Revealing_of_the_Answer: Yes (correct) | Yes (incorrect) | No
+Providing_Guidance: Yes | To some extent | No
+Actionability: Yes | To some extent | No
+Coherence: Yes | To some extent | No
+Tutor_Tone: Encouraging | Neutral | Offensive
+Humanlikeness: Yes | To some extent | No
+
+Return a single JSON object with these eight keys and one extra key "evidence"
+holding a short quotation from the reply (under 25 words) that most influenced your
+ratings. Return nothing else.

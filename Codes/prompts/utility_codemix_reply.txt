@@ -1,0 +1,6 @@
+Rewrite the maths tutor's reply below the way a teacher in {region} would type it
+in a chat to a school student: {matrix_language} sentence structure written in Roman
+letters, with maths terms and numbers kept in English. Do not change any number, symbol
+or quantity. Do not add or remove information. Return only the rewritten reply.
+
+{text}

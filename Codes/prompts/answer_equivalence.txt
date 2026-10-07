@@ -1,0 +1,9 @@
+A student answered the maths question below. Decide whether the student's answer states
+the same final answer as the reference answer (the same value, expression or choice,
+allowing different but equivalent notation). Ignore any working shown.
+
+QUESTION: {question}
+REFERENCE ANSWER: {reference}
+STUDENT'S ANSWER: {answer}
+
+Reply with exactly one word: SAME or DIFFERENT.

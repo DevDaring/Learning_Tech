@@ -1,0 +1,35 @@
+You are assessing one reply written by a maths tutor to a student who made a mistake.
+Judge only the teaching in the reply. The reply may be in English, Hindi, Bengali or a
+mix; the language used must not affect any score except Language_Match.
+
+{definitions_block}
+
+QUESTION: {question_en}
+CORRECT ANSWER: {correct_answer}
+STUDENT'S ANSWER: {student_answer}
+UNDERLYING MISCONCEPTION: {misconception_name}
+STUDENT WROTE IN: {language_label}
+
+TUTOR REPLY:
+{tutor_response_masked}
+
+Rate the reply on each dimension using exactly one of the allowed labels.
+
+Mistake_Identification: Yes | To some extent | No
+Mistake_Location: Yes | To some extent | No
+Revealing_of_the_Answer: Yes (correct) | Yes (incorrect) | No
+Providing_Guidance: Yes | To some extent | No
+Actionability: Yes | To some extent | No
+Coherence: Yes | To some extent | No
+Tutor_Tone: Encouraging | Neutral | Offensive
+Humanlikeness: Yes | To some extent | No
+Cognitive_Demand: High | Medium | Low | None
+Conceptual_Depth: Conceptual | Procedural only | None
+Praise_Calibration: Calibrated | Inflated | None | Discouraging
+Expectation_Level: At level | Simplified below | Condescending
+Math_Correctness: Yes | No
+Language_Match: Yes | Partly | No
+
+Return a single JSON object with these fourteen keys and one extra key "evidence"
+holding a short quotation from the reply (under 25 words) that most influenced your
+ratings. Return nothing else.

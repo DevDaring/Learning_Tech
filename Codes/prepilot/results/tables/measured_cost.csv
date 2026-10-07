@@ -1,0 +1,11 @@
+role,model,route,count,sum
+judge,deepseek_v32,bedrock:deepseek.v3.2,6720,13.6954914
+judge,gpt41_mini,linkapi:gpt-4.1-mini,6720,4.6665456
+judge,qwen3_next,bedrock:qwen.qwen3-next-80b-a3b,6717,4.690137200000001
+judge,qwen3_next,openrouter:qwen/qwen3-next-80b-a3b-instruct,3,0.00219872
+producer,gemini_flash,linkapi_gemini:gemini-3.8-flash,560,0.596782875
+producer,kimi_k25,bedrock:moonshotai.kimi-k2.5,560,0.6834768
+producer,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,560,0.055873349999999995
+producer,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,560,0.11863074
+producer,nova_lite,bedrock:amazon.nova-lite-v1:0,560,0.07522949999999999
+producer,sarvam_105b,sarvam:sarvam-105b,560,0.22248674181818184

@@ -1,0 +1,13 @@
+model,lang,in,out
+gemini_flash,BN,331.0,505.0
+gemini_flash,EN,332.0,499.0
+kimi_k25,BN,128.0,476.0
+kimi_k25,EN,88.0,295.0
+ministral_8b,BN,102.0,626.0
+ministral_8b,EN,82.0,520.0
+nemotron_nano,BN,113.0,1120.0
+nemotron_nano,EN,93.0,594.0
+nova_lite,BN,139.0,653.0
+nova_lite,EN,76.0,412.0
+sarvam_105b,BN,96.0,384.0
+sarvam_105b,EN,97.0,495.0

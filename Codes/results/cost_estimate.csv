@@ -1,0 +1,70 @@
+scenario,provider,model,call,calls,input_tokens_per_call,output_tokens_per_call,tokens_measured,input_usd,output_usd,total_usd
+as_configured,"LinkAPI (Gemini, discounted group)",gemini_flash,reply,13200,160,750,False,0.79,18.56,19.35
+as_configured,"LinkAPI (Gemini, discounted group)",gemini_flash,realise,700,750,450,False,0.2,0.59,0.79
+as_configured,"LinkAPI (Gemini, discounted group)",gemini_flash,plan,735,180,250,False,0.05,0.34,0.39
+as_configured,Sarvam AI,sarvam_105b,reply,13200,160,420,False,0.7,4.61,5.31
+as_configured,Sarvam AI,sarvam_105b,realise,700,750,450,False,0.17,0.26,0.44
+as_configured,Sarvam AI,sarvam_105b,plan,735,180,250,False,0.04,0.15,0.2
+as_configured,AWS Bedrock,kimi_k25,reply,13200,160,420,False,1.27,16.63,17.9
+as_configured,AWS Bedrock,kimi_k25,realise,700,750,450,False,0.32,0.94,1.26
+as_configured,AWS Bedrock,kimi_k25,plan,735,180,250,False,0.08,0.55,0.63
+as_configured,AWS Bedrock,nova_lite,reply,13200,160,420,False,0.13,1.33,1.46
+as_configured,AWS Bedrock,nova_lite,realise,700,750,450,False,0.03,0.08,0.11
+as_configured,AWS Bedrock,nova_lite,plan,735,180,250,False,0.01,0.04,0.05
+as_configured,AWS Bedrock,ministral_8b,reply,13200,160,420,False,0.32,0.83,1.15
+as_configured,AWS Bedrock,ministral_8b,realise,700,750,450,False,0.08,0.05,0.13
+as_configured,AWS Bedrock,ministral_8b,plan,735,180,250,False,0.02,0.03,0.05
+as_configured,AWS Bedrock,nemotron_nano,reply,13200,160,420,False,0.13,1.33,1.46
+as_configured,AWS Bedrock,nemotron_nano,realise,700,750,450,False,0.03,0.08,0.11
+as_configured,AWS Bedrock,nemotron_nano,plan,735,180,250,False,0.01,0.04,0.05
+as_configured,AWS Bedrock,glm47,judge,94677,2350,220,False,133.5,45.82,179.32
+as_configured,AWS Bedrock,deepseek_v32,judge,94677,2200,180,False,129.14,31.53,160.67
+as_configured,AWS Bedrock,qwen3_next,judge,94677,2390,220,False,31.68,24.99,56.67
+as_configured,OpenRouter (Llama 3.1 8B),student,answer,18500,700,30,False,0.65,0.04,0.69
+as_configured,LinkAPI (GPT-5 mini),utility,calls,23147,400,600,False,1.16,13.89,15.05
+claude_thinking_off,"LinkAPI (Gemini, discounted group)",gemini_flash,reply,13200,160,750,False,0.79,18.56,19.35
+claude_thinking_off,"LinkAPI (Gemini, discounted group)",gemini_flash,realise,700,750,450,False,0.2,0.59,0.79
+claude_thinking_off,"LinkAPI (Gemini, discounted group)",gemini_flash,plan,735,180,250,False,0.05,0.34,0.39
+claude_thinking_off,Sarvam AI,sarvam_105b,reply,13200,160,420,False,0.7,4.61,5.31
+claude_thinking_off,Sarvam AI,sarvam_105b,realise,700,750,450,False,0.17,0.26,0.44
+claude_thinking_off,Sarvam AI,sarvam_105b,plan,735,180,250,False,0.04,0.15,0.2
+claude_thinking_off,AWS Bedrock,kimi_k25,reply,13200,160,420,False,1.27,16.63,17.9
+claude_thinking_off,AWS Bedrock,kimi_k25,realise,700,750,450,False,0.32,0.94,1.26
+claude_thinking_off,AWS Bedrock,kimi_k25,plan,735,180,250,False,0.08,0.55,0.63
+claude_thinking_off,AWS Bedrock,nova_lite,reply,13200,160,420,False,0.13,1.33,1.46
+claude_thinking_off,AWS Bedrock,nova_lite,realise,700,750,450,False,0.03,0.08,0.11
+claude_thinking_off,AWS Bedrock,nova_lite,plan,735,180,250,False,0.01,0.04,0.05
+claude_thinking_off,AWS Bedrock,ministral_8b,reply,13200,160,420,False,0.32,0.83,1.15
+claude_thinking_off,AWS Bedrock,ministral_8b,realise,700,750,450,False,0.08,0.05,0.13
+claude_thinking_off,AWS Bedrock,ministral_8b,plan,735,180,250,False,0.02,0.03,0.05
+claude_thinking_off,AWS Bedrock,nemotron_nano,reply,13200,160,420,False,0.13,1.33,1.46
+claude_thinking_off,AWS Bedrock,nemotron_nano,realise,700,750,450,False,0.03,0.08,0.11
+claude_thinking_off,AWS Bedrock,nemotron_nano,plan,735,180,250,False,0.01,0.04,0.05
+claude_thinking_off,AWS Bedrock,glm47,judge,94677,2350,220,False,133.5,45.82,179.32
+claude_thinking_off,AWS Bedrock,deepseek_v32,judge,94677,2200,180,False,129.14,31.53,160.67
+claude_thinking_off,AWS Bedrock,qwen3_next,judge,94677,2390,220,False,31.68,24.99,56.67
+claude_thinking_off,OpenRouter (Llama 3.1 8B),student,answer,18500,700,30,False,0.65,0.04,0.69
+claude_thinking_off,LinkAPI (GPT-5 mini),utility,calls,23147,400,600,False,1.16,13.89,15.05
+thinking_off_plus_judge_caching,"LinkAPI (Gemini, discounted group)",gemini_flash,reply,13200,160,750,False,0.79,18.56,19.35
+thinking_off_plus_judge_caching,"LinkAPI (Gemini, discounted group)",gemini_flash,realise,700,750,450,False,0.2,0.59,0.79
+thinking_off_plus_judge_caching,"LinkAPI (Gemini, discounted group)",gemini_flash,plan,735,180,250,False,0.05,0.34,0.39
+thinking_off_plus_judge_caching,Sarvam AI,sarvam_105b,reply,13200,160,420,False,0.7,4.61,5.31
+thinking_off_plus_judge_caching,Sarvam AI,sarvam_105b,realise,700,750,450,False,0.17,0.26,0.44
+thinking_off_plus_judge_caching,Sarvam AI,sarvam_105b,plan,735,180,250,False,0.04,0.15,0.2
+thinking_off_plus_judge_caching,AWS Bedrock,kimi_k25,reply,13200,160,420,False,1.27,16.63,17.9
+thinking_off_plus_judge_caching,AWS Bedrock,kimi_k25,realise,700,750,450,False,0.32,0.94,1.26
+thinking_off_plus_judge_caching,AWS Bedrock,kimi_k25,plan,735,180,250,False,0.08,0.55,0.63
+thinking_off_plus_judge_caching,AWS Bedrock,nova_lite,reply,13200,160,420,False,0.13,1.33,1.46
+thinking_off_plus_judge_caching,AWS Bedrock,nova_lite,realise,700,750,450,False,0.03,0.08,0.11
+thinking_off_plus_judge_caching,AWS Bedrock,nova_lite,plan,735,180,250,False,0.01,0.04,0.05
+thinking_off_plus_judge_caching,AWS Bedrock,ministral_8b,reply,13200,160,420,False,0.32,0.83,1.15
+thinking_off_plus_judge_caching,AWS Bedrock,ministral_8b,realise,700,750,450,False,0.08,0.05,0.13
+thinking_off_plus_judge_caching,AWS Bedrock,ministral_8b,plan,735,180,250,False,0.02,0.03,0.05
+thinking_off_plus_judge_caching,AWS Bedrock,nemotron_nano,reply,13200,160,420,False,0.13,1.33,1.46
+thinking_off_plus_judge_caching,AWS Bedrock,nemotron_nano,realise,700,750,450,False,0.03,0.08,0.11
+thinking_off_plus_judge_caching,AWS Bedrock,nemotron_nano,plan,735,180,250,False,0.01,0.04,0.05
+thinking_off_plus_judge_caching,AWS Bedrock,glm47,judge,94677,2350,220,False,133.5,45.82,179.32
+thinking_off_plus_judge_caching,AWS Bedrock,deepseek_v32,judge,94677,2200,180,False,129.14,31.53,160.67
+thinking_off_plus_judge_caching,AWS Bedrock,qwen3_next,judge,94677,2390,220,False,31.68,24.99,56.67
+thinking_off_plus_judge_caching,OpenRouter (Llama 3.1 8B),student,answer,18500,700,30,False,0.65,0.04,0.69
+thinking_off_plus_judge_caching,LinkAPI (GPT-5 mini),utility,calls,23147,400,600,False,1.16,13.89,15.05

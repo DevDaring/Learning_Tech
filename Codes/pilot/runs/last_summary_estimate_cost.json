@@ -1,0 +1,28 @@
+{
+  "estimate_cost": {
+    "by_provider": {
+      "as_configured": {
+        "AWS Bedrock": 7.01,
+        "Google (Gemini API, keys 3-4)": 2.2,
+        "LinkAPI (GPT-5 mini)": 0.92,
+        "OpenRouter (Llama 3.1 8B)": 0.02,
+        "TOTAL": 10.15
+      },
+      "claude_thinking_off": {
+        "AWS Bedrock": 7.01,
+        "Google (Gemini API, keys 3-4)": 2.2,
+        "LinkAPI (GPT-5 mini)": 0.92,
+        "OpenRouter (Llama 3.1 8B)": 0.02,
+        "TOTAL": 10.15
+      },
+      "thinking_off_plus_judge_caching": {
+        "AWS Bedrock": 7.01,
+        "Google (Gemini API, keys 3-4)": 2.2,
+        "LinkAPI (GPT-5 mini)": 0.92,
+        "OpenRouter (Llama 3.1 8B)": 0.02,
+        "TOTAL": 10.15
+      }
+    },
+    "measured_tokens_used": false
+  }
+}

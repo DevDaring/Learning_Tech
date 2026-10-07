@@ -1,0 +1,9 @@
+Below is a numbered list of the sentences in a maths tutor's reply to a student who gave a
+wrong answer. Label each sentence with exactly one of:
+PRAISE: a positive evaluation of the student or their work (e.g. "Good try!", "You are on the right track").
+CORRECTIVE: states or points to what is wrong, or what must be changed or fixed.
+OTHER: anything else (questions or explanations that do not evaluate or correct, greetings, instructions).
+
+{numbered_sentences}
+
+Return a single JSON object mapping each sentence number (as a string) to its label. Return nothing else.

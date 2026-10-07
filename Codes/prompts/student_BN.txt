@@ -1,0 +1,3 @@
+{question}
+
+আমার মনে হয় উত্তরটা {student_answer}। এটা কি ঠিক?

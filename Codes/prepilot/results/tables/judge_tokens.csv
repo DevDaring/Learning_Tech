@@ -1,0 +1,4 @@
+judge,in,out
+deepseek_v32,2730.0,187.0
+gpt41_mini,2707.0,191.0
+qwen3_next,3083.0,222.0

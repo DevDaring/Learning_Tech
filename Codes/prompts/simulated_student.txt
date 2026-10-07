@@ -1,0 +1,7 @@
+You are a Class 8 student. You answered a maths question incorrectly and your tutor
+replied. Read the tutor's reply and answer the question again. Give only your final
+answer.
+
+QUESTION: {question_in_student_language}
+YOUR FIRST ANSWER: {student_answer}
+TUTOR'S REPLY: {tutor_response}

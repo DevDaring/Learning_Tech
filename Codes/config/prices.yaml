@@ -1,0 +1,53 @@
+# USD per 1M tokens on the route each model is configured to use FIRST (config/models.yaml).
+# Retrieved 2026-10-04. Re-check before the full run; prices change.
+#   OpenRouter catalogue: https://openrouter.ai/api/v1/models (live JSON)
+#   AWS Bedrock: public price list, us-east-1, on-demand standard tier
+#     https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json
+#   Anthropic: Claude API price table (Sonnet 5: $2 / $10; cache read 0.1x, cache write 1.25x)
+#   Sarvam: https://www.sarvam.ai/api-pricing (INR; converted at inr_per_usd below)
+inr_per_usd: 88.0   # assumption for conversion only; Sarvam bills in INR
+
+models:
+  gemini_flash:   {provider: "LinkAPI (Gemini, discounted group)", input: 0.375, output: 1.875, cache_read: 0.0375,
+                   source: "api.linkapi.ai/api/pricing: gemini-3.8-flash base 0.75/3.75 x group 'geminicheap' 0.5 (assumed from the key name Gemini_Cheap; group 'gemini' would be 1.6x). Google direct fallback: 0.75/3.75"}
+  sarvam_105b:    {provider: Sarvam AI, input_inr: 29.28, output_inr: 73.20, cache_read_inr: 10.98,
+                   source: "sarvam.ai/api-pricing, Sarvam 105B"}
+  kimi_k25:       {provider: AWS Bedrock, input: 0.60, output: 3.00, source: "AWS price list, moonshotai.kimi-k2.5"}
+  nova_lite:      {provider: AWS Bedrock, input: 0.06, output: 0.24, source: "AWS price list, Nova Lite"}
+  ministral_8b:   {provider: AWS Bedrock, input: 0.15, output: 0.15, source: "AWS price list, Ministral 8B 3.0"}
+  nemotron_nano:  {provider: AWS Bedrock, input: 0.06, output: 0.24, source: "AWS price list, Nemotron Nano 3 30B"}
+  claude_sonnet5: {provider: Anthropic, input: 2.00, output: 10.00, cache_read: 0.20, cache_write: 2.50,
+                   source: "Anthropic price table; OpenRouter anthropic/claude-sonnet-5 identical"}
+  grok_420:       {provider: xAI, input: 1.25, output: 2.50, cache_read: 0.20,
+                   source: "OpenRouter list for x-ai/grok-4.20 (xAI direct assumed equal)"}
+  gpt56_luna:     {provider: OpenAI, input: 0.20, output: 1.20, cache_read: 0.02,
+                   source: "OpenRouter list for openai/gpt-5.6-luna (OpenAI direct assumed equal)"}
+  gpt41_mini:     {provider: LinkAPI (GPT-4.1 mini judge), input: 0.20, output: 0.80, cache_read: 0.05,
+                   source: "api.linkapi.ai/api/pricing: gpt-4.1-mini base 0.40/1.60 x group 'azureopenai' 0.5"}
+  glm47:          {provider: AWS Bedrock, input: 0.60, output: 2.20, source: "AWS price list, zai.glm-4.7"}
+  deepseek_v32:   {provider: AWS Bedrock, input: 0.62, output: 1.85, source: "AWS price list, deepseek.v3.2"}
+  qwen3_next:     {provider: AWS Bedrock, input: 0.14, output: 1.20, source: "AWS price list, qwen.qwen3-next-80b-a3b"}
+  utility:        {provider: LinkAPI (GPT-5 mini), input: 0.125, output: 1.00, cache_read: 0.0125,
+                   source: "api.linkapi.ai/api/pricing: gpt-5-mini base 0.25/2.00 x group 'azureopenai' 0.5"}
+  student:        {provider: OpenRouter (Llama 3.1 8B), input: 0.05, output: 0.08,
+                   source: "OpenRouter list for meta-llama/llama-3.1-8b-instruct"}
+
+# Tokens per call (input, output). Output includes hidden reasoning, which is billed as output.
+# Defaults come from the live probes and smoke test of 2026-10-02 (docs/verification_log.md);
+# `python -m tlt estimate_cost --pilot` replaces them with the pilot's measured means.
+token_profile:
+  producer_reply:   {input: 160, output: 420}     # tutor reply; Indic replies are longer
+  producer_reasoning_extra: {gemini_flash: 330}   # Gemini 3 thinking cannot be disabled (D11)
+  producer_plan:    {input: 180, output: 250}     # R5 plan call
+  producer_realise: {input: 750, output: 450}     # R5 realise call
+  judge:
+    claude_sonnet5: {input: 3700, output: 1020}   # measured: adaptive thinking on by default
+    grok_420:       {input: 2700, output: 200}    # measured
+    gpt56_luna:     {input: 2400, output: 490}    # measured (290 of it reasoning)
+    gpt41_mini:     {input: 2350, output: 210}    # 2026-10-07 selection run (MRBench prompt 1,100 / 117), scaled to the 14-dim prompt
+    glm47:          {input: 2350, output: 220}    # measured 2026-10-04, Bedrock, no reasoning
+    deepseek_v32:   {input: 2200, output: 180}    # measured 2026-10-04, Bedrock, no reasoning
+    qwen3_next:     {input: 2390, output: 220}    # measured 2026-10-04, Bedrock, no reasoning
+  judge_cacheable_prefix: 1900                    # static instructions + definitions block
+  utility:          {input: 400, output: 600}     # GPT-5 mini at reasoning effort low
+  student:          {input: 700, output: 30}

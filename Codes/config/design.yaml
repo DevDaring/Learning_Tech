@@ -1,0 +1,129 @@
+# Experimental design for "Same Question, Lesser Lesson".
+# Every count used anywhere in the pipeline is read from this file. The `pilot`
+# block overrides the main values when a stage is run with --pilot.
+
+seed: 20261002
+
+items:
+  eedi_dir: data/raw/eedi                 # train.csv + misconception_mapping.csv (Kaggle)
+  benqa_dir: external/BEnQA/data/BEnQA
+  benqa_files: [8th-Math.csv, 10th-Math.csv, 10th-Math-II.csv]   # grades 8 and 10 only
+  n_core: 300                             # Block A item pool
+  max_per_construct: 3
+  # Deviation D1 (docs/deviations.md): at most one wrong option per Eedi question, so the
+  # items resampled by the paired bootstrap are independent.
+  max_per_question: 1
+  n_block_b: 150                          # subset of A
+  n_block_c: 100                          # subset of B; also the repair and B5 subset
+  n_block_d: 150                          # BEnQA maths items
+  # Picture-dependent items are dropped (Section 4.1 step 2).
+  # Case-insensitive regexes. "times table", "below zero" and "which of the above" are
+  # deliberately NOT matched: they do not imply a picture.
+  picture_patterns: ['\bpictures?\b', '\bdiagrams?\b', '\bgraphs?\b', '\bimages?\b',
+                     '\bfigures?\b', '\bshown\b', '\bshows\b', '\bdrawn\b', '\bsketch',
+                     '\bplotted\b', '\bpictograms?\b', '\bspinners?\b', '\bshaded\b',
+                     '\bgrids?\b', '\bcharts?\b', '\b(the|this) table\b', '\btable below\b',
+                     '\bnumber lines?\b', '\bbar models?\b', '\bvenn\b', '\bprotractor\b',
+                     '\b(this|these|the following) (shapes?|rectangles?|triangles?|squares?|circles?|polygons?|angles?|lines?|cuboids?|prisms?|nets?|patterns?|arrows?|scales?|clocks?|dials?|points?)\b',
+                     '\bon the (axes|coordinate)', '\bbelow\b(?! zero)', 'চিত্র',
+                     '!\[']   # embedded image markdown: 631 of 1,869 Eedi questions (pilot, 2026-10-07)
+
+languages:
+  core: [EN, HI, BN, HI-EN, BN-EN]
+  identity: [EN, HI, BN]                  # Block B
+  decomposition_targets: [HI, BN]         # Block C: English in, l out
+  labels:                                 # value of {language_label} in the judge prompt
+    EN: English
+    HI: Hindi (Devanagari script)
+    BN: Bengali (Bengali script)
+    HI-EN: Hinglish (Hindi written in Roman script, maths terms in English)
+    BN-EN: Banglish (Bengali written in Roman script, maths terms in English)
+  # Deviation D5: Block C label tells the judge which reply language was requested.
+  block_c_labels:
+    HI: English (the tutor was instructed to reply in Hindi)
+    BN: English (the tutor was instructed to reply in Bengali)
+  names:                                  # used in realise / R4 / code-mixing prompts
+    EN: English
+    HI: Hindi in Devanagari script
+    BN: Bengali in Bengali script
+    HI-EN: Hinglish (Hindi written in Roman script, with maths terms in English)
+    BN-EN: Banglish (Bengali written in Roman script, with maths terms in English)
+
+cues:
+  block_b: [S-ENG, S-VER, N-MD, N-FD, N-MM, N-FM]   # C0 is reused from Block A
+  # Identity-gap pairs (advantaged, disadvantaged). Name contrasts are 2x2 factorial:
+  # caste averages over gender, gender averages over caste (docs/deviations.md D6).
+  pairs:
+    schooling: {adv: [S-ENG], dis: [S-VER]}
+    caste: {adv: [N-MD, N-FD], dis: [N-MM, N-FM]}
+    gender: {adv: [N-MD, N-MM], dis: [N-FD, N-FM]}
+
+blocks:
+  A: {samples: 3}
+  B: {samples: 2}
+  C: {samples: 2}
+  D:
+    samples: 2
+    # Deviation D2: BN-MT (IndicTrans2 Bengali of the official English item) is added so
+    # native and machine-translated Bengali are compared on the same items (Table 7).
+    conditions: [BN-NATIVE, EN-OFFICIAL, BN-MT]
+
+producers: [gemini_flash, sarvam_105b, kimi_k25, nova_lite, ministral_8b, nemotron_nano]
+# Judges: two on AWS Bedrock (account credits), GPT-4.1 mini via LinkAPI (2026-10-07,
+# replacing GLM-4.7 at the study owner's request; D37). Selected on 100 MRBench_V2
+# responses disjoint from the B4 evaluation sample (docs/deviations.md D34). None shares a
+# vendor with a producer. The primary judge (tie-breaker) had the highest agreement with
+# MRBench gold labels on the PQI dimensions.
+judges: [gpt41_mini, deepseek_v32, qwen3_next]
+primary_judge: gpt41_mini
+
+translation:
+  similarity_threshold: 0.75              # back-translation cosine below this -> flagged
+  review_random_share: 0.20               # random share of unflagged items sent to review
+
+translated_judging:
+  share: 0.20                             # of non-English responses (Section 6.3)
+
+repair:
+  languages: [HI, BN, HI-EN, BN-EN]
+  # Deviation D3: EN under every arm so the within-arm gap can be estimated.
+  include_english_reference: true
+  arms: [R1, R2, R3, R4, R5]
+  identity_language: BN
+  identity_cues: [S-VER, N-FM]
+  identity_arms: [R0, R5]
+  samples: 1
+
+b5:
+  languages: [EN, HI, BN]
+  sample_index: 0                         # tutor reply used from each Block A cell
+  # Deviation D4: generic re-try control so gain is not confounded by re-attempting.
+  control: true
+
+bootstrap:
+  resamples: 10000
+  ci: 0.95
+
+human_export:
+  per_cell: 10                            # language (5) x producer (6) x 10 = 300
+
+mrbench:
+  file: external/UnifyingAITutorEvaluation/MRBench/MRBench_V2.json
+  n_responses: 500
+
+# --smoke: end-to-end test of every stage on real models (all producers and judges) with
+# 2 items per block and the GPU translation service, before a long run.
+smoke:
+  items: {n_core: 2, n_block_b: 2, n_block_c: 2, n_block_d: 2}
+  blocks: {A: {samples: 1}, B: {samples: 1}, C: {samples: 1}, D: {samples: 1}}
+  mrbench: {n_responses: 4}
+  human_export: {per_cell: 1}
+  bootstrap: {resamples: 500}
+
+pilot:
+  items: {n_core: 30, n_block_b: 15, n_block_c: 10, n_block_d: 10}
+  blocks: {A: {samples: 1}, B: {samples: 1}, C: {samples: 1}, D: {samples: 1}}
+  producers: [gemini_flash, nova_lite]
+  mrbench: {n_responses: 20}
+  human_export: {per_cell: 2}
+  bootstrap: {resamples: 1000}

@@ -1,0 +1,240 @@
+# Models, roles and routes. Model IDs marked `verify: true` are checked by stage 0
+# (`python -m tlt verify`), which writes what it found to docs/verification_log.md.
+# Keys are referenced by .env variable NAME only; values are never logged.
+
+credentials:
+  # GEMINI_API_KEY_1 (401) and _2 ("Please pass a valid API key") were rejected on 2026-10-02.
+  gemini: [GEMINI_API_KEY_3, GEMINI_API_KEY_4]
+  sarvam: [SARVAM_88_API_KEY, SARVAM_2009_API_KEY, SARVAM_PHD_API_KEY]
+  openrouter: [OPENROUTER_API_KEY_1, OPENROUTER_API_KEY_2]
+  anthropic: [Calude_2009_API_Key]
+  anthropic_workspace: Claude_workspace_id
+  openai: [Open_AI_2009_Key]
+  xai: [Grok_API_KEY]
+  linkapi: [LINKAPI_AzureOpenAI_KEY]
+  linkapi_gemini: [LINKAPI_Gemini_Cheap_KEY]   # LinkAPI "Discounted Gemini" group
+  # Bedrock calls go to the account with the largest remaining SHARE of its credit
+  # (src/tlt/aws_credit.py). credit_usd = Billing console "Total estimated amount remaining"
+  # read at as_of; update both fields whenever credits are checked or topped up.
+  aws_accounts:
+    - {label: "Deb (276496751642)", access: AWS_ACCESS_KEY, secret: AWS_SECRET_KEY,
+       credit_usd: 325.09, as_of: "2026-10-04T09:00:00+00:00"}
+    - {label: "DebK (212045813660)", access: AWS_ACCESS_KEY2, secret: AWS_SECRET_KEY2,
+       credit_usd: 87.82, as_of: "2026-10-04T09:00:00+00:00"}
+  aws_credit_margin: 0.05   # held back per account: the console figure lags up to 24 h
+  huggingface: HUGGINGFACE_TOKEN
+
+endpoints:
+  gemini: https://generativelanguage.googleapis.com/v1beta/openai
+  sarvam: https://api.sarvam.ai/v1
+  openrouter: https://openrouter.ai/api/v1
+  anthropic: https://api.anthropic.com/v1
+  openai: https://api.openai.com/v1
+  xai: https://api.x.ai/v1
+  linkapi: https://api.linkapi.ai/v1
+  linkapi_gemini: https://api.linkapi.ai/v1
+  aws_region: us-east-1
+
+# Call settings shared by all producers (Section 5).
+producer_settings:
+  temperature: 0.7
+  # Specification: 600. Raised for every producer and language after the pre-pilot showed
+  # language-dependent truncation (docs/deviations.md D38).
+  max_tokens: 4000
+  timeout_s: 180
+  max_retries: 4          # backoff rounds per route before falling through
+
+judge_settings:
+  temperature: 0.0        # sent only where the model accepts it
+  max_tokens: 1200
+  timeout_s: 240
+  max_retries: 4
+
+# Route fields:
+#   kind: bedrock | openai_compat | anthropic
+#   provider: credential/endpoint group
+#   temperature: false  -> the route rejects temperature; it is not sent (logged)
+#   token_param: max_tokens | max_completion_tokens
+#   seed: true          -> a per-call seed is sent
+#   extra: {...}        -> merged into the request body (OpenAI-compatible) or
+#                          additionalModelRequestFields (Bedrock)
+#   min_tokens: N       -> reasoning models need budget for hidden reasoning; the visible
+#                          cap stays at max_tokens and truncation is logged.
+models:
+  gemini_flash:
+    display: Gemini 3.8 Flash
+    vendor: Google
+    tier: Consumer frontier
+    role: producer
+    workers: 8
+    routes:
+      # Thinking cannot be switched off for Gemini 3 models (Google OpenAI-compatibility docs,
+      # checked 2026-10-02); "low" is the lowest documented level. Budget covers thinking.
+      # Primary: the same model through LinkAPI (cheaper; returns model "gemini-3.8-flash",
+      # accepts seed; probed 2026-10-04). Fallback: Google's own API (rejects `seed`).
+      - {kind: openai_compat, provider: linkapi_gemini, model: gemini-3.8-flash, seed: true,
+         extra: {reasoning_effort: low}, min_tokens: 4000, verify: true}
+      - {kind: openai_compat, provider: gemini, model: gemini-3.8-flash, seed: false,
+         extra: {reasoning_effort: low}, min_tokens: 4000, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: google/gemini-3.8-flash, seed: true,
+         extra: {reasoning: {effort: low}}, min_tokens: 4000, verify: true}
+  sarvam_105b:
+    display: Sarvam 105B
+    vendor: Sarvam AI
+    tier: Indic-focused
+    role: producer
+    workers: 4
+    routes:
+      # Sarvam docs (checked 2026-10-02): reasoning_effort null disables reasoning completely.
+      - {kind: openai_compat, provider: sarvam, model: sarvam-105b, auth: subscription,
+         extra: {reasoning_effort: null}, verify: true}
+  kimi_k25:
+    display: Kimi K2.5
+    vendor: Moonshot AI
+    tier: Mid-size open
+    role: producer
+    workers: 8
+    routes:
+      - {kind: bedrock, model: moonshotai.kimi-k2.5, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: moonshotai/kimi-k2.5, seed: true,
+         extra: {reasoning: {enabled: false}}, verify: true}
+  nova_lite:
+    display: Amazon Nova Lite
+    vendor: Amazon
+    tier: Low-cost
+    role: producer
+    workers: 8
+    routes:
+      - {kind: bedrock, model: amazon.nova-lite-v1:0, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: amazon/nova-lite-v1, seed: true, verify: true}
+  ministral_8b:
+    display: Ministral 3 8B
+    vendor: Mistral AI
+    tier: Low-cost
+    role: producer
+    workers: 8
+    routes:
+      - {kind: bedrock, model: mistral.ministral-3-8b-instruct, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: mistralai/ministral-8b-2512, seed: true, verify: true}
+  nemotron_nano:
+    display: Nemotron Nano 3 30B
+    vendor: NVIDIA
+    tier: Low-cost
+    role: producer
+    workers: 8
+    routes:
+      - {kind: bedrock, model: nvidia.nemotron-nano-3-30b, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: nvidia/nemotron-3-nano-30b-a3b, seed: true,
+         extra: {reasoning: {enabled: false}}, verify: true}
+
+  gpt41_mini:
+    display: GPT-4.1 mini
+    vendor: OpenAI
+    role: judge
+    workers: 12
+    routes:
+      - {kind: openai_compat, provider: linkapi, model: gpt-4.1-mini, seed: true, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: openai/gpt-4.1-mini, seed: true, verify: true}
+  glm47:
+    display: GLM-4.7
+    vendor: Z.AI (Zhipu)
+    role: judge
+    workers: 16
+    routes:
+      - {kind: bedrock, model: zai.glm-4.7, verify: true}
+      # reasoning off, so the fallback decodes like the Bedrock route (which emits none)
+      - {kind: openai_compat, provider: openrouter, model: z-ai/glm-4.7, seed: true,
+         extra: {reasoning: {enabled: false}}, verify: true}
+  deepseek_v32:
+    display: DeepSeek-V3.2
+    vendor: DeepSeek
+    role: judge
+    workers: 24            # ~12 s per call on Bedrock, so more concurrency
+    routes:
+      - {kind: bedrock, model: deepseek.v3.2, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: deepseek/deepseek-v3.2, seed: true, verify: true}
+  qwen3_next:
+    display: Qwen3-Next 80B A3B Instruct
+    vendor: Alibaba (Qwen)
+    role: judge
+    workers: 16
+    routes:
+      - {kind: bedrock, model: qwen.qwen3-next-80b-a3b, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: qwen/qwen3-next-80b-a3b-instruct, seed: true, verify: true}
+
+  # Former judges (Section 5 of the specification), kept for reference and possible
+  # sensitivity runs. Not used: too costly, and unavailable on Bedrock for these accounts
+  # ("not available for this account", probed 2026-10-04).
+  claude_sonnet5:
+    display: Claude Sonnet 5
+    vendor: Anthropic
+    role: judge
+    workers: 6
+    routes:
+      # "temperature is deprecated for this model" (HTTP 400, stage 0 on 2026-10-02): not sent
+      # on either route, so the judge decodes identically whichever route serves it.
+      - {kind: anthropic, provider: anthropic, model: claude-sonnet-5, temperature: false, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: anthropic/claude-sonnet-5, temperature: false,
+         verify: true}
+  grok_420:
+    display: Grok 4.20 (non-reasoning)
+    vendor: xAI
+    role: judge
+    workers: 6
+    routes:
+      - {kind: openai_compat, provider: xai, model: grok-4.20-0309-non-reasoning, seed: true, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: x-ai/grok-4.20, seed: true, verify: true}
+  gpt56_luna:
+    display: GPT-5.6 Luna
+    vendor: OpenAI
+    role: judge
+    workers: 6
+    routes:
+      # Reasoning model: rejects temperature and max_tokens (probed 2026-09-05, AgriFair).
+      - {kind: openai_compat, provider: openai, model: gpt-5.6-luna, temperature: false,
+         token_param: max_completion_tokens, min_tokens: 6000, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: openai/gpt-5.6-luna, temperature: false,
+         min_tokens: 6000, verify: true}
+
+  utility:
+    display: GPT-5 mini (utility)
+    vendor: OpenAI
+    role: utility
+    workers: 8
+    routes:
+      - {kind: openai_compat, provider: linkapi, model: gpt-5-mini, temperature: false,
+         token_param: max_completion_tokens, min_tokens: 4000, extra: {reasoning_effort: low}, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: openai/gpt-5-mini, temperature: false,
+         min_tokens: 4000, extra: {reasoning: {effort: low}}, verify: true}
+
+  # B5 simulated student: open, under 10B, not a producer or judge, different vendor
+  # from every producer and judge.
+  student:
+    display: Llama 3.1 8B Instruct (simulated student)
+    vendor: Meta
+    role: student
+    workers: 8
+    routes:
+      - {kind: openai_compat, provider: openrouter, model: meta-llama/llama-3.1-8b-instruct,
+         seed: true, verify: true}
+
+translation:
+  # IndicTrans2 (AI4Bharat). Deterministic: greedy beam search, no sampling.
+  en_indic: ai4bharat/indictrans2-en-indic-1B
+  indic_en: ai4bharat/indictrans2-indic-en-1B
+  # Pinned Hugging Face commits (the models run their own remote code; pinning keeps the
+  # code and weights fixed for the whole study). Retrieved 2026-10-07.
+  revisions:
+    ai4bharat/indictrans2-en-indic-1B: 10e65a9951a1e922cd109a95e8aba9357b62144b
+    ai4bharat/indictrans2-indic-en-1B: ac3daf0ecd37be3b6957764a9179ab2b07fa9d6a
+  num_beams: 5
+  max_length: 256
+  batch_size: 8
+  device: auto            # cuda if available, else cpu
+  lang_tags: {EN: eng_Latn, HI: hin_Deva, BN: ben_Beng}
+
+embedding:
+  # One open multilingual sentence-embedding model for the quality gate and B3.
+  model: BAAI/bge-m3
+  revision: 5617a9f61b028005a4858fdac845db406aefb181
+  batch_size: 16
