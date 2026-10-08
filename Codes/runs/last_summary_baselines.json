@@ -1,0 +1,12 @@
+{
+  "baselines": {
+    "B5": {
+      "submitted": 17500,
+      "already_done_or_exhausted": 1000,
+      "ok": 17500,
+      "error": 0,
+      "scored": 18500,
+      "undecided_dropped": 0
+    }
+  }
+}

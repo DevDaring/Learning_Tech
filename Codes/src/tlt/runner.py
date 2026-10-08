@@ -69,18 +69,34 @@ def _cached_call(llm, applog, call_id, model, user, meta, system, **kw) -> dict:
 
 
 def protected_utility(llm, applog: AppendLog, call_id: str, template: str, text_field: str, text: str,
-                      meta: dict, **values) -> tuple[str, dict, list[str]]:
+                      meta: dict, split_lines: bool = False, **values) -> tuple[str, dict, list[str]]:
     """Utility rewrite or translation with maths protected: LaTeX spans and roman-numeral
     labels become <IDn> placeholders and are restored afterwards, so they stay identical
     across language versions. Returns (text, record, spans the model dropped)."""
+    import re
+
     from .io import fill, prompt
-    from .textutil import has_words, protect_math, restore_math
+    from .textutil import has_words, merge_word_lines, protect_math, restore_math, split_maths_lines
     protected, mapping = protect_math(text)
     if not has_words(protected):  # pure maths: nothing to rewrite or translate
         return text, {"route_used": "unchanged(maths only)", "status": "ok", "raw_text": text}, []
-    user = fill(prompt(template), **{text_field: protected}, **values)
+    # split_lines (short questions): only the lines with words go to the model; maths-only
+    # lines (display maths, table rows) stay in place verbatim.
+    lines, word_idx = split_maths_lines(protected) if split_lines else ([protected], [0])
+    sent = "\n".join(lines[i] for i in word_idx)
+    expected = re.findall(r"<ID\d+>", sent)
+    user = fill(prompt(template), **{text_field: sent}, **values)
     rec = cached_call(llm, applog, call_id, "utility", user, meta)
-    restored, missing = restore_math((rec.get("raw_text") or "").strip(), mapping)
+    out = (rec.get("raw_text") or "").strip()
+    dropped = [ph for ph in expected if ph not in out]
+    if dropped and rec.get("status") == "ok":
+        # one deterministic retry that names the dropped tokens (same rule for every item)
+        user2 = user + "\n\nKeep each of these tokens exactly once, unchanged: " + " ".join(expected)
+        rec2 = cached_call(llm, applog, call_id + "|keep_tokens", "utility", user2, {**meta, "retry": "keep_tokens"})
+        out2 = (rec2.get("raw_text") or "").strip()
+        if rec2.get("status") == "ok" and len([p for p in expected if p not in out2]) < len(dropped):
+            rec, out = rec2, out2
+    restored, missing = restore_math(merge_word_lines(lines, word_idx, out), mapping)
     return restored, rec, missing
 
 
@@ -96,16 +112,12 @@ def execute(jobs: list[dict], applog: AppendLog, fn: Callable[[dict], dict],
     # one block or condition.
     todo.sort(key=lambda j: stable_hash("order", j["call_id"]))
     skipped = len(jobs) - len(todo)
-    sems = {m: threading.Semaphore(max(1, w)) for m, w in workers.items()}
-    total_workers = max(1, sum(workers.get(m, 4) for m in {j["model"] for j in todo}) if todo else 1)
     counts = {"submitted": len(todo), "already_done_or_exhausted": skipped, "ok": 0, "error": 0}
     lock = threading.Lock()
     t0 = time.time()
 
     def wrapped(job):
-        sem = sems.setdefault(job["model"], threading.Semaphore(4))
-        with sem:
-            rec = fn(job)
+        rec = fn(job)
         applog.append(rec)
         with lock:
             counts["ok" if rec.get("status") == "ok" else "error"] += 1
@@ -116,8 +128,21 @@ def execute(jobs: list[dict], applog: AppendLog, fn: Callable[[dict], dict],
         return rec
 
     if todo:
-        with ThreadPoolExecutor(max_workers=min(64, total_workers)) as ex:
-            futs = [ex.submit(wrapped, j) for j in todo]
+        # One pool per model, sized by its worker cap. A single shared pool let the jobs of a
+        # slow or tightly capped model occupy every thread while waiting for their model's
+        # slot, starving the other models (head-of-line blocking). Within each model the
+        # deterministic interleaved order above is kept.
+        pools = {m: ThreadPoolExecutor(max_workers=max(1, int(workers.get(m, 4))))
+                 for m in sorted({j["model"] for j in todo})}
+        futs = [pools[j["model"]].submit(wrapped, j) for j in todo]
+        try:
             for f in as_completed(futs):
                 f.result()
+        except BaseException:
+            for ex in pools.values():  # stop promptly (e.g. CreditExhausted): drop queued jobs
+                ex.shutdown(wait=False, cancel_futures=True)
+            raise
+        finally:
+            for ex in pools.values():
+                ex.shutdown(wait=True)
     return counts

@@ -169,15 +169,21 @@ class IndicTrans2:
         plans, flat = [], []
         for t in texts:
             protected, mapping = protect_math(t)
-            if not has_words(protected):  # pure maths: keep verbatim
-                protected, mapping = t, {}
+            if not has_words(protected):  # pure maths: nothing to translate, kept verbatim
+                plans.append(None)
+                continue
             pairs = split_segments(protected)
+            # segments without words (a maths block, a table row) are never sent to the model
             plans.append((pairs, mapping, len(flat)))
-            flat.extend(s for _, s in pairs)
+            flat.extend(s if has_words(s) else "" for _, s in pairs)
         outs = self._translate_segments(flat, src, tgt, model_id)
         results = []
-        for pairs, mapping, start in plans:
-            tr = [(ln, outs[start + j]) for j, (ln, _) in enumerate(pairs)]
+        for t, plan in zip(texts, plans):
+            if plan is None:
+                results.append((t, []))
+                continue
+            pairs, mapping, start = plan
+            tr = [(ln, outs[start + j] if has_words(s) else s) for j, (ln, s) in enumerate(pairs)]
             joined, missing = restore_math(join_segments(tr), mapping)
             results.append((joined, missing))
         return results

@@ -253,6 +253,8 @@ def down(quiet: bool = False) -> None:
     st = load()
     if st.get("tunnel_pid"):
         subprocess.run(["kill", str(st["tunnel_pid"])], capture_output=True)
+    if st.get("ip"):  # also any tunnel opened by a later `resume`/`serve` (pid not recorded)
+        subprocess.run(["pkill", "-f", f"{LOCAL_PORT}:127.0.0.1:8000 root@{st['ip']}"], capture_output=True)
     if st.get("contract"):
         try:
             api(f"/instances/{st['contract']}/", {}, "DELETE")

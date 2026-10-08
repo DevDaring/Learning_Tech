@@ -29,6 +29,14 @@ def read_jsonl(path: Path) -> list[dict]:
     return out
 
 
+def read_table(path, **kw):
+    """Read a results CSV. Only an empty cell is missing: rubric labels such as "None" (no
+    praise, no cognitive demand) must stay labels, but pandas reads "None", "NA" and "null"
+    as missing by default."""
+    import pandas as pd
+    return pd.read_csv(path, keep_default_na=False, na_values=[""], **kw)
+
+
 def write_jsonl(path: Path, rows: Iterable[dict]) -> int:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")

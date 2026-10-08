@@ -1,0 +1,863 @@
+2026-10-08 04:53:14,470 INFO tlt.s11: repair: {'submitted': 0, 'already_done_or_exhausted': 16200, 'ok': 0, 'error': 0, 'cells': 2700, 'generations': 16200, 'judged': {'submitted': 0, 'already_done_or_exhausted': 48600, 'ok': 0, 'error': 0}, 'r3_format_failures': 8, 'r5_plan_parse_failures': 0, 'r5_plan_schema_failures': 1, 'r5_plan_retried': 131}
+2026-10-08 04:53:14,780 INFO tlt: stage repair done in 78.4s
+2026-10-08 04:57:11,024 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 124.04, 'remaining_usd': 184.79}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 83.44, 'remaining_usd': -0.01}}
+2026-10-08 04:57:27,226 INFO tlt.runner: judge 200/133085 (5.8/s, errors=0)
+2026-10-08 04:57:40,257 INFO tlt.runner: judge 400/133085 (8.4/s, errors=0)
+2026-10-08 04:58:02,655 INFO tlt.runner: judge 600/133085 (8.6/s, errors=0)
+2026-10-08 04:58:29,523 INFO tlt.runner: judge 800/133085 (8.3/s, errors=0)
+2026-10-08 04:58:50,994 INFO tlt.runner: judge 1000/133085 (8.5/s, errors=0)
+2026-10-08 04:59:13,058 INFO tlt.runner: judge 1200/133085 (8.6/s, errors=0)
+2026-10-08 04:59:34,850 INFO tlt.runner: judge 1400/133085 (8.6/s, errors=0)
+2026-10-08 04:59:56,316 INFO tlt.runner: judge 1600/133085 (8.7/s, errors=0)
+2026-10-08 05:00:18,901 INFO tlt.runner: judge 1800/133085 (8.7/s, errors=0)
+2026-10-08 05:00:42,980 INFO tlt.runner: judge 2000/133085 (8.7/s, errors=0)
+2026-10-08 05:01:05,118 INFO tlt.runner: judge 2200/133085 (8.7/s, errors=0)
+2026-10-08 05:01:27,513 INFO tlt.runner: judge 2400/133085 (8.7/s, errors=0)
+2026-10-08 05:01:50,704 INFO tlt.runner: judge 2600/133085 (8.7/s, errors=0)
+2026-10-08 05:02:13,508 INFO tlt.runner: judge 2800/133085 (8.7/s, errors=0)
+2026-10-08 05:02:36,822 INFO tlt.runner: judge 3000/133085 (8.7/s, errors=0)
+2026-10-08 05:02:59,363 INFO tlt.runner: judge 3200/133085 (8.7/s, errors=0)
+2026-10-08 05:03:23,323 INFO tlt.runner: judge 3400/133085 (8.7/s, errors=0)
+2026-10-08 05:03:48,023 INFO tlt.runner: judge 3600/133085 (8.7/s, errors=0)
+2026-10-08 05:04:13,019 INFO tlt.runner: judge 3800/133085 (8.6/s, errors=0)
+2026-10-08 05:04:36,068 INFO tlt.runner: judge 4000/133085 (8.6/s, errors=0)
+2026-10-08 05:04:58,124 INFO tlt.runner: judge 4200/133085 (8.7/s, errors=0)
+2026-10-08 05:05:23,383 INFO tlt.runner: judge 4400/133085 (8.6/s, errors=0)
+2026-10-08 05:05:47,507 INFO tlt.runner: judge 4600/133085 (8.6/s, errors=0)
+2026-10-08 05:06:11,502 INFO tlt.runner: judge 4800/133085 (8.6/s, errors=0)
+2026-10-08 05:06:34,220 INFO tlt.runner: judge 5000/133085 (8.6/s, errors=0)
+2026-10-08 05:06:58,521 INFO tlt.runner: judge 5200/133085 (8.6/s, errors=0)
+2026-10-08 05:07:21,193 INFO tlt.runner: judge 5400/133085 (8.6/s, errors=0)
+2026-10-08 05:07:43,836 INFO tlt.runner: judge 5600/133085 (8.6/s, errors=0)
+2026-10-08 05:08:07,107 INFO tlt.runner: judge 5800/133085 (8.6/s, errors=0)
+2026-10-08 05:08:36,775 INFO tlt.runner: judge 6000/133085 (8.5/s, errors=0)
+2026-10-08 05:09:13,669 INFO tlt.runner: judge 6200/133085 (8.4/s, errors=0)
+2026-10-08 05:09:52,602 INFO tlt.runner: judge 6400/133085 (8.2/s, errors=0)
+2026-10-08 05:10:34,373 INFO tlt.runner: judge 6600/133085 (8.0/s, errors=0)
+2026-10-08 05:11:03,342 INFO tlt.runner: judge 6800/133085 (8.0/s, errors=0)
+2026-10-08 05:11:30,395 INFO tlt.runner: judge 7000/133085 (8.0/s, errors=0)
+2026-10-08 05:11:55,363 INFO tlt.runner: judge 7200/133085 (8.0/s, errors=0)
+2026-10-08 05:12:18,306 INFO tlt.runner: judge 7400/133085 (8.0/s, errors=0)
+2026-10-08 05:12:41,625 INFO tlt.runner: judge 7600/133085 (8.0/s, errors=0)
+2026-10-08 05:13:05,002 INFO tlt.runner: judge 7800/133085 (8.0/s, errors=0)
+2026-10-08 05:13:28,503 INFO tlt.runner: judge 8000/133085 (8.0/s, errors=0)
+2026-10-08 05:13:53,000 INFO tlt.runner: judge 8200/133085 (8.0/s, errors=0)
+2026-10-08 05:14:14,823 INFO tlt.runner: judge 8400/133085 (8.1/s, errors=0)
+2026-10-08 05:14:38,330 INFO tlt.runner: judge 8600/133085 (8.1/s, errors=0)
+2026-10-08 05:15:02,948 INFO tlt.runner: judge 8800/133085 (8.1/s, errors=0)
+2026-10-08 05:15:28,020 INFO tlt.runner: judge 9000/133085 (8.1/s, errors=0)
+2026-10-08 05:15:51,356 INFO tlt.runner: judge 9200/133085 (8.1/s, errors=0)
+2026-10-08 05:16:12,737 INFO tlt.runner: judge 9400/133085 (8.1/s, errors=0)
+2026-10-08 05:16:36,717 INFO tlt.runner: judge 9600/133085 (8.1/s, errors=0)
+2026-10-08 05:16:59,160 INFO tlt.runner: judge 9800/133085 (8.1/s, errors=0)
+2026-10-08 05:17:22,611 INFO tlt.runner: judge 10000/133085 (8.1/s, errors=0)
+2026-10-08 05:17:49,150 INFO tlt.runner: judge 10200/133085 (8.1/s, errors=0)
+2026-10-08 05:18:17,072 INFO tlt.runner: judge 10400/133085 (8.1/s, errors=0)
+2026-10-08 05:18:44,278 INFO tlt.runner: judge 10600/133085 (8.1/s, errors=0)
+2026-10-08 05:19:13,384 INFO tlt.runner: judge 10800/133085 (8.1/s, errors=0)
+2026-10-08 05:19:41,399 INFO tlt.runner: judge 11000/133085 (8.0/s, errors=0)
+2026-10-08 05:20:12,357 INFO tlt.runner: judge 11200/133085 (8.0/s, errors=0)
+2026-10-08 05:20:40,709 INFO tlt.runner: judge 11400/133085 (8.0/s, errors=0)
+2026-10-08 05:21:09,438 INFO tlt.runner: judge 11600/133085 (8.0/s, errors=0)
+2026-10-08 05:21:35,668 INFO tlt.runner: judge 11800/133085 (8.0/s, errors=0)
+2026-10-08 05:22:02,844 INFO tlt.runner: judge 12000/133085 (7.9/s, errors=0)
+2026-10-08 05:22:32,422 INFO tlt.runner: judge 12200/133085 (7.9/s, errors=0)
+2026-10-08 05:23:01,601 INFO tlt.runner: judge 12400/133085 (7.9/s, errors=0)
+2026-10-08 05:23:30,612 INFO tlt.runner: judge 12600/133085 (7.9/s, errors=0)
+2026-10-08 05:23:59,280 INFO tlt.runner: judge 12800/133085 (7.9/s, errors=0)
+2026-10-08 05:24:25,179 INFO tlt.runner: judge 13000/133085 (7.9/s, errors=0)
+2026-10-08 05:24:49,166 INFO tlt.runner: judge 13200/133085 (7.9/s, errors=0)
+2026-10-08 05:25:12,777 INFO tlt.runner: judge 13400/133085 (7.9/s, errors=0)
+2026-10-08 05:25:35,312 INFO tlt.runner: judge 13600/133085 (7.9/s, errors=0)
+2026-10-08 05:26:00,953 INFO tlt.runner: judge 13800/133085 (7.9/s, errors=0)
+2026-10-08 05:26:26,034 INFO tlt.runner: judge 14000/133085 (7.9/s, errors=0)
+2026-10-08 05:26:50,749 INFO tlt.runner: judge 14200/133085 (7.9/s, errors=0)
+2026-10-08 05:27:13,068 INFO tlt.runner: judge 14400/133085 (7.9/s, errors=0)
+2026-10-08 05:27:36,620 INFO tlt.runner: judge 14600/133085 (7.9/s, errors=0)
+2026-10-08 05:28:01,279 INFO tlt.runner: judge 14800/133085 (7.9/s, errors=0)
+2026-10-08 05:28:24,990 INFO tlt.runner: judge 15000/133085 (7.9/s, errors=0)
+2026-10-08 05:28:51,286 INFO tlt.runner: judge 15200/133085 (7.9/s, errors=0)
+2026-10-08 05:29:11,858 INFO tlt.runner: judge 15400/133085 (7.9/s, errors=0)
+2026-10-08 05:29:32,250 INFO tlt.runner: judge 15600/133085 (8.0/s, errors=0)
+2026-10-08 05:29:56,534 INFO tlt.runner: judge 15800/133085 (8.0/s, errors=0)
+2026-10-08 05:30:23,512 INFO tlt.runner: judge 16000/133085 (8.0/s, errors=0)
+2026-10-08 05:30:48,742 INFO tlt.runner: judge 16200/133085 (8.0/s, errors=0)
+2026-10-08 05:31:12,253 INFO tlt.runner: judge 16400/133085 (8.0/s, errors=0)
+2026-10-08 05:31:36,774 INFO tlt.runner: judge 16600/133085 (8.0/s, errors=0)
+2026-10-08 05:32:00,892 INFO tlt.runner: judge 16800/133085 (8.0/s, errors=0)
+2026-10-08 05:32:25,791 INFO tlt.runner: judge 17000/133085 (8.0/s, errors=0)
+2026-10-08 05:32:49,919 INFO tlt.runner: judge 17200/133085 (8.0/s, errors=0)
+2026-10-08 05:33:12,278 INFO tlt.runner: judge 17400/133085 (8.0/s, errors=0)
+2026-10-08 05:33:36,468 INFO tlt.runner: judge 17600/133085 (8.0/s, errors=0)
+2026-10-08 05:34:00,956 INFO tlt.runner: judge 17800/133085 (8.0/s, errors=0)
+2026-10-08 05:34:24,380 INFO tlt.runner: judge 18000/133085 (8.0/s, errors=0)
+2026-10-08 05:34:48,914 INFO tlt.runner: judge 18200/133085 (8.0/s, errors=0)
+2026-10-08 05:35:12,708 INFO tlt.runner: judge 18400/133085 (8.0/s, errors=0)
+2026-10-08 05:35:36,058 INFO tlt.runner: judge 18600/133085 (8.0/s, errors=1)
+2026-10-08 05:36:01,852 INFO tlt.runner: judge 18800/133085 (8.0/s, errors=1)
+2026-10-08 05:36:27,685 INFO tlt.runner: judge 19000/133085 (8.0/s, errors=1)
+2026-10-08 05:36:51,956 INFO tlt.runner: judge 19200/133085 (8.0/s, errors=1)
+2026-10-08 05:37:15,424 INFO tlt.runner: judge 19400/133085 (8.0/s, errors=1)
+2026-10-08 05:37:38,004 INFO tlt.runner: judge 19600/133085 (8.0/s, errors=1)
+2026-10-08 05:38:02,565 INFO tlt.runner: judge 19800/133085 (8.0/s, errors=1)
+2026-10-08 05:38:25,720 INFO tlt.runner: judge 20000/133085 (8.0/s, errors=1)
+2026-10-08 05:38:49,770 INFO tlt.runner: judge 20200/133085 (8.0/s, errors=1)
+2026-10-08 05:39:12,917 INFO tlt.runner: judge 20400/133085 (8.0/s, errors=1)
+2026-10-08 05:39:31,365 INFO tlt.runner: judge 20600/133085 (8.1/s, errors=1)
+2026-10-08 05:39:49,020 INFO tlt.runner: judge 20800/133085 (8.1/s, errors=1)
+2026-10-08 05:40:10,075 INFO tlt.runner: judge 21000/133085 (8.1/s, errors=1)
+2026-10-08 05:40:29,445 INFO tlt.runner: judge 21200/133085 (8.1/s, errors=1)
+2026-10-08 05:40:47,491 INFO tlt.runner: judge 21400/133085 (8.1/s, errors=1)
+2026-10-08 05:41:06,275 INFO tlt.runner: judge 21600/133085 (8.1/s, errors=1)
+2026-10-08 05:41:25,043 INFO tlt.runner: judge 21800/133085 (8.2/s, errors=1)
+2026-10-08 05:41:42,918 INFO tlt.runner: judge 22000/133085 (8.2/s, errors=1)
+2026-10-08 05:42:01,074 INFO tlt.runner: judge 22200/133085 (8.2/s, errors=1)
+2026-10-08 05:42:20,368 INFO tlt.runner: judge 22400/133085 (8.2/s, errors=1)
+2026-10-08 05:42:38,280 INFO tlt.runner: judge 22600/133085 (8.2/s, errors=1)
+2026-10-08 05:42:57,632 INFO tlt.runner: judge 22800/133085 (8.2/s, errors=1)
+2026-10-08 05:43:17,251 INFO tlt.runner: judge 23000/133085 (8.3/s, errors=1)
+2026-10-08 05:43:36,667 INFO tlt.runner: judge 23200/133085 (8.3/s, errors=1)
+2026-10-08 05:43:55,426 INFO tlt.runner: judge 23400/133085 (8.3/s, errors=1)
+2026-10-08 05:44:14,995 INFO tlt.runner: judge 23600/133085 (8.3/s, errors=1)
+2026-10-08 05:44:33,047 INFO tlt.runner: judge 23800/133085 (8.3/s, errors=1)
+2026-10-08 05:44:51,511 INFO tlt.runner: judge 24000/133085 (8.3/s, errors=1)
+2026-10-08 05:45:11,014 INFO tlt.runner: judge 24200/133085 (8.3/s, errors=1)
+2026-10-08 05:45:29,754 INFO tlt.runner: judge 24400/133085 (8.4/s, errors=1)
+2026-10-08 05:45:48,545 INFO tlt.runner: judge 24600/133085 (8.4/s, errors=1)
+2026-10-08 05:46:08,335 INFO tlt.runner: judge 24800/133085 (8.4/s, errors=1)
+2026-10-08 05:46:26,411 INFO tlt.runner: judge 25000/133085 (8.4/s, errors=1)
+2026-10-08 05:46:44,250 INFO tlt.runner: judge 25200/133085 (8.4/s, errors=1)
+2026-10-08 05:47:02,648 INFO tlt.runner: judge 25400/133085 (8.4/s, errors=1)
+2026-10-08 05:47:21,163 INFO tlt.runner: judge 25600/133085 (8.5/s, errors=1)
+2026-10-08 05:47:39,972 INFO tlt.runner: judge 25800/133085 (8.5/s, errors=1)
+2026-10-08 05:47:58,446 INFO tlt.runner: judge 26000/133085 (8.5/s, errors=1)
+2026-10-08 05:48:16,661 INFO tlt.runner: judge 26200/133085 (8.5/s, errors=1)
+2026-10-08 05:48:35,450 INFO tlt.runner: judge 26400/133085 (8.5/s, errors=1)
+2026-10-08 05:48:54,625 INFO tlt.runner: judge 26600/133085 (8.5/s, errors=1)
+2026-10-08 05:49:14,538 INFO tlt.runner: judge 26800/133085 (8.5/s, errors=1)
+2026-10-08 05:49:33,736 INFO tlt.runner: judge 27000/133085 (8.5/s, errors=1)
+2026-10-08 05:49:52,062 INFO tlt.runner: judge 27200/133085 (8.6/s, errors=1)
+2026-10-08 05:50:10,488 INFO tlt.runner: judge 27400/133085 (8.6/s, errors=1)
+2026-10-08 05:50:28,761 INFO tlt.runner: judge 27600/133085 (8.6/s, errors=1)
+2026-10-08 05:50:46,781 INFO tlt.runner: judge 27800/133085 (8.6/s, errors=1)
+2026-10-08 05:51:05,577 INFO tlt.runner: judge 28000/133085 (8.6/s, errors=1)
+2026-10-08 05:51:23,388 INFO tlt.runner: judge 28200/133085 (8.6/s, errors=1)
+2026-10-08 05:51:40,554 INFO tlt.runner: judge 28400/133085 (8.6/s, errors=1)
+2026-10-08 05:51:58,304 INFO tlt.runner: judge 28600/133085 (8.7/s, errors=1)
+2026-10-08 05:52:15,218 INFO tlt.runner: judge 28800/133085 (8.7/s, errors=1)
+2026-10-08 05:52:35,158 INFO tlt.runner: judge 29000/133085 (8.7/s, errors=1)
+2026-10-08 05:52:53,941 INFO tlt.runner: judge 29200/133085 (8.7/s, errors=1)
+2026-10-08 05:53:11,839 INFO tlt.runner: judge 29400/133085 (8.7/s, errors=1)
+2026-10-08 05:53:30,075 INFO tlt.runner: judge 29600/133085 (8.7/s, errors=1)
+2026-10-08 05:53:50,279 INFO tlt.runner: judge 29800/133085 (8.7/s, errors=1)
+2026-10-08 05:54:08,685 INFO tlt.runner: judge 30000/133085 (8.7/s, errors=1)
+2026-10-08 05:54:25,877 INFO tlt.runner: judge 30200/133085 (8.7/s, errors=1)
+2026-10-08 05:54:44,341 INFO tlt.runner: judge 30400/133085 (8.8/s, errors=1)
+2026-10-08 05:55:01,784 INFO tlt.runner: judge 30600/133085 (8.8/s, errors=1)
+2026-10-08 05:55:20,024 INFO tlt.runner: judge 30800/133085 (8.8/s, errors=1)
+2026-10-08 05:55:38,362 INFO tlt.runner: judge 31000/133085 (8.8/s, errors=1)
+2026-10-08 05:55:57,101 INFO tlt.runner: judge 31200/133085 (8.8/s, errors=1)
+2026-10-08 05:56:18,898 INFO tlt.runner: judge 31400/133085 (8.8/s, errors=1)
+2026-10-08 05:56:36,639 INFO tlt.runner: judge 31600/133085 (8.8/s, errors=1)
+2026-10-08 05:56:54,299 INFO tlt.runner: judge 31800/133085 (8.8/s, errors=1)
+2026-10-08 05:57:12,229 INFO tlt.runner: judge 32000/133085 (8.8/s, errors=1)
+2026-10-08 05:57:30,638 INFO tlt.runner: judge 32200/133085 (8.9/s, errors=1)
+2026-10-08 05:57:48,263 INFO tlt.runner: judge 32400/133085 (8.9/s, errors=1)
+2026-10-08 05:58:09,027 INFO tlt.runner: judge 32600/133085 (8.9/s, errors=1)
+2026-10-08 05:58:27,893 INFO tlt.runner: judge 32800/133085 (8.9/s, errors=1)
+2026-10-08 05:58:46,155 INFO tlt.runner: judge 33000/133085 (8.9/s, errors=1)
+2026-10-08 05:59:04,355 INFO tlt.runner: judge 33200/133085 (8.9/s, errors=1)
+2026-10-08 05:59:24,006 INFO tlt.runner: judge 33400/133085 (8.9/s, errors=1)
+2026-10-08 05:59:42,662 INFO tlt.runner: judge 33600/133085 (8.9/s, errors=1)
+2026-10-08 06:00:00,772 INFO tlt.runner: judge 33800/133085 (8.9/s, errors=1)
+2026-10-08 06:00:19,847 INFO tlt.runner: judge 34000/133085 (8.9/s, errors=1)
+2026-10-08 06:00:39,537 INFO tlt.runner: judge 34200/133085 (8.9/s, errors=1)
+2026-10-08 06:00:58,296 INFO tlt.runner: judge 34400/133085 (8.9/s, errors=1)
+2026-10-08 06:01:16,888 INFO tlt.runner: judge 34600/133085 (9.0/s, errors=1)
+2026-10-08 06:01:36,480 INFO tlt.runner: judge 34800/133085 (9.0/s, errors=1)
+2026-10-08 06:01:56,606 INFO tlt.runner: judge 35000/133085 (9.0/s, errors=1)
+2026-10-08 06:02:15,211 INFO tlt.runner: judge 35200/133085 (9.0/s, errors=1)
+2026-10-08 06:02:35,194 INFO tlt.runner: judge 35400/133085 (9.0/s, errors=1)
+2026-10-08 06:02:55,015 INFO tlt.runner: judge 35600/133085 (9.0/s, errors=1)
+2026-10-08 06:03:13,548 INFO tlt.runner: judge 35800/133085 (9.0/s, errors=1)
+2026-10-08 06:03:31,883 INFO tlt.runner: judge 36000/133085 (9.0/s, errors=1)
+2026-10-08 06:03:53,716 INFO tlt.runner: judge 36200/133085 (9.0/s, errors=1)
+2026-10-08 06:04:12,565 INFO tlt.runner: judge 36400/133085 (9.0/s, errors=1)
+2026-10-08 06:04:32,087 INFO tlt.runner: judge 36600/133085 (9.0/s, errors=1)
+2026-10-08 06:04:51,129 INFO tlt.runner: judge 36800/133085 (9.0/s, errors=1)
+2026-10-08 06:05:09,783 INFO tlt.runner: judge 37000/133085 (9.0/s, errors=1)
+2026-10-08 06:05:29,987 INFO tlt.runner: judge 37200/133085 (9.0/s, errors=1)
+2026-10-08 06:05:49,087 INFO tlt.runner: judge 37400/133085 (9.0/s, errors=1)
+2026-10-08 06:06:08,492 INFO tlt.runner: judge 37600/133085 (9.0/s, errors=1)
+2026-10-08 06:06:28,297 INFO tlt.runner: judge 37800/133085 (9.1/s, errors=1)
+2026-10-08 06:06:46,517 INFO tlt.runner: judge 38000/133085 (9.1/s, errors=1)
+2026-10-08 06:07:05,457 INFO tlt.runner: judge 38200/133085 (9.1/s, errors=1)
+2026-10-08 06:07:23,851 INFO tlt.runner: judge 38400/133085 (9.1/s, errors=1)
+2026-10-08 06:07:42,540 INFO tlt.runner: judge 38600/133085 (9.1/s, errors=1)
+2026-10-08 06:08:01,366 INFO tlt.runner: judge 38800/133085 (9.1/s, errors=1)
+2026-10-08 06:08:20,354 INFO tlt.runner: judge 39000/133085 (9.1/s, errors=1)
+2026-10-08 06:08:39,825 INFO tlt.runner: judge 39200/133085 (9.1/s, errors=1)
+2026-10-08 06:09:00,021 INFO tlt.runner: judge 39400/133085 (9.1/s, errors=1)
+2026-10-08 06:09:18,213 INFO tlt.runner: judge 39600/133085 (9.1/s, errors=1)
+2026-10-08 06:09:38,248 INFO tlt.runner: judge 39800/133085 (9.1/s, errors=1)
+2026-10-08 06:09:57,190 INFO tlt.runner: judge 40000/133085 (9.1/s, errors=1)
+2026-10-08 06:10:15,797 INFO tlt.runner: judge 40200/133085 (9.1/s, errors=1)
+2026-10-08 06:10:35,491 INFO tlt.runner: judge 40400/133085 (9.1/s, errors=1)
+2026-10-08 06:10:54,848 INFO tlt.runner: judge 40600/133085 (9.1/s, errors=1)
+2026-10-08 06:11:16,547 INFO tlt.runner: judge 40800/133085 (9.1/s, errors=1)
+2026-10-08 06:11:36,318 INFO tlt.runner: judge 41000/133085 (9.1/s, errors=1)
+2026-10-08 06:11:56,354 INFO tlt.runner: judge 41200/133085 (9.1/s, errors=1)
+2026-10-08 06:12:14,972 INFO tlt.runner: judge 41400/133085 (9.2/s, errors=1)
+2026-10-08 06:12:33,820 INFO tlt.runner: judge 41600/133085 (9.2/s, errors=1)
+2026-10-08 06:12:53,272 INFO tlt.runner: judge 41800/133085 (9.2/s, errors=1)
+2026-10-08 06:13:12,916 INFO tlt.runner: judge 42000/133085 (9.2/s, errors=1)
+2026-10-08 06:13:32,440 INFO tlt.runner: judge 42200/133085 (9.2/s, errors=1)
+2026-10-08 06:13:52,192 INFO tlt.runner: judge 42400/133085 (9.2/s, errors=1)
+2026-10-08 06:14:12,658 INFO tlt.runner: judge 42600/133085 (9.2/s, errors=1)
+2026-10-08 06:14:31,520 INFO tlt.runner: judge 42800/133085 (9.2/s, errors=1)
+2026-10-08 06:14:51,767 INFO tlt.runner: judge 43000/133085 (9.2/s, errors=1)
+2026-10-08 06:15:11,424 INFO tlt.runner: judge 43200/133085 (9.2/s, errors=1)
+2026-10-08 06:15:32,378 INFO tlt.runner: judge 43400/133085 (9.2/s, errors=1)
+2026-10-08 06:15:54,414 INFO tlt.runner: judge 43600/133085 (9.2/s, errors=1)
+2026-10-08 06:16:14,656 INFO tlt.runner: judge 43800/133085 (9.2/s, errors=1)
+2026-10-08 06:16:33,542 INFO tlt.runner: judge 44000/133085 (9.2/s, errors=1)
+2026-10-08 06:16:55,467 INFO tlt.runner: judge 44200/133085 (9.2/s, errors=1)
+2026-10-08 06:17:16,807 INFO tlt.runner: judge 44400/133085 (9.2/s, errors=1)
+2026-10-08 06:17:35,777 INFO tlt.runner: judge 44600/133085 (9.2/s, errors=1)
+2026-10-08 06:17:57,156 INFO tlt.runner: judge 44800/133085 (9.2/s, errors=1)
+2026-10-08 06:18:17,278 INFO tlt.runner: judge 45000/133085 (9.2/s, errors=1)
+2026-10-08 06:18:38,262 INFO tlt.runner: judge 45200/133085 (9.2/s, errors=1)
+2026-10-08 06:18:57,934 INFO tlt.runner: judge 45400/133085 (9.2/s, errors=1)
+2026-10-08 06:19:17,686 INFO tlt.runner: judge 45600/133085 (9.2/s, errors=1)
+2026-10-08 06:19:38,237 INFO tlt.runner: judge 45800/133085 (9.2/s, errors=1)
+2026-10-08 06:19:56,602 INFO tlt.runner: judge 46000/133085 (9.2/s, errors=1)
+2026-10-08 06:20:18,990 INFO tlt.runner: judge 46200/133085 (9.2/s, errors=1)
+2026-10-08 06:20:38,978 INFO tlt.runner: judge 46400/133085 (9.2/s, errors=1)
+2026-10-08 06:20:59,830 INFO tlt.runner: judge 46600/133085 (9.2/s, errors=1)
+2026-10-08 06:21:19,498 INFO tlt.runner: judge 46800/133085 (9.2/s, errors=1)
+2026-10-08 06:21:40,193 INFO tlt.runner: judge 47000/133085 (9.2/s, errors=1)
+2026-10-08 06:21:59,818 INFO tlt.runner: judge 47200/133085 (9.2/s, errors=1)
+2026-10-08 06:22:20,365 INFO tlt.runner: judge 47400/133085 (9.2/s, errors=1)
+2026-10-08 06:22:39,123 INFO tlt.runner: judge 47600/133085 (9.2/s, errors=1)
+2026-10-08 06:22:58,793 INFO tlt.runner: judge 47800/133085 (9.3/s, errors=1)
+2026-10-08 06:23:19,617 INFO tlt.runner: judge 48000/133085 (9.3/s, errors=1)
+2026-10-08 06:23:40,276 INFO tlt.runner: judge 48200/133085 (9.3/s, errors=2)
+2026-10-08 06:24:00,706 INFO tlt.runner: judge 48400/133085 (9.3/s, errors=2)
+2026-10-08 06:24:19,728 INFO tlt.runner: judge 48600/133085 (9.3/s, errors=2)
+2026-10-08 06:24:38,724 INFO tlt.runner: judge 48800/133085 (9.3/s, errors=2)
+2026-10-08 06:24:57,677 INFO tlt.runner: judge 49000/133085 (9.3/s, errors=2)
+2026-10-08 06:25:17,199 INFO tlt.runner: judge 49200/133085 (9.3/s, errors=2)
+2026-10-08 06:25:36,543 INFO tlt.runner: judge 49400/133085 (9.3/s, errors=2)
+2026-10-08 06:25:55,835 INFO tlt.runner: judge 49600/133085 (9.3/s, errors=2)
+2026-10-08 06:26:15,115 INFO tlt.runner: judge 49800/133085 (9.3/s, errors=2)
+2026-10-08 06:26:36,056 INFO tlt.runner: judge 50000/133085 (9.3/s, errors=2)
+2026-10-08 06:26:55,000 INFO tlt.runner: judge 50200/133085 (9.3/s, errors=2)
+2026-10-08 06:27:14,787 INFO tlt.runner: judge 50400/133085 (9.3/s, errors=2)
+2026-10-08 06:27:33,565 INFO tlt.runner: judge 50600/133085 (9.3/s, errors=2)
+2026-10-08 06:27:55,248 INFO tlt.runner: judge 50800/133085 (9.3/s, errors=2)
+2026-10-08 06:28:14,854 INFO tlt.runner: judge 51000/133085 (9.3/s, errors=2)
+2026-10-08 06:28:35,114 INFO tlt.runner: judge 51200/133085 (9.3/s, errors=2)
+2026-10-08 06:28:54,631 INFO tlt.runner: judge 51400/133085 (9.3/s, errors=2)
+2026-10-08 06:29:14,184 INFO tlt.runner: judge 51600/133085 (9.3/s, errors=2)
+2026-10-08 06:29:32,982 INFO tlt.runner: judge 51800/133085 (9.3/s, errors=2)
+2026-10-08 06:29:51,832 INFO tlt.runner: judge 52000/133085 (9.3/s, errors=2)
+2026-10-08 06:30:11,555 INFO tlt.runner: judge 52200/133085 (9.3/s, errors=2)
+2026-10-08 06:30:31,817 INFO tlt.runner: judge 52400/133085 (9.3/s, errors=2)
+2026-10-08 06:30:51,785 INFO tlt.runner: judge 52600/133085 (9.3/s, errors=2)
+2026-10-08 06:31:12,197 INFO tlt.runner: judge 52800/133085 (9.3/s, errors=2)
+2026-10-08 06:31:31,244 INFO tlt.runner: judge 53000/133085 (9.3/s, errors=2)
+2026-10-08 06:31:50,967 INFO tlt.runner: judge 53200/133085 (9.3/s, errors=2)
+2026-10-08 06:32:09,047 INFO tlt.runner: judge 53400/133085 (9.3/s, errors=2)
+2026-10-08 06:32:27,416 INFO tlt.runner: judge 53600/133085 (9.3/s, errors=2)
+2026-10-08 06:32:47,157 INFO tlt.runner: judge 53800/133085 (9.3/s, errors=2)
+2026-10-08 06:33:07,594 INFO tlt.runner: judge 54000/133085 (9.4/s, errors=2)
+2026-10-08 06:33:28,017 INFO tlt.runner: judge 54200/133085 (9.4/s, errors=2)
+2026-10-08 06:33:48,115 INFO tlt.runner: judge 54400/133085 (9.4/s, errors=2)
+2026-10-08 06:34:07,790 INFO tlt.runner: judge 54600/133085 (9.4/s, errors=2)
+2026-10-08 06:34:28,405 INFO tlt.runner: judge 54800/133085 (9.4/s, errors=2)
+2026-10-08 06:34:48,544 INFO tlt.runner: judge 55000/133085 (9.4/s, errors=2)
+2026-10-08 06:35:07,590 INFO tlt.runner: judge 55200/133085 (9.4/s, errors=2)
+2026-10-08 06:35:27,669 INFO tlt.runner: judge 55400/133085 (9.4/s, errors=2)
+2026-10-08 06:35:47,820 INFO tlt.runner: judge 55600/133085 (9.4/s, errors=2)
+2026-10-08 06:36:06,474 INFO tlt.runner: judge 55800/133085 (9.4/s, errors=2)
+2026-10-08 06:36:27,319 INFO tlt.runner: judge 56000/133085 (9.4/s, errors=2)
+2026-10-08 06:36:48,546 INFO tlt.runner: judge 56200/133085 (9.4/s, errors=2)
+2026-10-08 06:37:08,883 INFO tlt.runner: judge 56400/133085 (9.4/s, errors=2)
+2026-10-08 06:37:27,941 INFO tlt.runner: judge 56600/133085 (9.4/s, errors=2)
+2026-10-08 06:37:47,230 INFO tlt.runner: judge 56800/133085 (9.4/s, errors=2)
+2026-10-08 06:38:07,734 INFO tlt.runner: judge 57000/133085 (9.4/s, errors=2)
+2026-10-08 06:38:27,804 INFO tlt.runner: judge 57200/133085 (9.4/s, errors=2)
+2026-10-08 06:38:49,131 INFO tlt.runner: judge 57400/133085 (9.4/s, errors=2)
+2026-10-08 06:39:10,419 INFO tlt.runner: judge 57600/133085 (9.4/s, errors=2)
+2026-10-08 06:39:30,096 INFO tlt.runner: judge 57800/133085 (9.4/s, errors=2)
+2026-10-08 06:39:49,210 INFO tlt.runner: judge 58000/133085 (9.4/s, errors=2)
+2026-10-08 06:40:08,493 INFO tlt.runner: judge 58200/133085 (9.4/s, errors=2)
+2026-10-08 06:40:27,747 INFO tlt.runner: judge 58400/133085 (9.4/s, errors=2)
+2026-10-08 06:40:47,916 INFO tlt.runner: judge 58600/133085 (9.4/s, errors=2)
+2026-10-08 06:41:07,419 INFO tlt.runner: judge 58800/133085 (9.4/s, errors=2)
+2026-10-08 06:41:29,151 INFO tlt.runner: judge 59000/133085 (9.4/s, errors=2)
+2026-10-08 06:41:49,953 INFO tlt.runner: judge 59200/133085 (9.4/s, errors=2)
+2026-10-08 06:42:10,626 INFO tlt.runner: judge 59400/133085 (9.4/s, errors=2)
+2026-10-08 06:42:31,593 INFO tlt.runner: judge 59600/133085 (9.4/s, errors=2)
+2026-10-08 06:42:50,849 INFO tlt.runner: judge 59800/133085 (9.4/s, errors=2)
+2026-10-08 06:43:11,579 INFO tlt.runner: judge 60000/133085 (9.4/s, errors=2)
+2026-10-08 06:43:31,443 INFO tlt.runner: judge 60200/133085 (9.4/s, errors=2)
+2026-10-08 06:43:53,528 INFO tlt.runner: judge 60400/133085 (9.4/s, errors=2)
+2026-10-08 06:44:16,088 INFO tlt.runner: judge 60600/133085 (9.4/s, errors=2)
+2026-10-08 06:44:37,240 INFO tlt.runner: judge 60800/133085 (9.4/s, errors=2)
+2026-10-08 06:44:56,644 INFO tlt.runner: judge 61000/133085 (9.4/s, errors=2)
+2026-10-08 06:45:17,406 INFO tlt.runner: judge 61200/133085 (9.4/s, errors=2)
+2026-10-08 06:45:38,066 INFO tlt.runner: judge 61400/133085 (9.4/s, errors=2)
+2026-10-08 06:45:59,046 INFO tlt.runner: judge 61600/133085 (9.4/s, errors=2)
+2026-10-08 06:46:19,517 INFO tlt.runner: judge 61800/133085 (9.4/s, errors=2)
+2026-10-08 06:46:39,282 INFO tlt.runner: judge 62000/133085 (9.4/s, errors=2)
+2026-10-08 06:47:00,595 INFO tlt.runner: judge 62200/133085 (9.4/s, errors=2)
+2026-10-08 06:47:21,975 INFO tlt.runner: judge 62400/133085 (9.4/s, errors=2)
+2026-10-08 06:47:42,494 INFO tlt.runner: judge 62600/133085 (9.4/s, errors=2)
+2026-10-08 06:48:05,454 INFO tlt.runner: judge 62800/133085 (9.4/s, errors=2)
+2026-10-08 06:48:29,210 INFO tlt.runner: judge 63000/133085 (9.4/s, errors=2)
+2026-10-08 06:48:49,135 INFO tlt.runner: judge 63200/133085 (9.4/s, errors=2)
+2026-10-08 06:49:10,562 INFO tlt.runner: judge 63400/133085 (9.4/s, errors=2)
+2026-10-08 06:49:31,677 INFO tlt.runner: judge 63600/133085 (9.4/s, errors=2)
+2026-10-08 06:49:52,411 INFO tlt.runner: judge 63800/133085 (9.4/s, errors=2)
+2026-10-08 06:50:14,077 INFO tlt.runner: judge 64000/133085 (9.4/s, errors=2)
+2026-10-08 06:50:33,738 INFO tlt.runner: judge 64200/133085 (9.4/s, errors=2)
+2026-10-08 06:50:55,207 INFO tlt.runner: judge 64400/133085 (9.4/s, errors=2)
+2026-10-08 06:51:15,697 INFO tlt.runner: judge 64600/133085 (9.4/s, errors=2)
+2026-10-08 06:51:37,626 INFO tlt.runner: judge 64800/133085 (9.4/s, errors=2)
+2026-10-08 06:51:58,782 INFO tlt.runner: judge 65000/133085 (9.4/s, errors=2)
+2026-10-08 06:52:18,835 INFO tlt.runner: judge 65200/133085 (9.4/s, errors=2)
+2026-10-08 06:52:38,938 INFO tlt.runner: judge 65400/133085 (9.4/s, errors=2)
+2026-10-08 06:52:58,093 INFO tlt.runner: judge 65600/133085 (9.4/s, errors=2)
+2026-10-08 06:53:19,204 INFO tlt.runner: judge 65800/133085 (9.4/s, errors=2)
+2026-10-08 06:53:38,836 INFO tlt.runner: judge 66000/133085 (9.4/s, errors=2)
+2026-10-08 06:54:00,777 INFO tlt.runner: judge 66200/133085 (9.4/s, errors=2)
+2026-10-08 06:54:22,123 INFO tlt.runner: judge 66400/133085 (9.4/s, errors=2)
+2026-10-08 06:54:41,750 INFO tlt.runner: judge 66600/133085 (9.4/s, errors=2)
+2026-10-08 06:55:01,674 INFO tlt.runner: judge 66800/133085 (9.4/s, errors=2)
+2026-10-08 06:55:21,409 INFO tlt.runner: judge 67000/133085 (9.4/s, errors=2)
+2026-10-08 06:55:40,583 INFO tlt.runner: judge 67200/133085 (9.4/s, errors=2)
+2026-10-08 06:56:01,720 INFO tlt.runner: judge 67400/133085 (9.4/s, errors=2)
+2026-10-08 06:56:22,272 INFO tlt.runner: judge 67600/133085 (9.4/s, errors=2)
+2026-10-08 06:56:42,890 INFO tlt.runner: judge 67800/133085 (9.4/s, errors=2)
+2026-10-08 06:57:02,284 INFO tlt.runner: judge 68000/133085 (9.4/s, errors=2)
+2026-10-08 06:57:22,726 INFO tlt.runner: judge 68200/133085 (9.4/s, errors=2)
+2026-10-08 06:57:43,398 INFO tlt.runner: judge 68400/133085 (9.4/s, errors=2)
+2026-10-08 06:58:03,646 INFO tlt.runner: judge 68600/133085 (9.4/s, errors=2)
+2026-10-08 06:58:24,572 INFO tlt.runner: judge 68800/133085 (9.4/s, errors=2)
+2026-10-08 06:58:44,426 INFO tlt.runner: judge 69000/133085 (9.4/s, errors=2)
+2026-10-08 06:59:05,190 INFO tlt.runner: judge 69200/133085 (9.4/s, errors=2)
+2026-10-08 06:59:27,544 INFO tlt.runner: judge 69400/133085 (9.4/s, errors=2)
+2026-10-08 06:59:46,186 INFO tlt.runner: judge 69600/133085 (9.4/s, errors=2)
+2026-10-08 07:00:06,674 INFO tlt.runner: judge 69800/133085 (9.4/s, errors=2)
+2026-10-08 07:00:28,513 INFO tlt.runner: judge 70000/133085 (9.4/s, errors=2)
+2026-10-08 07:00:48,672 INFO tlt.runner: judge 70200/133085 (9.4/s, errors=2)
+2026-10-08 07:01:09,707 INFO tlt.runner: judge 70400/133085 (9.4/s, errors=2)
+2026-10-08 07:01:32,330 INFO tlt.runner: judge 70600/133085 (9.4/s, errors=2)
+2026-10-08 07:01:53,598 INFO tlt.runner: judge 70800/133085 (9.4/s, errors=2)
+2026-10-08 07:02:15,568 INFO tlt.runner: judge 71000/133085 (9.4/s, errors=2)
+2026-10-08 07:02:37,373 INFO tlt.runner: judge 71200/133085 (9.4/s, errors=2)
+2026-10-08 07:02:58,265 INFO tlt.runner: judge 71400/133085 (9.4/s, errors=2)
+2026-10-08 07:03:18,666 INFO tlt.runner: judge 71600/133085 (9.4/s, errors=2)
+2026-10-08 07:03:40,018 INFO tlt.runner: judge 71800/133085 (9.4/s, errors=2)
+2026-10-08 07:04:01,124 INFO tlt.runner: judge 72000/133085 (9.4/s, errors=2)
+2026-10-08 07:04:22,749 INFO tlt.runner: judge 72200/133085 (9.4/s, errors=2)
+2026-10-08 07:04:45,230 INFO tlt.runner: judge 72400/133085 (9.4/s, errors=2)
+2026-10-08 07:05:06,908 INFO tlt.runner: judge 72600/133085 (9.4/s, errors=2)
+2026-10-08 07:05:27,244 INFO tlt.runner: judge 72800/133085 (9.4/s, errors=2)
+2026-10-08 07:05:49,060 INFO tlt.runner: judge 73000/133085 (9.4/s, errors=2)
+2026-10-08 07:06:09,702 INFO tlt.runner: judge 73200/133085 (9.4/s, errors=2)
+2026-10-08 07:06:30,840 INFO tlt.runner: judge 73400/133085 (9.4/s, errors=2)
+2026-10-08 07:06:51,542 INFO tlt.runner: judge 73600/133085 (9.4/s, errors=2)
+2026-10-08 07:07:13,158 INFO tlt.runner: judge 73800/133085 (9.4/s, errors=2)
+2026-10-08 07:07:34,882 INFO tlt.runner: judge 74000/133085 (9.4/s, errors=2)
+2026-10-08 07:07:55,926 INFO tlt.runner: judge 74200/133085 (9.4/s, errors=2)
+2026-10-08 07:08:17,109 INFO tlt.runner: judge 74400/133085 (9.4/s, errors=2)
+2026-10-08 07:08:38,007 INFO tlt.runner: judge 74600/133085 (9.4/s, errors=2)
+2026-10-08 07:08:58,470 INFO tlt.runner: judge 74800/133085 (9.4/s, errors=2)
+2026-10-08 07:09:18,283 INFO tlt.runner: judge 75000/133085 (9.4/s, errors=2)
+2026-10-08 07:09:39,009 INFO tlt.runner: judge 75200/133085 (9.4/s, errors=2)
+2026-10-08 07:10:00,712 INFO tlt.runner: judge 75400/133085 (9.4/s, errors=2)
+2026-10-08 07:10:21,143 INFO tlt.runner: judge 75600/133085 (9.4/s, errors=2)
+2026-10-08 07:10:41,436 INFO tlt.runner: judge 75800/133085 (9.4/s, errors=2)
+2026-10-08 07:11:01,749 INFO tlt.runner: judge 76000/133085 (9.4/s, errors=2)
+2026-10-08 07:11:22,579 INFO tlt.runner: judge 76200/133085 (9.4/s, errors=2)
+2026-10-08 07:11:43,118 INFO tlt.runner: judge 76400/133085 (9.4/s, errors=2)
+2026-10-08 07:12:04,286 INFO tlt.runner: judge 76600/133085 (9.4/s, errors=2)
+2026-10-08 07:12:25,423 INFO tlt.runner: judge 76800/133085 (9.4/s, errors=2)
+2026-10-08 07:12:45,945 INFO tlt.runner: judge 77000/133085 (9.4/s, errors=2)
+2026-10-08 07:13:06,166 INFO tlt.runner: judge 77200/133085 (9.4/s, errors=2)
+2026-10-08 07:13:28,436 INFO tlt.runner: judge 77400/133085 (9.4/s, errors=2)
+2026-10-08 07:13:48,004 INFO tlt.runner: judge 77600/133085 (9.4/s, errors=2)
+2026-10-08 07:14:08,157 INFO tlt.runner: judge 77800/133085 (9.4/s, errors=2)
+2026-10-08 07:14:28,911 INFO tlt.runner: judge 78000/133085 (9.4/s, errors=2)
+2026-10-08 07:14:49,912 INFO tlt.runner: judge 78200/133085 (9.4/s, errors=2)
+2026-10-08 07:15:10,631 INFO tlt.runner: judge 78400/133085 (9.4/s, errors=2)
+2026-10-08 07:15:31,108 INFO tlt.runner: judge 78600/133085 (9.4/s, errors=2)
+2026-10-08 07:15:54,494 INFO tlt.runner: judge 78800/133085 (9.4/s, errors=2)
+2026-10-08 07:16:17,097 INFO tlt.runner: judge 79000/133085 (9.4/s, errors=2)
+2026-10-08 07:16:37,367 INFO tlt.runner: judge 79200/133085 (9.4/s, errors=2)
+2026-10-08 07:16:57,716 INFO tlt.runner: judge 79400/133085 (9.4/s, errors=2)
+2026-10-08 07:17:18,185 INFO tlt.runner: judge 79600/133085 (9.4/s, errors=2)
+2026-10-08 07:17:38,304 INFO tlt.runner: judge 79800/133085 (9.4/s, errors=2)
+2026-10-08 07:18:04,707 INFO tlt.runner: judge 80000/133085 (9.4/s, errors=2)
+2026-10-08 07:18:29,584 INFO tlt.runner: judge 80200/133085 (9.4/s, errors=2)
+2026-10-08 07:18:54,839 INFO tlt.runner: judge 80400/133085 (9.4/s, errors=2)
+2026-10-08 07:19:21,136 INFO tlt.runner: judge 80600/133085 (9.4/s, errors=2)
+2026-10-08 07:19:48,592 INFO tlt.runner: judge 80800/133085 (9.4/s, errors=2)
+2026-10-08 07:20:13,792 INFO tlt.runner: judge 81000/133085 (9.4/s, errors=2)
+2026-10-08 07:20:39,255 INFO tlt.runner: judge 81200/133085 (9.4/s, errors=2)
+2026-10-08 07:21:04,698 INFO tlt.runner: judge 81400/133085 (9.4/s, errors=2)
+2026-10-08 07:21:28,191 INFO tlt.runner: judge 81600/133085 (9.4/s, errors=2)
+2026-10-08 07:21:53,824 INFO tlt.runner: judge 81800/133085 (9.4/s, errors=2)
+2026-10-08 07:22:18,952 INFO tlt.runner: judge 82000/133085 (9.4/s, errors=2)
+2026-10-08 07:22:42,344 INFO tlt.runner: judge 82200/133085 (9.4/s, errors=2)
+2026-10-08 07:23:10,348 INFO tlt.runner: judge 82400/133085 (9.4/s, errors=2)
+2026-10-08 07:23:35,895 INFO tlt.runner: judge 82600/133085 (9.4/s, errors=2)
+2026-10-08 07:24:00,413 INFO tlt.runner: judge 82800/133085 (9.4/s, errors=2)
+2026-10-08 07:24:25,070 INFO tlt.runner: judge 83000/133085 (9.4/s, errors=2)
+2026-10-08 07:24:48,836 INFO tlt.runner: judge 83200/133085 (9.4/s, errors=2)
+2026-10-08 07:25:12,180 INFO tlt.runner: judge 83400/133085 (9.4/s, errors=2)
+2026-10-08 07:25:36,340 INFO tlt.runner: judge 83600/133085 (9.4/s, errors=2)
+2026-10-08 07:26:00,296 INFO tlt.runner: judge 83800/133085 (9.4/s, errors=2)
+2026-10-08 07:26:26,427 INFO tlt.runner: judge 84000/133085 (9.4/s, errors=2)
+2026-10-08 07:26:47,402 INFO tlt.runner: judge 84200/133085 (9.4/s, errors=2)
+2026-10-08 07:27:06,354 INFO tlt.runner: judge 84400/133085 (9.4/s, errors=2)
+2026-10-08 07:27:24,995 INFO tlt.runner: judge 84600/133085 (9.4/s, errors=2)
+2026-10-08 07:27:44,336 INFO tlt.runner: judge 84800/133085 (9.4/s, errors=2)
+2026-10-08 07:28:02,028 INFO tlt.runner: judge 85000/133085 (9.4/s, errors=2)
+2026-10-08 07:28:20,417 INFO tlt.runner: judge 85200/133085 (9.4/s, errors=2)
+2026-10-08 07:28:38,595 INFO tlt.runner: judge 85400/133085 (9.4/s, errors=2)
+2026-10-08 07:28:57,825 INFO tlt.runner: judge 85600/133085 (9.4/s, errors=2)
+2026-10-08 07:29:16,569 INFO tlt.runner: judge 85800/133085 (9.4/s, errors=2)
+2026-10-08 07:29:36,784 INFO tlt.runner: judge 86000/133085 (9.4/s, errors=2)
+2026-10-08 07:29:56,240 INFO tlt.runner: judge 86200/133085 (9.4/s, errors=2)
+2026-10-08 07:30:15,665 INFO tlt.runner: judge 86400/133085 (9.4/s, errors=2)
+2026-10-08 07:30:34,281 INFO tlt.runner: judge 86600/133085 (9.4/s, errors=2)
+2026-10-08 07:30:53,703 INFO tlt.runner: judge 86800/133085 (9.4/s, errors=2)
+2026-10-08 07:31:14,186 INFO tlt.runner: judge 87000/133085 (9.4/s, errors=2)
+2026-10-08 07:31:35,072 INFO tlt.runner: judge 87200/133085 (9.4/s, errors=2)
+2026-10-08 07:31:56,293 INFO tlt.runner: judge 87400/133085 (9.4/s, errors=2)
+2026-10-08 07:32:16,746 INFO tlt.runner: judge 87600/133085 (9.4/s, errors=2)
+2026-10-08 07:32:38,242 INFO tlt.runner: judge 87800/133085 (9.4/s, errors=2)
+2026-10-08 07:32:59,368 INFO tlt.runner: judge 88000/133085 (9.4/s, errors=2)
+2026-10-08 07:33:19,423 INFO tlt.runner: judge 88200/133085 (9.4/s, errors=2)
+2026-10-08 07:33:40,436 INFO tlt.runner: judge 88400/133085 (9.4/s, errors=2)
+2026-10-08 07:34:03,920 INFO tlt.runner: judge 88600/133085 (9.4/s, errors=2)
+2026-10-08 07:34:23,663 INFO tlt.runner: judge 88800/133085 (9.4/s, errors=2)
+2026-10-08 07:34:42,934 INFO tlt.runner: judge 89000/133085 (9.4/s, errors=2)
+2026-10-08 07:35:05,213 INFO tlt.runner: judge 89200/133085 (9.4/s, errors=2)
+2026-10-08 07:35:25,195 INFO tlt.runner: judge 89400/133085 (9.4/s, errors=2)
+2026-10-08 07:35:44,877 INFO tlt.runner: judge 89600/133085 (9.4/s, errors=2)
+2026-10-08 07:36:06,782 INFO tlt.runner: judge 89800/133085 (9.4/s, errors=2)
+2026-10-08 07:36:27,417 INFO tlt.runner: judge 90000/133085 (9.4/s, errors=2)
+2026-10-08 07:36:48,321 INFO tlt.runner: judge 90200/133085 (9.4/s, errors=2)
+2026-10-08 07:37:09,441 INFO tlt.runner: judge 90400/133085 (9.4/s, errors=2)
+2026-10-08 07:37:29,497 INFO tlt.runner: judge 90600/133085 (9.4/s, errors=2)
+2026-10-08 07:37:48,903 INFO tlt.runner: judge 90800/133085 (9.4/s, errors=2)
+2026-10-08 07:38:09,807 INFO tlt.runner: judge 91000/133085 (9.4/s, errors=2)
+2026-10-08 07:38:29,549 INFO tlt.runner: judge 91200/133085 (9.4/s, errors=2)
+2026-10-08 07:38:49,218 INFO tlt.runner: judge 91400/133085 (9.4/s, errors=2)
+2026-10-08 07:39:09,857 INFO tlt.runner: judge 91600/133085 (9.4/s, errors=2)
+2026-10-08 07:39:28,558 INFO tlt.runner: judge 91800/133085 (9.4/s, errors=2)
+2026-10-08 07:39:47,500 INFO tlt.runner: judge 92000/133085 (9.4/s, errors=2)
+2026-10-08 07:40:09,321 INFO tlt.runner: judge 92200/133085 (9.4/s, errors=2)
+2026-10-08 07:40:29,989 INFO tlt.runner: judge 92400/133085 (9.4/s, errors=2)
+2026-10-08 07:40:50,211 INFO tlt.runner: judge 92600/133085 (9.4/s, errors=2)
+2026-10-08 07:41:12,247 INFO tlt.runner: judge 92800/133085 (9.4/s, errors=2)
+2026-10-08 07:41:33,276 INFO tlt.runner: judge 93000/133085 (9.4/s, errors=2)
+2026-10-08 07:41:51,730 INFO tlt.runner: judge 93200/133085 (9.4/s, errors=2)
+2026-10-08 07:42:13,272 INFO tlt.runner: judge 93400/133085 (9.4/s, errors=2)
+2026-10-08 07:42:33,536 INFO tlt.runner: judge 93600/133085 (9.4/s, errors=2)
+2026-10-08 07:42:52,855 INFO tlt.runner: judge 93800/133085 (9.4/s, errors=2)
+2026-10-08 07:43:13,745 INFO tlt.runner: judge 94000/133085 (9.4/s, errors=2)
+2026-10-08 07:43:32,947 INFO tlt.runner: judge 94200/133085 (9.4/s, errors=2)
+2026-10-08 07:43:52,388 INFO tlt.runner: judge 94400/133085 (9.4/s, errors=2)
+2026-10-08 07:44:11,995 INFO tlt.runner: judge 94600/133085 (9.4/s, errors=2)
+2026-10-08 07:44:32,532 INFO tlt.runner: judge 94800/133085 (9.4/s, errors=2)
+2026-10-08 07:44:50,468 INFO tlt.runner: judge 95000/133085 (9.4/s, errors=2)
+2026-10-08 07:45:11,104 INFO tlt.runner: judge 95200/133085 (9.4/s, errors=2)
+2026-10-08 07:45:32,435 INFO tlt.runner: judge 95400/133085 (9.4/s, errors=2)
+2026-10-08 07:45:52,225 INFO tlt.runner: judge 95600/133085 (9.4/s, errors=2)
+2026-10-08 07:46:12,921 INFO tlt.runner: judge 95800/133085 (9.4/s, errors=2)
+2026-10-08 07:46:32,917 INFO tlt.runner: judge 96000/133085 (9.4/s, errors=2)
+2026-10-08 07:46:53,518 INFO tlt.runner: judge 96200/133085 (9.4/s, errors=2)
+2026-10-08 07:47:14,982 INFO tlt.runner: judge 96400/133085 (9.4/s, errors=2)
+2026-10-08 07:47:34,469 INFO tlt.runner: judge 96600/133085 (9.4/s, errors=2)
+2026-10-08 07:47:55,413 INFO tlt.runner: judge 96800/133085 (9.4/s, errors=2)
+2026-10-08 07:48:16,889 INFO tlt.runner: judge 97000/133085 (9.4/s, errors=2)
+2026-10-08 07:48:36,569 INFO tlt.runner: judge 97200/133085 (9.4/s, errors=2)
+2026-10-08 07:48:58,353 INFO tlt.runner: judge 97400/133085 (9.4/s, errors=2)
+2026-10-08 07:49:19,392 INFO tlt.runner: judge 97600/133085 (9.4/s, errors=2)
+2026-10-08 07:49:39,633 INFO tlt.runner: judge 97800/133085 (9.4/s, errors=2)
+2026-10-08 07:50:00,270 INFO tlt.runner: judge 98000/133085 (9.4/s, errors=2)
+2026-10-08 07:50:22,237 INFO tlt.runner: judge 98200/133085 (9.4/s, errors=2)
+2026-10-08 07:50:43,024 INFO tlt.runner: judge 98400/133085 (9.4/s, errors=2)
+2026-10-08 07:51:03,442 INFO tlt.runner: judge 98600/133085 (9.4/s, errors=2)
+2026-10-08 07:51:23,595 INFO tlt.runner: judge 98800/133085 (9.4/s, errors=2)
+2026-10-08 07:51:44,180 INFO tlt.runner: judge 99000/133085 (9.4/s, errors=2)
+2026-10-08 07:52:05,691 INFO tlt.runner: judge 99200/133085 (9.4/s, errors=2)
+2026-10-08 07:52:25,863 INFO tlt.runner: judge 99400/133085 (9.4/s, errors=2)
+2026-10-08 07:52:47,318 INFO tlt.runner: judge 99600/133085 (9.4/s, errors=2)
+2026-10-08 07:53:09,142 INFO tlt.runner: judge 99800/133085 (9.4/s, errors=2)
+2026-10-08 07:53:33,382 INFO tlt.runner: judge 100000/133085 (9.4/s, errors=2)
+2026-10-08 07:53:54,859 INFO tlt.runner: judge 100200/133085 (9.4/s, errors=2)
+2026-10-08 07:54:13,830 INFO tlt.runner: judge 100400/133085 (9.4/s, errors=2)
+2026-10-08 07:54:34,295 INFO tlt.runner: judge 100600/133085 (9.4/s, errors=2)
+2026-10-08 07:54:53,646 INFO tlt.runner: judge 100800/133085 (9.4/s, errors=2)
+2026-10-08 07:55:16,852 INFO tlt.runner: judge 101000/133085 (9.4/s, errors=2)
+2026-10-08 07:55:36,751 INFO tlt.runner: judge 101200/133085 (9.4/s, errors=2)
+2026-10-08 07:55:56,198 INFO tlt.runner: judge 101400/133085 (9.4/s, errors=2)
+2026-10-08 07:56:16,108 INFO tlt.runner: judge 101600/133085 (9.4/s, errors=2)
+2026-10-08 07:56:36,329 INFO tlt.runner: judge 101800/133085 (9.4/s, errors=2)
+2026-10-08 07:57:07,481 INFO tlt.runner: judge 102000/133085 (9.4/s, errors=2)
+2026-10-08 07:57:59,517 INFO tlt.runner: judge 102200/133085 (9.4/s, errors=2)
+2026-10-08 07:58:51,156 INFO tlt.runner: judge 102400/133085 (9.4/s, errors=2)
+2026-10-08 07:59:43,613 INFO tlt.runner: judge 102600/133085 (9.4/s, errors=2)
+2026-10-08 08:00:34,996 INFO tlt.runner: judge 102800/133085 (9.3/s, errors=2)
+2026-10-08 08:01:28,082 INFO tlt.runner: judge 103000/133085 (9.3/s, errors=2)
+2026-10-08 08:02:21,314 INFO tlt.runner: judge 103200/133085 (9.3/s, errors=2)
+2026-10-08 08:03:12,420 INFO tlt.runner: judge 103400/133085 (9.2/s, errors=2)
+2026-10-08 08:04:05,124 INFO tlt.runner: judge 103600/133085 (9.2/s, errors=2)
+2026-10-08 08:04:56,813 INFO tlt.runner: judge 103800/133085 (9.2/s, errors=2)
+2026-10-08 08:05:48,183 INFO tlt.runner: judge 104000/133085 (9.2/s, errors=2)
+2026-10-08 08:06:41,147 INFO tlt.runner: judge 104200/133085 (9.1/s, errors=2)
+2026-10-08 08:07:33,109 INFO tlt.runner: judge 104400/133085 (9.1/s, errors=2)
+2026-10-08 08:08:26,728 INFO tlt.runner: judge 104600/133085 (9.1/s, errors=2)
+2026-10-08 08:09:18,821 INFO tlt.runner: judge 104800/133085 (9.1/s, errors=2)
+2026-10-08 08:10:11,534 INFO tlt.runner: judge 105000/133085 (9.1/s, errors=2)
+2026-10-08 08:11:03,673 INFO tlt.runner: judge 105200/133085 (9.0/s, errors=2)
+2026-10-08 08:11:55,957 INFO tlt.runner: judge 105400/133085 (9.0/s, errors=2)
+2026-10-08 08:12:47,797 INFO tlt.runner: judge 105600/133085 (9.0/s, errors=2)
+2026-10-08 08:13:40,940 INFO tlt.runner: judge 105800/133085 (9.0/s, errors=2)
+2026-10-08 08:14:31,260 INFO tlt.runner: judge 106000/133085 (8.9/s, errors=2)
+2026-10-08 08:15:23,881 INFO tlt.runner: judge 106200/133085 (8.9/s, errors=2)
+2026-10-08 08:16:14,509 INFO tlt.runner: judge 106400/133085 (8.9/s, errors=2)
+2026-10-08 08:17:08,597 INFO tlt.runner: judge 106600/133085 (8.9/s, errors=2)
+2026-10-08 08:17:58,058 INFO tlt.runner: judge 106800/133085 (8.9/s, errors=2)
+2026-10-08 08:18:50,426 INFO tlt.runner: judge 107000/133085 (8.8/s, errors=2)
+2026-10-08 08:19:43,454 INFO tlt.runner: judge 107200/133085 (8.8/s, errors=2)
+2026-10-08 08:20:36,239 INFO tlt.runner: judge 107400/133085 (8.8/s, errors=2)
+2026-10-08 08:21:27,402 INFO tlt.runner: judge 107600/133085 (8.8/s, errors=2)
+2026-10-08 08:22:19,688 INFO tlt.runner: judge 107800/133085 (8.7/s, errors=2)
+2026-10-08 08:23:11,201 INFO tlt.runner: judge 108000/133085 (8.7/s, errors=2)
+2026-10-08 08:24:03,826 INFO tlt.runner: judge 108200/133085 (8.7/s, errors=2)
+2026-10-08 08:24:56,749 INFO tlt.runner: judge 108400/133085 (8.7/s, errors=2)
+2026-10-08 08:25:47,669 INFO tlt.runner: judge 108600/133085 (8.7/s, errors=2)
+2026-10-08 08:26:40,341 INFO tlt.runner: judge 108800/133085 (8.6/s, errors=2)
+2026-10-08 08:27:32,280 INFO tlt.runner: judge 109000/133085 (8.6/s, errors=2)
+2026-10-08 08:28:23,799 INFO tlt.runner: judge 109200/133085 (8.6/s, errors=2)
+2026-10-08 08:29:15,534 INFO tlt.runner: judge 109400/133085 (8.6/s, errors=2)
+2026-10-08 08:30:07,242 INFO tlt.runner: judge 109600/133085 (8.6/s, errors=2)
+2026-10-08 08:31:00,313 INFO tlt.runner: judge 109800/133085 (8.5/s, errors=2)
+2026-10-08 08:31:51,981 INFO tlt.runner: judge 110000/133085 (8.5/s, errors=2)
+2026-10-08 08:32:44,215 INFO tlt.runner: judge 110200/133085 (8.5/s, errors=2)
+2026-10-08 08:33:35,928 INFO tlt.runner: judge 110400/133085 (8.5/s, errors=2)
+2026-10-08 08:34:28,045 INFO tlt.runner: judge 110600/133085 (8.5/s, errors=2)
+2026-10-08 08:35:19,409 INFO tlt.runner: judge 110800/133085 (8.5/s, errors=2)
+2026-10-08 08:36:12,146 INFO tlt.runner: judge 111000/133085 (8.4/s, errors=2)
+2026-10-08 08:37:04,794 INFO tlt.runner: judge 111200/133085 (8.4/s, errors=2)
+2026-10-08 08:37:55,869 INFO tlt.runner: judge 111400/133085 (8.4/s, errors=2)
+2026-10-08 08:38:47,485 INFO tlt.runner: judge 111600/133085 (8.4/s, errors=2)
+2026-10-08 08:39:39,624 INFO tlt.runner: judge 111800/133085 (8.4/s, errors=2)
+2026-10-08 08:40:31,887 INFO tlt.runner: judge 112000/133085 (8.3/s, errors=2)
+2026-10-08 08:41:22,614 INFO tlt.runner: judge 112200/133085 (8.3/s, errors=2)
+2026-10-08 08:42:14,708 INFO tlt.runner: judge 112400/133085 (8.3/s, errors=2)
+2026-10-08 08:43:06,775 INFO tlt.runner: judge 112600/133085 (8.3/s, errors=2)
+2026-10-08 08:43:58,993 INFO tlt.runner: judge 112800/133085 (8.3/s, errors=2)
+2026-10-08 08:44:50,959 INFO tlt.runner: judge 113000/133085 (8.3/s, errors=2)
+2026-10-08 08:45:43,173 INFO tlt.runner: judge 113200/133085 (8.2/s, errors=2)
+2026-10-08 08:46:34,769 INFO tlt.runner: judge 113400/133085 (8.2/s, errors=2)
+2026-10-08 08:47:25,541 INFO tlt.runner: judge 113600/133085 (8.2/s, errors=2)
+2026-10-08 08:48:18,047 INFO tlt.runner: judge 113800/133085 (8.2/s, errors=2)
+2026-10-08 08:49:09,924 INFO tlt.runner: judge 114000/133085 (8.2/s, errors=2)
+2026-10-08 08:50:00,752 INFO tlt.runner: judge 114200/133085 (8.2/s, errors=2)
+2026-10-08 08:50:53,299 INFO tlt.runner: judge 114400/133085 (8.1/s, errors=2)
+2026-10-08 08:51:46,240 INFO tlt.runner: judge 114600/133085 (8.1/s, errors=2)
+2026-10-08 08:52:37,858 INFO tlt.runner: judge 114800/133085 (8.1/s, errors=2)
+2026-10-08 08:53:30,715 INFO tlt.runner: judge 115000/133085 (8.1/s, errors=2)
+2026-10-08 08:54:20,929 INFO tlt.runner: judge 115200/133085 (8.1/s, errors=2)
+2026-10-08 08:55:13,427 INFO tlt.runner: judge 115400/133085 (8.1/s, errors=2)
+2026-10-08 08:56:05,843 INFO tlt.runner: judge 115600/133085 (8.1/s, errors=2)
+2026-10-08 08:56:58,927 INFO tlt.runner: judge 115800/133085 (8.0/s, errors=2)
+2026-10-08 08:57:50,005 INFO tlt.runner: judge 116000/133085 (8.0/s, errors=2)
+2026-10-08 08:58:40,695 INFO tlt.runner: judge 116200/133085 (8.0/s, errors=2)
+2026-10-08 08:59:33,608 INFO tlt.runner: judge 116400/133085 (8.0/s, errors=2)
+2026-10-08 09:00:25,132 INFO tlt.runner: judge 116600/133085 (8.0/s, errors=2)
+2026-10-08 09:01:17,461 INFO tlt.runner: judge 116800/133085 (8.0/s, errors=2)
+2026-10-08 09:02:10,594 INFO tlt.runner: judge 117000/133085 (7.9/s, errors=2)
+2026-10-08 09:03:01,089 INFO tlt.runner: judge 117200/133085 (7.9/s, errors=2)
+2026-10-08 09:03:53,755 INFO tlt.runner: judge 117400/133085 (7.9/s, errors=2)
+2026-10-08 09:04:44,674 INFO tlt.runner: judge 117600/133085 (7.9/s, errors=2)
+2026-10-08 09:05:37,151 INFO tlt.runner: judge 117800/133085 (7.9/s, errors=2)
+2026-10-08 09:06:29,124 INFO tlt.runner: judge 118000/133085 (7.9/s, errors=2)
+2026-10-08 09:07:21,598 INFO tlt.runner: judge 118200/133085 (7.9/s, errors=2)
+2026-10-08 09:08:13,793 INFO tlt.runner: judge 118400/133085 (7.9/s, errors=2)
+2026-10-08 09:09:05,537 INFO tlt.runner: judge 118600/133085 (7.8/s, errors=2)
+2026-10-08 09:09:55,382 INFO tlt.runner: judge 118800/133085 (7.8/s, errors=2)
+2026-10-08 09:10:47,694 INFO tlt.runner: judge 119000/133085 (7.8/s, errors=2)
+2026-10-08 09:11:39,299 INFO tlt.runner: judge 119200/133085 (7.8/s, errors=2)
+2026-10-08 09:12:31,271 INFO tlt.runner: judge 119400/133085 (7.8/s, errors=2)
+2026-10-08 09:13:23,646 INFO tlt.runner: judge 119600/133085 (7.8/s, errors=2)
+2026-10-08 09:14:16,356 INFO tlt.runner: judge 119800/133085 (7.8/s, errors=2)
+2026-10-08 09:15:08,440 INFO tlt.runner: judge 120000/133085 (7.7/s, errors=2)
+2026-10-08 09:16:00,380 INFO tlt.runner: judge 120200/133085 (7.7/s, errors=2)
+2026-10-08 09:16:52,730 INFO tlt.runner: judge 120400/133085 (7.7/s, errors=2)
+2026-10-08 09:17:43,942 INFO tlt.runner: judge 120600/133085 (7.7/s, errors=2)
+2026-10-08 09:18:36,375 INFO tlt.runner: judge 120800/133085 (7.7/s, errors=2)
+2026-10-08 09:19:27,477 INFO tlt.runner: judge 121000/133085 (7.7/s, errors=2)
+2026-10-08 09:20:21,419 INFO tlt.runner: judge 121200/133085 (7.7/s, errors=2)
+2026-10-08 09:21:11,472 INFO tlt.runner: judge 121400/133085 (7.7/s, errors=2)
+2026-10-08 09:22:04,683 INFO tlt.runner: judge 121600/133085 (7.6/s, errors=2)
+2026-10-08 09:22:57,751 INFO tlt.runner: judge 121800/133085 (7.6/s, errors=2)
+2026-10-08 09:23:49,252 INFO tlt.runner: judge 122000/133085 (7.6/s, errors=2)
+2026-10-08 09:24:41,029 INFO tlt.runner: judge 122200/133085 (7.6/s, errors=2)
+2026-10-08 09:25:34,056 INFO tlt.runner: judge 122400/133085 (7.6/s, errors=2)
+2026-10-08 09:26:26,204 INFO tlt.runner: judge 122600/133085 (7.6/s, errors=2)
+2026-10-08 09:27:17,700 INFO tlt.runner: judge 122800/133085 (7.6/s, errors=2)
+2026-10-08 09:28:10,795 INFO tlt.runner: judge 123000/133085 (7.6/s, errors=2)
+2026-10-08 09:29:00,574 INFO tlt.runner: judge 123200/133085 (7.5/s, errors=2)
+2026-10-08 09:29:53,163 INFO tlt.runner: judge 123400/133085 (7.5/s, errors=2)
+2026-10-08 09:30:44,949 INFO tlt.runner: judge 123600/133085 (7.5/s, errors=2)
+2026-10-08 09:31:35,261 INFO tlt.runner: judge 123800/133085 (7.5/s, errors=2)
+2026-10-08 09:32:27,528 INFO tlt.runner: judge 124000/133085 (7.5/s, errors=2)
+2026-10-08 09:33:19,326 INFO tlt.runner: judge 124200/133085 (7.5/s, errors=2)
+2026-10-08 09:34:12,265 INFO tlt.runner: judge 124400/133085 (7.5/s, errors=2)
+2026-10-08 09:35:04,314 INFO tlt.runner: judge 124600/133085 (7.5/s, errors=2)
+2026-10-08 09:35:56,823 INFO tlt.runner: judge 124800/133085 (7.5/s, errors=2)
+2026-10-08 09:36:47,739 INFO tlt.runner: judge 125000/133085 (7.4/s, errors=2)
+2026-10-08 09:37:39,988 INFO tlt.runner: judge 125200/133085 (7.4/s, errors=2)
+2026-10-08 09:38:33,059 INFO tlt.runner: judge 125400/133085 (7.4/s, errors=2)
+2026-10-08 09:39:24,825 INFO tlt.runner: judge 125600/133085 (7.4/s, errors=2)
+2026-10-08 09:40:16,124 INFO tlt.runner: judge 125800/133085 (7.4/s, errors=2)
+2026-10-08 09:41:08,266 INFO tlt.runner: judge 126000/133085 (7.4/s, errors=2)
+2026-10-08 09:41:59,782 INFO tlt.runner: judge 126200/133085 (7.4/s, errors=2)
+2026-10-08 09:42:53,198 INFO tlt.runner: judge 126400/133085 (7.4/s, errors=2)
+2026-10-08 09:43:44,710 INFO tlt.runner: judge 126600/133085 (7.4/s, errors=2)
+2026-10-08 09:44:36,272 INFO tlt.runner: judge 126800/133085 (7.3/s, errors=2)
+2026-10-08 09:45:28,186 INFO tlt.runner: judge 127000/133085 (7.3/s, errors=2)
+2026-10-08 09:46:20,929 INFO tlt.runner: judge 127200/133085 (7.3/s, errors=2)
+2026-10-08 09:47:11,769 INFO tlt.runner: judge 127400/133085 (7.3/s, errors=2)
+2026-10-08 09:48:03,715 INFO tlt.runner: judge 127600/133085 (7.3/s, errors=2)
+2026-10-08 09:48:54,891 INFO tlt.runner: judge 127800/133085 (7.3/s, errors=2)
+2026-10-08 09:49:47,543 INFO tlt.runner: judge 128000/133085 (7.3/s, errors=2)
+2026-10-08 09:50:38,980 INFO tlt.runner: judge 128200/133085 (7.3/s, errors=2)
+2026-10-08 09:51:30,559 INFO tlt.runner: judge 128400/133085 (7.3/s, errors=2)
+2026-10-08 09:52:24,148 INFO tlt.runner: judge 128600/133085 (7.3/s, errors=2)
+2026-10-08 09:53:15,418 INFO tlt.runner: judge 128800/133085 (7.2/s, errors=2)
+2026-10-08 09:54:07,495 INFO tlt.runner: judge 129000/133085 (7.2/s, errors=2)
+2026-10-08 09:54:57,876 INFO tlt.runner: judge 129200/133085 (7.2/s, errors=2)
+2026-10-08 09:55:50,733 INFO tlt.runner: judge 129400/133085 (7.2/s, errors=2)
+2026-10-08 09:56:43,259 INFO tlt.runner: judge 129600/133085 (7.2/s, errors=2)
+2026-10-08 09:57:35,035 INFO tlt.runner: judge 129800/133085 (7.2/s, errors=2)
+2026-10-08 09:58:27,307 INFO tlt.runner: judge 130000/133085 (7.2/s, errors=2)
+2026-10-08 09:59:19,208 INFO tlt.runner: judge 130200/133085 (7.2/s, errors=2)
+2026-10-08 10:00:34,178 INFO tlt.runner: judge 130400/133085 (7.2/s, errors=2)
+2026-10-08 10:02:24,739 INFO tlt.runner: judge 130600/133085 (7.1/s, errors=2)
+2026-10-08 10:04:13,370 INFO tlt.runner: judge 130800/133085 (7.1/s, errors=2)
+2026-10-08 10:06:02,123 INFO tlt.runner: judge 131000/133085 (7.1/s, errors=2)
+2026-10-08 10:07:53,078 INFO tlt.runner: judge 131200/133085 (7.0/s, errors=2)
+2026-10-08 10:09:41,581 INFO tlt.runner: judge 131400/133085 (7.0/s, errors=2)
+2026-10-08 10:11:34,733 INFO tlt.runner: judge 131600/133085 (7.0/s, errors=2)
+2026-10-08 10:13:22,220 INFO tlt.runner: judge 131800/133085 (6.9/s, errors=2)
+2026-10-08 10:15:11,040 INFO tlt.runner: judge 132000/133085 (6.9/s, errors=2)
+2026-10-08 10:16:59,902 INFO tlt.runner: judge 132200/133085 (6.9/s, errors=2)
+2026-10-08 10:18:50,279 INFO tlt.runner: judge 132400/133085 (6.9/s, errors=2)
+2026-10-08 10:20:40,037 INFO tlt.runner: judge 132600/133085 (6.8/s, errors=2)
+2026-10-08 10:22:25,743 INFO tlt.runner: judge 132800/133085 (6.8/s, errors=2)
+2026-10-08 10:24:14,292 INFO tlt.runner: judge 133000/133085 (6.8/s, errors=2)
+2026-10-08 10:25:13,424 INFO tlt.runner: judge 133085/133085 (6.8/s, errors=2)
+2026-10-08 10:27:41,470 INFO tlt.s05: judge: {'submitted': 133085, 'already_done_or_exhausted': 68515, 'ok': 133083, 'error': 2, 'targets': 67200, 'judge_records': 201600, 'unparseable': 2, 'json_repair_fired': 2110, 'residual_name_hits': 0, 'pqi_missing': 3}
+2026-10-08 10:27:43,081 INFO tlt: stage mask_and_judge done in 20068.0s
+2026-10-08 10:29:48,936 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 209.38, 'remaining_usd': 99.45}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 83.44, 'remaining_usd': -0.01}}
+2026-10-08 10:30:03,354 INFO tlt.runner: translated-judge 200/29517 (6.2/s, errors=0)
+2026-10-08 10:30:15,675 INFO tlt.runner: translated-judge 400/29517 (8.9/s, errors=0)
+2026-10-08 10:30:35,017 INFO tlt.runner: translated-judge 600/29517 (9.4/s, errors=0)
+2026-10-08 10:30:53,435 INFO tlt.runner: translated-judge 800/29517 (9.7/s, errors=0)
+2026-10-08 10:31:10,566 INFO tlt.runner: translated-judge 1000/29517 (10.0/s, errors=0)
+2026-10-08 10:31:28,601 INFO tlt.runner: translated-judge 1200/29517 (10.2/s, errors=0)
+2026-10-08 10:31:46,744 INFO tlt.runner: translated-judge 1400/29517 (10.3/s, errors=0)
+2026-10-08 10:32:07,905 INFO tlt.runner: translated-judge 1600/29517 (10.2/s, errors=0)
+2026-10-08 10:32:24,717 INFO tlt.runner: translated-judge 1800/29517 (10.4/s, errors=0)
+2026-10-08 10:32:41,553 INFO tlt.runner: translated-judge 2000/29517 (10.5/s, errors=0)
+2026-10-08 10:32:58,830 INFO tlt.runner: translated-judge 2200/29517 (10.6/s, errors=0)
+2026-10-08 10:33:16,569 INFO tlt.runner: translated-judge 2400/29517 (10.6/s, errors=0)
+2026-10-08 10:33:33,690 INFO tlt.runner: translated-judge 2600/29517 (10.7/s, errors=0)
+2026-10-08 10:33:52,755 INFO tlt.runner: translated-judge 2800/29517 (10.7/s, errors=0)
+2026-10-08 10:34:09,733 INFO tlt.runner: translated-judge 3000/29517 (10.8/s, errors=0)
+2026-10-08 10:34:26,382 INFO tlt.runner: translated-judge 3200/29517 (10.8/s, errors=0)
+2026-10-08 10:34:44,283 INFO tlt.runner: translated-judge 3400/29517 (10.9/s, errors=0)
+2026-10-08 10:35:00,383 INFO tlt.runner: translated-judge 3600/29517 (10.9/s, errors=0)
+2026-10-08 10:35:17,128 INFO tlt.runner: translated-judge 3800/29517 (11.0/s, errors=0)
+2026-10-08 10:35:34,391 INFO tlt.runner: translated-judge 4000/29517 (11.0/s, errors=0)
+2026-10-08 10:35:51,771 INFO tlt.runner: translated-judge 4200/29517 (11.0/s, errors=0)
+2026-10-08 10:36:08,230 INFO tlt.runner: translated-judge 4400/29517 (11.1/s, errors=0)
+2026-10-08 10:36:24,553 INFO tlt.runner: translated-judge 4600/29517 (11.1/s, errors=0)
+2026-10-08 10:36:42,520 INFO tlt.runner: translated-judge 4800/29517 (11.1/s, errors=0)
+2026-10-08 10:37:00,371 INFO tlt.runner: translated-judge 5000/29517 (11.1/s, errors=0)
+2026-10-08 10:37:17,918 INFO tlt.runner: translated-judge 5200/29517 (11.1/s, errors=0)
+2026-10-08 10:37:35,546 INFO tlt.runner: translated-judge 5400/29517 (11.1/s, errors=0)
+2026-10-08 10:37:51,762 INFO tlt.runner: translated-judge 5600/29517 (11.2/s, errors=0)
+2026-10-08 10:38:09,787 INFO tlt.runner: translated-judge 5800/29517 (11.2/s, errors=0)
+2026-10-08 10:38:26,992 INFO tlt.runner: translated-judge 6000/29517 (11.2/s, errors=0)
+2026-10-08 10:38:43,627 INFO tlt.runner: translated-judge 6200/29517 (11.2/s, errors=0)
+2026-10-08 10:39:00,370 INFO tlt.runner: translated-judge 6400/29517 (11.2/s, errors=0)
+2026-10-08 10:39:20,808 INFO tlt.runner: translated-judge 6600/29517 (11.2/s, errors=0)
+2026-10-08 10:39:38,734 INFO tlt.runner: translated-judge 6800/29517 (11.2/s, errors=0)
+2026-10-08 10:39:55,439 INFO tlt.runner: translated-judge 7000/29517 (11.2/s, errors=0)
+2026-10-08 10:40:10,961 INFO tlt.runner: translated-judge 7200/29517 (11.2/s, errors=0)
+2026-10-08 10:40:29,049 INFO tlt.runner: translated-judge 7400/29517 (11.2/s, errors=0)
+2026-10-08 10:40:45,759 INFO tlt.runner: translated-judge 7600/29517 (11.3/s, errors=0)
+2026-10-08 10:41:03,369 INFO tlt.runner: translated-judge 7800/29517 (11.3/s, errors=0)
+2026-10-08 10:41:19,887 INFO tlt.runner: translated-judge 8000/29517 (11.3/s, errors=0)
+2026-10-08 10:41:36,179 INFO tlt.runner: translated-judge 8200/29517 (11.3/s, errors=0)
+2026-10-08 10:41:52,187 INFO tlt.runner: translated-judge 8400/29517 (11.3/s, errors=0)
+2026-10-08 10:42:11,954 INFO tlt.runner: translated-judge 8600/29517 (11.3/s, errors=0)
+2026-10-08 10:42:30,930 INFO tlt.runner: translated-judge 8800/29517 (11.3/s, errors=0)
+2026-10-08 10:42:48,994 INFO tlt.runner: translated-judge 9000/29517 (11.3/s, errors=0)
+2026-10-08 10:43:06,753 INFO tlt.runner: translated-judge 9200/29517 (11.3/s, errors=0)
+2026-10-08 10:43:24,338 INFO tlt.runner: translated-judge 9400/29517 (11.3/s, errors=0)
+2026-10-08 10:43:41,623 INFO tlt.runner: translated-judge 9600/29517 (11.3/s, errors=0)
+2026-10-08 10:43:59,304 INFO tlt.runner: translated-judge 9800/29517 (11.3/s, errors=0)
+2026-10-08 10:44:16,260 INFO tlt.runner: translated-judge 10000/29517 (11.3/s, errors=0)
+2026-10-08 10:44:33,377 INFO tlt.runner: translated-judge 10200/29517 (11.3/s, errors=0)
+2026-10-08 10:44:50,741 INFO tlt.runner: translated-judge 10400/29517 (11.3/s, errors=0)
+2026-10-08 10:45:07,139 INFO tlt.runner: translated-judge 10600/29517 (11.3/s, errors=0)
+2026-10-08 10:45:23,876 INFO tlt.runner: translated-judge 10800/29517 (11.3/s, errors=0)
+2026-10-08 10:45:40,739 INFO tlt.runner: translated-judge 11000/29517 (11.3/s, errors=0)
+2026-10-08 10:45:58,045 INFO tlt.runner: translated-judge 11200/29517 (11.3/s, errors=0)
+2026-10-08 10:46:15,068 INFO tlt.runner: translated-judge 11400/29517 (11.4/s, errors=0)
+2026-10-08 10:46:31,613 INFO tlt.runner: translated-judge 11600/29517 (11.4/s, errors=0)
+2026-10-08 10:46:49,090 INFO tlt.runner: translated-judge 11800/29517 (11.4/s, errors=0)
+2026-10-08 10:47:05,468 INFO tlt.runner: translated-judge 12000/29517 (11.4/s, errors=0)
+2026-10-08 10:47:23,729 INFO tlt.runner: translated-judge 12200/29517 (11.4/s, errors=0)
+2026-10-08 10:47:39,908 INFO tlt.runner: translated-judge 12400/29517 (11.4/s, errors=0)
+2026-10-08 10:47:57,296 INFO tlt.runner: translated-judge 12600/29517 (11.4/s, errors=0)
+2026-10-08 10:48:15,098 INFO tlt.runner: translated-judge 12800/29517 (11.4/s, errors=0)
+2026-10-08 10:48:32,957 INFO tlt.runner: translated-judge 13000/29517 (11.4/s, errors=0)
+2026-10-08 10:48:49,493 INFO tlt.runner: translated-judge 13200/29517 (11.4/s, errors=0)
+2026-10-08 10:49:07,214 INFO tlt.runner: translated-judge 13400/29517 (11.4/s, errors=0)
+2026-10-08 10:49:24,271 INFO tlt.runner: translated-judge 13600/29517 (11.4/s, errors=0)
+2026-10-08 10:49:41,757 INFO tlt.runner: translated-judge 13800/29517 (11.4/s, errors=0)
+2026-10-08 10:50:00,006 INFO tlt.runner: translated-judge 14000/29517 (11.4/s, errors=0)
+2026-10-08 10:50:18,757 INFO tlt.runner: translated-judge 14200/29517 (11.4/s, errors=0)
+2026-10-08 10:50:35,383 INFO tlt.runner: translated-judge 14400/29517 (11.4/s, errors=0)
+2026-10-08 10:50:53,440 INFO tlt.runner: translated-judge 14600/29517 (11.4/s, errors=0)
+2026-10-08 10:51:10,065 INFO tlt.runner: translated-judge 14800/29517 (11.4/s, errors=0)
+2026-10-08 10:51:27,350 INFO tlt.runner: translated-judge 15000/29517 (11.4/s, errors=0)
+2026-10-08 10:52:12,715 INFO tlt.runner: translated-judge 15200/29517 (11.2/s, errors=0)
+2026-10-08 10:53:05,701 INFO tlt.runner: translated-judge 15400/29517 (10.9/s, errors=0)
+2026-10-08 10:53:56,748 INFO tlt.runner: translated-judge 15600/29517 (10.6/s, errors=0)
+2026-10-08 10:54:48,642 INFO tlt.runner: translated-judge 15800/29517 (10.4/s, errors=0)
+2026-10-08 10:55:39,914 INFO tlt.runner: translated-judge 16000/29517 (10.2/s, errors=0)
+2026-10-08 10:56:31,530 INFO tlt.runner: translated-judge 16200/29517 (10.0/s, errors=0)
+2026-10-08 10:57:21,824 INFO tlt.runner: translated-judge 16400/29517 (9.8/s, errors=0)
+2026-10-08 10:58:11,684 INFO tlt.runner: translated-judge 16600/29517 (9.6/s, errors=0)
+2026-10-08 10:59:03,095 INFO tlt.runner: translated-judge 16800/29517 (9.5/s, errors=0)
+2026-10-08 10:59:55,066 INFO tlt.runner: translated-judge 17000/29517 (9.3/s, errors=0)
+2026-10-08 11:00:47,084 INFO tlt.runner: translated-judge 17200/29517 (9.2/s, errors=0)
+2026-10-08 11:01:38,523 INFO tlt.runner: translated-judge 17400/29517 (9.0/s, errors=0)
+2026-10-08 11:02:29,284 INFO tlt.runner: translated-judge 17600/29517 (8.9/s, errors=0)
+2026-10-08 11:03:20,423 INFO tlt.runner: translated-judge 17800/29517 (8.8/s, errors=0)
+2026-10-08 11:04:10,376 INFO tlt.runner: translated-judge 18000/29517 (8.7/s, errors=0)
+2026-10-08 11:05:01,637 INFO tlt.runner: translated-judge 18200/29517 (8.5/s, errors=0)
+2026-10-08 11:05:53,057 INFO tlt.runner: translated-judge 18400/29517 (8.4/s, errors=0)
+2026-10-08 11:06:44,962 INFO tlt.runner: translated-judge 18600/29517 (8.3/s, errors=0)
+2026-10-08 11:07:37,257 INFO tlt.runner: translated-judge 18800/29517 (8.2/s, errors=0)
+2026-10-08 11:08:29,871 INFO tlt.runner: translated-judge 19000/29517 (8.1/s, errors=0)
+2026-10-08 11:09:27,877 INFO tlt.runner: translated-judge 19200/29517 (8.0/s, errors=0)
+2026-10-08 11:10:18,997 INFO tlt.runner: translated-judge 19400/29517 (7.9/s, errors=0)
+2026-10-08 11:11:15,482 INFO tlt.runner: translated-judge 19600/29517 (7.8/s, errors=0)
+2026-10-08 11:12:12,979 INFO tlt.runner: translated-judge 19800/29517 (7.7/s, errors=0)
+2026-10-08 11:13:07,867 INFO tlt.runner: translated-judge 20000/29517 (7.6/s, errors=0)
+2026-10-08 11:14:03,280 INFO tlt.runner: translated-judge 20200/29517 (7.6/s, errors=0)
+2026-10-08 11:14:59,015 INFO tlt.runner: translated-judge 20400/29517 (7.5/s, errors=0)
+2026-10-08 11:15:52,839 INFO tlt.runner: translated-judge 20600/29517 (7.4/s, errors=0)
+2026-10-08 11:16:48,742 INFO tlt.runner: translated-judge 20800/29517 (7.3/s, errors=0)
+2026-10-08 11:17:40,813 INFO tlt.runner: translated-judge 21000/29517 (7.3/s, errors=0)
+2026-10-08 11:18:34,362 INFO tlt.runner: translated-judge 21200/29517 (7.2/s, errors=0)
+2026-10-08 11:19:25,866 INFO tlt.runner: translated-judge 21400/29517 (7.1/s, errors=0)
+2026-10-08 11:20:18,671 INFO tlt.runner: translated-judge 21600/29517 (7.1/s, errors=0)
+2026-10-08 11:21:09,715 INFO tlt.runner: translated-judge 21800/29517 (7.0/s, errors=0)
+2026-10-08 11:22:01,648 INFO tlt.runner: translated-judge 22000/29517 (7.0/s, errors=0)
+2026-10-08 11:22:55,527 INFO tlt.runner: translated-judge 22200/29517 (6.9/s, errors=0)
+2026-10-08 11:23:46,616 INFO tlt.runner: translated-judge 22400/29517 (6.9/s, errors=0)
+2026-10-08 11:24:39,063 INFO tlt.runner: translated-judge 22600/29517 (6.8/s, errors=0)
+2026-10-08 11:25:30,961 INFO tlt.runner: translated-judge 22800/29517 (6.8/s, errors=0)
+2026-10-08 11:26:22,111 INFO tlt.runner: translated-judge 23000/29517 (6.7/s, errors=0)
+2026-10-08 11:27:15,425 INFO tlt.runner: translated-judge 23200/29517 (6.7/s, errors=0)
+2026-10-08 11:28:06,630 INFO tlt.runner: translated-judge 23400/29517 (6.7/s, errors=0)
+2026-10-08 11:28:58,688 INFO tlt.runner: translated-judge 23600/29517 (6.6/s, errors=0)
+2026-10-08 11:29:51,293 INFO tlt.runner: translated-judge 23800/29517 (6.6/s, errors=0)
+2026-10-08 11:30:43,762 INFO tlt.runner: translated-judge 24000/29517 (6.5/s, errors=0)
+2026-10-08 11:31:35,315 INFO tlt.runner: translated-judge 24200/29517 (6.5/s, errors=0)
+2026-10-08 11:32:27,077 INFO tlt.runner: translated-judge 24400/29517 (6.5/s, errors=0)
+2026-10-08 11:33:19,880 INFO tlt.runner: translated-judge 24600/29517 (6.4/s, errors=0)
+2026-10-08 11:34:11,790 INFO tlt.runner: translated-judge 24800/29517 (6.4/s, errors=0)
+2026-10-08 11:35:03,268 INFO tlt.runner: translated-judge 25000/29517 (6.4/s, errors=0)
+2026-10-08 11:35:54,489 INFO tlt.runner: translated-judge 25200/29517 (6.3/s, errors=0)
+2026-10-08 11:36:46,993 INFO tlt.runner: translated-judge 25400/29517 (6.3/s, errors=0)
+2026-10-08 11:37:37,050 INFO tlt.runner: translated-judge 25600/29517 (6.3/s, errors=0)
+2026-10-08 11:38:30,701 INFO tlt.runner: translated-judge 25800/29517 (6.2/s, errors=0)
+2026-10-08 11:39:21,112 INFO tlt.runner: translated-judge 26000/29517 (6.2/s, errors=0)
+2026-10-08 11:40:14,006 INFO tlt.runner: translated-judge 26200/29517 (6.2/s, errors=0)
+2026-10-08 11:41:05,415 INFO tlt.runner: translated-judge 26400/29517 (6.1/s, errors=0)
+2026-10-08 11:41:58,511 INFO tlt.runner: translated-judge 26600/29517 (6.1/s, errors=0)
+2026-10-08 11:42:49,421 INFO tlt.runner: translated-judge 26800/29517 (6.1/s, errors=0)
+2026-10-08 11:43:41,605 INFO tlt.runner: translated-judge 27000/29517 (6.1/s, errors=0)
+2026-10-08 11:44:33,900 INFO tlt.runner: translated-judge 27200/29517 (6.0/s, errors=0)
+2026-10-08 11:45:26,795 INFO tlt.runner: translated-judge 27400/29517 (6.0/s, errors=0)
+2026-10-08 11:46:18,560 INFO tlt.runner: translated-judge 27600/29517 (6.0/s, errors=0)
+2026-10-08 11:47:10,707 INFO tlt.runner: translated-judge 27800/29517 (6.0/s, errors=0)
+2026-10-08 11:48:03,211 INFO tlt.runner: translated-judge 28000/29517 (5.9/s, errors=0)
+2026-10-08 11:48:59,143 INFO tlt.runner: translated-judge 28200/29517 (5.9/s, errors=0)
+2026-10-08 11:49:49,419 INFO tlt.runner: translated-judge 28400/29517 (5.9/s, errors=0)
+2026-10-08 11:50:44,851 INFO tlt.runner: translated-judge 28600/29517 (5.9/s, errors=0)
+2026-10-08 11:51:39,749 INFO tlt.runner: translated-judge 28800/29517 (5.8/s, errors=0)
+2026-10-08 11:52:43,111 INFO tlt.runner: translated-judge 29000/29517 (5.8/s, errors=0)
+2026-10-08 11:54:30,371 INFO tlt.runner: translated-judge 29200/29517 (5.7/s, errors=0)
+2026-10-08 11:56:17,647 INFO tlt.runner: translated-judge 29400/29517 (5.6/s, errors=0)
+2026-10-08 11:57:19,640 INFO tlt.runner: translated-judge 29517/29517 (5.6/s, errors=0)
+2026-10-08 11:57:57,385 INFO tlt.s07: translated judging: {'submitted': 29517, 'already_done_or_exhausted': 0, 'ok': 29517, 'error': 0, 'pool': 49200, 'sampled': 9840, 'translation_failed_excluded': 1, 'utility_routed': 1923}
+2026-10-08 11:57:58,661 INFO tlt: stage translated_judging done in 5414.7s
+GPU PHASE COMPLETE
+2026-10-08 11:58:15,120 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 231.59, 'remaining_usd': 77.24}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 83.44, 'remaining_usd': -0.01}}
+2026-10-08 11:58:27,861 INFO tlt.runner: mrbench 200/1500 (7.4/s, errors=0)
+2026-10-08 11:58:36,468 INFO tlt.runner: mrbench 400/1500 (11.3/s, errors=0)
+2026-10-08 11:58:48,324 INFO tlt.runner: mrbench 600/1500 (12.7/s, errors=0)
+2026-10-08 11:59:02,244 INFO tlt.runner: mrbench 800/1500 (13.1/s, errors=0)
+2026-10-08 11:59:45,128 INFO tlt.runner: mrbench 1000/1500 (9.6/s, errors=0)
+2026-10-08 12:00:35,127 INFO tlt.runner: mrbench 1200/1500 (7.8/s, errors=0)
+2026-10-08 12:01:24,875 INFO tlt.runner: mrbench 1400/1500 (6.9/s, errors=0)
+2026-10-08 12:02:16,720 INFO tlt.runner: mrbench 1500/1500 (5.9/s, errors=0)
+2026-10-08 12:02:17,039 INFO tlt.s06: judge validation: {'submitted': 1500, 'already_done_or_exhausted': 0, 'ok': 1500, 'error': 0, 'sampled': 500, 'unparseable': 0}
+2026-10-08 12:02:17,055 INFO tlt: stage judge_validation done in 257.8s
+2026-10-08 12:04:16,184 INFO tlt.s08: auto metrics: {'auto_metrics': {'rows': 67200, 'failed_calls': 0, 'empty': 3, 'refusal': 1, 'truncated': 246, 'leak_exact': 45235, 'cue_echo': 633, 'degenerate': 211}, 'repair_auto_metrics': {'rows': 16200, 'failed_calls': 0, 'empty': 0, 'refusal': 1, 'truncated': 37, 'leak_exact': 6443, 'cue_echo': 34, 'degenerate': 32}}
+2026-10-08 12:04:16,264 INFO tlt: stage auto_metrics done in 118.8s
+2026-10-08 12:04:26,283 INFO tlt.s10: B1: {'rows': 72}
+2026-10-08 12:09:07,785 INFO tlt.runner: b2 200/4200 (1.2/s, errors=0)
+2026-10-08 12:11:53,937 INFO tlt.runner: b2 400/4200 (1.2/s, errors=0)
+2026-10-08 12:14:37,297 INFO tlt.runner: b2 600/4200 (1.2/s, errors=0)
+2026-10-08 12:17:14,716 INFO tlt.runner: b2 800/4200 (1.2/s, errors=0)
+2026-10-08 12:19:51,940 INFO tlt.runner: b2 1000/4200 (1.2/s, errors=0)
+2026-10-08 12:22:32,786 INFO tlt.runner: b2 1200/4200 (1.2/s, errors=0)
+2026-10-08 12:25:14,497 INFO tlt.runner: b2 1400/4200 (1.2/s, errors=0)
+2026-10-08 12:28:04,154 INFO tlt.runner: b2 1600/4200 (1.2/s, errors=0)
+2026-10-08 12:31:05,499 INFO tlt.runner: b2 1800/4200 (1.2/s, errors=0)
+2026-10-08 12:33:50,917 INFO tlt.runner: b2 2000/4200 (1.2/s, errors=0)
+2026-10-08 12:36:34,595 INFO tlt.runner: b2 2200/4200 (1.2/s, errors=0)
+2026-10-08 12:39:25,716 INFO tlt.runner: b2 2400/4200 (1.2/s, errors=0)
+2026-10-08 12:42:12,300 INFO tlt.runner: b2 2600/4200 (1.2/s, errors=0)
+2026-10-08 12:44:53,164 INFO tlt.runner: b2 2800/4200 (1.2/s, errors=0)
+2026-10-08 12:47:34,269 INFO tlt.runner: b2 3000/4200 (1.2/s, errors=0)
+2026-10-08 12:50:21,907 INFO tlt.runner: b2 3200/4200 (1.2/s, errors=0)
+2026-10-08 12:53:02,031 INFO tlt.runner: b2 3400/4200 (1.2/s, errors=0)
+2026-10-08 12:55:45,766 INFO tlt.runner: b2 3600/4200 (1.2/s, errors=1)
+2026-10-08 13:00:19,334 INFO tlt.runner: b2 3800/4200 (1.2/s, errors=1)
+2026-10-08 13:08:27,512 INFO tlt.runner: b2 4000/4200 (1.1/s, errors=1)
+2026-10-08 13:23:38,231 INFO tlt.runner: b2 4200/4200 (0.9/s, errors=1)
+2026-10-08 13:23:40,227 INFO tlt.s10: B2: {'marked_words': 251, 'labelled': 4199, 'submitted': 4200, 'already_done_or_exhausted': 0, 'ok': 4199, 'error': 1}
+2026-10-08 13:24:47,883 INFO datasets: PyTorch version 2.13.0 available.
+Batches:   0%|          | 0/1350 [00:00<?, ?it/s]Batches:   0%|          | 1/1350 [04:37<103:58:44, 277.48s/it]Batches:   0%|          | 2/1350 [06:26<66:51:24, 178.55s/it] Batches:   0%|          | 3/1350 [07:59<52:04:40, 139.18s/it]Batches:   0%|          | 4/1350 [09:16<42:53:00, 114.70s/it]Batches:   0%|          | 5/1350 [10:21<36:11:18, 96.86s/it] Batches:   0%|          | 6/1350 [12:23<39:19:09, 105.32s/it]Batches:   1%|          | 7/1350 [14:16<40:17:57, 108.02s/it]Batches:   1%|          | 8/1350 [16:23<42:29:50, 114.00s/it]Batches:   1%|          | 9/1350 [17:30<36:56:29, 99.17s/it] Batches:   1%|          | 10/1350 [18:34<32:53:45, 88.38s/it]Batches:   1%|          | 11/1350 [19:26<28:42:56, 77.20s/it]Batches:   1%|          | 12/1350 [20:15<25:30:17, 68.62s/it]Batches:   1%|          | 13/1350 [21:13<24:16:37, 65.37s/it]Batches:   1%|          | 14/1350 [22:01<22:18:14, 60.10s/it]Batches:   1%|          | 15/1350 [22:49<20:55:57, 56.45s/it]Batches:   1%|          | 16/1350 [23:31<19:17:59, 52.08s/it]Batches:   1%|▏         | 17/1350 [24:11<18:00:02, 48.61s/it]Batches:   1%|▏         | 18/1350 [24:55<17:29:54, 47.29s/it]Batches:   1%|▏         | 19/1350 [25:36<16:48:07, 45.45s/it]Batches:   1%|▏         | 20/1350 [26:15<16:01:04, 43.36s/it]Batches:   2%|▏         | 21/1350 [26:53<15:24:31, 41.74s/it]Batches:   2%|▏         | 22/1350 [27:39<15:54:40, 43.13s/it]Batches:   2%|▏         | 23/1350 [28:17<15:19:33, 41.58s/it]Batches:   2%|▏         | 24/1350 [28:56<15:01:16, 40.78s/it]Batches:   2%|▏         | 25/1350 [29:33<14:33:23, 39.55s/it]Batches:   2%|▏         | 26/1350 [30:11<14:26:02, 39.25s/it]Batches:   2%|▏         | 27/1350 [30:51<14:24:50, 39.22s/it]Batches:   2%|▏         | 28/1350 [31:28<14:13:50, 38.75s/it]Batches:   2%|▏         | 29/1350 [32:03<13:50:08, 37.71s/it]Batches:   2%|▏         | 30/1350 [32:38<13:26:30, 36.66s/it]Batches:   2%|▏         | 31/1350 [33:20<14:05:02, 38.44s/it]Batches:   2%|▏         | 32/1350 [33:59<14:07:06, 38.56s/it]Batches:   2%|▏         | 33/1350 [34:33<13:34:02, 37.09s/it]Batches:   3%|▎         | 34/1350 [35:05<12:59:56, 35.56s/it]Batches:   3%|▎         | 35/1350 [35:39<12:51:35, 35.21s/it]Batches:   3%|▎         | 36/1350 [36:13<12:41:43, 34.78s/it]Batches:   3%|▎         | 37/1350 [36:47<12:34:38, 34.48s/it]Batches:   3%|▎         | 38/1350 [37:22<12:37:18, 34.63s/it]Batches:   3%|▎         | 39/1350 [37:56<12:34:30, 34.53s/it]Batches:   3%|▎         | 40/1350 [38:28<12:18:17, 33.81s/it]Batches:   3%|▎         | 41/1350 [39:02<12:19:00, 33.87s/it]Batches:   3%|▎         | 42/1350 [39:33<12:01:43, 33.11s/it]Batches:   3%|▎         | 43/1350 [40:06<11:54:45, 32.81s/it]Batches:   3%|▎         | 44/1350 [40:40<12:07:48, 33.44s/it]Batches:   3%|▎         | 45/1350 [41:13<12:03:56, 33.28s/it]Batches:   3%|▎         | 46/1350 [41:44<11:48:56, 32.62s/it]Batches:   3%|▎         | 47/1350 [42:18<11:54:01, 32.88s/it]Batches:   4%|▎         | 48/1350 [42:48<11:36:41, 32.11s/it]Batches:   4%|▎         | 49/1350 [43:20<11:32:48, 31.95s/it]Batches:   4%|▎         | 50/1350 [43:47<11:02:46, 30.59s/it]Batches:   4%|▍         | 51/1350 [44:08<9:56:32, 27.55s/it] Batches:   4%|▍         | 52/1350 [44:28<9:06:40, 25.27s/it]Batches:   4%|▍         | 53/1350 [44:49<8:41:46, 24.14s/it]Batches:   4%|▍         | 54/1350 [45:10<8:21:47, 23.23s/it]Batches:   4%|▍         | 55/1350 [45:30<7:59:21, 22.21s/it]Batches:   4%|▍         | 56/1350 [45:49<7:35:34, 21.12s/it]Batches:   4%|▍         | 57/1350 [46:09<7:27:14, 20.75s/it]Batches:   4%|▍         | 58/1350 [46:27<7:14:00, 20.16s/it]Batches:   4%|▍         | 59/1350 [46:47<7:08:46, 19.93s/it]Batches:   4%|▍         | 60/1350 [47:05<7:00:51, 19.58s/it]Batches:   5%|▍         | 61/1350 [47:25<7:01:49, 19.64s/it]Batches:   5%|▍         | 62/1350 [47:47<7:15:47, 20.30s/it]Batches:   5%|▍         | 63/1350 [48:07<7:12:35, 20.17s/it]Batches:   5%|▍         | 64/1350 [48:25<6:58:07, 19.51s/it]Batches:   5%|▍         | 65/1350 [48:45<6:58:18, 19.53s/it]Batches:   5%|▍         | 66/1350 [49:06<7:08:34, 20.03s/it]Batches:   5%|▍         | 67/1350 [49:26<7:09:38, 20.09s/it]Batches:   5%|▌         | 68/1350 [49:45<7:02:28, 19.77s/it]Batches:   5%|▌         | 69/1350 [50:05<7:01:49, 19.76s/it]Batches:   5%|▌         | 70/1350 [50:25<7:01:46, 19.77s/it]Batches:   5%|▌         | 71/1350 [50:53<7:59:07, 22.48s/it]Batches:   5%|▌         | 72/1350 [51:27<9:08:57, 25.77s/it]Batches:   5%|▌         | 73/1350 [51:46<8:25:51, 23.77s/it]Batches:   5%|▌         | 74/1350 [52:05<7:52:59, 22.24s/it]Batches:   6%|▌         | 75/1350 [52:23<7:27:43, 21.07s/it]Batches:   6%|▌         | 76/1350 [52:41<7:07:53, 20.15s/it]Batches:   6%|▌         | 77/1350 [52:58<6:49:34, 19.30s/it]Batches:   6%|▌         | 78/1350 [53:17<6:43:36, 19.04s/it]Batches:   6%|▌         | 79/1350 [53:38<6:58:00, 19.73s/it]Batches:   6%|▌         | 80/1350 [54:18<9:08:33, 25.92s/it]Batches:   6%|▌         | 81/1350 [54:57<10:31:53, 29.88s/it]Batches:   6%|▌         | 82/1350 [55:38<11:38:08, 33.03s/it]Batches:   6%|▌         | 83/1350 [56:17<12:13:42, 34.75s/it]Batches:   6%|▌         | 84/1350 [56:57<12:50:02, 36.49s/it]Batches:   6%|▋         | 85/1350 [57:36<13:05:27, 37.26s/it]Batches:   6%|▋         | 86/1350 [58:15<13:14:04, 37.69s/it]Batches:   6%|▋         | 87/1350 [58:54<13:22:44, 38.14s/it]Batches:   7%|▋         | 88/1350 [59:34<13:31:00, 38.56s/it]Batches:   7%|▋         | 89/1350 [1:00:13<13:37:23, 38.89s/it]Batches:   7%|▋         | 90/1350 [1:00:51<13:26:55, 38.42s/it]Batches:   7%|▋         | 91/1350 [1:01:28<13:22:08, 38.23s/it]Batches:   7%|▋         | 92/1350 [1:02:06<13:16:26, 37.99s/it]Batches:   7%|▋         | 93/1350 [1:02:44<13:16:42, 38.03s/it]Batches:   7%|▋         | 94/1350 [1:03:21<13:12:03, 37.84s/it]Batches:   7%|▋         | 95/1350 [1:03:59<13:10:50, 37.81s/it]Batches:   7%|▋         | 96/1350 [1:04:38<13:17:29, 38.16s/it]Batches:   7%|▋         | 97/1350 [1:05:18<13:26:08, 38.60s/it]Batches:   7%|▋         | 98/1350 [1:05:57<13:32:50, 38.95s/it]Batches:   7%|▋         | 99/1350 [1:06:37<13:33:38, 39.02s/it]Batches:   7%|▋         | 100/1350 [1:07:16<13:35:08, 39.13s/it]Batches:   7%|▋         | 101/1350 [1:07:55<13:30:57, 38.96s/it]Batches:   8%|▊         | 102/1350 [1:08:34<13:35:51, 39.22s/it]Batches:   8%|▊         | 103/1350 [1:09:12<13:24:05, 38.69s/it]Batches:   8%|▊         | 104/1350 [1:09:49<13:11:03, 38.09s/it]Batches:   8%|▊         | 105/1350 [1:10:25<12:57:31, 37.47s/it]Batches:   8%|▊         | 106/1350 [1:11:01<12:53:12, 37.29s/it]Batches:   8%|▊         | 107/1350 [1:11:37<12:40:52, 36.73s/it]Batches:   8%|▊         | 108/1350 [1:12:14<12:43:12, 36.87s/it]Batches:   8%|▊         | 109/1350 [1:12:51<12:40:22, 36.76s/it]Batches:   8%|▊         | 110/1350 [1:13:28<12:45:54, 37.06s/it]Batches:   8%|▊         | 111/1350 [1:14:06<12:48:22, 37.21s/it]Batches:   8%|▊         | 112/1350 [1:14:42<12:41:20, 36.90s/it]Batches:   8%|▊         | 113/1350 [1:15:21<12:54:54, 37.59s/it]Batches:   8%|▊         | 114/1350 [1:15:59<12:56:03, 37.67s/it]Batches:   9%|▊         | 115/1350 [1:16:37<12:55:12, 37.66s/it]Batches:   9%|▊         | 116/1350 [1:17:13<12:45:43, 37.23s/it]Batches:   9%|▊         | 117/1350 [1:17:49<12:37:18, 36.85s/it]Batches:   9%|▊         | 118/1350 [1:18:28<12:49:17, 37.47s/it]Batches:   9%|▉         | 119/1350 [1:19:04<12:38:24, 36.97s/it]Batches:   9%|▉         | 120/1350 [1:19:34<11:57:31, 35.00s/it]Batches:   9%|▉         | 121/1350 [1:20:05<11:32:26, 33.81s/it]Batches:   9%|▉         | 122/1350 [1:20:35<11:10:27, 32.76s/it]Batches:   9%|▉         | 123/1350 [1:21:04<10:46:44, 31.63s/it]Batches:   9%|▉         | 124/1350 [1:21:31<10:13:45, 30.04s/it]Batches:   9%|▉         | 125/1350 [1:21:56<9:42:37, 28.54s/it] Batches:   9%|▉         | 126/1350 [1:22:23<9:36:08, 28.24s/it]Batches:   9%|▉         | 127/1350 [1:22:51<9:32:50, 28.10s/it]Batches:   9%|▉         | 128/1350 [1:23:19<9:29:25, 27.96s/it]Batches:  10%|▉         | 129/1350 [1:23:46<9:27:02, 27.86s/it]Batches:  10%|▉         | 130/1350 [1:24:14<9:24:59, 27.79s/it]Batches:  10%|▉         | 131/1350 [1:24:40<9:12:35, 27.20s/it]Batches:  10%|▉         | 132/1350 [1:25:06<9:05:21, 26.87s/it]Batches:  10%|▉         | 133/1350 [1:25:30<8:45:15, 25.90s/it]Batches:  10%|▉         | 134/1350 [1:25:53<8:29:08, 25.12s/it]Batches:  10%|█         | 135/1350 [1:26:15<8:11:24, 24.27s/it]Batches:  10%|█         | 136/1350 [1:26:38<8:00:10, 23.73s/it]Batches:  10%|█         | 137/1350 [1:27:00<7:49:44, 23.24s/it]Batches:  10%|█         | 138/1350 [1:27:21<7:37:45, 22.66s/it]Batches:  10%|█         | 139/1350 [1:27:43<7:36:06, 22.60s/it]Batches:  10%|█         | 140/1350 [1:28:05<7:32:13, 22.42s/it]Batches:  10%|█         | 141/1350 [1:28:25<7:15:30, 21.61s/it]Batches:  11%|█         | 142/1350 [1:28:44<6:58:36, 20.79s/it]Batches:  11%|█         | 143/1350 [1:29:04<6:55:52, 20.67s/it]Batches:  11%|█         | 144/1350 [1:29:22<6:38:55, 19.85s/it]Batches:  11%|█         | 145/1350 [1:29:40<6:27:17, 19.28s/it]Batches:  11%|█         | 146/1350 [1:29:58<6:16:34, 18.77s/it]Batches:  11%|█         | 147/1350 [1:30:15<6:08:20, 18.37s/it]Batches:  11%|█         | 148/1350 [1:30:31<5:51:33, 17.55s/it]Batches:  11%|█         | 149/1350 [1:30:47<5:44:45, 17.22s/it]Batches:  11%|█         | 150/1350 [1:31:02<5:30:23, 16.52s/it]Batches:  11%|█         | 151/1350 [1:31:19<5:31:07, 16.57s/it]Batches:  11%|█▏        | 152/1350 [1:31:36<5:35:06, 16.78s/it]Batches:  11%|█▏        | 153/1350 [1:31:51<5:21:10, 16.10s/it]Batches:  11%|█▏        | 154/1350 [1:32:05<5:11:32, 15.63s/it]Batches:  11%|█▏        | 155/1350 [1:32:20<5:05:54, 15.36s/it]Batches:  12%|█▏        | 156/1350 [1:32:36<5:07:56, 15.47s/it]Batches:  12%|█▏        | 157/1350 [1:32:51<5:07:29, 15.46s/it]Batches:  12%|█▏        | 158/1350 [1:33:07<5:07:25, 15.47s/it]Batches:  12%|█▏        | 159/1350 [1:33:21<5:02:44, 15.25s/it]Batches:  12%|█▏        | 160/1350 [1:33:37<5:02:07, 15.23s/it]Batches:  12%|█▏        | 161/1350 [1:33:52<5:03:16, 15.30s/it]Batches:  12%|█▏        | 162/1350 [1:34:09<5:11:38, 15.74s/it]Batches:  12%|█▏        | 163/1350 [1:34:24<5:05:44, 15.45s/it]Batches:  12%|█▏        | 164/1350 [1:34:40<5:10:19, 15.70s/it]Batches:  12%|█▏        | 165/1350 [1:34:56<5:09:39, 15.68s/it]Batches:  12%|█▏        | 166/1350 [1:35:11<5:05:17, 15.47s/it]Batches:  12%|█▏        | 167/1350 [1:35:25<4:59:52, 15.21s/it]Batches:  12%|█▏        | 168/1350 [1:35:40<4:59:03, 15.18s/it]Batches:  13%|█▎        | 169/1350 [1:35:55<4:55:10, 15.00s/it]Batches:  13%|█▎        | 170/1350 [1:36:08<4:43:41, 14.42s/it]Batches:  13%|█▎        | 171/1350 [1:36:22<4:41:53, 14.35s/it]Batches:  13%|█▎        | 172/1350 [1:36:37<4:43:38, 14.45s/it]Batches:  13%|█▎        | 173/1350 [1:36:51<4:40:08, 14.28s/it]Batches:  13%|█▎        | 174/1350 [1:37:05<4:38:50, 14.23s/it]Batches:  13%|█▎        | 175/1350 [1:37:18<4:35:33, 14.07s/it]Batches:  13%|█▎        | 176/1350 [1:37:32<4:34:30, 14.03s/it]Batches:  13%|█▎        | 177/1350 [1:37:46<4:29:29, 13.78s/it]Batches:  13%|█▎        | 178/1350 [1:38:00<4:32:21, 13.94s/it]Batches:  13%|█▎        | 179/1350 [1:38:14<4:33:00, 13.99s/it]Batches:  13%|█▎        | 180/1350 [1:38:28<4:32:52, 13.99s/it]Batches:  13%|█▎        | 181/1350 [1:38:43<4:36:33, 14.19s/it]Batches:  13%|█▎        | 182/1350 [1:38:52<4:06:07, 12.64s/it]Batches:  14%|█▎        | 183/1350 [1:39:02<3:52:49, 11.97s/it]Batches:  14%|█▎        | 184/1350 [1:39:14<3:50:52, 11.88s/it]Batches:  14%|█▎        | 185/1350 [1:39:24<3:41:49, 11.42s/it]Batches:  14%|█▍        | 186/1350 [1:39:34<3:33:27, 11.00s/it]Batches:  14%|█▍        | 187/1350 [1:39:45<3:31:20, 10.90s/it]Batches:  14%|█▍        | 188/1350 [1:39:54<3:18:47, 10.26s/it]Batches:  14%|█▍        | 189/1350 [1:40:03<3:13:02,  9.98s/it]Batches:  14%|█▍        | 190/1350 [1:40:13<3:10:42,  9.86s/it]Batches:  14%|█▍        | 191/1350 [1:40:24<3:18:02, 10.25s/it]Batches:  14%|█▍        | 192/1350 [1:40:32<3:05:52,  9.63s/it]Batches:  14%|█▍        | 193/1350 [1:40:41<3:05:27,  9.62s/it]Batches:  14%|█▍        | 194/1350 [1:40:52<3:12:38, 10.00s/it]Batches:  14%|█▍        | 195/1350 [1:41:02<3:10:19,  9.89s/it]Batches:  15%|█▍        | 196/1350 [1:41:12<3:13:06, 10.04s/it]Batches:  15%|█▍        | 197/1350 [1:41:22<3:09:17,  9.85s/it]Batches:  15%|█▍        | 198/1350 [1:41:31<3:06:12,  9.70s/it]Batches:  15%|█▍        | 199/1350 [1:41:41<3:04:49,  9.64s/it]Batches:  15%|█▍        | 200/1350 [1:41:52<3:14:46, 10.16s/it]Batches:  15%|█▍        | 201/1350 [1:42:01<3:06:27,  9.74s/it]Batches:  15%|█▍        | 202/1350 [1:42:10<3:04:09,  9.63s/it]Batches:  15%|█▌        | 203/1350 [1:42:18<2:55:10,  9.16s/it]Batches:  15%|█▌        | 204/1350 [1:42:28<2:56:38,  9.25s/it]Batches:  15%|█▌        | 205/1350 [1:42:37<2:56:34,  9.25s/it]Batches:  15%|█▌        | 206/1350 [1:42:47<2:58:41,  9.37s/it]Batches:  15%|█▌        | 207/1350 [1:42:55<2:53:57,  9.13s/it]Batches:  15%|█▌        | 208/1350 [1:43:04<2:54:03,  9.14s/it]Batches:  15%|█▌        | 209/1350 [1:43:18<3:22:44, 10.66s/it]Batches:  16%|█▌        | 210/1350 [1:43:32<3:40:50, 11.62s/it]Batches:  16%|█▌        | 211/1350 [1:43:46<3:50:04, 12.12s/it]Batches:  16%|█▌        | 212/1350 [1:43:59<3:55:06, 12.40s/it]Batches:  16%|█▌        | 213/1350 [1:44:13<4:03:04, 12.83s/it]Batches:  16%|█▌        | 214/1350 [1:44:25<3:59:58, 12.67s/it]Batches:  16%|█▌        | 215/1350 [1:44:38<4:01:23, 12.76s/it]Batches:  16%|█▌        | 216/1350 [1:44:50<3:58:45, 12.63s/it]Batches:  16%|█▌        | 217/1350 [1:45:03<3:57:24, 12.57s/it]Batches:  16%|█▌        | 218/1350 [1:45:16<4:03:57, 12.93s/it]Batches:  16%|█▌        | 219/1350 [1:45:29<4:03:41, 12.93s/it]Batches:  16%|█▋        | 220/1350 [1:45:42<4:05:09, 13.02s/it]Batches:  16%|█▋        | 221/1350 [1:45:55<4:03:14, 12.93s/it]Batches:  16%|█▋        | 222/1350 [1:46:09<4:05:27, 13.06s/it]Batches:  17%|█▋        | 223/1350 [1:46:22<4:09:00, 13.26s/it]Batches:  17%|█▋        | 224/1350 [1:46:36<4:11:29, 13.40s/it]Batches:  17%|█▋        | 225/1350 [1:46:50<4:12:58, 13.49s/it]Batches:  17%|█▋        | 226/1350 [1:47:05<4:20:26, 13.90s/it]Batches:  17%|█▋        | 227/1350 [1:47:19<4:21:06, 13.95s/it]Batches:  17%|█▋        | 228/1350 [1:47:38<4:52:03, 15.62s/it]Batches:  17%|█▋        | 229/1350 [1:48:10<6:24:11, 20.56s/it]Batches:  17%|█▋        | 230/1350 [1:48:41<7:22:01, 23.68s/it]Batches:  17%|█▋        | 231/1350 [1:49:11<7:57:55, 25.63s/it]Batches:  17%|█▋        | 232/1350 [1:49:42<8:22:56, 26.99s/it]Batches:  17%|█▋        | 233/1350 [1:50:16<9:06:58, 29.38s/it]Batches:  17%|█▋        | 234/1350 [1:50:48<9:19:23, 30.08s/it]Batches:  17%|█▋        | 235/1350 [1:51:19<9:25:46, 30.45s/it]Batches:  17%|█▋        | 236/1350 [1:51:50<9:27:56, 30.59s/it]Batches:  18%|█▊        | 237/1350 [1:52:21<9:27:34, 30.60s/it]Batches:  18%|█▊        | 238/1350 [1:52:53<9:33:05, 30.92s/it]Batches:  18%|█▊        | 239/1350 [1:53:23<9:26:39, 30.60s/it]Batches:  18%|█▊        | 240/1350 [1:53:52<9:18:26, 30.19s/it]Batches:  18%|█▊        | 241/1350 [1:54:23<9:22:13, 30.42s/it]Batches:  18%|█▊        | 242/1350 [1:54:51<9:08:50, 29.72s/it]Batches:  18%|█▊        | 243/1350 [1:55:20<9:07:50, 29.69s/it]Batches:  18%|█▊        | 244/1350 [1:55:50<9:08:29, 29.76s/it]Batches:  18%|█▊        | 245/1350 [1:56:20<9:07:54, 29.75s/it]Batches:  18%|█▊        | 246/1350 [1:56:52<9:16:44, 30.26s/it]Batches:  18%|█▊        | 247/1350 [1:57:21<9:12:25, 30.05s/it]Batches:  18%|█▊        | 248/1350 [1:57:52<9:17:59, 30.38s/it]Batches:  18%|█▊        | 249/1350 [1:58:22<9:14:48, 30.24s/it]Batches:  19%|█▊        | 250/1350 [1:58:54<9:24:15, 30.78s/it]Batches:  19%|█▊        | 251/1350 [1:59:24<9:20:52, 30.62s/it]Batches:  19%|█▊        | 252/1350 [1:59:53<9:10:19, 30.07s/it]Batches:  19%|█▊        | 253/1350 [2:00:24<9:15:48, 30.40s/it]Batches:  19%|█▉        | 254/1350 [2:00:54<9:10:18, 30.13s/it]Batches:  19%|█▉        | 255/1350 [2:01:24<9:11:20, 30.21s/it]Batches:  19%|█▉        | 256/1350 [2:01:58<9:27:24, 31.12s/it]Batches:  19%|█▉        | 257/1350 [2:02:29<9:30:32, 31.32s/it]Batches:  19%|█▉        | 258/1350 [2:03:00<9:28:54, 31.26s/it]Batches:  19%|█▉        | 259/1350 [2:03:33<9:35:05, 31.63s/it]Batches:  19%|█▉        | 260/1350 [2:04:01<9:16:26, 30.63s/it]Batches:  19%|█▉        | 261/1350 [2:04:31<9:11:26, 30.38s/it]Batches:  19%|█▉        | 262/1350 [2:04:58<8:54:24, 29.47s/it]Batches:  19%|█▉        | 263/1350 [2:05:28<8:56:28, 29.61s/it]Batches:  20%|█▉        | 264/1350 [2:05:59<9:03:08, 30.01s/it]Batches:  20%|█▉        | 265/1350 [2:06:28<8:58:14, 29.76s/it]Batches:  20%|█▉        | 266/1350 [2:06:59<9:02:55, 30.05s/it]Batches:  20%|█▉        | 267/1350 [2:07:28<8:56:35, 29.73s/it]Batches:  20%|█▉        | 268/1350 [2:07:54<8:33:28, 28.47s/it]Batches:  20%|█▉        | 269/1350 [2:08:22<8:33:22, 28.49s/it]Batches:  20%|██        | 270/1350 [2:08:49<8:25:01, 28.06s/it]Batches:  20%|██        | 271/1350 [2:09:18<8:28:09, 28.26s/it]Batches:  20%|██        | 272/1350 [2:09:48<8:39:08, 28.89s/it]Batches:  20%|██        | 273/1350 [2:10:19<8:46:48, 29.35s/it]Batches:  20%|██        | 274/1350 [2:10:49<8:52:28, 29.69s/it]Batches:  20%|██        | 275/1350 [2:11:19<8:53:32, 29.78s/it]Batches:  20%|██        | 276/1350 [2:11:49<8:54:30, 29.86s/it]Batches:  21%|██        | 277/1350 [2:12:19<8:52:39, 29.78s/it]Batches:  21%|██        | 278/1350 [2:12:46<8:36:49, 28.93s/it]Batches:  21%|██        | 279/1350 [2:13:15<8:35:46, 28.90s/it]Batches:  21%|██        | 280/1350 [2:13:43<8:29:59, 28.60s/it]Batches:  21%|██        | 281/1350 [2:14:08<8:15:01, 27.78s/it]Batches:  21%|██        | 282/1350 [2:14:31<7:48:36, 26.33s/it]Batches:  21%|██        | 283/1350 [2:14:54<7:27:37, 25.17s/it]Batches:  21%|██        | 284/1350 [2:15:17<7:16:21, 24.56s/it]Batches:  21%|██        | 285/1350 [2:15:41<7:14:43, 24.49s/it]Batches:  21%|██        | 286/1350 [2:16:07<7:19:19, 24.77s/it]Batches:  21%|██▏       | 287/1350 [2:16:33<7:24:50, 25.11s/it]Batches:  21%|██▏       | 288/1350 [2:16:57<7:21:07, 24.92s/it]Batches:  21%|██▏       | 289/1350 [2:17:18<7:01:29, 23.84s/it]Batches:  21%|██▏       | 290/1350 [2:17:41<6:52:20, 23.34s/it]Batches:  22%|██▏       | 291/1350 [2:18:03<6:45:14, 22.96s/it]Batches:  22%|██▏       | 292/1350 [2:18:24<6:37:50, 22.56s/it]Batches:  22%|██▏       | 293/1350 [2:18:46<6:34:18, 22.38s/it]Batches:  22%|██▏       | 294/1350 [2:19:06<6:21:17, 21.66s/it]Batches:  22%|██▏       | 295/1350 [2:19:25<6:06:50, 20.86s/it]Batches:  22%|██▏       | 296/1350 [2:19:44<5:56:36, 20.30s/it]Batches:  22%|██▏       | 297/1350 [2:20:05<5:57:36, 20.38s/it]Batches:  22%|██▏       | 298/1350 [2:20:24<5:53:30, 20.16s/it]Batches:  22%|██▏       | 299/1350 [2:20:42<5:39:28, 19.38s/it]Batches:  22%|██▏       | 300/1350 [2:20:59<5:26:54, 18.68s/it]Batches:  22%|██▏       | 301/1350 [2:21:17<5:24:06, 18.54s/it]Batches:  22%|██▏       | 302/1350 [2:21:35<5:20:24, 18.34s/it]Batches:  22%|██▏       | 303/1350 [2:21:52<5:11:22, 17.84s/it]Batches:  23%|██▎       | 304/1350 [2:22:08<5:03:05, 17.39s/it]Batches:  23%|██▎       | 305/1350 [2:22:25<4:59:05, 17.17s/it]Batches:  23%|██▎       | 306/1350 [2:22:42<5:00:22, 17.26s/it]Batches:  23%|██▎       | 307/1350 [2:23:00<5:00:01, 17.26s/it]Batches:  23%|██▎       | 308/1350 [2:23:17<4:58:01, 17.16s/it]Batches:  23%|██▎       | 309/1350 [2:23:35<5:03:41, 17.50s/it]Batches:  23%|██▎       | 310/1350 [2:23:53<5:07:35, 17.75s/it]Batches:  23%|██▎       | 311/1350 [2:24:07<4:48:44, 16.67s/it]Batches:  23%|██▎       | 312/1350 [2:24:21<4:31:44, 15.71s/it]Batches:  23%|██▎       | 313/1350 [2:24:35<4:21:23, 15.12s/it]Batches:  23%|██▎       | 314/1350 [2:24:49<4:16:52, 14.88s/it]Batches:  23%|██▎       | 315/1350 [2:25:04<4:18:35, 14.99s/it]Batches:  23%|██▎       | 316/1350 [2:25:18<4:14:21, 14.76s/it]Batches:  23%|██▎       | 317/1350 [2:25:33<4:11:27, 14.61s/it]Batches:  24%|██▎       | 318/1350 [2:25:47<4:11:09, 14.60s/it]Batches:  24%|██▎       | 319/1350 [2:26:02<4:10:16, 14.56s/it]Batches:  24%|██▎       | 320/1350 [2:26:15<4:01:37, 14.08s/it]Batches:  24%|██▍       | 321/1350 [2:26:28<3:56:54, 13.81s/it]Batches:  24%|██▍       | 322/1350 [2:26:43<4:03:10, 14.19s/it]Batches:  24%|██▍       | 323/1350 [2:26:57<4:01:19, 14.10s/it]Batches:  24%|██▍       | 324/1350 [2:27:12<4:06:24, 14.41s/it]Batches:  24%|██▍       | 325/1350 [2:27:26<4:04:37, 14.32s/it]Batches:  24%|██▍       | 326/1350 [2:27:38<3:54:39, 13.75s/it]Batches:  24%|██▍       | 327/1350 [2:27:51<3:50:37, 13.53s/it]Batches:  24%|██▍       | 328/1350 [2:28:04<3:43:23, 13.11s/it]Batches:  24%|██▍       | 329/1350 [2:28:17<3:43:55, 13.16s/it]Batches:  24%|██▍       | 330/1350 [2:28:29<3:38:55, 12.88s/it]Batches:  25%|██▍       | 331/1350 [2:28:43<3:42:10, 13.08s/it]Batches:  25%|██▍       | 332/1350 [2:28:56<3:42:18, 13.10s/it]Batches:  25%|██▍       | 333/1350 [2:29:09<3:43:30, 13.19s/it]Batches:  25%|██▍       | 334/1350 [2:29:21<3:35:57, 12.75s/it]Batches:  25%|██▍       | 335/1350 [2:29:33<3:32:53, 12.58s/it]Batches:  25%|██▍       | 336/1350 [2:29:45<3:29:08, 12.37s/it]Batches:  25%|██▍       | 337/1350 [2:29:57<3:28:52, 12.37s/it]Batches:  25%|██▌       | 338/1350 [2:30:10<3:27:56, 12.33s/it]Batches:  25%|██▌       | 339/1350 [2:30:21<3:24:36, 12.14s/it]Batches:  25%|██▌       | 340/1350 [2:30:33<3:22:46, 12.05s/it]Batches:  25%|██▌       | 341/1350 [2:30:46<3:25:02, 12.19s/it]Batches:  25%|██▌       | 342/1350 [2:31:00<3:33:46, 12.72s/it]Batches:  25%|██▌       | 343/1350 [2:31:12<3:30:28, 12.54s/it]Batches:  25%|██▌       | 344/1350 [2:31:23<3:22:07, 12.06s/it]Batches:  26%|██▌       | 345/1350 [2:31:34<3:17:11, 11.77s/it]Batches:  26%|██▌       | 346/1350 [2:31:45<3:12:55, 11.53s/it]Batches:  26%|██▌       | 347/1350 [2:31:56<3:12:17, 11.50s/it]Batches:  26%|██▌       | 348/1350 [2:32:08<3:12:22, 11.52s/it]Batches:  26%|██▌       | 349/1350 [2:32:18<3:07:26, 11.24s/it]Batches:  26%|██▌       | 350/1350 [2:32:31<3:15:20, 11.72s/it]Batches:  26%|██▌       | 351/1350 [2:32:44<3:20:13, 12.03s/it]Batches:  26%|██▌       | 352/1350 [2:32:56<3:22:49, 12.19s/it]Batches:  26%|██▌       | 353/1350 [2:33:08<3:19:33, 12.01s/it]Batches:  26%|██▌       | 354/1350 [2:33:19<3:15:38, 11.79s/it]Batches:  26%|██▋       | 355/1350 [2:33:31<3:13:06, 11.64s/it]Batches:  26%|██▋       | 356/1350 [2:33:39<2:57:04, 10.69s/it]Batches:  26%|██▋       | 357/1350 [2:33:49<2:51:59, 10.39s/it]Batches:  27%|██▋       | 358/1350 [2:33:56<2:38:02,  9.56s/it]Batches:  27%|██▋       | 359/1350 [2:34:05<2:31:05,  9.15s/it]Batches:  27%|██▋       | 360/1350 [2:34:14<2:33:04,  9.28s/it]Batches:  27%|██▋       | 361/1350 [2:34:21<2:22:52,  8.67s/it]Batches:  27%|██▋       | 362/1350 [2:34:29<2:18:01,  8.38s/it]Batches:  27%|██▋       | 363/1350 [2:34:36<2:10:09,  7.91s/it]Batches:  27%|██▋       | 364/1350 [2:34:43<2:06:23,  7.69s/it]Batches:  27%|██▋       | 365/1350 [2:34:51<2:07:56,  7.79s/it]Batches:  27%|██▋       | 366/1350 [2:34:59<2:07:35,  7.78s/it]Batches:  27%|██▋       | 367/1350 [2:35:07<2:09:08,  7.88s/it]Batches:  27%|██▋       | 368/1350 [2:35:14<2:03:49,  7.57s/it]Batches:  27%|██▋       | 369/1350 [2:35:20<1:56:04,  7.10s/it]Batches:  27%|██▋       | 370/1350 [2:35:27<1:56:20,  7.12s/it]Batches:  27%|██▋       | 371/1350 [2:35:32<1:46:54,  6.55s/it]Batches:  28%|██▊       | 372/1350 [2:35:41<1:58:41,  7.28s/it]Batches:  28%|██▊       | 373/1350 [2:35:48<1:56:19,  7.14s/it]Batches:  28%|██▊       | 374/1350 [2:35:54<1:51:03,  6.83s/it]Batches:  28%|██▊       | 375/1350 [2:36:00<1:45:14,  6.48s/it]Batches:  28%|██▊       | 376/1350 [2:36:05<1:41:07,  6.23s/it]Batches:  28%|██▊       | 377/1350 [2:36:13<1:47:00,  6.60s/it]Batches:  28%|██▊       | 378/1350 [2:36:19<1:45:05,  6.49s/it]Batches:  28%|██▊       | 379/1350 [2:36:25<1:42:05,  6.31s/it]Batches:  28%|██▊       | 380/1350 [2:36:33<1:49:47,  6.79s/it]Batches:  28%|██▊       | 381/1350 [2:36:40<1:50:11,  6.82s/it]Batches:  28%|██▊       | 382/1350 [2:36:46<1:48:59,  6.76s/it]Batches:  28%|██▊       | 383/1350 [2:36:54<1:52:15,  6.97s/it]Batches:  28%|██▊       | 384/1350 [2:37:00<1:48:05,  6.71s/it]Batches:  29%|██▊       | 385/1350 [2:37:07<1:47:45,  6.70s/it]Batches:  29%|██▊       | 386/1350 [2:37:13<1:44:43,  6.52s/it]Batches:  29%|██▊       | 387/1350 [2:37:19<1:43:45,  6.46s/it]Batches:  29%|██▊       | 388/1350 [2:37:26<1:43:52,  6.48s/it]Batches:  29%|██▉       | 389/1350 [2:37:33<1:49:18,  6.82s/it]Batches:  29%|██▉       | 390/1350 [2:37:41<1:53:06,  7.07s/it]Batches:  29%|██▉       | 391/1350 [2:37:48<1:55:17,  7.21s/it]Batches:  29%|██▉       | 392/1350 [2:37:56<1:54:58,  7.20s/it]Batches:  29%|██▉       | 393/1350 [2:38:03<1:56:52,  7.33s/it]Batches:  29%|██▉       | 394/1350 [2:38:09<1:48:58,  6.84s/it]Batches:  29%|██▉       | 395/1350 [2:38:14<1:42:27,  6.44s/it]Batches:  29%|██▉       | 396/1350 [2:38:20<1:39:02,  6.23s/it]Batches:  29%|██▉       | 397/1350 [2:38:27<1:43:00,  6.49s/it]Batches:  29%|██▉       | 398/1350 [2:38:33<1:40:04,  6.31s/it]Batches:  30%|██▉       | 399/1350 [2:38:39<1:39:07,  6.25s/it]Batches:  30%|██▉       | 400/1350 [2:38:47<1:47:14,  6.77s/it]Batches:  30%|██▉       | 401/1350 [2:38:52<1:39:30,  6.29s/it]Batches:  30%|██▉       | 402/1350 [2:38:59<1:43:03,  6.52s/it]Batches:  30%|██▉       | 403/1350 [2:39:04<1:34:26,  5.98s/it]Batches:  30%|██▉       | 404/1350 [2:39:10<1:32:14,  5.85s/it]Batches:  30%|███       | 405/1350 [2:39:16<1:35:28,  6.06s/it]Batches:  30%|███       | 406/1350 [2:39:21<1:30:13,  5.73s/it]Batches:  30%|███       | 407/1350 [2:39:28<1:35:25,  6.07s/it]Batches:  30%|███       | 408/1350 [2:39:34<1:33:48,  5.97s/it]Batches:  30%|███       | 409/1350 [2:39:42<1:46:09,  6.77s/it]Batches:  30%|███       | 410/1350 [2:39:49<1:46:58,  6.83s/it]Batches:  30%|███       | 411/1350 [2:39:55<1:39:55,  6.38s/it]Batches:  31%|███       | 412/1350 [2:40:02<1:42:22,  6.55s/it]Batches:  31%|███       | 413/1350 [2:40:07<1:37:17,  6.23s/it]Batches:  31%|███       | 414/1350 [2:40:12<1:28:32,  5.68s/it]Batches:  31%|███       | 415/1350 [2:40:18<1:29:46,  5.76s/it]Batches:  31%|███       | 416/1350 [2:40:23<1:28:02,  5.66s/it]Batches:  31%|███       | 417/1350 [2:40:29<1:30:17,  5.81s/it]Batches:  31%|███       | 418/1350 [2:40:35<1:31:49,  5.91s/it]Batches:  31%|███       | 419/1350 [2:40:42<1:34:00,  6.06s/it]Batches:  31%|███       | 420/1350 [2:40:47<1:29:33,  5.78s/it]Batches:  31%|███       | 421/1350 [2:40:53<1:29:25,  5.78s/it]Batches:  31%|███▏      | 422/1350 [2:40:57<1:24:58,  5.49s/it]Batches:  31%|███▏      | 423/1350 [2:41:04<1:32:09,  5.97s/it]Batches:  31%|███▏      | 424/1350 [2:41:10<1:29:01,  5.77s/it]Batches:  31%|███▏      | 425/1350 [2:41:15<1:27:32,  5.68s/it]Batches:  32%|███▏      | 426/1350 [2:41:19<1:20:19,  5.22s/it]Batches:  32%|███▏      | 427/1350 [2:41:24<1:18:44,  5.12s/it]Batches:  32%|███▏      | 428/1350 [2:41:30<1:19:40,  5.19s/it]Batches:  32%|███▏      | 429/1350 [2:41:35<1:22:44,  5.39s/it]Batches:  32%|███▏      | 430/1350 [2:41:40<1:18:37,  5.13s/it]Batches:  32%|███▏      | 431/1350 [2:41:46<1:20:34,  5.26s/it]Batches:  32%|███▏      | 432/1350 [2:41:51<1:23:08,  5.43s/it]Batches:  32%|███▏      | 433/1350 [2:41:58<1:26:54,  5.69s/it]Batches:  32%|███▏      | 434/1350 [2:42:04<1:29:15,  5.85s/it]Batches:  32%|███▏      | 435/1350 [2:42:12<1:39:53,  6.55s/it]Batches:  32%|███▏      | 436/1350 [2:42:18<1:36:57,  6.36s/it]Batches:  32%|███▏      | 437/1350 [2:42:24<1:36:17,  6.33s/it]Batches:  32%|███▏      | 438/1350 [2:42:31<1:36:08,  6.33s/it]Batches:  33%|███▎      | 439/1350 [2:42:39<1:46:35,  7.02s/it]Batches:  33%|███▎      | 440/1350 [2:42:46<1:47:30,  7.09s/it]Batches:  33%|███▎      | 441/1350 [2:42:53<1:45:06,  6.94s/it]Batches:  33%|███▎      | 442/1350 [2:42:58<1:36:05,  6.35s/it]Batches:  33%|███▎      | 443/1350 [2:43:04<1:35:14,  6.30s/it]Batches:  33%|███▎      | 444/1350 [2:43:11<1:38:54,  6.55s/it]Batches:  33%|███▎      | 445/1350 [2:43:18<1:38:35,  6.54s/it]Batches:  33%|███▎      | 446/1350 [2:43:25<1:42:20,  6.79s/it]Batches:  33%|███▎      | 447/1350 [2:43:32<1:39:59,  6.64s/it]Batches:  33%|███▎      | 448/1350 [2:43:37<1:34:23,  6.28s/it]Batches:  33%|███▎      | 449/1350 [2:43:43<1:33:54,  6.25s/it]Batches:  33%|███▎      | 450/1350 [2:43:49<1:31:07,  6.08s/it]Batches:  33%|███▎      | 451/1350 [2:43:55<1:31:26,  6.10s/it]Batches:  33%|███▎      | 452/1350 [2:44:00<1:26:50,  5.80s/it]Batches:  34%|███▎      | 453/1350 [2:44:06<1:25:02,  5.69s/it]Batches:  34%|███▎      | 454/1350 [2:44:11<1:25:16,  5.71s/it]Batches:  34%|███▎      | 455/1350 [2:44:18<1:28:53,  5.96s/it]Batches:  34%|███▍      | 456/1350 [2:44:25<1:32:12,  6.19s/it]Batches:  34%|███▍      | 457/1350 [2:44:30<1:28:00,  5.91s/it]Batches:  34%|███▍      | 458/1350 [2:44:36<1:30:31,  6.09s/it]Batches:  34%|███▍      | 459/1350 [2:44:42<1:29:04,  6.00s/it]Batches:  34%|███▍      | 460/1350 [2:44:48<1:30:40,  6.11s/it]Batches:  34%|███▍      | 461/1350 [2:44:54<1:28:53,  6.00s/it]Batches:  34%|███▍      | 462/1350 [2:44:59<1:24:26,  5.71s/it]Batches:  34%|███▍      | 463/1350 [2:45:06<1:26:54,  5.88s/it]Batches:  34%|███▍      | 464/1350 [2:45:11<1:24:45,  5.74s/it]Batches:  34%|███▍      | 465/1350 [2:45:16<1:23:43,  5.68s/it]Batches:  35%|███▍      | 466/1350 [2:45:22<1:24:05,  5.71s/it]Batches:  35%|███▍      | 467/1350 [2:45:28<1:22:51,  5.63s/it]Batches:  35%|███▍      | 468/1350 [2:45:34<1:24:12,  5.73s/it]Batches:  35%|███▍      | 469/1350 [2:45:39<1:21:30,  5.55s/it]Batches:  35%|███▍      | 470/1350 [2:45:45<1:23:56,  5.72s/it]Batches:  35%|███▍      | 471/1350 [2:45:51<1:25:26,  5.83s/it]Batches:  35%|███▍      | 472/1350 [2:45:56<1:22:48,  5.66s/it]Batches:  35%|███▌      | 473/1350 [2:46:03<1:25:30,  5.85s/it]Batches:  35%|███▌      | 474/1350 [2:46:07<1:21:10,  5.56s/it]Batches:  35%|███▌      | 475/1350 [2:46:13<1:20:08,  5.50s/it]Batches:  35%|███▌      | 476/1350 [2:46:18<1:20:13,  5.51s/it]Batches:  35%|███▌      | 477/1350 [2:46:24<1:21:32,  5.60s/it]Batches:  35%|███▌      | 478/1350 [2:46:30<1:24:14,  5.80s/it]Batches:  35%|███▌      | 479/1350 [2:46:36<1:23:54,  5.78s/it]Batches:  36%|███▌      | 480/1350 [2:46:42<1:22:42,  5.70s/it]Batches:  36%|███▌      | 481/1350 [2:46:48<1:23:44,  5.78s/it]Batches:  36%|███▌      | 482/1350 [2:46:54<1:27:50,  6.07s/it]Batches:  36%|███▌      | 483/1350 [2:47:00<1:24:56,  5.88s/it]Batches:  36%|███▌      | 484/1350 [2:47:05<1:22:15,  5.70s/it]Batches:  36%|███▌      | 485/1350 [2:47:10<1:20:14,  5.57s/it]Batches:  36%|███▌      | 486/1350 [2:47:15<1:17:20,  5.37s/it]Batches:  36%|███▌      | 487/1350 [2:47:21<1:18:51,  5.48s/it]Batches:  36%|███▌      | 488/1350 [2:47:28<1:23:54,  5.84s/it]Batches:  36%|███▌      | 489/1350 [2:47:34<1:26:29,  6.03s/it]Batches:  36%|███▋      | 490/1350 [2:47:40<1:24:31,  5.90s/it]Batches:  36%|███▋      | 491/1350 [2:47:46<1:26:33,  6.05s/it]Batches:  36%|███▋      | 492/1350 [2:47:51<1:23:19,  5.83s/it]Batches:  37%|███▋      | 493/1350 [2:47:58<1:27:28,  6.12s/it]Batches:  37%|███▋      | 494/1350 [2:48:04<1:24:06,  5.90s/it]Batches:  37%|███▋      | 495/1350 [2:48:09<1:20:50,  5.67s/it]Batches:  37%|███▋      | 496/1350 [2:48:14<1:19:57,  5.62s/it]Batches:  37%|███▋      | 497/1350 [2:48:20<1:18:46,  5.54s/it]Batches:  37%|███▋      | 498/1350 [2:48:25<1:17:12,  5.44s/it]Batches:  37%|███▋      | 499/1350 [2:48:32<1:22:28,  5.82s/it]Batches:  37%|███▋      | 500/1350 [2:48:37<1:19:33,  5.62s/it]Batches:  37%|███▋      | 501/1350 [2:48:42<1:17:10,  5.45s/it]Batches:  37%|███▋      | 502/1350 [2:48:47<1:14:26,  5.27s/it]Batches:  37%|███▋      | 503/1350 [2:48:52<1:13:03,  5.18s/it]Batches:  37%|███▋      | 504/1350 [2:48:57<1:14:24,  5.28s/it]Batches:  37%|███▋      | 505/1350 [2:49:03<1:18:16,  5.56s/it]Batches:  37%|███▋      | 506/1350 [2:49:09<1:18:48,  5.60s/it]Batches:  38%|███▊      | 507/1350 [2:49:14<1:15:27,  5.37s/it]Batches:  38%|███▊      | 508/1350 [2:49:19<1:14:53,  5.34s/it]Batches:  38%|███▊      | 509/1350 [2:49:24<1:15:09,  5.36s/it]Batches:  38%|███▊      | 510/1350 [2:49:31<1:18:38,  5.62s/it]Batches:  38%|███▊      | 511/1350 [2:49:36<1:18:38,  5.62s/it]Batches:  38%|███▊      | 512/1350 [2:49:41<1:16:12,  5.46s/it]Batches:  38%|███▊      | 513/1350 [2:49:46<1:14:32,  5.34s/it]Batches:  38%|███▊      | 514/1350 [2:49:52<1:15:00,  5.38s/it]Batches:  38%|███▊      | 515/1350 [2:49:57<1:14:15,  5.34s/it]Batches:  38%|███▊      | 516/1350 [2:50:02<1:11:57,  5.18s/it]Batches:  38%|███▊      | 517/1350 [2:50:09<1:17:51,  5.61s/it]Batches:  38%|███▊      | 518/1350 [2:50:14<1:16:31,  5.52s/it]Batches:  38%|███▊      | 519/1350 [2:50:19<1:13:53,  5.34s/it]Batches:  39%|███▊      | 520/1350 [2:50:24<1:12:12,  5.22s/it]Batches:  39%|███▊      | 521/1350 [2:50:29<1:11:48,  5.20s/it]Batches:  39%|███▊      | 522/1350 [2:50:35<1:16:26,  5.54s/it]Batches:  39%|███▊      | 523/1350 [2:50:42<1:21:56,  5.95s/it]Batches:  39%|███▉      | 524/1350 [2:50:48<1:21:33,  5.92s/it]Batches:  39%|███▉      | 525/1350 [2:50:53<1:17:19,  5.62s/it]Batches:  39%|███▉      | 526/1350 [2:50:59<1:17:34,  5.65s/it]Batches:  39%|███▉      | 527/1350 [2:51:04<1:17:05,  5.62s/it]Batches:  39%|███▉      | 528/1350 [2:51:10<1:17:27,  5.65s/it]Batches:  39%|███▉      | 529/1350 [2:51:16<1:19:19,  5.80s/it]Batches:  39%|███▉      | 530/1350 [2:51:22<1:17:49,  5.69s/it]Batches:  39%|███▉      | 531/1350 [2:51:27<1:15:22,  5.52s/it]Batches:  39%|███▉      | 532/1350 [2:51:31<1:12:24,  5.31s/it]Batches:  39%|███▉      | 533/1350 [2:51:36<1:09:55,  5.14s/it]Batches:  40%|███▉      | 534/1350 [2:51:42<1:12:21,  5.32s/it]Batches:  40%|███▉      | 535/1350 [2:51:49<1:18:12,  5.76s/it]Batches:  40%|███▉      | 536/1350 [2:51:56<1:24:23,  6.22s/it]Batches:  40%|███▉      | 537/1350 [2:52:02<1:23:22,  6.15s/it]Batches:  40%|███▉      | 538/1350 [2:52:08<1:21:14,  6.00s/it]Batches:  40%|███▉      | 539/1350 [2:52:14<1:22:23,  6.10s/it]Batches:  40%|████      | 540/1350 [2:52:20<1:20:46,  5.98s/it]Batches:  40%|████      | 541/1350 [2:52:26<1:21:05,  6.01s/it]Batches:  40%|████      | 542/1350 [2:52:32<1:21:21,  6.04s/it]Batches:  40%|████      | 543/1350 [2:52:37<1:17:12,  5.74s/it]Batches:  40%|████      | 544/1350 [2:52:43<1:18:52,  5.87s/it]Batches:  40%|████      | 545/1350 [2:52:49<1:20:34,  6.01s/it]Batches:  40%|████      | 546/1350 [2:52:56<1:22:31,  6.16s/it]Batches:  41%|████      | 547/1350 [2:53:02<1:21:03,  6.06s/it]Batches:  41%|████      | 548/1350 [2:53:08<1:23:30,  6.25s/it]Batches:  41%|████      | 549/1350 [2:53:13<1:16:54,  5.76s/it]Batches:  41%|████      | 550/1350 [2:53:19<1:16:41,  5.75s/it]Batches:  41%|████      | 551/1350 [2:53:25<1:17:18,  5.81s/it]Batches:  41%|████      | 552/1350 [2:53:31<1:17:10,  5.80s/it]Batches:  41%|████      | 553/1350 [2:53:37<1:18:23,  5.90s/it]Batches:  41%|████      | 554/1350 [2:53:42<1:14:57,  5.65s/it]Batches:  41%|████      | 555/1350 [2:53:48<1:16:36,  5.78s/it]Batches:  41%|████      | 556/1350 [2:53:54<1:16:08,  5.75s/it]Batches:  41%|████▏     | 557/1350 [2:53:59<1:15:18,  5.70s/it]Batches:  41%|████▏     | 558/1350 [2:54:05<1:16:07,  5.77s/it]Batches:  41%|████▏     | 559/1350 [2:54:11<1:15:04,  5.69s/it]Batches:  41%|████▏     | 560/1350 [2:54:17<1:19:12,  6.02s/it]Batches:  42%|████▏     | 561/1350 [2:54:24<1:20:25,  6.12s/it]Batches:  42%|████▏     | 562/1350 [2:54:28<1:13:42,  5.61s/it]Batches:  42%|████▏     | 563/1350 [2:54:34<1:15:22,  5.75s/it]Batches:  42%|████▏     | 564/1350 [2:54:39<1:13:32,  5.61s/it]Batches:  42%|████▏     | 565/1350 [2:54:46<1:16:41,  5.86s/it]Batches:  42%|████▏     | 566/1350 [2:54:52<1:18:53,  6.04s/it]Batches:  42%|████▏     | 567/1350 [2:54:58<1:17:24,  5.93s/it]Batches:  42%|████▏     | 568/1350 [2:55:03<1:14:14,  5.70s/it]Batches:  42%|████▏     | 569/1350 [2:55:08<1:11:04,  5.46s/it]Batches:  42%|████▏     | 570/1350 [2:55:14<1:11:36,  5.51s/it]Batches:  42%|████▏     | 571/1350 [2:55:19<1:10:56,  5.46s/it]Batches:  42%|████▏     | 572/1350 [2:55:24<1:10:28,  5.43s/it]Batches:  42%|████▏     | 573/1350 [2:55:30<1:11:46,  5.54s/it]Batches:  43%|████▎     | 574/1350 [2:55:36<1:10:45,  5.47s/it]Batches:  43%|████▎     | 575/1350 [2:55:41<1:11:18,  5.52s/it]Batches:  43%|████▎     | 576/1350 [2:55:46<1:10:19,  5.45s/it]Batches:  43%|████▎     | 577/1350 [2:55:52<1:10:44,  5.49s/it]Batches:  43%|████▎     | 578/1350 [2:55:58<1:11:47,  5.58s/it]Batches:  43%|████▎     | 579/1350 [2:56:03<1:10:33,  5.49s/it]Batches:  43%|████▎     | 580/1350 [2:56:08<1:09:39,  5.43s/it]Batches:  43%|████▎     | 581/1350 [2:56:14<1:11:54,  5.61s/it]Batches:  43%|████▎     | 582/1350 [2:56:21<1:13:44,  5.76s/it]Batches:  43%|████▎     | 583/1350 [2:56:27<1:14:32,  5.83s/it]Batches:  43%|████▎     | 584/1350 [2:56:32<1:11:43,  5.62s/it]Batches:  43%|████▎     | 585/1350 [2:56:37<1:09:53,  5.48s/it]Batches:  43%|████▎     | 586/1350 [2:56:42<1:07:46,  5.32s/it]Batches:  43%|████▎     | 587/1350 [2:56:46<1:04:50,  5.10s/it]Batches:  44%|████▎     | 588/1350 [2:56:52<1:06:31,  5.24s/it]Batches:  44%|████▎     | 589/1350 [2:56:57<1:05:54,  5.20s/it]Batches:  44%|████▎     | 590/1350 [2:57:05<1:17:55,  6.15s/it]Batches:  44%|████▍     | 591/1350 [2:57:16<1:33:24,  7.38s/it]Batches:  44%|████▍     | 592/1350 [2:57:26<1:43:28,  8.19s/it]Batches:  44%|████▍     | 593/1350 [2:57:36<1:51:18,  8.82s/it]Batches:  44%|████▍     | 594/1350 [2:57:47<1:58:09,  9.38s/it]Batches:  44%|████▍     | 595/1350 [2:57:52<1:42:35,  8.15s/it]Batches:  44%|████▍     | 596/1350 [2:57:58<1:33:32,  7.44s/it]Batches:  44%|████▍     | 597/1350 [2:58:04<1:29:08,  7.10s/it]Batches:  44%|████▍     | 598/1350 [2:58:10<1:24:04,  6.71s/it]Batches:  44%|████▍     | 599/1350 [2:58:16<1:21:15,  6.49s/it]Batches:  44%|████▍     | 600/1350 [2:58:22<1:19:14,  6.34s/it]Batches:  45%|████▍     | 601/1350 [2:58:27<1:15:54,  6.08s/it]Batches:  45%|████▍     | 602/1350 [2:58:34<1:19:31,  6.38s/it]Batches:  45%|████▍     | 603/1350 [2:58:40<1:14:47,  6.01s/it]Batches:  45%|████▍     | 604/1350 [2:58:45<1:12:09,  5.80s/it]Batches:  45%|████▍     | 605/1350 [2:58:50<1:10:39,  5.69s/it]Batches:  45%|████▍     | 606/1350 [2:58:56<1:11:35,  5.77s/it]Batches:  45%|████▍     | 607/1350 [2:59:01<1:07:44,  5.47s/it]Batches:  45%|████▌     | 608/1350 [2:59:08<1:13:58,  5.98s/it]Batches:  45%|████▌     | 609/1350 [2:59:13<1:09:58,  5.67s/it]Batches:  45%|████▌     | 610/1350 [2:59:20<1:12:41,  5.89s/it]Batches:  45%|████▌     | 611/1350 [2:59:26<1:13:19,  5.95s/it]Batches:  45%|████▌     | 612/1350 [2:59:31<1:11:22,  5.80s/it]Batches:  45%|████▌     | 613/1350 [2:59:37<1:12:00,  5.86s/it]Batches:  45%|████▌     | 614/1350 [2:59:42<1:09:58,  5.71s/it]Batches:  46%|████▌     | 615/1350 [2:59:47<1:06:42,  5.44s/it]Batches:  46%|████▌     | 616/1350 [2:59:52<1:05:02,  5.32s/it]Batches:  46%|████▌     | 617/1350 [2:59:57<1:04:12,  5.26s/it]Batches:  46%|████▌     | 618/1350 [3:00:03<1:03:57,  5.24s/it]Batches:  46%|████▌     | 619/1350 [3:00:08<1:03:27,  5.21s/it]Batches:  46%|████▌     | 620/1350 [3:00:14<1:05:58,  5.42s/it]Batches:  46%|████▌     | 621/1350 [3:00:18<1:03:18,  5.21s/it]Batches:  46%|████▌     | 622/1350 [3:00:23<1:02:04,  5.12s/it]Batches:  46%|████▌     | 623/1350 [3:00:28<59:46,  4.93s/it]  Batches:  46%|████▌     | 624/1350 [3:00:33<59:38,  4.93s/it]Batches:  46%|████▋     | 625/1350 [3:00:37<57:29,  4.76s/it]Batches:  46%|████▋     | 626/1350 [3:00:42<59:22,  4.92s/it]Batches:  46%|████▋     | 627/1350 [3:00:48<1:00:29,  5.02s/it]Batches:  47%|████▋     | 628/1350 [3:00:53<1:01:43,  5.13s/it]Batches:  47%|████▋     | 629/1350 [3:00:58<1:02:29,  5.20s/it]Batches:  47%|████▋     | 630/1350 [3:01:03<1:00:03,  5.01s/it]Batches:  47%|████▋     | 631/1350 [3:01:08<59:32,  4.97s/it]  Batches:  47%|████▋     | 632/1350 [3:01:14<1:02:37,  5.23s/it]Batches:  47%|████▋     | 633/1350 [3:01:19<1:02:50,  5.26s/it]Batches:  47%|████▋     | 634/1350 [3:01:25<1:03:51,  5.35s/it]Batches:  47%|████▋     | 635/1350 [3:01:30<1:03:24,  5.32s/it]Batches:  47%|████▋     | 636/1350 [3:01:35<1:03:58,  5.38s/it]Batches:  47%|████▋     | 637/1350 [3:01:42<1:07:52,  5.71s/it]Batches:  47%|████▋     | 638/1350 [3:01:48<1:09:03,  5.82s/it]Batches:  47%|████▋     | 639/1350 [3:01:53<1:06:38,  5.62s/it]Batches:  47%|████▋     | 640/1350 [3:01:58<1:04:28,  5.45s/it]Batches:  47%|████▋     | 641/1350 [3:02:03<1:02:18,  5.27s/it]Batches:  48%|████▊     | 642/1350 [3:02:07<58:49,  4.98s/it]  Batches:  48%|████▊     | 643/1350 [3:02:12<57:09,  4.85s/it]Batches:  48%|████▊     | 644/1350 [3:02:18<1:00:45,  5.16s/it]Batches:  48%|████▊     | 645/1350 [3:02:22<57:00,  4.85s/it]  Batches:  48%|████▊     | 646/1350 [3:02:27<56:42,  4.83s/it]Batches:  48%|████▊     | 647/1350 [3:02:32<59:35,  5.09s/it]Batches:  48%|████▊     | 648/1350 [3:02:37<58:39,  5.01s/it]Batches:  48%|████▊     | 649/1350 [3:02:41<55:01,  4.71s/it]Batches:  48%|████▊     | 650/1350 [3:02:45<52:36,  4.51s/it]Batches:  48%|████▊     | 651/1350 [3:02:51<58:13,  5.00s/it]Batches:  48%|████▊     | 652/1350 [3:02:56<57:23,  4.93s/it]Batches:  48%|████▊     | 653/1350 [3:03:00<53:58,  4.65s/it]Batches:  48%|████▊     | 654/1350 [3:03:05<53:59,  4.65s/it]Batches:  49%|████▊     | 655/1350 [3:03:09<54:18,  4.69s/it]Batches:  49%|████▊     | 656/1350 [3:03:15<56:33,  4.89s/it]Batches:  49%|████▊     | 657/1350 [3:03:19<55:04,  4.77s/it]Batches:  49%|████▊     | 658/1350 [3:03:24<54:56,  4.76s/it]Batches:  49%|████▉     | 659/1350 [3:03:28<51:30,  4.47s/it]Batches:  49%|████▉     | 660/1350 [3:03:32<50:27,  4.39s/it]Batches:  49%|████▉     | 661/1350 [3:03:36<49:36,  4.32s/it]Batches:  49%|████▉     | 662/1350 [3:03:41<49:25,  4.31s/it]Batches:  49%|████▉     | 663/1350 [3:03:45<49:16,  4.30s/it]Batches:  49%|████▉     | 664/1350 [3:03:49<48:14,  4.22s/it]Batches:  49%|████▉     | 665/1350 [3:03:54<49:56,  4.37s/it]Batches:  49%|████▉     | 666/1350 [3:03:58<51:37,  4.53s/it]Batches:  49%|████▉     | 667/1350 [3:04:02<48:25,  4.25s/it]Batches:  49%|████▉     | 668/1350 [3:04:07<50:14,  4.42s/it]Batches:  50%|████▉     | 669/1350 [3:04:11<49:07,  4.33s/it]Batches:  50%|████▉     | 670/1350 [3:04:15<48:32,  4.28s/it]Batches:  50%|████▉     | 671/1350 [3:04:19<48:28,  4.28s/it]Batches:  50%|████▉     | 672/1350 [3:04:25<51:53,  4.59s/it]Batches:  50%|████▉     | 673/1350 [3:04:29<49:04,  4.35s/it]Batches:  50%|████▉     | 674/1350 [3:04:33<49:11,  4.37s/it]Batches:  50%|█████     | 675/1350 [3:04:37<48:01,  4.27s/it]Batches:  50%|█████     | 676/1350 [3:04:42<49:23,  4.40s/it]Batches:  50%|█████     | 677/1350 [3:04:47<53:29,  4.77s/it]Batches:  50%|█████     | 678/1350 [3:04:52<52:21,  4.67s/it]Batches:  50%|█████     | 679/1350 [3:04:58<57:34,  5.15s/it]Batches:  50%|█████     | 680/1350 [3:05:03<56:57,  5.10s/it]Batches:  50%|█████     | 681/1350 [3:05:08<56:27,  5.06s/it]Batches:  51%|█████     | 682/1350 [3:05:12<53:02,  4.76s/it]Batches:  51%|█████     | 683/1350 [3:05:16<51:53,  4.67s/it]Batches:  51%|█████     | 684/1350 [3:05:21<50:34,  4.56s/it]Batches:  51%|█████     | 685/1350 [3:05:25<49:30,  4.47s/it]Batches:  51%|█████     | 686/1350 [3:05:31<52:47,  4.77s/it]Batches:  51%|█████     | 687/1350 [3:05:35<52:57,  4.79s/it]Batches:  51%|█████     | 688/1350 [3:05:39<50:06,  4.54s/it]Batches:  51%|█████     | 689/1350 [3:05:44<51:11,  4.65s/it]Batches:  51%|█████     | 690/1350 [3:05:49<51:09,  4.65s/it]Batches:  51%|█████     | 691/1350 [3:05:53<49:49,  4.54s/it]Batches:  51%|█████▏    | 692/1350 [3:05:57<48:04,  4.38s/it]Batches:  51%|█████▏    | 693/1350 [3:06:02<50:37,  4.62s/it]Batches:  51%|█████▏    | 694/1350 [3:06:07<49:28,  4.53s/it]Batches:  51%|█████▏    | 695/1350 [3:06:11<49:57,  4.58s/it]Batches:  52%|█████▏    | 696/1350 [3:06:16<49:28,  4.54s/it]Batches:  52%|█████▏    | 697/1350 [3:06:20<48:52,  4.49s/it]Batches:  52%|█████▏    | 698/1350 [3:06:24<47:59,  4.42s/it]Batches:  52%|█████▏    | 699/1350 [3:06:29<47:36,  4.39s/it]Batches:  52%|█████▏    | 700/1350 [3:06:34<49:15,  4.55s/it]Batches:  52%|█████▏    | 701/1350 [3:06:39<52:12,  4.83s/it]Batches:  52%|█████▏    | 702/1350 [3:06:44<50:47,  4.70s/it]Batches:  52%|█████▏    | 703/1350 [3:06:47<47:36,  4.41s/it]Batches:  52%|█████▏    | 704/1350 [3:06:51<46:19,  4.30s/it]Batches:  52%|█████▏    | 705/1350 [3:06:56<46:41,  4.34s/it]Batches:  52%|█████▏    | 706/1350 [3:07:00<45:28,  4.24s/it]Batches:  52%|█████▏    | 707/1350 [3:07:06<51:23,  4.80s/it]Batches:  52%|█████▏    | 708/1350 [3:07:11<51:36,  4.82s/it]Batches:  53%|█████▎    | 709/1350 [3:07:16<52:25,  4.91s/it]Batches:  53%|█████▎    | 710/1350 [3:07:20<49:19,  4.62s/it]Batches:  53%|█████▎    | 711/1350 [3:07:24<49:07,  4.61s/it]Batches:  53%|█████▎    | 712/1350 [3:07:29<50:05,  4.71s/it]Batches:  53%|█████▎    | 713/1350 [3:07:34<49:07,  4.63s/it]Batches:  53%|█████▎    | 714/1350 [3:07:40<53:28,  5.04s/it]Batches:  53%|█████▎    | 715/1350 [3:07:44<51:58,  4.91s/it]Batches:  53%|█████▎    | 716/1350 [3:07:48<49:01,  4.64s/it]Batches:  53%|█████▎    | 717/1350 [3:07:53<47:54,  4.54s/it]Batches:  53%|█████▎    | 718/1350 [3:07:57<47:48,  4.54s/it]Batches:  53%|█████▎    | 719/1350 [3:08:02<47:23,  4.51s/it]Batches:  53%|█████▎    | 720/1350 [3:08:06<46:46,  4.46s/it]Batches:  53%|█████▎    | 721/1350 [3:08:11<48:15,  4.60s/it]Batches:  53%|█████▎    | 722/1350 [3:08:16<49:43,  4.75s/it]Batches:  54%|█████▎    | 723/1350 [3:08:20<47:29,  4.54s/it]Batches:  54%|█████▎    | 724/1350 [3:08:24<45:44,  4.38s/it]Batches:  54%|█████▎    | 725/1350 [3:08:28<44:32,  4.28s/it]Batches:  54%|█████▍    | 726/1350 [3:08:32<43:53,  4.22s/it]Batches:  54%|█████▍    | 727/1350 [3:08:37<45:24,  4.37s/it]Batches:  54%|█████▍    | 728/1350 [3:08:42<47:37,  4.59s/it]Batches:  54%|█████▍    | 729/1350 [3:08:46<45:08,  4.36s/it]Batches:  54%|█████▍    | 730/1350 [3:08:50<43:16,  4.19s/it]Batches:  54%|█████▍    | 731/1350 [3:08:53<41:51,  4.06s/it]Batches:  54%|█████▍    | 732/1350 [3:08:57<41:35,  4.04s/it]Batches:  54%|█████▍    | 733/1350 [3:09:02<42:26,  4.13s/it]Batches:  54%|█████▍    | 734/1350 [3:09:06<42:36,  4.15s/it]Batches:  54%|█████▍    | 735/1350 [3:09:12<48:14,  4.71s/it]Batches:  55%|█████▍    | 736/1350 [3:09:16<47:01,  4.59s/it]Batches:  55%|█████▍    | 737/1350 [3:09:20<45:14,  4.43s/it]Batches:  55%|█████▍    | 738/1350 [3:09:25<45:02,  4.42s/it]Batches:  55%|█████▍    | 739/1350 [3:09:29<45:01,  4.42s/it]Batches:  55%|█████▍    | 740/1350 [3:09:33<43:20,  4.26s/it]Batches:  55%|█████▍    | 741/1350 [3:09:38<44:37,  4.40s/it]Batches:  55%|█████▍    | 742/1350 [3:09:43<47:55,  4.73s/it]Batches:  55%|█████▌    | 743/1350 [3:09:48<46:56,  4.64s/it]Batches:  55%|█████▌    | 744/1350 [3:09:52<45:42,  4.52s/it]Batches:  55%|█████▌    | 745/1350 [3:09:56<45:06,  4.47s/it]Batches:  55%|█████▌    | 746/1350 [3:10:00<42:04,  4.18s/it]Batches:  55%|█████▌    | 747/1350 [3:10:04<41:06,  4.09s/it]Batches:  55%|█████▌    | 748/1350 [3:10:08<40:39,  4.05s/it]Batches:  55%|█████▌    | 749/1350 [3:10:12<40:39,  4.06s/it]Batches:  56%|█████▌    | 750/1350 [3:10:18<46:07,  4.61s/it]Batches:  56%|█████▌    | 751/1350 [3:10:22<44:59,  4.51s/it]Batches:  56%|█████▌    | 752/1350 [3:10:26<43:24,  4.36s/it]Batches:  56%|█████▌    | 753/1350 [3:10:30<41:41,  4.19s/it]Batches:  56%|█████▌    | 754/1350 [3:10:33<39:46,  4.00s/it]Batches:  56%|█████▌    | 755/1350 [3:10:38<42:12,  4.26s/it]Batches:  56%|█████▌    | 756/1350 [3:10:43<44:19,  4.48s/it]Batches:  56%|█████▌    | 757/1350 [3:10:49<47:11,  4.78s/it]Batches:  56%|█████▌    | 758/1350 [3:10:53<45:35,  4.62s/it]Batches:  56%|█████▌    | 759/1350 [3:10:56<42:28,  4.31s/it]Batches:  56%|█████▋    | 760/1350 [3:11:00<41:25,  4.21s/it]Batches:  56%|█████▋    | 761/1350 [3:11:05<41:00,  4.18s/it]Batches:  56%|█████▋    | 762/1350 [3:11:09<41:07,  4.20s/it]Batches:  57%|█████▋    | 763/1350 [3:11:13<41:34,  4.25s/it]Batches:  57%|█████▋    | 764/1350 [3:11:18<43:53,  4.49s/it]Batches:  57%|█████▋    | 765/1350 [3:11:22<41:42,  4.28s/it]Batches:  57%|█████▋    | 766/1350 [3:11:27<42:41,  4.39s/it]Batches:  57%|█████▋    | 767/1350 [3:11:30<40:45,  4.19s/it]Batches:  57%|█████▋    | 768/1350 [3:11:36<44:22,  4.57s/it]Batches:  57%|█████▋    | 769/1350 [3:11:41<44:57,  4.64s/it]Batches:  57%|█████▋    | 770/1350 [3:11:45<43:53,  4.54s/it]Batches:  57%|█████▋    | 771/1350 [3:11:49<42:28,  4.40s/it]Batches:  57%|█████▋    | 772/1350 [3:11:54<43:04,  4.47s/it]Batches:  57%|█████▋    | 773/1350 [3:11:59<44:20,  4.61s/it]Batches:  57%|█████▋    | 774/1350 [3:12:02<40:38,  4.23s/it]Batches:  57%|█████▋    | 775/1350 [3:12:06<39:16,  4.10s/it]Batches:  57%|█████▋    | 776/1350 [3:12:10<38:34,  4.03s/it]Batches:  58%|█████▊    | 777/1350 [3:12:14<38:43,  4.05s/it]Batches:  58%|█████▊    | 778/1350 [3:12:18<39:17,  4.12s/it]Batches:  58%|█████▊    | 779/1350 [3:12:23<42:03,  4.42s/it]Batches:  58%|█████▊    | 780/1350 [3:12:27<40:17,  4.24s/it]Batches:  58%|█████▊    | 781/1350 [3:12:31<41:02,  4.33s/it]Batches:  58%|█████▊    | 782/1350 [3:12:35<39:51,  4.21s/it]Batches:  58%|█████▊    | 783/1350 [3:12:39<38:13,  4.04s/it]Batches:  58%|█████▊    | 784/1350 [3:12:43<37:35,  3.99s/it]Batches:  58%|█████▊    | 785/1350 [3:12:46<36:12,  3.85s/it]Batches:  58%|█████▊    | 786/1350 [3:12:50<36:05,  3.84s/it]Batches:  58%|█████▊    | 787/1350 [3:12:55<38:54,  4.15s/it]Batches:  58%|█████▊    | 788/1350 [3:12:59<37:36,  4.02s/it]Batches:  58%|█████▊    | 789/1350 [3:13:03<38:47,  4.15s/it]Batches:  59%|█████▊    | 790/1350 [3:13:08<40:59,  4.39s/it]Batches:  59%|█████▊    | 791/1350 [3:13:12<39:46,  4.27s/it]Batches:  59%|█████▊    | 792/1350 [3:13:16<38:49,  4.18s/it]Batches:  59%|█████▊    | 793/1350 [3:13:20<38:06,  4.10s/it]Batches:  59%|█████▉    | 794/1350 [3:13:24<36:37,  3.95s/it]Batches:  59%|█████▉    | 795/1350 [3:13:28<38:50,  4.20s/it]Batches:  59%|█████▉    | 796/1350 [3:13:32<37:24,  4.05s/it]Batches:  59%|█████▉    | 797/1350 [3:13:37<38:33,  4.18s/it]Batches:  59%|█████▉    | 798/1350 [3:13:41<39:34,  4.30s/it]Batches:  59%|█████▉    | 799/1350 [3:13:45<38:06,  4.15s/it]Batches:  59%|█████▉    | 800/1350 [3:13:49<36:14,  3.95s/it]Batches:  59%|█████▉    | 801/1350 [3:13:52<35:52,  3.92s/it]Batches:  59%|█████▉    | 802/1350 [3:13:56<34:28,  3.78s/it]Batches:  59%|█████▉    | 803/1350 [3:14:01<39:14,  4.30s/it]Batches:  60%|█████▉    | 804/1350 [3:14:05<36:33,  4.02s/it]Batches:  60%|█████▉    | 805/1350 [3:14:08<35:14,  3.88s/it]Batches:  60%|█████▉    | 806/1350 [3:14:13<37:23,  4.12s/it]Batches:  60%|█████▉    | 807/1350 [3:14:17<36:21,  4.02s/it]Batches:  60%|█████▉    | 808/1350 [3:14:20<34:48,  3.85s/it]Batches:  60%|█████▉    | 809/1350 [3:14:24<34:41,  3.85s/it]Batches:  60%|██████    | 810/1350 [3:14:29<37:27,  4.16s/it]Batches:  60%|██████    | 811/1350 [3:14:33<37:38,  4.19s/it]Batches:  60%|██████    | 812/1350 [3:14:37<37:29,  4.18s/it]Batches:  60%|██████    | 813/1350 [3:14:41<36:05,  4.03s/it]Batches:  60%|██████    | 814/1350 [3:14:45<37:01,  4.15s/it]Batches:  60%|██████    | 815/1350 [3:14:49<36:34,  4.10s/it]Batches:  60%|██████    | 816/1350 [3:14:53<35:45,  4.02s/it]Batches:  61%|██████    | 817/1350 [3:14:58<36:19,  4.09s/it]Batches:  61%|██████    | 818/1350 [3:15:02<38:14,  4.31s/it]Batches:  61%|██████    | 819/1350 [3:15:07<37:56,  4.29s/it]Batches:  61%|██████    | 820/1350 [3:15:10<36:51,  4.17s/it]Batches:  61%|██████    | 821/1350 [3:15:15<36:59,  4.20s/it]Batches:  61%|██████    | 822/1350 [3:15:19<37:28,  4.26s/it]Batches:  61%|██████    | 823/1350 [3:15:23<37:00,  4.21s/it]Batches:  61%|██████    | 824/1350 [3:15:28<37:12,  4.24s/it]Batches:  61%|██████    | 825/1350 [3:15:32<37:34,  4.30s/it]Batches:  61%|██████    | 826/1350 [3:15:36<38:06,  4.36s/it]Batches:  61%|██████▏   | 827/1350 [3:15:40<36:17,  4.16s/it]Batches:  61%|██████▏   | 828/1350 [3:15:44<35:12,  4.05s/it]Batches:  61%|██████▏   | 829/1350 [3:15:48<35:34,  4.10s/it]Batches:  61%|██████▏   | 830/1350 [3:15:52<35:33,  4.10s/it]Batches:  62%|██████▏   | 831/1350 [3:15:56<34:21,  3.97s/it]Batches:  62%|██████▏   | 832/1350 [3:16:00<34:15,  3.97s/it]Batches:  62%|██████▏   | 833/1350 [3:16:05<36:09,  4.20s/it]Batches:  62%|██████▏   | 834/1350 [3:16:08<35:11,  4.09s/it]Batches:  62%|██████▏   | 835/1350 [3:16:12<34:20,  4.00s/it]Batches:  62%|██████▏   | 836/1350 [3:16:16<33:44,  3.94s/it]Batches:  62%|██████▏   | 837/1350 [3:16:19<32:10,  3.76s/it]Batches:  62%|██████▏   | 838/1350 [3:16:23<32:10,  3.77s/it]Batches:  62%|██████▏   | 839/1350 [3:16:27<32:23,  3.80s/it]Batches:  62%|██████▏   | 840/1350 [3:16:31<32:16,  3.80s/it]Batches:  62%|██████▏   | 841/1350 [3:16:35<32:45,  3.86s/it]Batches:  62%|██████▏   | 842/1350 [3:16:40<35:15,  4.16s/it]Batches:  62%|██████▏   | 843/1350 [3:16:43<33:26,  3.96s/it]Batches:  63%|██████▎   | 844/1350 [3:16:47<32:06,  3.81s/it]Batches:  63%|██████▎   | 845/1350 [3:16:50<30:02,  3.57s/it]Batches:  63%|██████▎   | 846/1350 [3:16:54<31:05,  3.70s/it]Batches:  63%|██████▎   | 847/1350 [3:16:57<30:14,  3.61s/it]Batches:  63%|██████▎   | 848/1350 [3:17:01<31:27,  3.76s/it]Batches:  63%|██████▎   | 849/1350 [3:17:06<33:17,  3.99s/it]Batches:  63%|██████▎   | 850/1350 [3:17:10<34:43,  4.17s/it]Batches:  63%|██████▎   | 851/1350 [3:17:14<33:37,  4.04s/it]Batches:  63%|██████▎   | 852/1350 [3:17:18<32:36,  3.93s/it]Batches:  63%|██████▎   | 853/1350 [3:17:21<30:55,  3.73s/it]Batches:  63%|██████▎   | 854/1350 [3:17:25<31:27,  3.81s/it]Batches:  63%|██████▎   | 855/1350 [3:17:29<31:33,  3.83s/it]Batches:  63%|██████▎   | 856/1350 [3:17:33<32:56,  4.00s/it]Batches:  63%|██████▎   | 857/1350 [3:17:37<32:54,  4.01s/it]Batches:  64%|██████▎   | 858/1350 [3:17:42<34:55,  4.26s/it]Batches:  64%|██████▎   | 859/1350 [3:17:46<33:54,  4.14s/it]Batches:  64%|██████▎   | 860/1350 [3:17:49<31:16,  3.83s/it]Batches:  64%|██████▍   | 861/1350 [3:17:53<31:10,  3.82s/it]Batches:  64%|██████▍   | 862/1350 [3:17:57<31:06,  3.82s/it]Batches:  64%|██████▍   | 863/1350 [3:18:01<31:17,  3.85s/it]Batches:  64%|██████▍   | 864/1350 [3:18:06<34:14,  4.23s/it]Batches:  64%|██████▍   | 865/1350 [3:18:09<32:43,  4.05s/it]Batches:  64%|██████▍   | 866/1350 [3:18:14<34:16,  4.25s/it]Batches:  64%|██████▍   | 867/1350 [3:18:18<32:44,  4.07s/it]Batches:  64%|██████▍   | 868/1350 [3:18:22<33:08,  4.13s/it]Batches:  64%|██████▍   | 869/1350 [3:18:26<32:46,  4.09s/it]Batches:  64%|██████▍   | 870/1350 [3:18:30<31:52,  3.98s/it]Batches:  65%|██████▍   | 871/1350 [3:18:34<31:27,  3.94s/it]Batches:  65%|██████▍   | 872/1350 [3:18:38<32:22,  4.06s/it]Batches:  65%|██████▍   | 873/1350 [3:18:42<31:46,  4.00s/it]Batches:  65%|██████▍   | 874/1350 [3:18:47<34:54,  4.40s/it]Batches:  65%|██████▍   | 875/1350 [3:18:51<34:04,  4.31s/it]Batches:  65%|██████▍   | 876/1350 [3:18:55<31:57,  4.05s/it]Batches:  65%|██████▍   | 877/1350 [3:18:58<31:17,  3.97s/it]Batches:  65%|██████▌   | 878/1350 [3:19:03<32:58,  4.19s/it]Batches:  65%|██████▌   | 879/1350 [3:19:07<32:02,  4.08s/it]Batches:  65%|██████▌   | 880/1350 [3:19:11<32:44,  4.18s/it]Batches:  65%|██████▌   | 881/1350 [3:19:17<35:42,  4.57s/it]Batches:  65%|██████▌   | 882/1350 [3:19:20<32:19,  4.14s/it]Batches:  65%|██████▌   | 883/1350 [3:19:24<30:44,  3.95s/it]Batches:  65%|██████▌   | 884/1350 [3:19:28<31:26,  4.05s/it]Batches:  66%|██████▌   | 885/1350 [3:19:32<31:04,  4.01s/it]Batches:  66%|██████▌   | 886/1350 [3:19:36<30:39,  3.97s/it]Batches:  66%|██████▌   | 887/1350 [3:19:39<29:40,  3.85s/it]Batches:  66%|██████▌   | 888/1350 [3:19:43<30:02,  3.90s/it]Batches:  66%|██████▌   | 889/1350 [3:19:48<33:08,  4.31s/it]Batches:  66%|██████▌   | 890/1350 [3:19:52<30:46,  4.01s/it]Batches:  66%|██████▌   | 891/1350 [3:19:56<30:06,  3.94s/it]Batches:  66%|██████▌   | 892/1350 [3:19:59<29:39,  3.89s/it]Batches:  66%|██████▌   | 893/1350 [3:20:03<28:28,  3.74s/it]Batches:  66%|██████▌   | 894/1350 [3:20:07<29:32,  3.89s/it]Batches:  66%|██████▋   | 895/1350 [3:20:10<27:22,  3.61s/it]Batches:  66%|██████▋   | 896/1350 [3:20:13<26:26,  3.50s/it]Batches:  66%|██████▋   | 897/1350 [3:20:18<29:52,  3.96s/it]Batches:  67%|██████▋   | 898/1350 [3:20:23<32:23,  4.30s/it]Batches:  67%|██████▋   | 899/1350 [3:20:27<30:25,  4.05s/it]Batches:  67%|██████▋   | 900/1350 [3:20:30<29:42,  3.96s/it]Batches:  67%|██████▋   | 901/1350 [3:20:35<29:56,  4.00s/it]Batches:  67%|██████▋   | 902/1350 [3:20:38<28:51,  3.86s/it]Batches:  67%|██████▋   | 903/1350 [3:20:41<27:23,  3.68s/it]Batches:  67%|██████▋   | 904/1350 [3:20:46<29:49,  4.01s/it]Batches:  67%|██████▋   | 905/1350 [3:20:50<29:44,  4.01s/it]Batches:  67%|██████▋   | 906/1350 [3:20:56<34:07,  4.61s/it]Batches:  67%|██████▋   | 907/1350 [3:21:00<32:50,  4.45s/it]Batches:  67%|██████▋   | 908/1350 [3:21:04<31:16,  4.25s/it]Batches:  67%|██████▋   | 909/1350 [3:21:08<31:06,  4.23s/it]Batches:  67%|██████▋   | 910/1350 [3:21:12<30:30,  4.16s/it]Batches:  67%|██████▋   | 911/1350 [3:21:17<32:05,  4.39s/it]Batches:  68%|██████▊   | 912/1350 [3:21:22<32:27,  4.45s/it]Batches:  68%|██████▊   | 913/1350 [3:21:27<33:52,  4.65s/it]Batches:  68%|██████▊   | 914/1350 [3:21:31<33:27,  4.60s/it]Batches:  68%|██████▊   | 915/1350 [3:21:36<34:37,  4.78s/it]Batches:  68%|██████▊   | 916/1350 [3:21:41<33:24,  4.62s/it]Batches:  68%|██████▊   | 917/1350 [3:21:44<31:19,  4.34s/it]Batches:  68%|██████▊   | 918/1350 [3:21:48<30:02,  4.17s/it]Batches:  68%|██████▊   | 919/1350 [3:21:52<28:50,  4.02s/it]Batches:  68%|██████▊   | 920/1350 [3:21:57<30:57,  4.32s/it]Batches:  68%|██████▊   | 921/1350 [3:22:01<31:20,  4.38s/it]Batches:  68%|██████▊   | 922/1350 [3:22:06<31:05,  4.36s/it]Batches:  68%|██████▊   | 923/1350 [3:22:10<29:59,  4.21s/it]Batches:  68%|██████▊   | 924/1350 [3:22:14<30:44,  4.33s/it]Batches:  69%|██████▊   | 925/1350 [3:22:18<30:34,  4.32s/it]Batches:  69%|██████▊   | 926/1350 [3:22:23<31:15,  4.42s/it]Batches:  69%|██████▊   | 927/1350 [3:22:28<32:45,  4.65s/it]Batches:  69%|██████▊   | 928/1350 [3:22:33<31:57,  4.54s/it]Batches:  69%|██████▉   | 929/1350 [3:22:37<32:19,  4.61s/it]Batches:  69%|██████▉   | 930/1350 [3:22:41<31:13,  4.46s/it]Batches:  69%|██████▉   | 931/1350 [3:22:45<29:56,  4.29s/it]Batches:  69%|██████▉   | 932/1350 [3:22:49<28:29,  4.09s/it]Batches:  69%|██████▉   | 933/1350 [3:22:53<28:05,  4.04s/it]Batches:  69%|██████▉   | 934/1350 [3:22:57<28:20,  4.09s/it]Batches:  69%|██████▉   | 935/1350 [3:23:02<29:38,  4.29s/it]Batches:  69%|██████▉   | 936/1350 [3:23:06<29:41,  4.30s/it]Batches:  69%|██████▉   | 937/1350 [3:23:11<30:49,  4.48s/it]Batches:  69%|██████▉   | 938/1350 [3:23:15<29:49,  4.34s/it]Batches:  70%|██████▉   | 939/1350 [3:23:19<28:51,  4.21s/it]Batches:  70%|██████▉   | 940/1350 [3:23:24<29:17,  4.29s/it]Batches:  70%|██████▉   | 941/1350 [3:23:27<28:26,  4.17s/it]Batches:  70%|██████▉   | 942/1350 [3:23:33<30:23,  4.47s/it]Batches:  70%|██████▉   | 943/1350 [3:23:37<30:03,  4.43s/it]Batches:  70%|██████▉   | 944/1350 [3:23:41<29:29,  4.36s/it]Batches:  70%|███████   | 945/1350 [3:23:46<29:30,  4.37s/it]Batches:  70%|███████   | 946/1350 [3:23:49<28:09,  4.18s/it]Batches:  70%|███████   | 947/1350 [3:23:53<27:30,  4.10s/it]Batches:  70%|███████   | 948/1350 [3:23:58<28:11,  4.21s/it]Batches:  70%|███████   | 949/1350 [3:24:02<29:16,  4.38s/it]Batches:  70%|███████   | 950/1350 [3:24:06<28:27,  4.27s/it]Batches:  70%|███████   | 951/1350 [3:24:10<28:01,  4.21s/it]Batches:  71%|███████   | 952/1350 [3:24:15<27:50,  4.20s/it]Batches:  71%|███████   | 953/1350 [3:24:19<27:25,  4.14s/it]Batches:  71%|███████   | 954/1350 [3:24:23<28:10,  4.27s/it]Batches:  71%|███████   | 955/1350 [3:24:27<27:19,  4.15s/it]Batches:  71%|███████   | 956/1350 [3:24:31<27:23,  4.17s/it]Batches:  71%|███████   | 957/1350 [3:24:36<28:31,  4.35s/it]Batches:  71%|███████   | 958/1350 [3:24:40<28:01,  4.29s/it]Batches:  71%|███████   | 959/1350 [3:24:44<26:49,  4.12s/it]Batches:  71%|███████   | 960/1350 [3:24:49<27:55,  4.30s/it]Batches:  71%|███████   | 961/1350 [3:24:53<27:56,  4.31s/it]Batches:  71%|███████▏  | 962/1350 [3:24:57<26:50,  4.15s/it]Batches:  71%|███████▏  | 963/1350 [3:25:01<26:27,  4.10s/it]Batches:  71%|███████▏  | 964/1350 [3:25:04<24:38,  3.83s/it]Batches:  71%|███████▏  | 965/1350 [3:25:09<26:07,  4.07s/it]Batches:  72%|███████▏  | 966/1350 [3:25:14<27:53,  4.36s/it]Batches:  72%|███████▏  | 967/1350 [3:25:18<28:43,  4.50s/it]Batches:  72%|███████▏  | 968/1350 [3:25:23<28:36,  4.49s/it]Batches:  72%|███████▏  | 969/1350 [3:25:28<28:51,  4.55s/it]Batches:  72%|███████▏  | 970/1350 [3:25:32<27:33,  4.35s/it]Batches:  72%|███████▏  | 971/1350 [3:25:35<26:09,  4.14s/it]Batches:  72%|███████▏  | 972/1350 [3:25:40<26:41,  4.24s/it]Batches:  72%|███████▏  | 973/1350 [3:25:44<26:17,  4.19s/it]Batches:  72%|███████▏  | 974/1350 [3:25:47<25:28,  4.07s/it]Batches:  72%|███████▏  | 975/1350 [3:25:52<26:01,  4.16s/it]Batches:  72%|███████▏  | 976/1350 [3:25:57<27:01,  4.34s/it]Batches:  72%|███████▏  | 977/1350 [3:26:00<25:59,  4.18s/it]Batches:  72%|███████▏  | 978/1350 [3:26:04<25:31,  4.12s/it]Batches:  73%|███████▎  | 979/1350 [3:26:09<26:20,  4.26s/it]Batches:  73%|███████▎  | 980/1350 [3:26:13<26:13,  4.25s/it]Batches:  73%|███████▎  | 981/1350 [3:26:17<26:00,  4.23s/it]Batches:  73%|███████▎  | 982/1350 [3:26:21<25:13,  4.11s/it]Batches:  73%|███████▎  | 983/1350 [3:26:25<24:07,  3.94s/it]Batches:  73%|███████▎  | 984/1350 [3:26:29<25:04,  4.11s/it]Batches:  73%|███████▎  | 985/1350 [3:26:33<24:22,  4.01s/it]Batches:  73%|███████▎  | 986/1350 [3:26:36<23:17,  3.84s/it]Batches:  73%|███████▎  | 987/1350 [3:26:41<23:55,  3.96s/it]Batches:  73%|███████▎  | 988/1350 [3:26:45<24:14,  4.02s/it]Batches:  73%|███████▎  | 989/1350 [3:26:49<23:46,  3.95s/it]Batches:  73%|███████▎  | 990/1350 [3:26:52<22:49,  3.80s/it]Batches:  73%|███████▎  | 991/1350 [3:26:56<23:23,  3.91s/it]Batches:  73%|███████▎  | 992/1350 [3:27:00<23:45,  3.98s/it]Batches:  74%|███████▎  | 993/1350 [3:27:04<23:16,  3.91s/it]Batches:  74%|███████▎  | 994/1350 [3:27:09<23:54,  4.03s/it]Batches:  74%|███████▎  | 995/1350 [3:27:13<24:45,  4.18s/it]Batches:  74%|███████▍  | 996/1350 [3:27:17<24:36,  4.17s/it]Batches:  74%|███████▍  | 997/1350 [3:27:21<24:39,  4.19s/it]Batches:  74%|███████▍  | 998/1350 [3:27:25<23:51,  4.07s/it]Batches:  74%|███████▍  | 999/1350 [3:27:29<23:40,  4.05s/it]Batches:  74%|███████▍  | 1000/1350 [3:27:34<24:10,  4.15s/it]Batches:  74%|███████▍  | 1001/1350 [3:27:37<23:18,  4.01s/it]Batches:  74%|███████▍  | 1002/1350 [3:27:41<23:14,  4.01s/it]Batches:  74%|███████▍  | 1003/1350 [3:27:46<24:27,  4.23s/it]Batches:  74%|███████▍  | 1004/1350 [3:27:49<22:23,  3.88s/it]Batches:  74%|███████▍  | 1005/1350 [3:27:53<22:28,  3.91s/it]Batches:  75%|███████▍  | 1006/1350 [3:27:57<23:02,  4.02s/it]Batches:  75%|███████▍  | 1007/1350 [3:28:01<22:24,  3.92s/it]Batches:  75%|███████▍  | 1008/1350 [3:28:05<22:22,  3.92s/it]Batches:  75%|███████▍  | 1009/1350 [3:28:09<23:15,  4.09s/it]Batches:  75%|███████▍  | 1010/1350 [3:28:13<22:45,  4.02s/it]Batches:  75%|███████▍  | 1011/1350 [3:28:18<24:13,  4.29s/it]Batches:  75%|███████▍  | 1012/1350 [3:28:21<22:01,  3.91s/it]Batches:  75%|███████▌  | 1013/1350 [3:28:25<21:17,  3.79s/it]Batches:  75%|███████▌  | 1014/1350 [3:28:28<20:26,  3.65s/it]Batches:  75%|███████▌  | 1015/1350 [3:28:32<20:37,  3.69s/it]Batches:  75%|███████▌  | 1016/1350 [3:28:35<20:13,  3.63s/it]Batches:  75%|███████▌  | 1017/1350 [3:28:39<20:36,  3.71s/it]Batches:  75%|███████▌  | 1018/1350 [3:28:44<21:32,  3.89s/it]Batches:  75%|███████▌  | 1019/1350 [3:28:48<22:30,  4.08s/it]Batches:  76%|███████▌  | 1020/1350 [3:28:52<22:39,  4.12s/it]Batches:  76%|███████▌  | 1021/1350 [3:28:56<22:18,  4.07s/it]Batches:  76%|███████▌  | 1022/1350 [3:29:00<20:54,  3.83s/it]Batches:  76%|███████▌  | 1023/1350 [3:29:03<20:41,  3.80s/it]Batches:  76%|███████▌  | 1024/1350 [3:29:07<19:56,  3.67s/it]Batches:  76%|███████▌  | 1025/1350 [3:29:10<20:08,  3.72s/it]Batches:  76%|███████▌  | 1026/1350 [3:29:14<19:56,  3.69s/it]Batches:  76%|███████▌  | 1027/1350 [3:29:19<21:16,  3.95s/it]Batches:  76%|███████▌  | 1028/1350 [3:29:23<22:21,  4.17s/it]Batches:  76%|███████▌  | 1029/1350 [3:29:27<21:12,  3.96s/it]Batches:  76%|███████▋  | 1030/1350 [3:29:31<21:31,  4.04s/it]Batches:  76%|███████▋  | 1031/1350 [3:29:34<20:34,  3.87s/it]Batches:  76%|███████▋  | 1032/1350 [3:29:38<20:18,  3.83s/it]Batches:  77%|███████▋  | 1033/1350 [3:29:42<20:45,  3.93s/it]Batches:  77%|███████▋  | 1034/1350 [3:29:46<20:15,  3.85s/it]Batches:  77%|███████▋  | 1035/1350 [3:29:50<19:40,  3.75s/it]Batches:  77%|███████▋  | 1036/1350 [3:29:55<21:37,  4.13s/it]Batches:  77%|███████▋  | 1037/1350 [3:29:58<20:54,  4.01s/it]Batches:  77%|███████▋  | 1038/1350 [3:30:02<19:57,  3.84s/it]Batches:  77%|███████▋  | 1039/1350 [3:30:05<19:02,  3.68s/it]Batches:  77%|███████▋  | 1040/1350 [3:30:09<18:45,  3.63s/it]Batches:  77%|███████▋  | 1041/1350 [3:30:13<19:22,  3.76s/it]Batches:  77%|███████▋  | 1042/1350 [3:30:17<20:23,  3.97s/it]Batches:  77%|███████▋  | 1043/1350 [3:30:20<19:17,  3.77s/it]Batches:  77%|███████▋  | 1044/1350 [3:30:26<22:01,  4.32s/it]Batches:  77%|███████▋  | 1045/1350 [3:30:31<22:38,  4.45s/it]Batches:  77%|███████▋  | 1046/1350 [3:30:34<20:43,  4.09s/it]Batches:  78%|███████▊  | 1047/1350 [3:30:38<20:14,  4.01s/it]Batches:  78%|███████▊  | 1048/1350 [3:30:42<19:48,  3.93s/it]Batches:  78%|███████▊  | 1049/1350 [3:30:45<18:48,  3.75s/it]Batches:  78%|███████▊  | 1050/1350 [3:30:49<19:13,  3.84s/it]Batches:  78%|███████▊  | 1051/1350 [3:30:53<18:44,  3.76s/it]Batches:  78%|███████▊  | 1052/1350 [3:30:57<20:23,  4.11s/it]Batches:  78%|███████▊  | 1053/1350 [3:31:00<18:45,  3.79s/it]Batches:  78%|███████▊  | 1054/1350 [3:31:04<18:39,  3.78s/it]Batches:  78%|███████▊  | 1055/1350 [3:31:08<18:01,  3.67s/it]Batches:  78%|███████▊  | 1056/1350 [3:31:11<17:54,  3.65s/it]Batches:  78%|███████▊  | 1057/1350 [3:31:15<17:15,  3.53s/it]Batches:  78%|███████▊  | 1058/1350 [3:31:18<17:25,  3.58s/it]Batches:  78%|███████▊  | 1059/1350 [3:31:22<17:43,  3.65s/it]Batches:  79%|███████▊  | 1060/1350 [3:31:26<17:37,  3.64s/it]Batches:  79%|███████▊  | 1061/1350 [3:31:30<19:02,  3.95s/it]Batches:  79%|███████▊  | 1062/1350 [3:31:34<19:06,  3.98s/it]Batches:  79%|███████▊  | 1063/1350 [3:31:38<18:13,  3.81s/it]Batches:  79%|███████▉  | 1064/1350 [3:31:42<18:44,  3.93s/it]Batches:  79%|███████▉  | 1065/1350 [3:31:45<17:29,  3.68s/it]Batches:  79%|███████▉  | 1066/1350 [3:31:49<17:14,  3.64s/it]Batches:  79%|███████▉  | 1067/1350 [3:31:52<16:41,  3.54s/it]Batches:  79%|███████▉  | 1068/1350 [3:31:56<16:49,  3.58s/it]Batches:  79%|███████▉  | 1069/1350 [3:32:00<18:09,  3.88s/it]Batches:  79%|███████▉  | 1070/1350 [3:32:04<18:08,  3.89s/it]Batches:  79%|███████▉  | 1071/1350 [3:32:08<18:16,  3.93s/it]Batches:  79%|███████▉  | 1072/1350 [3:32:11<17:15,  3.73s/it]Batches:  79%|███████▉  | 1073/1350 [3:32:15<17:12,  3.73s/it]Batches:  80%|███████▉  | 1074/1350 [3:32:19<16:53,  3.67s/it]Batches:  80%|███████▉  | 1075/1350 [3:32:22<16:47,  3.66s/it]Batches:  80%|███████▉  | 1076/1350 [3:32:26<16:35,  3.63s/it]Batches:  80%|███████▉  | 1077/1350 [3:32:29<16:26,  3.61s/it]Batches:  80%|███████▉  | 1078/1350 [3:32:34<17:07,  3.78s/it]Batches:  80%|███████▉  | 1079/1350 [3:32:37<17:00,  3.77s/it]Batches:  80%|████████  | 1080/1350 [3:32:41<16:56,  3.76s/it]Batches:  80%|████████  | 1081/1350 [3:32:45<16:38,  3.71s/it]Batches:  80%|████████  | 1082/1350 [3:32:48<16:06,  3.61s/it]Batches:  80%|████████  | 1083/1350 [3:32:52<15:57,  3.59s/it]Batches:  80%|████████  | 1084/1350 [3:32:55<15:27,  3.49s/it]Batches:  80%|████████  | 1085/1350 [3:32:59<15:37,  3.54s/it]Batches:  80%|████████  | 1086/1350 [3:33:02<15:55,  3.62s/it]Batches:  81%|████████  | 1087/1350 [3:33:07<17:01,  3.88s/it]Batches:  81%|████████  | 1088/1350 [3:33:10<15:52,  3.63s/it]Batches:  81%|████████  | 1089/1350 [3:33:14<16:58,  3.90s/it]Batches:  81%|████████  | 1090/1350 [3:33:18<16:24,  3.79s/it]Batches:  81%|████████  | 1091/1350 [3:33:21<16:01,  3.71s/it]Batches:  81%|████████  | 1092/1350 [3:33:25<15:15,  3.55s/it]Batches:  81%|████████  | 1093/1350 [3:33:28<15:11,  3.55s/it]Batches:  81%|████████  | 1094/1350 [3:33:32<15:20,  3.59s/it]Batches:  81%|████████  | 1095/1350 [3:33:36<16:19,  3.84s/it]Batches:  81%|████████  | 1096/1350 [3:33:40<15:51,  3.74s/it]Batches:  81%|████████▏ | 1097/1350 [3:33:43<15:15,  3.62s/it]Batches:  81%|████████▏ | 1098/1350 [3:33:47<15:41,  3.74s/it]Batches:  81%|████████▏ | 1099/1350 [3:33:51<15:20,  3.67s/it]Batches:  81%|████████▏ | 1100/1350 [3:33:54<14:47,  3.55s/it]Batches:  82%|████████▏ | 1101/1350 [3:33:58<14:54,  3.59s/it]Batches:  82%|████████▏ | 1102/1350 [3:34:01<14:12,  3.44s/it]Batches:  82%|████████▏ | 1103/1350 [3:34:04<14:30,  3.53s/it]Batches:  82%|████████▏ | 1104/1350 [3:34:09<15:19,  3.74s/it]Batches:  82%|████████▏ | 1105/1350 [3:34:12<14:49,  3.63s/it]Batches:  82%|████████▏ | 1106/1350 [3:34:16<14:39,  3.60s/it]Batches:  82%|████████▏ | 1107/1350 [3:34:20<15:14,  3.76s/it]Batches:  82%|████████▏ | 1108/1350 [3:34:23<14:34,  3.61s/it]Batches:  82%|████████▏ | 1109/1350 [3:34:27<14:47,  3.68s/it]Batches:  82%|████████▏ | 1110/1350 [3:34:30<14:09,  3.54s/it]Batches:  82%|████████▏ | 1111/1350 [3:34:33<13:28,  3.38s/it]Batches:  82%|████████▏ | 1112/1350 [3:34:36<13:22,  3.37s/it]Batches:  82%|████████▏ | 1113/1350 [3:34:41<14:37,  3.70s/it]Batches:  83%|████████▎ | 1114/1350 [3:34:44<14:22,  3.66s/it]Batches:  83%|████████▎ | 1115/1350 [3:34:47<13:34,  3.47s/it]Batches:  83%|████████▎ | 1116/1350 [3:34:51<13:04,  3.35s/it]Batches:  83%|████████▎ | 1117/1350 [3:34:55<13:49,  3.56s/it]Batches:  83%|████████▎ | 1118/1350 [3:34:58<13:58,  3.61s/it]Batches:  83%|████████▎ | 1119/1350 [3:35:01<13:23,  3.48s/it]Batches:  83%|████████▎ | 1120/1350 [3:35:05<13:21,  3.48s/it]Batches:  83%|████████▎ | 1121/1350 [3:35:08<12:59,  3.41s/it]Batches:  83%|████████▎ | 1122/1350 [3:35:13<14:02,  3.69s/it]Batches:  83%|████████▎ | 1123/1350 [3:35:16<13:24,  3.54s/it]Batches:  83%|████████▎ | 1124/1350 [3:35:19<13:20,  3.54s/it]Batches:  83%|████████▎ | 1125/1350 [3:35:22<12:53,  3.44s/it]Batches:  83%|████████▎ | 1126/1350 [3:35:27<14:07,  3.79s/it]Batches:  83%|████████▎ | 1127/1350 [3:35:30<13:35,  3.66s/it]Batches:  84%|████████▎ | 1128/1350 [3:35:34<13:31,  3.66s/it]Batches:  84%|████████▎ | 1129/1350 [3:35:37<13:00,  3.53s/it]Batches:  84%|████████▎ | 1130/1350 [3:35:41<12:44,  3.47s/it]Batches:  84%|████████▍ | 1131/1350 [3:35:45<13:24,  3.68s/it]Batches:  84%|████████▍ | 1132/1350 [3:35:48<12:58,  3.57s/it]Batches:  84%|████████▍ | 1133/1350 [3:35:51<12:24,  3.43s/it]Batches:  84%|████████▍ | 1134/1350 [3:35:54<12:06,  3.36s/it]Batches:  84%|████████▍ | 1135/1350 [3:35:57<11:18,  3.15s/it]Batches:  84%|████████▍ | 1136/1350 [3:36:01<11:39,  3.27s/it]Batches:  84%|████████▍ | 1137/1350 [3:36:04<11:48,  3.33s/it]Batches:  84%|████████▍ | 1138/1350 [3:36:07<11:10,  3.16s/it]Batches:  84%|████████▍ | 1139/1350 [3:36:10<10:39,  3.03s/it]Batches:  84%|████████▍ | 1140/1350 [3:36:14<11:36,  3.31s/it]Batches:  85%|████████▍ | 1141/1350 [3:36:17<11:59,  3.44s/it]Batches:  85%|████████▍ | 1142/1350 [3:36:21<12:02,  3.47s/it]Batches:  85%|████████▍ | 1143/1350 [3:36:24<11:35,  3.36s/it]Batches:  85%|████████▍ | 1144/1350 [3:36:27<11:24,  3.32s/it]Batches:  85%|████████▍ | 1145/1350 [3:36:30<11:13,  3.29s/it]Batches:  85%|████████▍ | 1146/1350 [3:36:34<11:06,  3.27s/it]Batches:  85%|████████▍ | 1147/1350 [3:36:37<11:09,  3.30s/it]Batches:  85%|████████▌ | 1148/1350 [3:36:40<10:54,  3.24s/it]Batches:  85%|████████▌ | 1149/1350 [3:36:43<10:39,  3.18s/it]Batches:  85%|████████▌ | 1150/1350 [3:36:47<11:24,  3.42s/it]Batches:  85%|████████▌ | 1151/1350 [3:36:50<10:46,  3.25s/it]Batches:  85%|████████▌ | 1152/1350 [3:36:53<10:04,  3.05s/it]Batches:  85%|████████▌ | 1153/1350 [3:36:56<10:20,  3.15s/it]Batches:  85%|████████▌ | 1154/1350 [3:36:59<09:57,  3.05s/it]Batches:  86%|████████▌ | 1155/1350 [3:37:02<09:59,  3.07s/it]Batches:  86%|████████▌ | 1156/1350 [3:37:05<09:41,  3.00s/it]Batches:  86%|████████▌ | 1157/1350 [3:37:08<10:06,  3.14s/it]Batches:  86%|████████▌ | 1158/1350 [3:37:11<09:56,  3.11s/it]Batches:  86%|████████▌ | 1159/1350 [3:37:14<09:51,  3.09s/it]Batches:  86%|████████▌ | 1160/1350 [3:37:19<11:22,  3.59s/it]Batches:  86%|████████▌ | 1161/1350 [3:37:22<10:33,  3.35s/it]Batches:  86%|████████▌ | 1162/1350 [3:37:25<10:37,  3.39s/it]Batches:  86%|████████▌ | 1163/1350 [3:37:28<10:03,  3.23s/it]Batches:  86%|████████▌ | 1164/1350 [3:37:31<09:32,  3.08s/it]Batches:  86%|████████▋ | 1165/1350 [3:37:34<09:18,  3.02s/it]Batches:  86%|████████▋ | 1166/1350 [3:37:37<09:08,  2.98s/it]Batches:  86%|████████▋ | 1167/1350 [3:37:40<09:23,  3.08s/it]Batches:  87%|████████▋ | 1168/1350 [3:37:44<09:55,  3.27s/it]Batches:  87%|████████▋ | 1169/1350 [3:37:47<10:05,  3.35s/it]Batches:  87%|████████▋ | 1170/1350 [3:37:51<10:33,  3.52s/it]Batches:  87%|████████▋ | 1171/1350 [3:37:54<09:53,  3.31s/it]Batches:  87%|████████▋ | 1172/1350 [3:37:57<09:17,  3.13s/it]Batches:  87%|████████▋ | 1173/1350 [3:38:00<09:04,  3.08s/it]Batches:  87%|████████▋ | 1174/1350 [3:38:03<09:10,  3.13s/it]Batches:  87%|████████▋ | 1175/1350 [3:38:06<08:55,  3.06s/it]Batches:  87%|████████▋ | 1176/1350 [3:38:09<08:48,  3.04s/it]Batches:  87%|████████▋ | 1177/1350 [3:38:11<08:25,  2.92s/it]Batches:  87%|████████▋ | 1178/1350 [3:38:15<08:40,  3.03s/it]Batches:  87%|████████▋ | 1179/1350 [3:38:18<08:44,  3.07s/it]Batches:  87%|████████▋ | 1180/1350 [3:38:22<09:25,  3.33s/it]Batches:  87%|████████▋ | 1181/1350 [3:38:25<08:52,  3.15s/it]Batches:  88%|████████▊ | 1182/1350 [3:38:27<08:23,  3.00s/it]Batches:  88%|████████▊ | 1183/1350 [3:38:30<08:11,  2.94s/it]Batches:  88%|████████▊ | 1184/1350 [3:38:33<07:50,  2.84s/it]Batches:  88%|████████▊ | 1185/1350 [3:38:36<07:55,  2.88s/it]Batches:  88%|████████▊ | 1186/1350 [3:38:39<07:59,  2.93s/it]Batches:  88%|████████▊ | 1187/1350 [3:38:41<07:43,  2.84s/it]Batches:  88%|████████▊ | 1188/1350 [3:38:45<08:02,  2.98s/it]Batches:  88%|████████▊ | 1189/1350 [3:38:48<08:43,  3.25s/it]Batches:  88%|████████▊ | 1190/1350 [3:38:51<08:20,  3.13s/it]Batches:  88%|████████▊ | 1191/1350 [3:38:55<09:02,  3.41s/it]Batches:  88%|████████▊ | 1192/1350 [3:38:58<08:26,  3.20s/it]Batches:  88%|████████▊ | 1193/1350 [3:39:01<08:07,  3.11s/it]Batches:  88%|████████▊ | 1194/1350 [3:39:04<07:41,  2.96s/it]Batches:  89%|████████▊ | 1195/1350 [3:39:06<07:32,  2.92s/it]Batches:  89%|████████▊ | 1196/1350 [3:39:09<07:29,  2.92s/it]Batches:  89%|████████▊ | 1197/1350 [3:39:12<07:00,  2.75s/it]Batches:  89%|████████▊ | 1198/1350 [3:39:15<07:06,  2.81s/it]Batches:  89%|████████▉ | 1199/1350 [3:39:18<07:12,  2.87s/it]Batches:  89%|████████▉ | 1200/1350 [3:39:21<07:17,  2.91s/it]Batches:  89%|████████▉ | 1201/1350 [3:39:24<07:19,  2.95s/it]Batches:  89%|████████▉ | 1202/1350 [3:39:27<07:47,  3.16s/it]Batches:  89%|████████▉ | 1203/1350 [3:39:30<07:35,  3.10s/it]Batches:  89%|████████▉ | 1204/1350 [3:39:33<07:01,  2.89s/it]Batches:  89%|████████▉ | 1205/1350 [3:39:36<07:05,  2.94s/it]Batches:  89%|████████▉ | 1206/1350 [3:39:39<06:57,  2.90s/it]Batches:  89%|████████▉ | 1207/1350 [3:39:41<06:45,  2.83s/it]Batches:  89%|████████▉ | 1208/1350 [3:39:44<06:35,  2.79s/it]Batches:  90%|████████▉ | 1209/1350 [3:39:46<06:26,  2.74s/it]Batches:  90%|████████▉ | 1210/1350 [3:39:50<06:38,  2.84s/it]Batches:  90%|████████▉ | 1211/1350 [3:39:53<06:46,  2.93s/it]Batches:  90%|████████▉ | 1212/1350 [3:39:57<07:49,  3.40s/it]Batches:  90%|████████▉ | 1213/1350 [3:40:00<07:00,  3.07s/it]Batches:  90%|████████▉ | 1214/1350 [3:40:02<06:49,  3.01s/it]Batches:  90%|█████████ | 1215/1350 [3:40:05<06:34,  2.92s/it]Batches:  90%|█████████ | 1216/1350 [3:40:08<06:25,  2.87s/it]Batches:  90%|█████████ | 1217/1350 [3:40:11<06:16,  2.83s/it]Batches:  90%|█████████ | 1218/1350 [3:40:13<06:13,  2.83s/it]Batches:  90%|█████████ | 1219/1350 [3:40:16<06:04,  2.78s/it]Batches:  90%|█████████ | 1220/1350 [3:40:19<05:54,  2.72s/it]Batches:  90%|█████████ | 1221/1350 [3:40:21<05:40,  2.64s/it]Batches:  91%|█████████ | 1222/1350 [3:40:24<06:01,  2.82s/it]Batches:  91%|█████████ | 1223/1350 [3:40:28<06:37,  3.13s/it]Batches:  91%|█████████ | 1224/1350 [3:40:31<06:32,  3.12s/it]Batches:  91%|█████████ | 1225/1350 [3:40:34<06:12,  2.98s/it]Batches:  91%|█████████ | 1226/1350 [3:40:37<06:08,  2.97s/it]Batches:  91%|█████████ | 1227/1350 [3:40:40<05:55,  2.89s/it]Batches:  91%|█████████ | 1228/1350 [3:40:42<05:42,  2.80s/it]Batches:  91%|█████████ | 1229/1350 [3:40:45<05:42,  2.83s/it]Batches:  91%|█████████ | 1230/1350 [3:40:48<05:32,  2.77s/it]Batches:  91%|█████████ | 1231/1350 [3:40:50<05:29,  2.77s/it]Batches:  91%|█████████▏| 1232/1350 [3:40:53<05:19,  2.71s/it]Batches:  91%|█████████▏| 1233/1350 [3:40:56<05:12,  2.67s/it]Batches:  91%|█████████▏| 1234/1350 [3:40:59<05:34,  2.88s/it]Batches:  91%|█████████▏| 1235/1350 [3:41:03<06:02,  3.15s/it]Batches:  92%|█████████▏| 1236/1350 [3:41:05<05:42,  3.01s/it]Batches:  92%|█████████▏| 1237/1350 [3:41:09<05:49,  3.09s/it]Batches:  92%|█████████▏| 1238/1350 [3:41:11<05:21,  2.87s/it]Batches:  92%|█████████▏| 1239/1350 [3:41:14<05:10,  2.79s/it]Batches:  92%|█████████▏| 1240/1350 [3:41:16<05:04,  2.77s/it]Batches:  92%|█████████▏| 1241/1350 [3:41:19<04:52,  2.68s/it]Batches:  92%|█████████▏| 1242/1350 [3:41:22<04:48,  2.67s/it]Batches:  92%|█████████▏| 1243/1350 [3:41:24<04:53,  2.74s/it]Batches:  92%|█████████▏| 1244/1350 [3:41:27<04:43,  2.68s/it]Batches:  92%|█████████▏| 1245/1350 [3:41:30<04:42,  2.69s/it]Batches:  92%|█████████▏| 1246/1350 [3:41:34<05:23,  3.11s/it]Batches:  92%|█████████▏| 1247/1350 [3:41:37<05:22,  3.13s/it]Batches:  92%|█████████▏| 1248/1350 [3:41:40<05:28,  3.22s/it]Batches:  93%|█████████▎| 1249/1350 [3:41:43<05:15,  3.12s/it]Batches:  93%|█████████▎| 1250/1350 [3:41:46<04:52,  2.92s/it]Batches:  93%|█████████▎| 1251/1350 [3:41:48<04:36,  2.80s/it]Batches:  93%|█████████▎| 1252/1350 [3:41:51<04:30,  2.76s/it]Batches:  93%|█████████▎| 1253/1350 [3:41:53<04:13,  2.61s/it]Batches:  93%|█████████▎| 1254/1350 [3:41:56<04:05,  2.56s/it]Batches:  93%|█████████▎| 1255/1350 [3:41:58<03:48,  2.40s/it]Batches:  93%|█████████▎| 1256/1350 [3:42:00<03:51,  2.46s/it]Batches:  93%|█████████▎| 1257/1350 [3:42:04<04:17,  2.77s/it]Batches:  93%|█████████▎| 1258/1350 [3:42:06<04:00,  2.61s/it]Batches:  93%|█████████▎| 1259/1350 [3:42:09<04:00,  2.64s/it]Batches:  93%|█████████▎| 1260/1350 [3:42:12<04:03,  2.71s/it]Batches:  93%|█████████▎| 1261/1350 [3:42:14<03:58,  2.68s/it]Batches:  93%|█████████▎| 1262/1350 [3:42:16<03:41,  2.52s/it]Batches:  94%|█████████▎| 1263/1350 [3:42:19<03:52,  2.68s/it]Batches:  94%|█████████▎| 1264/1350 [3:42:22<03:46,  2.64s/it]Batches:  94%|█████████▎| 1265/1350 [3:42:25<03:45,  2.66s/it]Batches:  94%|█████████▍| 1266/1350 [3:42:27<03:46,  2.69s/it]Batches:  94%|█████████▍| 1267/1350 [3:42:30<03:36,  2.61s/it]Batches:  94%|█████████▍| 1268/1350 [3:42:32<03:33,  2.61s/it]Batches:  94%|█████████▍| 1269/1350 [3:42:36<04:06,  3.04s/it]Batches:  94%|█████████▍| 1270/1350 [3:42:39<03:50,  2.88s/it]Batches:  94%|█████████▍| 1271/1350 [3:42:41<03:38,  2.76s/it]Batches:  94%|█████████▍| 1272/1350 [3:42:44<03:40,  2.83s/it]Batches:  94%|█████████▍| 1273/1350 [3:42:47<03:25,  2.66s/it]Batches:  94%|█████████▍| 1274/1350 [3:42:49<03:20,  2.64s/it]Batches:  94%|█████████▍| 1275/1350 [3:42:52<03:29,  2.79s/it]Batches:  95%|█████████▍| 1276/1350 [3:42:55<03:15,  2.64s/it]Batches:  95%|█████████▍| 1277/1350 [3:42:57<03:04,  2.52s/it]Batches:  95%|█████████▍| 1278/1350 [3:43:00<03:02,  2.53s/it]Batches:  95%|█████████▍| 1279/1350 [3:43:02<02:57,  2.50s/it]Batches:  95%|█████████▍| 1280/1350 [3:43:04<02:48,  2.40s/it]Batches:  95%|█████████▍| 1281/1350 [3:43:08<03:08,  2.74s/it]Batches:  95%|█████████▍| 1282/1350 [3:43:11<03:11,  2.81s/it]Batches:  95%|█████████▌| 1283/1350 [3:43:14<03:11,  2.86s/it]Batches:  95%|█████████▌| 1284/1350 [3:43:16<03:06,  2.83s/it]Batches:  95%|█████████▌| 1285/1350 [3:43:19<02:57,  2.73s/it]Batches:  95%|█████████▌| 1286/1350 [3:43:21<02:45,  2.59s/it]Batches:  95%|█████████▌| 1287/1350 [3:43:23<02:34,  2.46s/it]Batches:  95%|█████████▌| 1288/1350 [3:43:26<02:29,  2.41s/it]Batches:  95%|█████████▌| 1289/1350 [3:43:29<02:41,  2.65s/it]Batches:  96%|█████████▌| 1290/1350 [3:43:32<02:51,  2.86s/it]Batches:  96%|█████████▌| 1291/1350 [3:43:35<02:49,  2.88s/it]Batches:  96%|█████████▌| 1292/1350 [3:43:39<03:11,  3.30s/it]Batches:  96%|█████████▌| 1293/1350 [3:43:44<03:24,  3.59s/it]Batches:  96%|█████████▌| 1294/1350 [3:43:46<03:02,  3.26s/it]Batches:  96%|█████████▌| 1295/1350 [3:43:50<03:15,  3.56s/it]Batches:  96%|█████████▌| 1296/1350 [3:43:58<04:21,  4.83s/it]Batches:  96%|█████████▌| 1297/1350 [3:44:02<03:57,  4.48s/it]Batches:  96%|█████████▌| 1298/1350 [3:44:07<03:57,  4.57s/it]Batches:  96%|█████████▌| 1299/1350 [3:44:14<04:34,  5.38s/it]Batches:  96%|█████████▋| 1300/1350 [3:44:19<04:31,  5.42s/it]Batches:  96%|█████████▋| 1301/1350 [3:44:26<04:38,  5.68s/it]Batches:  96%|█████████▋| 1302/1350 [3:44:29<03:57,  4.95s/it]Batches:  97%|█████████▋| 1303/1350 [3:44:34<03:51,  4.93s/it]Batches:  97%|█████████▋| 1304/1350 [3:44:38<03:35,  4.68s/it]Batches:  97%|█████████▋| 1305/1350 [3:44:42<03:26,  4.59s/it]Batches:  97%|█████████▋| 1306/1350 [3:44:48<03:37,  4.94s/it]Batches:  97%|█████████▋| 1307/1350 [3:44:53<03:29,  4.88s/it]Batches:  97%|█████████▋| 1308/1350 [3:44:57<03:20,  4.78s/it]Batches:  97%|█████████▋| 1309/1350 [3:45:02<03:11,  4.67s/it]Batches:  97%|█████████▋| 1310/1350 [3:45:07<03:14,  4.86s/it]Batches:  97%|█████████▋| 1311/1350 [3:45:11<03:01,  4.66s/it]Batches:  97%|█████████▋| 1312/1350 [3:45:17<03:03,  4.83s/it]Batches:  97%|█████████▋| 1313/1350 [3:45:22<03:09,  5.12s/it]Batches:  97%|█████████▋| 1314/1350 [3:45:27<02:55,  4.86s/it]Batches:  97%|█████████▋| 1315/1350 [3:45:31<02:46,  4.76s/it]Batches:  97%|█████████▋| 1316/1350 [3:45:36<02:40,  4.73s/it]Batches:  98%|█████████▊| 1317/1350 [3:45:41<02:36,  4.73s/it]Batches:  98%|█████████▊| 1318/1350 [3:45:44<02:22,  4.45s/it]Batches:  98%|█████████▊| 1319/1350 [3:45:49<02:15,  4.38s/it]Batches:  98%|█████████▊| 1320/1350 [3:45:55<02:26,  4.87s/it]Batches:  98%|█████████▊| 1321/1350 [3:46:00<02:24,  4.99s/it]Batches:  98%|█████████▊| 1322/1350 [3:46:04<02:11,  4.71s/it]Batches:  98%|█████████▊| 1323/1350 [3:46:09<02:08,  4.74s/it]Batches:  98%|█████████▊| 1324/1350 [3:46:13<02:01,  4.66s/it]Batches:  98%|█████████▊| 1325/1350 [3:46:17<01:54,  4.56s/it]Batches:  98%|█████████▊| 1326/1350 [3:46:21<01:43,  4.29s/it]Batches:  98%|█████████▊| 1327/1350 [3:46:27<01:48,  4.72s/it]Batches:  98%|█████████▊| 1328/1350 [3:46:30<01:33,  4.23s/it]Batches:  98%|█████████▊| 1329/1350 [3:46:33<01:20,  3.83s/it]Batches:  99%|█████████▊| 1330/1350 [3:46:37<01:16,  3.84s/it]Batches:  99%|█████████▊| 1331/1350 [3:46:43<01:29,  4.71s/it]Batches:  99%|█████████▊| 1332/1350 [3:46:48<01:23,  4.66s/it]Batches:  99%|█████████▊| 1333/1350 [3:46:51<01:09,  4.09s/it]Batches:  99%|█████████▉| 1334/1350 [3:46:54<01:01,  3.83s/it]Batches:  99%|█████████▉| 1335/1350 [3:46:59<01:02,  4.15s/it]Batches:  99%|█████████▉| 1336/1350 [3:47:01<00:47,  3.40s/it]Batches:  99%|█████████▉| 1337/1350 [3:47:02<00:36,  2.83s/it]Batches:  99%|█████████▉| 1338/1350 [3:47:04<00:30,  2.55s/it]Batches:  99%|█████████▉| 1339/1350 [3:47:05<00:23,  2.16s/it]Batches:  99%|█████████▉| 1340/1350 [3:47:07<00:21,  2.12s/it]Batches:  99%|█████████▉| 1341/1350 [3:47:09<00:18,  2.10s/it]Batches:  99%|█████████▉| 1342/1350 [3:47:12<00:17,  2.17s/it]Batches:  99%|█████████▉| 1343/1350 [3:47:15<00:17,  2.49s/it]Batches: 100%|█████████▉| 1344/1350 [3:47:18<00:15,  2.66s/it]Batches: 100%|█████████▉| 1345/1350 [3:47:20<00:12,  2.53s/it]Batches: 100%|█████████▉| 1346/1350 [3:47:23<00:10,  2.52s/it]Batches: 100%|█████████▉| 1347/1350 [3:47:25<00:07,  2.47s/it]Batches: 100%|█████████▉| 1348/1350 [3:47:27<00:04,  2.38s/it]Batches: 100%|█████████▉| 1349/1350 [3:47:31<00:02,  2.73s/it]Batches: 100%|██████████| 1350/1350 [3:47:31<00:00,  2.14s/it]Batches: 100%|██████████| 1350/1350 [3:47:31<00:00, 10.11s/it]
+2026-10-08 17:12:37,340 INFO tlt.s10: B3: {'rows': 126}
+2026-10-08 17:15:06,142 INFO tlt.runner: b5 200/18500 (1.5/s, errors=0)

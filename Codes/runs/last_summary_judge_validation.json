@@ -1,0 +1,10 @@
+{
+  "judge_validation": {
+    "submitted": 1500,
+    "already_done_or_exhausted": 0,
+    "ok": 1500,
+    "error": 0,
+    "sampled": 500,
+    "unparseable": 0
+  }
+}

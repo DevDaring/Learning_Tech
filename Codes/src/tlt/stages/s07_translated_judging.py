@@ -26,7 +26,7 @@ import pandas as pd
 from ..analysis.stats import add_holm, bootstrap_mean
 from ..clients import make_llm
 from ..config import Run
-from ..io import AppendLog, read_jsonl
+from ..io import AppendLog, read_jsonl, read_table
 from ..names import mask_names
 from ..rubric import CATEGORICAL, DIMENSIONS, ordinal_index, pqi
 
@@ -111,8 +111,8 @@ def run_stage(run: Run) -> dict:
     write_tables(run, applog, "translated_judgements", jids)
 
     # Paired comparison with the original-language judgements of the same replies.
-    orig = pd.read_csv(run.path("results", "judgements_long.csv"))
-    trans = pd.read_csv(run.path("results", "translated_judgements_long.csv"))
+    orig = read_table(run.path("results", "judgements_long.csv"))
+    trans = read_table(run.path("results", "translated_judgements_long.csv"))
     ids = {t["target_id"] for t in trans_targets}
     orig = orig[orig.target_id.isin(ids)]
     m = orig.merge(trans, on=["target_id", "judge"], suffixes=("_o", "_t"))

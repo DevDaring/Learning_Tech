@@ -131,10 +131,11 @@ models:
     display: GPT-4.1 mini
     vendor: OpenAI
     role: judge
-    workers: 12
+    workers: 24            # ~3 s per call on LinkAPI
     routes:
+      # LinkAPI only (D47): every GPT-4.1 mini judgement comes from the same deployment; a
+      # failed call is retried in a later pass rather than served by another provider.
       - {kind: openai_compat, provider: linkapi, model: gpt-4.1-mini, seed: true, verify: true}
-      - {kind: openai_compat, provider: openrouter, model: openai/gpt-4.1-mini, seed: true, verify: true}
   glm47:
     display: GLM-4.7
     vendor: Z.AI (Zhipu)
@@ -161,6 +162,18 @@ models:
     routes:
       - {kind: bedrock, model: qwen.qwen3-next-80b-a3b, verify: true}
       - {kind: openai_compat, provider: openrouter, model: qwen/qwen3-next-80b-a3b-instruct, seed: true, verify: true}
+
+  # Stand-in third judge if GPT-4.1 mini cannot be funded (LinkAPI out of credit, OpenRouter
+  # balance below the judging cost): same vendor (OpenAI), paid from AWS credit.
+  gpt_oss_120b:
+    display: gpt-oss-120b
+    vendor: OpenAI
+    role: judge
+    workers: 16
+    routes:
+      - {kind: bedrock, model: openai.gpt-oss-120b-1:0, extra: {reasoning_effort: low}, verify: true}
+      - {kind: openai_compat, provider: openrouter, model: openai/gpt-oss-120b, seed: true,
+         extra: {reasoning: {effort: low}}, verify: true}
 
   # Former judges (Section 5 of the specification), kept for reference and possible
   # sensitivity runs. Not used: too costly, and unavailable on Bedrock for these accounts
@@ -213,7 +226,7 @@ models:
     display: Llama 3.1 8B Instruct (simulated student)
     vendor: Meta
     role: student
-    workers: 8
+    workers: 96           # B5 jobs wait mostly on the utility equivalence call; speed only
     routes:
       - {kind: openai_compat, provider: openrouter, model: meta-llama/llama-3.1-8b-instruct,
          seed: true, verify: true}

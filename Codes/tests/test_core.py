@@ -292,3 +292,112 @@ def test_lenient_json_latex_evidence():
     assert extract_json(raw) is None
     obj = extract_json_lenient(raw)
     assert obj["Math_Correctness"] == "Yes" and "144" in obj["evidence"]
+
+
+def test_sets_scripts_thousands_protected_and_nested_restore():
+    s = "U = \\{1, 2, 3\\}\nWhich is (A^{\\prime} \\cup B^{prime})? Order 650,312 and 3,506,212."
+    p, m = textutil.protect_math(s)
+    assert "\\{" not in p and "prime" not in p and "650" not in p and "3,506" not in p
+    r, miss = textutil.restore_math(p, m)
+    assert r == s and not miss
+
+
+def test_word_lines_split_and_merge():
+    p, _ = textutil.protect_math("\\[ 650 \\text{ cl}=\\bigstar \\text{ l} \\]\n\nWhat should replace the star?")
+    lines, idx = textutil.split_maths_lines(p)
+    assert idx == [2] and lines[0] == "<ID101>"
+    merged = textutil.merge_word_lines(lines, idx, "Star ki jagah kya hona chahiye?")
+    assert merged.startswith("<ID101>") and merged.endswith("chahiye?")
+    # line count mismatch: whole output at the first word line, maths lines kept
+    lines = ["<ID101>", "line one", "<ID102>", "line two"]
+    assert textutil.merge_word_lines(lines, [1, 3], "a\nb\nc") == "<ID101>\na\nb\nc\n<ID102>"
+
+
+class _EchoTranslator:
+    """IndicTrans2 stand-in that records what it was asked to translate."""
+    def __init__(self):
+        self.sent = []
+
+    def __call__(self, segs, src, tgt, model_id):
+        self.sent.extend(s for s in segs if s)
+        return [f"T({s})" if s else "" for s in segs]
+
+
+def test_translator_never_sends_pure_maths():
+    import threading
+    from tlt.translate import IndicTrans2
+    tr = IndicTrans2.__new__(IndicTrans2)
+    tr._tlock = threading.Lock()
+    tr._translate_segments = _EchoTranslator()
+    out = tr._translate(["\\( 5+4 \\times 3= \\)", "\\[ x=2 \\]\n\nWhat is \\( x \\)?"], "eng_Latn", "hin_Deva", "m")
+    assert out[0] == ("\\( 5+4 \\times 3= \\)", [])
+    assert out[1][0].startswith("\\[ x=2 \\]") and "T(" in out[1][0] and not out[1][1]
+    assert tr._translate_segments.sent == ["What is <ID102>?"]  # the maths line was not sent
+
+
+def test_dotted_tags_optional_args_and_number_check():
+    p, m = textutil.protect_math("PQ = \\sqrt[5]{2} units")
+    assert "sqrt" not in p and textutil.restore_math(p, m)[0] == "PQ = \\sqrt[5]{2} units"
+    ph = next(iter(m))
+    out, miss = textutil.restore_math(f"অসমতা <আই. ডি. {ph[3:-1]}> এবং", m)
+    assert not miss and "\\sqrt[5]{2}" in out
+    assert textutil.numbers_in("A(2, 3) and 650,312") == textutil.numbers_in("A (2,3) এবং 650312")
+
+
+def test_extract_json_never_returns_nested_fragment():
+    from tlt.jsonfix import extract_json, extract_json_lenient
+    raw = '```json\n{"diagnosis": {"note": "uses \\( \\sqrt{9} \\)"}, "next_step": "x",\n "question_to_ask": "y"}\n```'
+    assert extract_json(raw) is None            # outer invalid: no inner object returned
+    obj = extract_json_lenient(raw)
+    assert set(obj) == {"diagnosis", "next_step", "question_to_ask"}
+    assert extract_json('{"a": "line1\nline2"}') is None
+    assert extract_json_lenient('{"a": "line1\nline2"}') == {"a": "line1\nline2"}
+    assert extract_json('Note {x} then {"ok": 1}') == {"ok": 1}   # prose braces skipped
+    assert extract_json('{"a": {"b": 1}') is None                  # truncated
+
+
+def test_credit_routing_uses_funded_account_while_it_cools_down():
+    from tlt.clients import _Pool
+    from tlt.aws_credit import AwsCredit
+    cr = AwsCredit.__new__(AwsCredit)
+    import threading
+    cr._lock = threading.Lock(); cr.accounts = {"A": {}, "B": {}}
+    cr.limit = {"A": 100.0, "B": 10.0}; cr.spent = {"A": 5.0, "B": 10.0}   # B is spent
+    pool = _Pool([("A", None), ("B", None)])
+    pool.cool(0, 60)                                 # A throttled: pool offers only B
+    assert pool.order() == [1]
+    names = cr.order([pool.creds[i][0] for i in pool.live()])
+    funded = [i for i in pool.order() if pool.creds[i][0] in names]
+    order = funded or [i for i in pool.live() if pool.creds[i][0] in names]
+    assert order == [0]                              # the funded account is tried, no stop
+
+
+def test_execute_no_head_of_line_blocking(tmp_path):
+    import time as _t
+    from tlt.io import AppendLog
+    from tlt.runner import execute
+    log = AppendLog(tmp_path / "x.jsonl")
+    jobs = [{"call_id": f"slow{i}", "model": "slow"} for i in range(8)] + \
+           [{"call_id": f"fast{i}", "model": "fast"} for i in range(40)]
+    finished = {}
+    def fn(j):
+        _t.sleep(0.3 if j["model"] == "slow" else 0.01)
+        finished[j["call_id"]] = _t.time()
+        return {"call_id": j["call_id"], "status": "ok"}
+    t0 = _t.time()
+    c = execute(jobs, log, fn, {"slow": 1, "fast": 8})
+    assert c["ok"] == 48
+    # fast jobs must not wait behind the slow model's single slot (8 x 0.3 s = 2.4 s)
+    assert max(v for k, v in finished.items() if k.startswith("fast")) - t0 < 1.0
+
+
+def test_none_label_survives_csv_round_trip(tmp_path):
+    from tlt.io import read_table
+    df = pd.DataFrame({"Praise_Calibration": ["None", "Inflated", None], "Cognitive_Demand": ["None", "High", "Low"],
+                       "PQI": [0.5, None, 0.25]})
+    p = tmp_path / "x.csv"
+    df.to_csv(p, index=False)
+    back = read_table(p)
+    assert list(back.Praise_Calibration[:2]) == ["None", "Inflated"] and pd.isna(back.Praise_Calibration[2])
+    assert list(back.Cognitive_Demand) == ["None", "High", "Low"]
+    assert pd.isna(back.PQI[1]) and back.PQI[0] == 0.5

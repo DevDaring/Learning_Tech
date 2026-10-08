@@ -27,3 +27,10 @@ __pycache__/
 *.pyc
 .pytest_cache/
 *.tmp
+
+# ---- raw run logs over GitHub's 100 MB limit: pushed gzip-compressed in Codes/runs/archive/ ----
+Codes/runs/judgements.jsonl
+Codes/runs/repair_judgements.jsonl
+Codes/runs/generations.jsonl
+Codes/runs/repair_generations.jsonl
+Codes/runs/translated_judgements.jsonl

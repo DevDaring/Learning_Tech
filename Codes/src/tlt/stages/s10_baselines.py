@@ -15,7 +15,7 @@ from ..analysis.stats import add_holm, bootstrap_mean, gap
 from ..baselines import b1_mab_mdb, b2_marked, b3_semantic_shift, b5_simstudent
 from ..clients import make_llm
 from ..config import Run, stable_hash
-from ..io import AppendLog, fill, prompt, prompt_yaml, read_jsonl
+from ..io import AppendLog, fill, prompt, prompt_yaml, read_jsonl, read_table
 from ..jsonfix import parse_with_repair
 from ..names import mask_names
 from ..runner import call_record, execute
@@ -44,7 +44,7 @@ def _gens_with_c0(run: Run, langs: list[str]) -> pd.DataFrame:
 
 
 def run_b1(run: Run, out_dir) -> dict:
-    agg = pd.read_csv(run.path("results", "judgements_aggregated.csv"))
+    agg = read_table(run.path("results", "judgements_aggregated.csv"))
     df = b1_mab_mdb.compute(agg, int(run.design["bootstrap"]["resamples"]) // 10, run.seed)
     df.to_csv(out_dir / "b1_mab_mdb.csv", index=False)
     return {"rows": len(df)}

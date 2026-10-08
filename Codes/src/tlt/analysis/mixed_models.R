@@ -70,40 +70,47 @@ test_rows[[length(test_rows) + 1]] <- lrt(ml_noint, ml_nocond, "condition (main)
 vc <- as.data.frame(VarCorr(fit))
 write.csv(vc, file.path(outdir, paste0("lmm_variance_block", block, ".csv")), row.names = FALSE)
 
-# ---- CLMM per ordinal dimension
+# ---- CLMM per ordinal dimension and GLMM per categorical indicator
+# Every fit (full, no interaction, no condition) is an independent task, run in parallel with
+# forked workers; the models, formulas and data are exactly those of a sequential run.
+ncores <- as.integer(Sys.getenv("TLT_R_CORES", "6"))
 ord_dims <- grep("^ord__", names(d), value = TRUE)
-for (col in ord_dims) {
-  dd <- d[!is.na(d[[col]]), ]
-  if (length(unique(dd[[col]])) < 2) next
-  dd$y <- factor(dd[[col]], ordered = TRUE)
-  fit <- tryCatch(clmm(y ~ condition * model + (1 | item_id) + (1 | item_model), data = dd, nAGQ = 1),
-                  error = function(e) { message(col, ": ", conditionMessage(e)); NULL })
-  if (is.null(fit)) next
-  coef_rows[[length(coef_rows) + 1]] <- add_coefs(fit, sub("^ord__", "", col), "clmm")
-  red <- tryCatch(clmm(y ~ condition + model + (1 | item_id) + (1 | item_model), data = dd, nAGQ = 1),
-                  error = function(e) NULL)
-  red2 <- tryCatch(clmm(y ~ model + (1 | item_id) + (1 | item_model), data = dd, nAGQ = 1),
-                   error = function(e) NULL)
-  test_rows[[length(test_rows) + 1]] <- lrt(fit, red, "condition:model", sub("^ord__", "", col), "clmm")
-  test_rows[[length(test_rows) + 1]] <- lrt(red, red2, "condition (main)", sub("^ord__", "", col), "clmm")
-}
-
-# ---- GLMM per categorical indicator
 bad_dims <- grep("__bad$", names(d), value = TRUE)
-for (col in bad_dims) {
+rhs <- c(full = "condition * model", noint = "condition + model", nocond = "model")
+tasks <- list()
+for (col in c(ord_dims, bad_dims)) for (k in names(rhs)) tasks[[length(tasks) + 1]] <- list(col = col, k = k)
+fit_task <- function(t) {
+  col <- t$col
   dd <- d[!is.na(d[[col]]), ]
-  if (length(unique(dd[[col]])) < 2) next
-  ctl <- glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e5))
-  fit <- tryCatch(glmer(as.formula(paste(col, "~ condition * model + (1 | item_id) + (1 | item_model)")),
-                        data = dd, family = binomial, control = ctl), error = function(e) NULL)
-  if (is.null(fit)) next
-  coef_rows[[length(coef_rows) + 1]] <- add_coefs(fit, col, "glmm")
-  red <- tryCatch(glmer(as.formula(paste(col, "~ condition + model + (1 | item_id) + (1 | item_model)")),
-                        data = dd, family = binomial, control = ctl), error = function(e) NULL)
-  red2 <- tryCatch(glmer(as.formula(paste(col, "~ model + (1 | item_id) + (1 | item_model)")),
-                         data = dd, family = binomial, control = ctl), error = function(e) NULL)
-  test_rows[[length(test_rows) + 1]] <- lrt(fit, red, "condition:model", col, "glmm")
-  test_rows[[length(test_rows) + 1]] <- lrt(red, red2, "condition (main)", col, "glmm")
+  if (length(unique(dd[[col]])) < 2) return(NULL)
+  re <- "+ (1 | item_id) + (1 | item_model)"
+  tryCatch({
+    if (grepl("^ord__", col)) {
+      dd$y <- factor(dd[[col]], ordered = TRUE)
+      clmm(as.formula(paste("y ~", rhs[[t$k]], re)), data = dd, nAGQ = 1)
+    } else {
+      ctl <- glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e5))
+      glmer(as.formula(paste(col, "~", rhs[[t$k]], re)), data = dd, family = binomial, control = ctl)
+    }
+  }, error = function(e) { message(col, " ", t$k, ": ", conditionMessage(e)); NULL })
+}
+fits <- parallel::mclapply(tasks, fit_task, mc.cores = ncores, mc.preschedule = FALSE)
+get_fit <- function(col, k) {
+  for (i in seq_along(tasks)) if (tasks[[i]]$col == col && tasks[[i]]$k == k) {
+    f <- fits[[i]]
+    return(if (inherits(f, "try-error")) NULL else f)
+  }
+  NULL
+}
+for (col in c(ord_dims, bad_dims)) {
+  fam <- if (grepl("^ord__", col)) "clmm" else "glmm"
+  name <- if (fam == "clmm") sub("^ord__", "", col) else col
+  full <- get_fit(col, "full")
+  if (is.null(full)) next
+  coef_rows[[length(coef_rows) + 1]] <- add_coefs(full, name, fam)
+  red <- get_fit(col, "noint"); red2 <- get_fit(col, "nocond")
+  test_rows[[length(test_rows) + 1]] <- lrt(full, red, "condition:model", name, fam)
+  test_rows[[length(test_rows) + 1]] <- lrt(red, red2, "condition (main)", name, fam)
 }
 
 write.csv(do.call(rbind, coef_rows), file.path(outdir, paste0("mixed_coefficients_block", block, ".csv")), row.names = FALSE)

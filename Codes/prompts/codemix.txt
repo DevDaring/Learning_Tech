@@ -1,6 +1,8 @@
 Rewrite the maths question below the way a school student in {region} would type it
 in a chat: {matrix_language} sentence structure written in Roman letters, with maths
 terms and numbers kept in English. Do not change any number, symbol or quantity.
-Do not add or remove information. Return only the rewritten question.
+Do not add or remove information. Tokens such as <ID101> stand for maths expressions:
+keep every one of them exactly once, unchanged, where it belongs in the sentence.
+Return only the rewritten question.
 
 {question_en}

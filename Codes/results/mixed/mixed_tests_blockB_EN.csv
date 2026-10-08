@@ -1,0 +1,31 @@
+block,outcome,model_type,test,chisq,df,p_value,note,family,p_holm,significant_holm_05
+B_EN,PQI,lmm,condition:model,216.032250484172,30,4.7559785523305e-30,,lmm | condition:model,4.7559785523305e-30,True
+B_EN,PQI,lmm,condition (main),52.6429073548243,6,1.38451267814892e-09,,lmm | condition (main),1.38451267814892e-09,True
+B_EN,Mistake_Identification,clmm,condition:model,78.8207921918251,30,2.91500892998657e-06,,clmm | condition:model,1.749005357991942e-05,True
+B_EN,Mistake_Identification,clmm,condition (main),50.2374499123507,6,4.21295151973972e-09,,clmm | condition (main),3.370361215791776e-08,True
+B_EN,Mistake_Location,clmm,condition:model,83.6282904384861,30,5.86728872046759e-07,,clmm | condition:model,4.107102104327313e-06,True
+B_EN,Mistake_Location,clmm,condition (main),36.8150924179818,6,1.9132293154312e-06,,clmm | condition (main),9.566146577156e-06,True
+B_EN,Providing_Guidance,clmm,condition:model,57.7081403399006,30,0.0017285188578922,,clmm | condition:model,0.0069140754315688,True
+B_EN,Providing_Guidance,clmm,condition (main),18.4997712773611,6,0.0050973912976547,,clmm | condition (main),0.0101947825953094,True
+B_EN,Actionability,clmm,condition:model,104.835527852399,30,3.1524636182935303e-10,,clmm | condition:model,2.8372172564641772e-09,True
+B_EN,Actionability,clmm,condition (main),25.2528954468453,6,0.0003065288844352,,clmm | condition (main),0.0009195866533056001,True
+B_EN,Coherence,clmm,condition:model,97.8924310505031,30,3.98386027159741e-09,,clmm | condition:model,3.187088217277928e-08,True
+B_EN,Coherence,clmm,condition (main),74.6073905785352,6,4.62336563051444e-14,,clmm | condition (main),4.62336563051444e-13,True
+B_EN,Tutor_Tone,clmm,condition:model,642.646969844724,30,4.23694260224349e-116,,clmm | condition:model,5.084331122692188e-115,True
+B_EN,Tutor_Tone,clmm,condition (main),841.89517188608,6,1.36230926782461e-178,,clmm | condition (main),1.4985401946070709e-177,True
+B_EN,Humanlikeness,clmm,condition:model,20.5167979966609,30,0.902387163692342,,clmm | condition:model,1.0,False
+B_EN,Humanlikeness,clmm,condition (main),11.8086998754636,6,0.0663750990643874,,clmm | condition (main),0.0663750990643874,False
+B_EN,Cognitive_Demand,clmm,condition:model,139.794354629988,30,4.18096986529498e-16,,clmm | condition:model,4.599066851824478e-15,True
+B_EN,Cognitive_Demand,clmm,condition (main),57.8224309753587,6,1.24492137404667e-10,,clmm | condition (main),1.120429236642003e-09,True
+B_EN,Conceptual_Depth,clmm,condition:model,72.9710525109804,30,1.92100164962346e-05,,clmm | condition:model,9.605008248117299e-05,True
+B_EN,Conceptual_Depth,clmm,condition (main),44.6771018393738,6,5.42506538817357e-08,,clmm | condition (main),3.797545771721499e-07,True
+B_EN,Expectation_Level,clmm,condition:model,131.691361064157,30,1.05734953697677e-14,,clmm | condition:model,1.0573495369767701e-13,True
+B_EN,Expectation_Level,clmm,condition (main),39.7570680699937,6,5.08425721908413e-07,,clmm | condition (main),3.050554331450478e-06,True
+B_EN,Math_Correctness,clmm,condition:model,57.0062114580055,30,0.0020884809268963,,clmm | condition:model,0.0069140754315688,True
+B_EN,Math_Correctness,clmm,condition (main),33.2932411921679,6,9.20767616207362e-06,,clmm | condition (main),3.683070464829448e-05,True
+B_EN,Language_Match,clmm,condition:model,12.5379700379701,30,0.997882336600979,,clmm | condition:model,1.0,False
+B_EN,Language_Match,clmm,condition (main),2790.0512945826,6,0.0,,clmm | condition (main),0.0,True
+B_EN,Revealing__bad,glmm,condition:model,121.37763267037,30,5.99172166340535e-13,,glmm | condition:model,5.99172166340535e-13,True
+B_EN,Revealing__bad,glmm,condition (main),94.9136037439466,6,2.88162349795596e-18,,glmm | condition (main),2.88162349795596e-18,True
+B_EN,Inflated__bad,glmm,condition:model,182.976137966665,30,7.19578388988799e-24,,glmm | condition:model,1.439156777977598e-23,True
+B_EN,Inflated__bad,glmm,condition (main),131.012379505602,6,7.867116396001319e-26,,glmm | condition (main),1.5734232792002639e-25,True

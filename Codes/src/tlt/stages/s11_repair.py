@@ -45,16 +45,33 @@ ARM_TEMPLATES = {"R1": ["tutor_system", "repair_R1_instruction"], "R2": ["tutor_
                  "R5": ["repair_plan", "repair_realise", "utility_translate_to_en"]}
 
 
-def repair_jobs(run: Run, cells: list[dict], prompts: dict[str, dict]) -> list[dict]:
+# Version of the R5 plan parser written into every R5 record. Version 1 (records without the
+# field) could return a nested object in place of an invalid outer plan (D46).
+PLAN_PARSER = 2
+
+
+def stale_r5_ids(run: Run) -> set[str]:
+    """R5 replies realised from a plan the version-1 parser mis-read: they fail the plan
+    schema and carry no parser version. They are redone under a '|reparse1' id, reusing the
+    cached plan text (same plan call, same seed), so only the parse and the realise step
+    change."""
+    return {r["call_id"] for r in AppendLog(run.path("runs", "repair_generations.jsonl")).records()
+            if r.get("arm") == "R5" and "plan_parser" not in r and r.get("plan_schema_ok") is False}
+
+
+def repair_jobs(run: Run, cells: list[dict], prompts: dict[str, dict], stale: set[str] | None = None) -> list[dict]:
     """Call ids carry a hash of the base prompt and the arm's templates, so editing either
     regenerates the reply instead of reusing an old one."""
+    stale = stale_r5_ids(run) if stale is None else stale
     jobs = []
     for c in cells:
         st = run.models["producer_settings"]
         h = stable_hash(prompts[c["base_prompt_id"]]["user"], *(prompt(t) for t in ARM_TEMPLATES[c["arm"]]),
                         st["temperature"], st["max_tokens"], n=10)
         for m in run.producers:
-            jobs.append({"call_id": f"repair|{c['arm']}|{c['base_prompt_id']}|{m}|{h}", "model": m, "cell": c})
+            base = f"repair|{c['arm']}|{c['base_prompt_id']}|{m}|{h}"
+            cid = f"{base}|reparse1" if base in stale else base
+            jobs.append({"call_id": cid, "base_key": base, "model": m, "cell": c})
     return jobs
 
 
@@ -125,7 +142,8 @@ class Repair:
         meta.update({"call_id": job["call_id"], "model": m, "role": "producer", "arm": c["arm"],
                      "sample_index": 0, "block": "R", "base_prompt_id": c["base_prompt_id"],
                      "repair_lang": c["lang"]})
-        arm, user, key = c["arm"], base["user"], job["call_id"]
+        # the plan cache and seeds use the base id, so a '|reparse1' job reuses the same plan call
+        arm, user, key = c["arm"], base["user"], job.get("base_key", job["call_id"])
         extra: dict = {}
         if arm in ("R1", "R2"):
             system = f"{self.sys0}\n{prompt(f'repair_{arm}_instruction')}"
@@ -173,6 +191,7 @@ class Repair:
             extra.update({"canonical_message_en": en_msg, "to_en_route": r1, "plan": plan,
                           "plan_raw": plan_rec.get("raw_text"), "plan_parse_ok": plan is not None,
                           "plan_schema_ok": plan_schema_ok(plan), "plan_retried": plan_retried,
+                          "plan_parser": PLAN_PARSER,
                           "plan_json_repair_fired": pinfo.get("json_repair_fired"),
                           "plan_route": plan_rec.get("route_used"), "realise_user": user2})
             if res is None:

@@ -1,0 +1,14 @@
+{
+  "mask_and_judge": {
+    "submitted": 133085,
+    "already_done_or_exhausted": 68515,
+    "ok": 133083,
+    "error": 2,
+    "targets": 67200,
+    "judge_records": 201600,
+    "unparseable": 2,
+    "json_repair_fired": 2110,
+    "residual_name_hits": 0,
+    "pqi_missing": 3
+  }
+}

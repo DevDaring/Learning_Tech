@@ -122,6 +122,10 @@ class _Pool:
         ready = [i for i in idx if self._until[i] <= now]
         return ready or idx  # if every live credential is cooling down, try anyway
 
+    def live(self) -> list[int]:
+        """Every credential not killed, cooling down or not."""
+        return [i for i in range(len(self.creds)) if not self._dead[i]]
+
     def kill(self, i: int) -> None:
         with self._lock:
             self._dead[i] = True
@@ -337,11 +341,14 @@ class LLM:
                 moved_on = False
                 order = pool.order()
                 if kind == "bedrock" and self.credit is not None:
-                    # credit-aware: largest remaining share first; raises when all are spent
-                    names = self.credit.order([pool.creds[i][0] for i in order])
-                    order = sorted(order, key=lambda i: names.index(pool.creds[i][0])
-                                   if pool.creds[i][0] in names else len(names))
-                    order = [i for i in order if pool.creds[i][0] in names]
+                    # Credit-aware: largest remaining share first. Exhaustion is judged over
+                    # every live account (raises only when all are spent), so an account that
+                    # is merely cooling down after a throttle is still used rather than the
+                    # run stopping because the ready account happens to be spent.
+                    names = self.credit.order([pool.creds[i][0] for i in pool.live()])
+                    funded = [i for i in order if pool.creds[i][0] in names]
+                    order = funded or [i for i in pool.live() if pool.creds[i][0] in names]
+                    order = sorted(order, key=lambda i: names.index(pool.creds[i][0]))
                 for ci in order:
                     cred_name, key = pool.creds[ci]
                     t0 = time.time()

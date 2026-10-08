@@ -23,7 +23,7 @@ from scipy.stats import norm
 
 from ..analysis.stats import add_holm, diff_in_diff, gap, krippendorff_alpha
 from ..config import CONFIG_DIR, Run, load_yaml
-from ..io import AppendLog, prompt, write_jsonl
+from ..io import AppendLog, prompt, read_table, write_jsonl
 from ..rubric import ALPHA_LEVEL, DIMENSIONS, PQI_SCORES, ordinal_index
 from . import s04_generate, s05_mask_and_judge, s08_auto_metrics
 from .s01_build_items import benqa_pool, load_benqa, stratified_subset
@@ -81,8 +81,8 @@ def build(run: Run) -> list[dict]:
 # ------------------------------------------------------------------------- analysis
 
 def analyse(run: Run) -> dict:
-    agg = pd.read_csv(run.path("results", "judgements_aggregated.csv"))
-    long = pd.read_csv(run.path("results", "judgements_long.csv"))
+    agg = read_table(run.path("results", "judgements_aggregated.csv"))
+    long = read_table(run.path("results", "judgements_long.csv"))
     auto = pd.read_csv(run.path("results", "auto_metrics.csv"))
     agg = agg.merge(auto[["target_id", "truncated", "is_empty", "refusal", "cue_echo", "word_count",
                           "dominant_script", "leak_exact", "degenerate"]], on="target_id", how="left")

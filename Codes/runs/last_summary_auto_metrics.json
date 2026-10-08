@@ -1,0 +1,24 @@
+{
+  "auto_metrics": {
+    "auto_metrics": {
+      "rows": 67200,
+      "failed_calls": 0,
+      "empty": 3,
+      "refusal": 1,
+      "truncated": 246,
+      "leak_exact": 45235,
+      "cue_echo": 633,
+      "degenerate": 211
+    },
+    "repair_auto_metrics": {
+      "rows": 16200,
+      "failed_calls": 0,
+      "empty": 0,
+      "refusal": 1,
+      "truncated": 37,
+      "leak_exact": 6443,
+      "cue_echo": 34,
+      "degenerate": 32
+    }
+  }
+}

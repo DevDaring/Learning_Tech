@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "verification_log": true,
+    "paired_prompt_diff": true,
+    "masking_scan": true,
+    "refusals_and_empty_counted": true,
+    "repair_and_fallback_reported": true,
+    "pilot_completed": true,
+    "significance_uses_holm": true,
+    "secret_scan": true,
+    "all_pass": true
+  }
+}

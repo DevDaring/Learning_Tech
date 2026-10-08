@@ -25,6 +25,7 @@ models:
   gpt41_mini:     {provider: LinkAPI (GPT-4.1 mini judge), input: 0.20, output: 0.80, cache_read: 0.05,
                    source: "api.linkapi.ai/api/pricing: gpt-4.1-mini base 0.40/1.60 x group 'azureopenai' 0.5"}
   glm47:          {provider: AWS Bedrock, input: 0.60, output: 2.20, source: "AWS price list, zai.glm-4.7"}
+  gpt_oss_120b:   {provider: AWS Bedrock, input: 0.15, output: 0.60, source: "AWS price list, openai.gpt-oss-120b-1:0 (stand-in judge)"}
   deepseek_v32:   {provider: AWS Bedrock, input: 0.62, output: 1.85, source: "AWS price list, deepseek.v3.2"}
   qwen3_next:     {provider: AWS Bedrock, input: 0.14, output: 1.20, source: "AWS price list, qwen.qwen3-next-80b-a3b"}
   utility:        {provider: LinkAPI (GPT-5 mini), input: 0.125, output: 1.00, cache_read: 0.0125,
@@ -46,6 +47,7 @@ token_profile:
     gpt56_luna:     {input: 2400, output: 490}    # measured (290 of it reasoning)
     gpt41_mini:     {input: 2350, output: 210}    # 2026-10-07 selection run (MRBench prompt 1,100 / 117), scaled to the 14-dim prompt
     glm47:          {input: 2350, output: 220}    # measured 2026-10-04, Bedrock, no reasoning
+    gpt_oss_120b:   {input: 2350, output: 260}    # assumed: GPT-4.1 mini profile + low-effort reasoning
     deepseek_v32:   {input: 2200, output: 180}    # measured 2026-10-04, Bedrock, no reasoning
     qwen3_next:     {input: 2390, output: 220}    # measured 2026-10-04, Bedrock, no reasoning
   judge_cacheable_prefix: 1900                    # static instructions + definitions block

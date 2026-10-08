@@ -7,7 +7,9 @@ within the stated family.
 """
 from __future__ import annotations
 
+import hashlib
 import json
+import os
 import logging
 import shutil
 import subprocess
@@ -20,7 +22,7 @@ from ..analysis import figures as F
 from .. import names as names_mod
 from ..analysis.stats import add_holm, diff_in_diff, gap, krippendorff_alpha, paired_diff
 from ..config import CODES_DIR, Run
-from ..io import AppendLog
+from ..io import AppendLog, read_table
 from ..rubric import ALPHA_LEVEL, CATEGORICAL, DIMENSIONS, ORDINAL, norm_label, ordinal_index
 
 log = logging.getLogger("tlt.s09")
@@ -49,7 +51,7 @@ class Ctx:
 
 def _read(run: Run, *parts) -> pd.DataFrame:
     p = run.path(*parts)
-    return pd.read_csv(p) if p.exists() else pd.DataFrame()
+    return read_table(p) if p.exists() else pd.DataFrame()
 
 
 # ------------------------------------------------------------------ table 1: models
@@ -509,7 +511,7 @@ def mixed_models(ctx: Ctx, agg: pd.DataFrame) -> dict:
         s = agg[agg.block.isin(["A", "B"]) & (agg.condition == lang) & agg.item_id.isin(items_b)
                 & (agg.variant == "original")]
         sets[f"B_{lang}"] = s[(s.block == "B") | (s.cue == "C0")].assign(condition=lambda x: x.cue)
-    status = {}
+    status, procs = {}, {}
     for name, df in sets.items():
         if df.empty or df.model.nunique() < 1:
             continue
@@ -528,9 +530,31 @@ def mixed_models(ctx: Ctx, agg: pd.DataFrame) -> dict:
         if df.model.nunique() < 2 or df.item_id.nunique() < 5:
             status[name] = "too little data for mixed models (pilot)"
             continue
-        p = subprocess.run(rscript + [str(CODES_DIR / "src/tlt/analysis/mixed_models.R"), str(inp), str(out_dir), name],
-                           capture_output=True, text=True, timeout=6 * 3600)
-        status[name] = "ok" if p.returncode == 0 else f"R failed: {p.stderr[-800:]}"
+        # Skip a set whose input and R script are byte-identical to a finished fit.
+        key = hashlib.sha256(inp.read_bytes() + (CODES_DIR / "src/tlt/analysis/mixed_models.R").read_bytes()).hexdigest()
+        done = out_dir / f"done_{name}.json"
+        outs = [out_dir / f"mixed_coefficients_block{name}.csv", out_dir / f"mixed_tests_block{name}.csv"]
+        if done.exists() and json.loads(done.read_text()).get("sha256") == key and all(o.exists() for o in outs):
+            status[name] = "ok (cached fit, identical input)"
+            continue
+        env = {**os.environ, "OMP_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1",
+               "TLT_R_CORES": os.environ.get("TLT_R_CORES", "6")}
+        # the sets run concurrently; each fits its models in parallel inside R
+        procs[name] = (subprocess.Popen(rscript + [str(CODES_DIR / "src/tlt/analysis/mixed_models.R"), str(inp),
+                                                   str(out_dir), name], stdout=subprocess.PIPE,
+                                        stderr=subprocess.PIPE, text=True, env=env), done, key)
+    for name, (proc, done, key) in procs.items():
+        try:
+            _, err = proc.communicate(timeout=8 * 3600)
+        except subprocess.TimeoutExpired:
+            proc.kill()
+            status[name] = "R timed out"
+            continue
+        if proc.returncode == 0:
+            done.write_text(json.dumps({"sha256": key}))
+            status[name] = "ok"
+        else:
+            status[name] = f"R failed: {err[-800:]}"
     # Holm within each family of omnibus tests
     for f in out_dir.glob("mixed_tests_block*.csv"):
         t = pd.read_csv(f)

@@ -69,11 +69,12 @@ blocks:
     conditions: [BN-NATIVE, EN-OFFICIAL, BN-MT]
 
 producers: [gemini_flash, sarvam_105b, kimi_k25, nova_lite, ministral_8b, nemotron_nano]
-# Judges: two on AWS Bedrock (account credits), GPT-4.1 mini via LinkAPI (2026-10-07,
-# replacing GLM-4.7 at the study owner's request; D37). Selected on 100 MRBench_V2
-# responses disjoint from the B4 evaluation sample (docs/deviations.md D34). None shares a
-# vendor with a producer. The primary judge (tie-breaker) had the highest agreement with
-# MRBench gold labels on the PQI dimensions.
+# Judges: two on AWS Bedrock (account credits) and GPT-4.1 mini via LinkAPI, the study
+# owner's choice (D37). Selected on 100 MRBench_V2 responses disjoint from the B4 evaluation
+# sample (D34). None shares a vendor with a producer. The primary judge (tie-breaker) has the
+# highest agreement with MRBench gold labels on the PQI dimensions (GPT-4.1 mini 0.586).
+# gpt-oss-120b stood in while LinkAPI was out of credit (D45); its judgements are kept as a
+# fourth-judge sensitivity check (D47).
 judges: [gpt41_mini, deepseek_v32, qwen3_next]
 primary_judge: gpt41_mini
 

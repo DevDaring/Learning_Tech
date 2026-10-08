@@ -1,0 +1,2 @@
+2026-10-08 15:10:23,752 INFO tlt.s07: translated judging: {'submitted': 0, 'already_done_or_exhausted': 29517, 'ok': 0, 'error': 0, 'pool': 49200, 'sampled': 9840, 'translation_failed_excluded': 1, 'utility_routed': 1923}
+2026-10-08 15:10:24,237 INFO tlt: stage translated_judging done in 147.0s

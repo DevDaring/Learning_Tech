@@ -99,7 +99,7 @@ def run_stage(run: Run) -> dict:
         eedi = [x for x in items if x["source"] == "eedi"]
         futs = [pool.submit(protected_utility, llm, ulog, f"codemix|{lang}|{it['item_id']}", "codemix",
                             "question_en", it["question_en"], {"role": "codemix", "item_id": it["item_id"], "lang": lang},
-                            region=region, matrix_language=matrix) for it in eedi]
+                            split_lines=True, region=region, matrix_language=matrix) for it in eedi]
         for it, fut in zip(eedi, futs):
             text, rec, miss = fut.result()
             rows.append({"item_id": it["item_id"], "lang": lang, "field": "question",
@@ -125,7 +125,7 @@ def run_stage(run: Run) -> dict:
         futs = [pool.submit(protected_utility, llm, ulog, f"backtr|{lang}|{r['item_id']}|{r['field']}",
                             "utility_translate_to_en", "text", r["translation"],
                             {"role": "back_translation", "item_id": r["item_id"], "lang": lang},
-                            source_description=CM_SOURCE[lang]) for r in sel]
+                            split_lines=True, source_description=CM_SOURCE[lang]) for r in sel]
         for r, fut in zip(sel, futs):
             text, rec, _ = fut.result()
             r["back_translation"], r["back_route"] = text, rec.get("route_used")

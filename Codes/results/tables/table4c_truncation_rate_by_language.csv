@@ -1,0 +1,6 @@
+result_status,condition,gemini_flash,kimi_k25,ministral_8b,nemotron_nano,nova_lite,sarvam_105b
+PRELIMINARY (human review of translations/templates/names outstanding),BN,0.0,0.0,0.0011111111111111111,0.06,0.0011111111111111111,0.0
+PRELIMINARY (human review of translations/templates/names outstanding),BN-EN,0.0,0.0011111111111111111,0.0,0.03666666666666667,0.0,0.0
+PRELIMINARY (human review of translations/templates/names outstanding),EN,0.0,0.0,0.0,0.0022222222222222222,0.0,0.0011111111111111111
+PRELIMINARY (human review of translations/templates/names outstanding),HI,0.0,0.0,0.0,0.0077777777777777776,0.0,0.0
+PRELIMINARY (human review of translations/templates/names outstanding),HI-EN,0.0,0.0,0.0011111111111111111,0.0044444444444444444,0.0,0.0022222222222222222

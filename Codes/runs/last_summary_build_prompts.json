@@ -1,0 +1,21 @@
+{
+  "build_prompts": {
+    "prompts": {
+      "A": 1500,
+      "B": 2700,
+      "C": 200,
+      "D": 450
+    },
+    "generations": {
+      "A": 27000,
+      "B": 32400,
+      "C": 2400,
+      "D": 5400
+    },
+    "total_generations": 67200,
+    "judge_calls": 201600,
+    "templates_not_approved": 1,
+    "translation_reviews_pending": 382,
+    "names_confirmed": false
+  }
+}

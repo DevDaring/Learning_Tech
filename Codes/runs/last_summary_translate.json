@@ -1,0 +1,11 @@
+{
+  "translate": {
+    "rows": 4050,
+    "flagged": 29,
+    "review_sample": 353,
+    "reviewed": 0,
+    "translation_model": "ai4bharat/indictrans2-en-indic-1B",
+    "back_translation_model": "ai4bharat/indictrans2-indic-en-1B",
+    "embedding_model": "BAAI/bge-m3"
+  }
+}

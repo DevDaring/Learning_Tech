@@ -102,13 +102,41 @@ _ROMAN_LABEL = re.compile(r"(?<![A-Za-z\\])(?:viii|vii|iii|ix|iv|vi|ii|v|x|i)(?!
 
 # Bare LaTeX (BEnQA writes maths without \( \) delimiters): commands with their brace
 # arguments, and runs of numbers joined by operators ("3 - 3 + 3 - 3 + .....").
-_BARE_LATEX = re.compile(r"\\[A-Za-z]+(?:\s*\{[^{}]*\})*")
+_BARE_LATEX = re.compile(r"\\[A-Za-z]+(?:\s*\[[^\[\]{}]*\])?(?:\s*\{[^{}]*\})*")
+# Set literals (\{1, 2, 3\}) and super/subscript arguments (A^{\prime}, B^{prime}), which a
+# translation model reformats or translates, and numbers with thousands separators (650,312),
+# which it splits ("650, 312").
+_SET_LITERAL = re.compile(r"\\\{[^{}]*\\\}")
+_SCRIPT_ARG = re.compile(r"[\^_]\s*\{[^{}]*\}")
+_THOUSANDS = re.compile(r"(?<![\w.,])\d{1,3}(?:,\d{3})+(?:\.\d+)?(?!\w|,\d|\.\d)")
 _ARITH_RUN = re.compile(r"(?<![\w.])\d+(?:\.\d+)?(?:\s*[-+×÷*/=^]\s*(?:\d+(?:\.\d+)?|\.{2,}))+(?:\s*[-+×÷*/=]\s*\.{2,})?")
 
 
 def has_words(protected: str) -> bool:
     """True if text still has words to translate once maths is replaced by placeholders."""
     return bool(re.search(r"[^\W\d_]{2,}", re.sub(r"<ID\d+>", " ", protected or "")))
+
+
+def split_maths_lines(protected: str) -> tuple[list[str], list[int]]:
+    """Lines of a protected text and the indices of those with words to translate; the
+    others (maths blocks, table rows, blank lines) are kept verbatim."""
+    lines = (protected or "").split("\n")
+    return lines, [i for i, ln in enumerate(lines) if has_words(ln)]
+
+
+def merge_word_lines(lines: list[str], word_idx: list[int], out: str) -> str:
+    """Put the model output for the word lines back between the verbatim lines: line by
+    line when the line counts agree, otherwise the whole output at the first word line."""
+    out_lines = [ln for ln in out.strip().split("\n") if ln.strip()] if len(word_idx) > 1 else [out.strip()]
+    res = list(lines)
+    if len(out_lines) == len(word_idx):
+        for i, o in zip(word_idx, out_lines):
+            res[i] = o
+    else:
+        res[word_idx[0]] = out.strip()
+        for i in word_idx[1:]:
+            res[i] = None
+    return "\n".join(r for r in res if r is not None)
 
 
 def protect_math(text: str, start: int = 101) -> tuple[str, dict[str, str]]:
@@ -125,8 +153,11 @@ def protect_math(text: str, start: int = 101) -> tuple[str, dict[str, str]]:
         return ph
 
     out = _LATEX_SPAN.sub(sub, text or "")
+    out = _SET_LITERAL.sub(sub, out)
+    out = _SCRIPT_ARG.sub(sub, out)
     out = _BARE_LATEX.sub(sub, out)
     out = _ARITH_RUN.sub(sub, out)
+    out = _THOUSANDS.sub(sub, out)
     out = _ROMAN_LABEL.sub(sub, out)
     return out, mapping
 
@@ -134,12 +165,13 @@ def protect_math(text: str, start: int = 101) -> tuple[str, dict[str, str]]:
 def restore_math(text: str, mapping: dict[str, str]) -> tuple[str, list[str]]:
     """Restore placeholders, tolerating spacing/bracket variants. Returns (text, missing)."""
     missing = []
-    for ph, original in mapping.items():
+    # latest first, so a placeholder whose original contains an earlier one resolves fully
+    for ph, original in reversed(mapping.items()):
         n = ph[3:-1]
         # the model may transliterate the tag (Bengali আইডি, Hindi आईडी/आइडी) or write the
         # number in Indic digits
         digits = "".join(f"[{d}{'০১২৩৪৫৬৭৮৯'[int(d)]}{'०१२३४५६७८९'[int(d)]}]" for d in n)
-        pat = re.compile(rf"[<\[]\s*(?:[Ii][Dd]|আইডি|আই ডি|आईडी|आइडी|आई डी)\s*{digits}\s*[>\]]")
+        pat = re.compile(rf"[<\[]\s*(?:[Ii]\.?\s*[Dd]\.?|আই\.?\s*ডি\.?|आ[ईइ]\.?\s*डी\.?)\s*{digits}\s*[>\]]")
         if pat.search(text):
             text = pat.sub(lambda _m: original, text, count=1)
             text = pat.sub("", text)
@@ -150,7 +182,8 @@ def restore_math(text: str, mapping: dict[str, str]) -> tuple[str, list[str]]:
 
 def numbers_in(text: str) -> list[str]:
     """Multiset of numerals (ASCII digits after conversion), for translation integrity."""
-    return sorted(re.findall(r"\d+(?:\.\d+)?", ascii_digits(text or "").replace(",", "")))
+    t = re.sub(r"(?<=\d),(?=\d{3}(?!\d))", "", ascii_digits(text or ""))  # thousands separators only
+    return sorted(re.findall(r"\d+(?:\.\d+)?", t))
 
 
 def normalise_answer(ans: str) -> str:

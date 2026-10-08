@@ -1,0 +1,7 @@
+result_status,model,BN-MT,BN-NATIVE,EN-OFFICIAL
+PRELIMINARY (human review of translations/templates/names outstanding),gemini_flash,0.718125,0.7197916666666667,0.754375
+PRELIMINARY (human review of translations/templates/names outstanding),kimi_k25,0.69875,0.7141666666666666,0.715
+PRELIMINARY (human review of translations/templates/names outstanding),ministral_8b,0.65375,0.6575,0.7041666666666667
+PRELIMINARY (human review of translations/templates/names outstanding),nemotron_nano,0.6277083333333333,0.6189583333333334,0.7220833333333333
+PRELIMINARY (human review of translations/templates/names outstanding),nova_lite,0.513125,0.51125,0.6610416666666666
+PRELIMINARY (human review of translations/templates/names outstanding),sarvam_105b,0.6395833333333333,0.6373327759197325,0.7341666666666666

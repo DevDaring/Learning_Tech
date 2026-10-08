@@ -1,0 +1,13 @@
+2026-10-08 02:30:38,722 INFO tlt.aws_credit: AWS credit position: {'Deb (276496751642)': {'limit_usd': 308.84, 'spent_usd': 111.88, 'remaining_usd': 196.95}, 'DebK (212045813660)': {'limit_usd': 83.43, 'spent_usd': 83.44, 'remaining_usd': -0.01}}
+2026-10-08 02:34:30,793 INFO tlt.runner: repair 200/438 (0.8/s, errors=0)
+2026-10-08 02:40:18,916 INFO tlt.runner: repair 400/438 (0.7/s, errors=0)
+2026-10-08 02:41:05,874 INFO tlt.runner: repair 438/438 (0.7/s, errors=0)
+2026-10-08 02:42:57,535 INFO tlt.runner: repair-judge 200/1314 (2.8/s, errors=0)
+2026-10-08 02:43:56,162 INFO tlt.runner: repair-judge 400/1314 (3.1/s, errors=0)
+2026-10-08 02:44:55,301 INFO tlt.runner: repair-judge 600/1314 (3.2/s, errors=0)
+2026-10-08 02:46:08,580 INFO tlt.runner: repair-judge 800/1314 (3.0/s, errors=0)
+2026-10-08 02:47:09,245 INFO tlt.runner: repair-judge 1000/1314 (3.1/s, errors=0)
+2026-10-08 02:48:04,528 INFO tlt.runner: repair-judge 1200/1314 (3.2/s, errors=0)
+2026-10-08 02:49:01,395 INFO tlt.runner: repair-judge 1314/1314 (3.0/s, errors=0)
+2026-10-08 02:49:34,535 INFO tlt.s11: repair: {'submitted': 438, 'already_done_or_exhausted': 15762, 'ok': 438, 'error': 0, 'cells': 2700, 'generations': 16200, 'judged': {'submitted': 1314, 'already_done_or_exhausted': 47286, 'ok': 1314, 'error': 0}, 'r3_format_failures': 8, 'r5_plan_parse_failures': 0, 'r5_plan_schema_failures': 1, 'r5_plan_retried': 131}
+2026-10-08 02:49:34,876 INFO tlt: stage repair done in 1147.3s

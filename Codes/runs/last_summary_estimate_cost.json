@@ -2,30 +2,30 @@
   "estimate_cost": {
     "by_provider": {
       "as_configured": {
-        "AWS Bedrock": 421.02,
+        "AWS Bedrock": 286.21,
         "LinkAPI (GPT-5 mini)": 15.05,
-        "LinkAPI (Gemini, discounted group)": 20.53,
+        "LinkAPI (Gemini, discounted group)": 9.5,
         "OpenRouter (Llama 3.1 8B)": 0.69,
-        "Sarvam AI": 5.95,
-        "TOTAL": 463.24
+        "Sarvam AI": 4.33,
+        "TOTAL": 315.78
       },
       "claude_thinking_off": {
-        "AWS Bedrock": 421.02,
+        "AWS Bedrock": 286.21,
         "LinkAPI (GPT-5 mini)": 15.05,
-        "LinkAPI (Gemini, discounted group)": 20.53,
+        "LinkAPI (Gemini, discounted group)": 9.5,
         "OpenRouter (Llama 3.1 8B)": 0.69,
-        "Sarvam AI": 5.95,
-        "TOTAL": 463.24
+        "Sarvam AI": 4.33,
+        "TOTAL": 315.78
       },
       "thinking_off_plus_judge_caching": {
-        "AWS Bedrock": 421.02,
+        "AWS Bedrock": 286.21,
         "LinkAPI (GPT-5 mini)": 15.05,
-        "LinkAPI (Gemini, discounted group)": 20.53,
+        "LinkAPI (Gemini, discounted group)": 9.5,
         "OpenRouter (Llama 3.1 8B)": 0.69,
-        "Sarvam AI": 5.95,
-        "TOTAL": 463.24
+        "Sarvam AI": 4.33,
+        "TOTAL": 315.78
       }
     },
-    "measured_tokens_used": false
+    "measured_tokens_used": true
   }
 }
