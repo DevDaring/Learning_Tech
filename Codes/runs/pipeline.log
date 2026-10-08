@@ -3700,3 +3700,7 @@ TOTAL                                      315.78               315.78          
 2026-10-08 17:53:37,910 INFO tlt: stage analysis done in 134.2s
 2026-10-08 18:02:26,128 INFO tlt.checks: acceptance: all_pass=True
 2026-10-08 18:02:26,349 INFO tlt: stage checks done in 527.9s
+2026-10-08 18:21:18,012 INFO tlt.review_pack_full: full-run review pack: /home/Debz/Research/Learning_Tech/Codes/review/outgoing/TLT_full_run_review_pack_2026-10-08.zip {'Translation_review_Hindi.xlsx': 140, 'Translation_review_Bengali.xlsx': 242, 'Teacher_annotation.xlsx': 300}
+2026-10-08 18:21:18,012 INFO tlt: stage review_pack_full done in 3.3s
+2026-10-08 18:21:35,532 INFO tlt.import_review: import review: [{'file': 'Translation_review_Hindi_ZZ.xlsx', 'reviewer': 'ZZ', 'approved': 1, 'corrected': 1, 'no_decision': 137, 'correction_missing': 1, 'stale': 0, 'unknown_row': 0}, {'file': 'Teacher_annotation_ZZ.xlsx', 'annotator': None, 'teacher': 'ZZ', 'rows_rated': 2, 'stale': 0, 'invalid_labels': 1}]
+2026-10-08 18:21:35,533 INFO tlt: stage import_review done in 1.1s

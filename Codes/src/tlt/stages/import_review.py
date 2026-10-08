@@ -44,7 +44,8 @@ def _sheet_df(wb, name: str) -> pd.DataFrame:
 
 def reviewer_code(path: Path) -> str:
     stem = path.stem
-    for base in ("Hindi_template_review", "Bengali_template_review", "Name_survey"):
+    for base in ("Hindi_template_review", "Bengali_template_review", "Name_survey", "Translation_review_Hindi",
+                 "Translation_review_Bengali", "Teacher_annotation"):
         if stem.startswith(base):
             return stem[len(base):].strip("_- ") or stem
     return stem
@@ -131,6 +132,68 @@ def summarise_name_surveys(run: Run) -> pd.DataFrame:
     return summary
 
 
+def import_translation_review(run: Run, path: Path, wb, meta: dict) -> dict:
+    """Write the reviewer's decisions into review/translation_review.csv. A row whose
+    translation has changed since the pack was built is skipped (its hash no longer
+    matches); 'Needs correction' without a corrected text is left pending and reported."""
+    df = _sheet_df(wb, "Check")
+    who = reviewer_code(path)
+    p = run.path("review", "translation_review.csv")
+    tr = pd.read_csv(p, dtype=str, keep_default_na=False)
+    tr["row_id"] = tr.item_id + "|" + tr.lang + "|" + tr.field
+    pos = {rid: i for i, rid in enumerate(tr.row_id)}
+    out = {"file": path.name, "reviewer": who, "approved": 0, "corrected": 0, "no_decision": 0,
+           "correction_missing": 0, "stale": 0, "unknown_row": 0}
+    for _, r in df.iterrows():
+        rid, dec = str(r["Row"]).strip(), str(r["Decision"]).strip()
+        txt = str(r["Your corrected text"]).strip()
+        if rid not in pos:
+            out["unknown_row"] += 1
+            continue
+        i = pos[rid]
+        if meta.get(rid) != stable_hash(tr.at[i, "translation"], n=12):
+            out["stale"] += 1
+            continue
+        if dec == "Correct as it is":
+            tr.at[i, "status"], tr.at[i, "corrected_text"] = "approved", ""
+            out["approved"] += 1
+        elif dec == "Needs correction" and txt:
+            tr.at[i, "status"], tr.at[i, "corrected_text"] = "corrected", txt
+            out["corrected"] += 1
+        elif dec == "Needs correction":
+            out["correction_missing"] += 1
+            continue
+        else:
+            out["no_decision"] += 1
+            continue
+        tr.at[i, "reviewer"] = who
+        tr.at[i, "notes"] = str(r["Comment (optional)"]).strip()
+    tr.drop(columns=["row_id"]).to_csv(p, index=False)
+    return out
+
+
+def import_teacher_annotation(run: Run, path: Path, wb, meta: dict) -> dict:
+    """Save one teacher's ratings as review/human_returned/<initials>.csv (read by the
+    analysis, Table 3). Rows whose reply changed since the pack was built are dropped."""
+    from ..rubric import DIMENSIONS, norm_label
+    df = _sheet_df(wb, "Rate")
+    who = reviewer_code(path)
+    keep = df[[c for c in df.columns if c in DIMENSIONS]].copy()
+    keep.insert(0, "row_id", df["Row"].astype(str).str.strip())
+    fresh = [meta.get(rid) == stable_hash(reply, n=12) for rid, reply in zip(keep.row_id, df["Tutor's reply"])]
+    stale = int(len(fresh) - sum(fresh))
+    keep = keep[fresh]
+    keep["annotator"], keep["notes"] = who, df.loc[fresh, "Notes (optional)"].values
+    rated = int((keep[[d for d in DIMENSIONS if d in keep]].astype(str).apply(lambda s: s.str.strip()) != "").any(axis=1).sum())
+    invalid = sum(int(((keep[d].astype(str).str.strip() != "") &
+                       keep[d].map(lambda x, d=d: norm_label(d, x) is None)).sum()) for d in DIMENSIONS if d in keep)
+    out_dir = run.path("review", "human_returned", "x").parent
+    out_dir.mkdir(parents=True, exist_ok=True)
+    keep.to_csv(out_dir / f"{who}.csv", index=False)
+    return {"file": path.name, "annotator": None, "teacher": who, "rows_rated": rated, "stale": stale,
+            "invalid_labels": invalid}
+
+
 def run_stage(run: Run, files: list[str] | None = None) -> dict:
     if not files:
         raise SystemExit("give the returned workbooks: python -m tlt import_review --files <file.xlsx> ...")
@@ -144,6 +207,10 @@ def run_stage(run: Run, files: list[str] | None = None) -> dict:
             results.append(import_template_review(run, path, wb, meta))
         elif kind == "name_survey":
             results.append(import_name_survey(run, path, wb, meta))
+        elif kind.startswith("translation_review_"):
+            results.append(import_translation_review(run, path, wb, meta))
+        elif kind == "teacher_annotation":
+            results.append(import_teacher_annotation(run, path, wb, meta))
         else:
             results.append({"file": path.name, "error": "not a review-pack workbook (no _meta sheet)"})
     if any(r.get("annotator") for r in results):

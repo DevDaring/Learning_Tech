@@ -26,6 +26,7 @@ STAGES = {
     "export_human": "s12_export_human",
     "checks": "checks",
     "review_pack": "review_pack",
+    "review_pack_full": "review_pack_full",
     "import_review": "import_review",
     "estimate_cost": "estimate_cost",
     "prepilot": "prepilot",

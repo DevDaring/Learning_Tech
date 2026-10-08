@@ -1,0 +1,10 @@
+{
+  "review_pack_full": {
+    "zip": "/home/Debz/Research/Learning_Tech/Codes/review/outgoing/TLT_full_run_review_pack_2026-10-08.zip",
+    "rows": {
+      "Translation_review_Hindi.xlsx": 140,
+      "Translation_review_Bengali.xlsx": 242,
+      "Teacher_annotation.xlsx": 300
+    }
+  }
+}
