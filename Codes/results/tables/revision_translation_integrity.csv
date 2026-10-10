@@ -1,0 +1,7 @@
+variety,transformed_fields,number_token_mismatch,digit_multiset_mismatch,math_span_count_mismatch,empty_final
+BN,432,0,0,0,0
+BN-EN,269,0,0,0,0
+BN-MT,450,12,1,0,0
+HI,432,0,0,0,0
+HI-EN,269,0,0,0,0
+ALL,1852,12,1,0,0

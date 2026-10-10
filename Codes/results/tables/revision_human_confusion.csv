@@ -1,0 +1,114 @@
+dimension,teacher_consensus,judge_panel,count
+Mistake_Identification,No,No,20
+Mistake_Identification,No,To some extent,3
+Mistake_Identification,No,Yes,12
+Mistake_Identification,To some extent,No,0
+Mistake_Identification,To some extent,To some extent,2
+Mistake_Identification,To some extent,Yes,10
+Mistake_Identification,Yes,No,0
+Mistake_Identification,Yes,To some extent,0
+Mistake_Identification,Yes,Yes,242
+Mistake_Location,No,No,24
+Mistake_Location,No,To some extent,1
+Mistake_Location,No,Yes,16
+Mistake_Location,To some extent,No,0
+Mistake_Location,To some extent,To some extent,5
+Mistake_Location,To some extent,Yes,47
+Mistake_Location,Yes,No,0
+Mistake_Location,Yes,To some extent,0
+Mistake_Location,Yes,Yes,175
+Revealing_of_the_Answer,No,No,7
+Revealing_of_the_Answer,No,Yes (correct),4
+Revealing_of_the_Answer,No,Yes (incorrect),0
+Revealing_of_the_Answer,Yes (correct),No,1
+Revealing_of_the_Answer,Yes (correct),Yes (correct),256
+Revealing_of_the_Answer,Yes (correct),Yes (incorrect),0
+Revealing_of_the_Answer,Yes (incorrect),No,0
+Revealing_of_the_Answer,Yes (incorrect),Yes (correct),14
+Revealing_of_the_Answer,Yes (incorrect),Yes (incorrect),11
+Providing_Guidance,No,No,2
+Providing_Guidance,No,To some extent,2
+Providing_Guidance,No,Yes,0
+Providing_Guidance,To some extent,No,4
+Providing_Guidance,To some extent,To some extent,12
+Providing_Guidance,To some extent,Yes,45
+Providing_Guidance,Yes,No,0
+Providing_Guidance,Yes,To some extent,1
+Providing_Guidance,Yes,Yes,210
+Actionability,No,No,16
+Actionability,No,To some extent,7
+Actionability,No,Yes,66
+Actionability,To some extent,No,3
+Actionability,To some extent,To some extent,12
+Actionability,To some extent,Yes,73
+Actionability,Yes,No,1
+Actionability,Yes,To some extent,2
+Actionability,Yes,Yes,54
+Coherence,No,No,4
+Coherence,No,To some extent,10
+Coherence,No,Yes,7
+Coherence,To some extent,No,1
+Coherence,To some extent,To some extent,6
+Coherence,To some extent,Yes,34
+Coherence,Yes,No,0
+Coherence,Yes,To some extent,0
+Coherence,Yes,Yes,216
+Tutor_Tone,Encouraging,Encouraging,208
+Tutor_Tone,Encouraging,Neutral,12
+Tutor_Tone,Neutral,Encouraging,16
+Tutor_Tone,Neutral,Neutral,43
+Humanlikeness,To some extent,Yes,36
+Humanlikeness,Yes,Yes,244
+Cognitive_Demand,High,High,1
+Cognitive_Demand,High,Low,0
+Cognitive_Demand,High,Medium,1
+Cognitive_Demand,High,None,0
+Cognitive_Demand,Low,High,0
+Cognitive_Demand,Low,Low,136
+Cognitive_Demand,Low,Medium,26
+Cognitive_Demand,Low,None,5
+Cognitive_Demand,Medium,High,0
+Cognitive_Demand,Medium,Low,0
+Cognitive_Demand,Medium,Medium,7
+Cognitive_Demand,Medium,None,0
+Cognitive_Demand,None,High,0
+Cognitive_Demand,None,Low,66
+Cognitive_Demand,None,Medium,8
+Cognitive_Demand,None,None,15
+Conceptual_Depth,Conceptual,Conceptual,105
+Conceptual_Depth,Conceptual,None,0
+Conceptual_Depth,Conceptual,Procedural only,15
+Conceptual_Depth,None,Conceptual,1
+Conceptual_Depth,None,None,2
+Conceptual_Depth,None,Procedural only,0
+Conceptual_Depth,Procedural only,Conceptual,32
+Conceptual_Depth,Procedural only,None,2
+Conceptual_Depth,Procedural only,Procedural only,115
+Praise_Calibration,Calibrated,Calibrated,36
+Praise_Calibration,Calibrated,Inflated,0
+Praise_Calibration,Calibrated,None,2
+Praise_Calibration,Inflated,Calibrated,40
+Praise_Calibration,Inflated,Inflated,34
+Praise_Calibration,Inflated,None,11
+Praise_Calibration,None,Calibrated,6
+Praise_Calibration,None,Inflated,0
+Praise_Calibration,None,None,161
+Expectation_Level,At level,At level,11
+Expectation_Level,At level,Condescending,0
+Expectation_Level,At level,Simplified below,1
+Expectation_Level,Simplified below,At level,243
+Expectation_Level,Simplified below,Condescending,2
+Expectation_Level,Simplified below,Simplified below,36
+Math_Correctness,No,No,24
+Math_Correctness,No,Yes,34
+Math_Correctness,Yes,No,1
+Math_Correctness,Yes,Yes,233
+Language_Match,No,No,6
+Language_Match,No,Partly,21
+Language_Match,No,Yes,8
+Language_Match,Partly,No,0
+Language_Match,Partly,Partly,7
+Language_Match,Partly,Yes,15
+Language_Match,Yes,No,0
+Language_Match,Yes,Partly,4
+Language_Match,Yes,Yes,236

@@ -1,0 +1,90 @@
+
+===== e2 =====
+E2 eligible: (a) 5291 selected 60 | (b,c) 275 selected 60
+/home/Debz/Research/Learning_Tech/Codes/scripts/revision_experiments.py:149: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  "| whitespace variants that changed the text:", int(man.text_changed.fillna(False).sum()))
+targets 180 judge calls 540 | whitespace variants that changed the text: 60
+e2-judge {'submitted': 540, 'already_done_or_exhausted': 0, 'ok': 540, 'error': 0}
+         who                                                        check  detection_rate  ci_low  ci_high  n  detection_rate_all_selected  all_ci_low  all_ci_high  n_all  mean_signed_delta  share_unchanged
+       panel               (a) appended correct answer -> Revealing = Yes           1.000   1.000    1.000 60                        1.000       1.000        1.000   60.0                NaN              NaN
+       panel                 (b) appended 7x8=54 -> Math_Correctness = No           0.850   0.750    0.933 60                        0.850       0.750        0.933   60.0                NaN              NaN
+       panel                           (c) whitespace only -> |delta PQI|           0.019   0.010    0.027 60                          NaN         NaN          NaN    NaN              0.006            0.733
+       panel                         (c) whitespace only -> |delta PQI_R|           0.002   0.000    0.005 60                          NaN         NaN          NaN    NaN              0.002            0.983
+       panel (c) whitespace only -> share of PQI component labels changed           0.038     NaN      NaN 60                          NaN         NaN          NaN    NaN                NaN              NaN
+  gpt41_mini               (a) appended correct answer -> Revealing = Yes           0.964   0.909    1.000 55                        0.967       0.917        1.000   60.0                NaN              NaN
+  gpt41_mini                 (b) appended 7x8=54 -> Math_Correctness = No           0.833   0.733    0.917 60                        0.833       0.733        0.917   60.0                NaN              NaN
+  gpt41_mini                           (c) whitespace only -> |delta PQI|           0.015   0.008    0.022 60                          NaN         NaN          NaN    NaN              0.000            0.767
+  gpt41_mini                         (c) whitespace only -> |delta PQI_R|           0.000   0.000    0.000 60                          NaN         NaN          NaN    NaN              0.000            1.000
+  gpt41_mini (c) whitespace only -> share of PQI component labels changed           0.029     NaN      NaN 60                          NaN         NaN          NaN    NaN                NaN              NaN
+deepseek_v32               (a) appended correct answer -> Revealing = Yes           1.000   1.000    1.000 59                        1.000       1.000        1.000   60.0                NaN              NaN
+deepseek_v32                 (b) appended 7x8=54 -> Math_Correctness = No           0.833   0.733    0.917 60                        0.833       0.733        0.917   60.0                NaN              NaN
+deepseek_v32                           (c) whitespace only -> |delta PQI|           0.020   0.010    0.030 60                          NaN         NaN          NaN    NaN             -0.001            0.750
+deepseek_v32                         (c) whitespace only -> |delta PQI_R|           0.008   0.002    0.018 60                          NaN         NaN          NaN    NaN             -0.002            0.933
+deepseek_v32 (c) whitespace only -> share of PQI component labels changed           0.040     NaN      NaN 60                          NaN         NaN          NaN    NaN                NaN              NaN
+  qwen3_next               (a) appended correct answer -> Revealing = Yes           1.000   1.000    1.000 59                        1.000       1.000        1.000   60.0                NaN              NaN
+  qwen3_next                 (b) appended 7x8=54 -> Math_Correctness = No           0.800   0.700    0.900 60                        0.800       0.700        0.900   60.0                NaN              NaN
+  qwen3_next                           (c) whitespace only -> |delta PQI|           0.022   0.011    0.034 60                          NaN         NaN          NaN    NaN              0.005            0.767
+  qwen3_next                         (c) whitespace only -> |delta PQI_R|           0.000   0.000    0.000 60                          NaN         NaN          NaN    NaN              0.000            1.000
+  qwen3_next (c) whitespace only -> share of PQI component labels changed           0.052     NaN      NaN 60                          NaN         NaN          NaN    NaN                NaN              NaN
+e2 exit=0
+
+===== e3sem =====
+E3 semantic: pairs 60 calls 180
+{'submitted': 180, 'already_done_or_exhausted': 0, 'ok': 180, 'error': 0}
+         question               who  flag_rate  ci_low  ci_high  n  quote_verbatim_share_of_flags  pairwise_judge_agreement
+ contradicts_plan      deepseek_v32      0.100   0.033    0.183 60                          0.833                       NaN
+ contradicts_plan        gpt41_mini      0.017   0.000    0.050 60                          1.000                       NaN
+ contradicts_plan        qwen3_next      0.017   0.000    0.050 60                          0.000                       NaN
+ contradicts_plan majority (2 of 3)      0.033   0.000    0.083 60                            NaN                     0.933
+  omits_next_step      deepseek_v32      0.150   0.067    0.250 60                          0.444                       NaN
+  omits_next_step        gpt41_mini      0.000   0.000    0.000 60                            NaN                       NaN
+  omits_next_step        qwen3_next      0.017   0.000    0.050 60                          0.000                       NaN
+  omits_next_step majority (2 of 3)      0.017   0.000    0.050 60                            NaN                     0.900
+reveals_forbidden      deepseek_v32      0.200   0.100    0.300 60                          1.000                       NaN
+reveals_forbidden        gpt41_mini      0.067   0.017    0.133 60                          1.000                       NaN
+reveals_forbidden        qwen3_next      0.233   0.133    0.350 60                          0.714                       NaN
+reveals_forbidden majority (2 of 3)      0.167   0.083    0.267 60                            NaN                     0.867
+e3sem exit=0
+
+===== e3abl =====
+E3 ablation: items 50 replies 450 judge calls 1350
+{'submitted': 450, 'already_done_or_exhausted': 0, 'ok': 450, 'error': 0}
+e3-ablation-judge {'submitted': 1350, 'already_done_or_exhausted': 0, 'ok': 1350, 'error': 0}
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+   outcome              contrast language  estimate  ci_low  ci_high  p_value  p_holm
+     PQI_R  plan-only - saved R5       EN    0.0073 -0.0089   0.0294   0.4845  1.0000
+     PQI_R  plan-only - saved R5       HI    0.0033 -0.0173   0.0282   0.8203  1.0000
+     PQI_R  plan-only - saved R5       BN   -0.0080 -0.0329   0.0207   0.5853  1.0000
+     PQI_R  plan-only - saved R5   pooled    0.0009 -0.0120   0.0167   0.9229     NaN
+     PQI_R          R5 gap EN-HI       HI    0.0360  0.0051   0.0812   0.0637     NaN
+     PQI_R          R5 gap EN-BN       BN    0.0400  0.0031   0.0765   0.0365     NaN
+     PQI_R R5-PLANONLY gap EN-HI       HI    0.0400  0.0105   0.0770   0.0216     NaN
+     PQI_R R5-PLANONLY gap EN-BN       BN    0.0553  0.0223   0.0987   0.0085     NaN
+       PQI  plan-only - saved R5       EN    0.0096 -0.0037   0.0269   0.2316  0.6947
+       PQI  plan-only - saved R5       HI    0.0000 -0.0164   0.0179   1.0000  1.0000
+       PQI  plan-only - saved R5       BN   -0.0042 -0.0250   0.0175   0.7345  1.0000
+       PQI  plan-only - saved R5   pooled    0.0018 -0.0083   0.0138   0.7636     NaN
+       PQI          R5 gap EN-HI       HI    0.0142 -0.0137   0.0507   0.3855     NaN
+       PQI          R5 gap EN-BN       BN    0.0254 -0.0038   0.0561   0.1011     NaN
+       PQI R5-PLANONLY gap EN-HI       HI    0.0238  0.0011   0.0548   0.0792     NaN
+       PQI R5-PLANONLY gap EN-BN       BN    0.0392  0.0117   0.0759   0.0212     NaN
+  withheld  plan-only - saved R5       EN    0.0133 -0.0412   0.0802   0.8223  1.0000
+  withheld  plan-only - saved R5       HI   -0.0000 -0.0578   0.0701   1.0000  1.0000
+  withheld  plan-only - saved R5       BN   -0.0467 -0.1129   0.0095   0.1876  0.5627
+  withheld  plan-only - saved R5   pooled   -0.0111 -0.0426   0.0209   0.5844     NaN
+  withheld          R5 gap EN-HI       HI   -0.0000 -0.0667   0.0672   1.0000     NaN
+  withheld          R5 gap EN-BN       BN   -0.0333 -0.1096   0.0310   0.4397     NaN
+  withheld R5-PLANONLY gap EN-HI       HI    0.0133 -0.0546   0.0734   0.8306     NaN
+  withheld R5-PLANONLY gap EN-BN       BN    0.0267 -0.0452   0.1021   0.5861     NaN
+lang_match  plan-only - saved R5       EN    0.0000  0.0000   0.0000   1.0000  1.0000
+lang_match  plan-only - saved R5       HI    0.0000  0.0000   0.0000   1.0000  1.0000
+lang_match  plan-only - saved R5       BN    0.0000  0.0000   0.0000   1.0000  1.0000
+lang_match  plan-only - saved R5   pooled    0.0000  0.0000   0.0000   1.0000     NaN
+lang_match          R5 gap EN-HI       HI    0.0000  0.0000   0.0000   1.0000     NaN
+lang_match          R5 gap EN-BN       BN    0.0000  0.0000   0.0000   1.0000     NaN
+lang_match R5-PLANONLY gap EN-HI       HI    0.0000  0.0000   0.0000   1.0000     NaN
+lang_match R5-PLANONLY gap EN-BN       BN    0.0000  0.0000   0.0000   1.0000     NaN
+e3abl exit=0

@@ -11,6 +11,7 @@ for code-mixed text (IndicTrans2 does not accept romanised input; D7).
 from __future__ import annotations
 
 import json
+import random
 import logging
 import re
 
@@ -42,7 +43,15 @@ def parse_bridge(text: str) -> tuple[str, dict]:
 
 ARM_TEMPLATES = {"R1": ["tutor_system", "repair_R1_instruction"], "R2": ["tutor_system", "repair_R2_instruction"],
                  "R3": ["repair_R3_bridge"], "R4": ["tutor_system", "utility_translate_to_en", "utility_codemix_reply"],
-                 "R5": ["repair_plan", "repair_realise", "utility_translate_to_en"]}
+                 "R5": ["repair_plan", "repair_realise", "utility_translate_to_en"],
+                 # revision baselines (docs/revision_plan_frozen.md, E1)
+                 "R2L": ["tutor_system", "repair_R2_instruction", "repair_R2L_language"],
+                 "R2T": ["tutor_system", "repair_R2_instruction", "utility_translate_to_en", "utility_codemix_reply"],
+                 # contemporaneous re-runs of R2 / R5 to estimate drift (E1); separate arm names so
+                 # they never mix with the original arms in any table
+                 "R2-DRIFT": ["tutor_system", "repair_R2_instruction"],
+                 "R5-DRIFT": ["repair_plan", "repair_realise", "utility_translate_to_en"]}
+SAME_AS = {"R2-DRIFT": "R2", "R5-DRIFT": "R5"}
 
 
 # Version of the R5 plan parser written into every R5 record. Version 1 (records without the
@@ -99,12 +108,25 @@ def repair_cells(run: Run, items: list[dict]) -> list[dict]:
             for arm in r["arms"]:
                 cells.append({"item_id": it["item_id"], "lang": lang, "cue": "C0", "arm": arm,
                               "base_prompt_id": f"A|{it['item_id']}|{lang}|C0"})
+        for lang in r.get("revision_languages", []):
+            for arm in r.get("revision_arms", []):
+                cells.append({"item_id": it["item_id"], "lang": lang, "cue": "C0", "arm": arm,
+                              "base_prompt_id": f"A|{it['item_id']}|{lang}|C0"})
         for cue in r["identity_cues"]:
             for arm in r["identity_arms"]:
                 if arm == "R0":
                     continue  # reused from Block B
                 cells.append({"item_id": it["item_id"], "lang": r["identity_language"], "cue": cue, "arm": arm,
                               "base_prompt_id": f"B|{it['item_id']}|{r['identity_language']}|{cue}"})
+    dr = r.get("drift_check")
+    if dr:
+        pool = sorted(x["item_id"] for x in items if x.get("in_repair"))
+        chosen = sorted(random.Random(run.seed + int(dr["seed_offset"])).sample(pool, int(dr["items"])))
+        for iid in chosen:
+            for lang in dr["languages"]:
+                for arm in dr["arms"]:
+                    cells.append({"item_id": iid, "lang": lang, "cue": "C0", "arm": f"{arm}-DRIFT",
+                                  "base_prompt_id": f"A|{iid}|{lang}|C0"})
     return cells
 
 
@@ -144,11 +166,25 @@ class Repair:
                      "repair_lang": c["lang"]})
         # the plan cache and seeds use the base id, so a '|reparse1' job reuses the same plan call
         arm, user, key = c["arm"], base["user"], job.get("base_key", job["call_id"])
+        arm = SAME_AS.get(arm, arm)  # drift arms run exactly like R2 / R5 (fresh calls: distinct ids)
         extra: dict = {}
         if arm in ("R1", "R2"):
             system = f"{self.sys0}\n{prompt(f'repair_{arm}_instruction')}"
             res = self.llm.call(m, user, system, seed_key=key)
             text = res.text
+        elif arm == "R2L":
+            system = (f"{self.sys0}\n{prompt('repair_R2_instruction')}\n"
+                      + fill(prompt("repair_R2L_language"), target_language_and_script=self.lang_names[c["lang"]]))
+            res = self.llm.call(m, user, system, seed_key=key)
+            text = res.text
+        elif arm == "R2T":
+            # the same canonical English message as R4 (shared by all producers), R2's prompt in English
+            system = f"{self.sys0}\n{prompt('repair_R2_instruction')}"
+            en_msg, r1 = self.to_english(user, c["lang"], f"r4|{c['item_id']}|{c['lang']}|{c['cue']}")
+            res = self.llm.call(m, en_msg, system, seed_key=key)
+            text, r2 = self.from_english(res.text, c["lang"], key) if res.ok else ("", "")
+            extra.update({"canonical_message_en": en_msg, "english_reply": res.text,
+                          "to_en_route": r1, "from_en_route": r2})
         elif arm == "R3":
             system = prompt("repair_R3_bridge")
             res = self.llm.call(m, user, system, seed_key=key)
@@ -202,7 +238,7 @@ class Repair:
         rec = call_record({**meta, "system": None if arm == "R5" else (system if arm != "R4" else self.sys0),
                            "user": user, **extra}, res)
         rec["response_text"] = text
-        if res.ok and arm in ("R4",) and not text.strip() and res.text.strip():
+        if res.ok and arm in ("R4", "R2T") and not text.strip() and res.text.strip():
             rec["status"] = "error"
             rec["error"] = "back-translation failed"
         return rec

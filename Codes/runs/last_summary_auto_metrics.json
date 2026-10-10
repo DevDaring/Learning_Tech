@@ -11,14 +11,14 @@
       "degenerate": 215
     },
     "repair_auto_metrics": {
-      "rows": 16200,
+      "rows": 20520,
       "failed_calls": 0,
       "empty": 0,
       "refusal": 1,
-      "truncated": 36,
-      "leak_exact": 6526,
+      "truncated": 41,
+      "leak_exact": 6922,
       "cue_echo": 24,
-      "degenerate": 31
+      "degenerate": 36
     }
   }
 }

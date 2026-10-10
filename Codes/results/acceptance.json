@@ -11,7 +11,7 @@
     "pass": true
   },
   "masking_scan": {
-    "judge_records_scanned": 343128,
+    "judge_records_scanned": 356088,
     "residual_hits": [],
     "n_residual": 0,
     "loose_candidates_for_review": [

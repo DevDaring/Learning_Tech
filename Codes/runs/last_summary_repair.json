@@ -1,20 +1,20 @@
 {
   "repair": {
-    "submitted": 660,
-    "already_done_or_exhausted": 15540,
-    "ok": 660,
+    "submitted": 0,
+    "already_done_or_exhausted": 20520,
+    "ok": 0,
     "error": 0,
-    "cells": 2700,
-    "generations": 16200,
+    "cells": 3420,
+    "generations": 20520,
     "judged": {
-      "submitted": 1980,
-      "already_done_or_exhausted": 46620,
-      "ok": 1980,
+      "submitted": 6387,
+      "already_done_or_exhausted": 55173,
+      "ok": 6387,
       "error": 0
     },
     "r3_format_failures": 9,
     "r5_plan_parse_failures": 0,
     "r5_plan_schema_failures": 1,
-    "r5_plan_retried": 122
+    "r5_plan_retried": 125
   }
 }

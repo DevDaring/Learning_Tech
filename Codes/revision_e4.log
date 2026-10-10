@@ -1,0 +1,28 @@
+
+===== e4 =====
+E4: items 100 prompts 500 replies 3000 judge calls 9000
+example label: Hindi (the tutor was instructed to reply in English) | instruction: Reply in English.
+{'submitted': 2, 'already_done_or_exhausted': 2998, 'ok': 2, 'error': 0}
+e4-judge {'submitted': 5062, 'already_done_or_exhausted': 3938, 'ok': 5062, 'error': 0}
+condition   n  script_compliance  language_match_yes   PQI  PQI_R
+    BN>BN 600              1.000               0.998 0.614  0.675
+    BN>EN 600              0.727               0.000 0.649  0.721
+    EN>BN 600              0.993               0.597 0.643  0.715
+    EN>EN 600              1.000               1.000 0.707  0.782
+    EN>HI 600              0.997               0.380 0.654  0.733
+    HI>EN 600              0.670               0.000 0.658  0.728
+    HI>HI 600              0.997               0.997 0.645  0.716
+outcome language                                                                 effect  estimate  ci_low  ci_high  p_value  p_holm
+  PQI_R       HI       output effect (English minus target output, averaged over input)    0.0303  0.0189   0.0441   0.0002  0.0006
+  PQI_R       HI        input effect (English minus target input, averaged over output)    0.0352  0.0222   0.0525   0.0001  0.0006
+  PQI_R       HI interaction (output effect with English input minus with target input)    0.0363  0.0141   0.0618   0.0028  0.0056
+  PQI_R       BN       output effect (English minus target output, averaged over input)    0.0566  0.0434   0.0710   0.0001  0.0006
+  PQI_R       BN        input effect (English minus target input, averaged over output)    0.0506  0.0338   0.0710   0.0001  0.0006
+  PQI_R       BN interaction (output effect with English input minus with target input)    0.0205 -0.0015   0.0450   0.0862  0.0862
+    PQI       HI       output effect (English minus target output, averaged over input)    0.0329  0.0227   0.0452   0.0001  0.0006
+    PQI       HI        input effect (English minus target input, averaged over output)    0.0288  0.0179   0.0431   0.0001  0.0006
+    PQI       HI interaction (output effect with English input minus with target input)    0.0402  0.0214   0.0615   0.0002  0.0006
+    PQI       BN       output effect (English minus target output, averaged over input)    0.0494  0.0382   0.0613   0.0001  0.0006
+    PQI       BN        input effect (English minus target input, averaged over output)    0.0435  0.0287   0.0615   0.0001  0.0006
+    PQI       BN interaction (output effect with English input minus with target input)    0.0278  0.0093   0.0476   0.0060  0.0060
+e4 exit=0

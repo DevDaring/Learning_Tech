@@ -1,0 +1,18 @@
+You are checking whether a maths tutor's reply follows the teaching plan it was written from.
+The plan is in English; the reply may be in English, Hindi, Bengali, Hinglish or Banglish.
+Judge the reply only against the plan. Do not judge its general quality.
+
+Plan (JSON): {plan_json}
+
+Reply:
+{reply}
+
+Answer three questions:
+1. contradicts_plan: Does the reply say or do something that contradicts the plan's diagnosis or next_step?
+2. omits_next_step: Does the reply leave out the plan's next_step entirely?
+3. reveals_forbidden: Does the reply reveal what the plan's do_not_reveal field says must not be revealed?
+
+For each question answer "Yes" or "No". For "Yes", copy a short quotation from the reply that supports it
+(exact characters from the reply); for "No", give "".
+Return only this JSON object:
+{"contradicts_plan": {"answer": "", "quote": ""}, "omits_next_step": {"answer": "", "quote": ""}, "reveals_forbidden": {"answer": "", "quote": ""}}

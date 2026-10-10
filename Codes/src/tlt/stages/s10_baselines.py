@@ -143,7 +143,8 @@ def b5_targets(run: Run) -> list[dict]:
             out.append({"source_id": g["call_id"], "item_id": g["item_id"], "lang": g["student_lang"],
                         "model": g["model"], "arm": "R0", "cue": "C0", "reply": g["raw_text"] or ""})
     for g in current_repair_records(run, ok_only=True):
-        if g["item_id"] in items and g["cue"] == "C0":
+        # original arms only: the revision baselines and drift re-runs (E1) are not part of B5
+        if g["item_id"] in items and g["cue"] == "C0" and g["arm"] in run.design["repair"]["arms"]:
             out.append({"source_id": g["call_id"], "item_id": g["item_id"], "lang": g["repair_lang"],
                         "model": g["model"], "arm": g["arm"], "cue": "C0", "reply": g.get("response_text") or ""})
     if run.design["b5"].get("control"):

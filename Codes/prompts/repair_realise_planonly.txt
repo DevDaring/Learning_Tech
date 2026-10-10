@@ -1,0 +1,3 @@
+Write the tutor's reply to the student in {target_language_and_script}, following
+this plan exactly. Do not add or remove teaching content. Do not give the final answer.
+Plan: {plan_json}

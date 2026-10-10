@@ -1,0 +1,7 @@
+variety,field_rows,unchanged_or_not_gated,transformed_gated,flagged,flagged_reviewed,unflagged,unflagged_reviewed,unflagged_review_share,reviewed_total,corrected_total,corrected_among_flagged,corrected_among_unflagged_reviewed,reviewed_outside_gate
+BN,900,468,432,8,8,424,89,0.2099056603773585,97,38,6,32,0
+BN-EN,900,631,269,1,1,268,45,0.16791044776119404,46,7,1,6,0
+BN-MT,450,0,450,8,8,442,91,0.20588235294117646,99,22,6,16,0
+HI,900,468,432,12,12,420,80,0.19047619047619047,92,36,10,26,0
+HI-EN,900,631,269,0,0,269,48,0.17843866171003717,48,6,0,6,0
+ALL,4050,2198,1852,29,29,1823,353,0.1936368623148656,382,109,23,86,0

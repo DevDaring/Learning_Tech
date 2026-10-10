@@ -1,0 +1,279 @@
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+judged replies per arm x language:
+ condition   BN   EN   HI
+arm                     
+R1         600  600  600
+R2         600  600  600
+R2-DRIFT   120  120  120
+R2L        600  600  600
+R2T        600  600  600
+R3         600  600  600
+R4         600  600  600
+R5         600  600  600
+R5-DRIFT   120  120  120
+
+[E1] contrasts (ALL tutors)
+   outcome contrast language  mean_R5  mean_base  estimate  ci_low  ci_high  p_value  p_holm
+     PQI_R R5 - R2L       EN   0.8862     0.9490   -0.0628 -0.0790  -0.0487   0.0001  0.0006
+     PQI_R R5 - R2L       HI   0.8687     0.9045   -0.0358 -0.0585  -0.0176   0.0020  0.0040
+     PQI_R R5 - R2L       BN   0.8718     0.8947   -0.0228 -0.0408  -0.0060   0.0119  0.0119
+     PQI_R R5 - R2L   pooled   0.8756     0.9161   -0.0405 -0.0542  -0.0291   0.0001     NaN
+     PQI_R R5 - R2T       EN   0.8862     0.9408   -0.0547 -0.0735  -0.0380   0.0001  0.0006
+     PQI_R R5 - R2T       HI   0.8687     0.9280   -0.0593 -0.0771  -0.0444   0.0001  0.0006
+     PQI_R R5 - R2T       BN   0.8718     0.9275   -0.0557 -0.0713  -0.0410   0.0001  0.0006
+     PQI_R R5 - R2T   pooled   0.8756     0.9321   -0.0566 -0.0696  -0.0455   0.0001     NaN
+       PQI R5 - R2L       EN   0.8744     0.9184   -0.0441 -0.0562  -0.0334   0.0001  0.0006
+       PQI R5 - R2L       HI   0.8671     0.8914   -0.0243 -0.0426  -0.0098   0.0067  0.0134
+       PQI R5 - R2L       BN   0.8632     0.8742   -0.0109 -0.0277   0.0048   0.1938  0.1938
+       PQI R5 - R2L   pooled   0.8682     0.8947   -0.0264 -0.0373  -0.0173   0.0001     NaN
+       PQI R5 - R2T       EN   0.8744     0.9130   -0.0386 -0.0520  -0.0265   0.0001  0.0006
+       PQI R5 - R2T       HI   0.8671     0.9151   -0.0480 -0.0619  -0.0352   0.0001  0.0006
+       PQI R5 - R2T       BN   0.8632     0.9129   -0.0497 -0.0633  -0.0370   0.0001  0.0006
+       PQI R5 - R2T   pooled   0.8682     0.9137   -0.0455 -0.0555  -0.0366   0.0001     NaN
+  withheld R5 - R2L       EN   0.8667     0.9550   -0.0883 -0.1239  -0.0563   0.0001  0.0006
+  withheld R5 - R2L       HI   0.8250     0.9383   -0.1133 -0.1460  -0.0823   0.0001  0.0006
+  withheld R5 - R2L       BN   0.8567     0.9533   -0.0967 -0.1263  -0.0677   0.0001  0.0006
+  withheld R5 - R2L   pooled   0.8494     0.9489   -0.0994 -0.1196  -0.0809   0.0001     NaN
+  withheld R5 - R2T       EN   0.8667     0.9417   -0.0750 -0.1083  -0.0431   0.0002  0.0006
+  withheld R5 - R2T       HI   0.8250     0.9683   -0.1433 -0.1735  -0.1144   0.0001  0.0006
+  withheld R5 - R2T       BN   0.8567     0.9450   -0.0883 -0.1166  -0.0606   0.0001  0.0006
+  withheld R5 - R2T   pooled   0.8494     0.9517   -0.1022 -0.1218  -0.0838   0.0001     NaN
+lang_match R5 - R2L       EN   1.0000     1.0000    0.0000  0.0000   0.0000   1.0000  1.0000
+lang_match R5 - R2L       HI   0.9917     0.9983   -0.0067 -0.0165  -0.0019   0.1208  0.6039
+lang_match R5 - R2L       BN   0.9967     0.9967    0.0000 -0.0064   0.0064   1.0000  1.0000
+lang_match R5 - R2L   pooled   0.9961     0.9983   -0.0022 -0.0072   0.0007   0.3591     NaN
+lang_match R5 - R2T       EN   1.0000     1.0000    0.0000  0.0000   0.0000   1.0000  1.0000
+lang_match R5 - R2T       HI   0.9917     1.0000   -0.0083 -0.0229  -0.0023   0.0589  0.3534
+lang_match R5 - R2T       BN   0.9967     1.0000   -0.0033 -0.0083   0.0000   0.5009  1.0000
+lang_match R5 - R2T   pooled   0.9961     1.0000   -0.0039 -0.0097  -0.0014   0.0466     NaN
+   math_ok R5 - R2L       EN   0.9667     0.9967   -0.0300 -0.0461  -0.0168   0.0011  0.0066
+   math_ok R5 - R2L       HI   0.9567     0.9783   -0.0217 -0.0436  -0.0030   0.0521  0.1042
+   math_ok R5 - R2L       BN   0.9600     0.9733   -0.0133 -0.0333   0.0039   0.2124  0.2124
+   math_ok R5 - R2L   pooled   0.9611     0.9828   -0.0217 -0.0366  -0.0102   0.0030     NaN
+   math_ok R5 - R2T       EN   0.9667     0.9917   -0.0250 -0.0452  -0.0104   0.0099  0.0300
+   math_ok R5 - R2T       HI   0.9567     0.9850   -0.0283 -0.0496  -0.0125   0.0061  0.0300
+   math_ok R5 - R2T       BN   0.9600     0.9883   -0.0283 -0.0482  -0.0113   0.0060  0.0300
+   math_ok R5 - R2T   pooled   0.9611     0.9883   -0.0272 -0.0417  -0.0165   0.0002     NaN
+
+TOST +/-0.02
+outcome contrast language  tost_estimate  ci90_low  ci90_high  p_tost  p_tost_holm
+  PQI_R R5 - R2L       EN        -0.0628   -0.0763    -0.0509  1.0000       1.0000
+  PQI_R R5 - R2L       HI        -0.0358   -0.0543    -0.0204  0.9554       1.0000
+  PQI_R R5 - R2L       BN        -0.0228   -0.0382    -0.0089  0.6245       1.0000
+  PQI_R R5 - R2T       EN        -0.0547   -0.0704    -0.0408  1.0000       1.0000
+  PQI_R R5 - R2T       HI        -0.0593   -0.0739    -0.0468  1.0000       1.0000
+  PQI_R R5 - R2T       BN        -0.0557   -0.0686    -0.0433  1.0000       1.0000
+    PQI R5 - R2L       EN        -0.0441   -0.0540    -0.0351  1.0000       1.0000
+    PQI R5 - R2L       HI        -0.0243   -0.0392    -0.0120  0.7094       1.0000
+    PQI R5 - R2L       BN        -0.0109   -0.0251     0.0022  0.1400       0.8399
+    PQI R5 - R2T       EN        -0.0386   -0.0495    -0.0285  0.9987       1.0000
+    PQI R5 - R2T       HI        -0.0480   -0.0597    -0.0372  1.0000       1.0000
+    PQI R5 - R2T       BN        -0.0497   -0.0609    -0.0390  1.0000       1.0000
+
+[E1] arm summary (EN/HI/BN, 100 repair items, six tutors)
+arm    outcome  mean_EN  mean_HI  mean_BN  gap_EN_HI  gap_EN_BN
+ R0      PQI_R    0.785    0.736    0.713      0.049      0.072
+ R0        PQI    0.713    0.675    0.654      0.039      0.060
+ R0   withheld    0.055    0.033    0.035      0.022      0.020
+ R0 lang_match    1.000    0.982    0.958      0.018      0.042
+ R0    math_ok    0.962    0.892    0.857      0.069      0.104
+ R2      PQI_R    0.942    0.917    0.903      0.025      0.039
+ R2        PQI    0.916    0.900    0.889      0.016      0.027
+ R2   withheld    0.933    0.922    0.927      0.012      0.007
+ R2 lang_match    1.000    0.928    0.862      0.072      0.138
+ R2    math_ok    0.997    0.967    0.972      0.030      0.025
+R2L      PQI_R    0.949    0.904    0.895      0.045      0.054
+R2L        PQI    0.918    0.891    0.874      0.027      0.044
+R2L   withheld    0.955    0.938    0.953      0.017      0.002
+R2L lang_match    1.000    0.998    0.997      0.002      0.003
+R2L    math_ok    0.997    0.978    0.973      0.018      0.023
+R2T      PQI_R    0.941    0.928    0.928      0.013      0.013
+R2T        PQI    0.913    0.915    0.913     -0.002      0.000
+R2T   withheld    0.942    0.968    0.945     -0.027     -0.003
+R2T lang_match    1.000    1.000    1.000      0.000      0.000
+R2T    math_ok    0.992    0.985    0.988      0.007      0.003
+ R4      PQI_R    0.787    0.771    0.774      0.017      0.014
+ R4        PQI    0.714    0.708    0.714      0.007      0.001
+ R4   withheld    0.062    0.057    0.063      0.005     -0.002
+ R4 lang_match    1.000    1.000    1.000      0.000      0.000
+ R4    math_ok    0.962    0.937    0.927      0.025      0.035
+ R5      PQI_R    0.886    0.869    0.872      0.017      0.014
+ R5        PQI    0.874    0.867    0.863      0.007      0.011
+ R5   withheld    0.867    0.825    0.857      0.042      0.010
+ R5 lang_match    1.000    0.992    0.997      0.008      0.003
+ R5    math_ok    0.967    0.957    0.960      0.010      0.007
+
+[E1] all arms, pooled HI+BN
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+arm outcome  quality_HI_BN  q_ci_low  q_ci_high  quality_EN    gap  gap_ci_low  gap_ci_high  gap_p
+ R0   PQI_R          0.725     0.703      0.741       0.785  0.060       0.046        0.079  0.000
+ R0     PQI          0.664     0.646      0.678       0.713  0.049       0.038        0.064  0.000
+ R1   PQI_R          0.723     0.699      0.740       0.781  0.058       0.042        0.080  0.000
+ R1     PQI          0.666     0.646      0.681       0.714  0.049       0.035        0.067  0.000
+ R2   PQI_R          0.910     0.899      0.919       0.942  0.032       0.023        0.043  0.000
+ R2     PQI          0.895     0.884      0.904       0.916  0.021       0.013        0.031  0.000
+R2L   PQI_R          0.900     0.889      0.910       0.949  0.049       0.040        0.060  0.000
+R2L     PQI          0.883     0.873      0.892       0.918  0.036       0.026        0.046  0.000
+R2T   PQI_R          0.928     0.916      0.937       0.941  0.013       0.003        0.025  0.016
+R2T     PQI          0.914     0.903      0.923       0.913 -0.001      -0.009        0.010  0.852
+ R3   PQI_R          0.821     0.808      0.833       0.854  0.032       0.019        0.045  0.000
+ R3     PQI          0.764     0.752      0.775       0.791  0.028       0.016        0.038  0.000
+ R4   PQI_R          0.772     0.741      0.787       0.787  0.015       0.001        0.040  0.106
+ R4     PQI          0.711     0.688      0.723       0.714  0.004      -0.009        0.024  0.655
+ R5   PQI_R          0.870     0.852      0.884       0.886  0.016      -0.000        0.034  0.069
+ R5     PQI          0.865     0.850      0.878       0.874  0.009      -0.004        0.024  0.196
+
+[E1] within-arm gap EN - l by tutor (PQI-R)
+arm               R0            R2           R2L           R2T            R5       
+language          BN     HI     BN     HI     BN     HI     BN     HI     BN     HI
+model                                                                              
+ALL            0.072  0.049  0.039  0.025  0.054  0.045  0.013  0.013  0.014  0.017
+gemini_flash   0.036  0.040 -0.004 -0.004 -0.008 -0.002  0.015  0.006  0.039  0.020
+kimi_k25       0.019  0.015 -0.016 -0.021 -0.017 -0.018  0.032  0.008 -0.019 -0.016
+ministral_8b   0.062  0.065  0.044  0.056  0.056  0.075 -0.004  0.005 -0.019  0.012
+nemotron_nano  0.060  0.023  0.130  0.043  0.165  0.082  0.009  0.008  0.061  0.030
+nova_lite      0.142  0.064  0.046  0.038  0.093  0.092  0.035  0.046  0.030  0.042
+sarvam_105b    0.111  0.086  0.036  0.037  0.037  0.038 -0.007  0.004 -0.006  0.017
+
+[E1] exploratory fluency-related dimensions
+               dimension              arm    EN    HI    BN  estimate  ci_low  ci_high
+         Coherence = Yes               R0 0.975 0.902 0.859       NaN     NaN      NaN
+         Coherence = Yes               R2 0.997 0.973 0.955       NaN     NaN      NaN
+         Coherence = Yes              R2L 0.998 0.975 0.958       NaN     NaN      NaN
+         Coherence = Yes              R2T 0.997 0.982 0.983       NaN     NaN      NaN
+         Coherence = Yes               R4 0.960 0.940 0.947       NaN     NaN      NaN
+         Coherence = Yes               R5 0.975 0.968 0.950       NaN     NaN      NaN
+         Coherence = Yes R5 - R2L (HI+BN)   NaN   NaN   NaN    -0.008  -0.028    0.009
+         Coherence = Yes R5 - R2T (HI+BN)   NaN   NaN   NaN    -0.023  -0.039   -0.011
+     Humanlikeness = Yes               R0 0.997 0.997 0.981       NaN     NaN      NaN
+     Humanlikeness = Yes               R2 1.000 0.997 0.980       NaN     NaN      NaN
+     Humanlikeness = Yes              R2L 1.000 0.993 0.982       NaN     NaN      NaN
+     Humanlikeness = Yes              R2T 1.000 0.997 1.000       NaN     NaN      NaN
+     Humanlikeness = Yes               R4 0.998 0.993 1.000       NaN     NaN      NaN
+     Humanlikeness = Yes               R5 0.998 1.000 0.983       NaN     NaN      NaN
+     Humanlikeness = Yes R5 - R2L (HI+BN)   NaN   NaN   NaN     0.004  -0.004    0.013
+     Humanlikeness = Yes R5 - R2T (HI+BN)   NaN   NaN   NaN    -0.007  -0.013   -0.002
+Tutor_Tone = Encouraging               R0 0.756 0.842 0.734       NaN     NaN      NaN
+Tutor_Tone = Encouraging               R2 0.883 0.850 0.708       NaN     NaN      NaN
+Tutor_Tone = Encouraging              R2L 0.908 0.867 0.730       NaN     NaN      NaN
+Tutor_Tone = Encouraging              R2T 0.887 0.845 0.843       NaN     NaN      NaN
+Tutor_Tone = Encouraging               R4 0.725 0.707 0.777       NaN     NaN      NaN
+Tutor_Tone = Encouraging               R5 0.820 0.835 0.825       NaN     NaN      NaN
+Tutor_Tone = Encouraging R5 - R2L (HI+BN)   NaN   NaN   NaN     0.032   0.003    0.059
+Tutor_Tone = Encouraging R5 - R2T (HI+BN)   NaN   NaN   NaN    -0.014  -0.041    0.012
+
+[E1] drift: re-run minus saved, same 20 items
+             arm    outcome language  estimate  ci_low  ci_high  p_value
+              R2      PQI_R       EN   -0.0017 -0.0208   0.0188   0.9305
+              R2      PQI_R       HI   -0.0017 -0.0239   0.0245   0.9440
+              R2      PQI_R       BN   -0.0075 -0.0897   0.0278   0.8531
+              R2      PQI_R   pooled   -0.0036 -0.0281   0.0119   0.7678
+              R2        PQI       EN    0.0005 -0.0153   0.0157   1.0000
+              R2        PQI       HI   -0.0010 -0.0252   0.0282   0.9687
+              R2        PQI       BN   -0.0172 -0.0778   0.0140   0.4235
+              R2        PQI   pooled   -0.0059 -0.0268   0.0077   0.5246
+              R2   withheld       EN    0.0167 -0.0150   0.0667   0.6255
+              R2   withheld       HI   -0.0083 -0.0498   0.0300   1.0000
+              R2   withheld       BN   -0.0167 -0.0996   0.0476   0.8092
+              R2   withheld   pooled   -0.0028 -0.0361   0.0381   1.0000
+              R2 lang_match       EN    0.0000  0.0000   0.0000   1.0000
+              R2 lang_match       HI    0.0250 -0.0109   0.1125   0.4994
+              R2 lang_match       BN   -0.0083 -0.0844   0.0723   1.0000
+              R2 lang_match   pooled    0.0056 -0.0228   0.0354   0.8373
+              R5      PQI_R       EN   -0.0042 -0.0353   0.0206   0.8102
+              R5      PQI_R       HI    0.0117 -0.0177   0.0350   0.3841
+              R5      PQI_R       BN   -0.0033 -0.0451   0.0327   0.8927
+              R5      PQI_R   pooled    0.0014 -0.0142   0.0143   0.8736
+              R5        PQI       EN    0.0016 -0.0234   0.0207   0.9185
+              R5        PQI       HI    0.0047 -0.0145   0.0224   0.6304
+              R5        PQI       BN   -0.0000 -0.0370   0.0380   1.0000
+              R5        PQI   pooled    0.0021 -0.0102   0.0129   0.7423
+              R5   withheld       EN    0.0083 -0.0432   0.0621   1.0000
+              R5   withheld       HI    0.0250 -0.0661   0.1141   0.6993
+              R5   withheld       BN    0.0000 -0.0622   0.0622   1.0000
+              R5   withheld   pooled    0.0111 -0.0364   0.0506   0.6845
+              R5 lang_match       EN    0.0000  0.0000   0.0000   1.0000
+              R5 lang_match       HI    0.0000  0.0000   0.0000   1.0000
+              R5 lang_match       BN   -0.0083 -0.0250   0.0000   1.0000
+              R5 lang_match   pooled   -0.0028 -0.0083   0.0000   1.0000
+R5 - R2 (re-run)      PQI_R   pooled   -0.0375 -0.0698  -0.0031   0.0292
+ R5 - R2 (saved)      PQI_R   pooled   -0.0425 -0.0742  -0.0231   0.0040
+R5 - R2 (re-run)        PQI   pooled   -0.0215 -0.0486   0.0060   0.1172
+ R5 - R2 (saved)        PQI   pooled   -0.0295 -0.0558  -0.0110   0.0156
+
+[E1] cost per final reply (EN/HI/BN cells; judging excluded)
+     arm  final_replies  llm_calls_per_reply  input_tokens_per_reply  output_tokens_per_reply  sequential_latency_s_median  usd_per_1000_replies  indictrans2_calls_per_reply                          collected
+      R1           1800                1.000                 104.155                  407.815                        2.540                 0.516                        0.000             2026-10-07, 2026-10-09
+      R2           1800                1.000                 107.488                  187.892                        1.478                 0.243                        0.000             2026-10-07, 2026-10-09
+R2-DRIFT            360                1.000                 114.756                  193.828                        1.507                 0.249                        0.000                         2026-10-10
+     R2L           1800                1.000                 119.822                  168.702                        1.469                 0.234                        0.000                         2026-10-10
+     R2T           1800                1.000                  95.917                  131.762                        1.193                 0.181                        1.333                         2026-10-10
+      R3           1800                1.000                 433.488                  252.259                        1.808                 0.412                        0.000             2026-10-07, 2026-10-09
+      R4           1800                1.000                  78.251                  301.039                        1.951                 0.378                        1.333             2026-10-07, 2026-10-09
+      R5           1800                1.930                 545.937                  533.559                        3.806                 0.690                        0.667 2026-10-07, 2026-10-08, 2026-10-09
+R5-DRIFT            360                2.008                 559.097                  596.319                        4.237                 0.707                        0.667                         2026-10-10
+
+done
+e1 exit=0

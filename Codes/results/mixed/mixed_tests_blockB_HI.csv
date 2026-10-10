@@ -1,5 +1,5 @@
 block,outcome,model_type,test,chisq,df,p_value,note,family,p_holm,significant_holm_05
-B_HI,PQI,lmm,condition:model,116.789453472564,30,3.5030652667011397e-12,,lmm | condition:model,3.5030652667011397e-12,True
+B_HI,PQI,lmm,condition:model,116.789453472564,30,3.50306526670114e-12,,lmm | condition:model,3.50306526670114e-12,True
 B_HI,PQI,lmm,condition (main),16.236509821676,6,0.0125392765322439,,lmm | condition (main),0.0125392765322439,True
 B_HI,Mistake_Identification,clmm,condition:model,55.2586081810987,30,0.0033181712681698,,clmm | condition:model,0.0099545138045094,True
 B_HI,Mistake_Identification,clmm,condition (main),11.9773467410614,6,0.0624760829905374,,clmm | condition (main),0.3748564979432244,False

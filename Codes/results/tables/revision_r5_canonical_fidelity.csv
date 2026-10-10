@@ -1,0 +1,6 @@
+variety,canonical_messages,exact,residual_indic_script,paraphrase (meaning kept),meaning shifted,answer lost,answer mistranslated,garbled
+BN,100,89,4,9,0,1,0,1
+BN-EN,100,100,0,0,0,0,0,0
+EN,100,100,0,0,0,0,0,0
+HI,100,90,14,6,2,0,1,1
+HI-EN,100,100,0,0,0,0,0,0

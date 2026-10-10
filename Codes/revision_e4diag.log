@@ -1,0 +1,21 @@
+
+===== e4diag =====
+condition      BN>BN  BN>EN  EN>EN  HI>EN  HI>HI
+model                                           
+gemini_flash     1.0   1.00    1.0   1.00   1.00
+kimi_k25         1.0   0.69    1.0   0.46   1.00
+ministral_8b     1.0   1.00    1.0   1.00   0.99
+nemotron_nano    1.0   0.64    1.0   0.60   0.99
+nova_lite        1.0   1.00    1.0   0.83   1.00
+sarvam_105b      1.0   0.03    1.0   0.13   1.00
+ALL              1.0   0.73    1.0   0.67   1.00
+language                              sample outcome  n_item_tutor_pairs  estimate  ci_low  ci_high
+      HI           all replies (as assigned)   PQI_R                 600    0.0533  0.0361   0.0749
+      HI           all replies (as assigned)     PQI                 600    0.0489  0.0338   0.0673
+      HI compliant replies only (diagnostic)   PQI_R                 402    0.0356  0.0196   0.0559
+      HI compliant replies only (diagnostic)     PQI                 402    0.0353  0.0217   0.0533
+      BN           all replies (as assigned)   PQI_R                 600    0.0608  0.0426   0.0882
+      BN           all replies (as assigned)     PQI                 600    0.0574  0.0412   0.0812
+      BN compliant replies only (diagnostic)   PQI_R                 436    0.0366  0.0182   0.0631
+      BN compliant replies only (diagnostic)     PQI                 436    0.0370  0.0209   0.0599
+e4diag exit=0

@@ -1,0 +1,77 @@
+2026-10-10 14:24:47,025 INFO tlt.s08: auto metrics: {'auto_metrics': {'rows': 67200, 'failed_calls': 0, 'empty': 3, 'refusal': 1, 'truncated': 249, 'leak_exact': 45568, 'cue_echo': 632, 'degenerate': 215}, 'repair_auto_metrics': {'rows': 20520, 'failed_calls': 0, 'empty': 0, 'refusal': 1, 'truncated': 41, 'leak_exact': 6922, 'cue_echo': 24, 'degenerate': 36}}
+2026-10-10 14:24:47,162 INFO tlt: stage auto_metrics done in 122.1s
+auto_metrics exit=0
+/home/Debz/Research/Learning_Tech/Codes/src/tlt/io.py:37: DtypeWarning: Columns (10,11) have mixed types. Specify dtype option on import or set low_memory=False.
+  return pd.read_csv(path, keep_default_na=False, na_values=[""], **kw)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+/home/Debz/venv/lib/python3.10/site-packages/numpy/lib/function_base.py:4655: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = subtract(b, a)
+2026-10-10 14:26:44,760 INFO tlt.s09: analysis: {'status': 'FINAL', 'mixed_models': {'A': 'ok (cached fit, identical input)', 'B_EN': 'ok (cached fit, identical input)', 'B_HI': 'ok (cached fit, identical input)', 'B_BN': 'ok (cached fit, identical input)'}, 'tables': ['expectation_indicator_tests.csv', 'expectation_indicators.csv', 'extra_component_profile.csv', 'extra_decomposition_components.csv', 'extra_judge_teacher_pooled.csv', 'extra_named_vs_unnamed.csv', 'extra_repair_pooled.csv', 'extra_schooling_switch.csv', 'extra_template_sensitivity.csv', 'inter_judge_alpha.csv', 'operational_counts.csv', 'revision_cluster_sensitivity.csv', 'revision_component_sensitivity.csv', 'revision_cost_latency.csv', 'revision_e1_arm_summary.csv', 'revision_e1_arms_pooled_HI_BN.csv', 'revision_e1_components.csv', 'revision_e1_contrasts.csv', 'revision_e1_cost.csv', 'revision_e1_drift.csv', 'revision_e1_fluency_exploratory.csv', 'revision_e1_residuals_by_tutor.csv', 'revision_e2_challenge.csv', 'revision_e2_manifest.csv', 'revision_e3_ablation.csv', 'revision_e3_fidelity.csv', 'revision_e4_cells.csv', 'revision_e4_compliance_by_tutor.csv', 'revision_e4_compliance_contrast.csv', 'revision_e4_crossing.csv', 'revision_human_agreement_detail.csv', 'revision_human_confusion.csv', 'revision_judge_sensitivity.csv', 'revision_name_balance.csv', 'revision_provenance.csv', 'revision_r5_canonical_fidelity.csv', 'revision_r5_structure.csv', 'revision_r5_vs_r2.csv', 'revision_repair_residual_gaps.csv', 'revision_tost_original_arms.csv', 'revision_translation_coverage.csv', 'revision_translation_integrity.csv', 'revision_translation_reviewed_subset.csv', 'route_by_block_condition.csv', 'table1_models.csv', 'table2_judge_validation_mrbench.csv', 'table3_judge_human_agreement.csv', 'table3b_human_invalid_labels.csv', 'table4_language_gaps.csv', 'table4a_pqi_by_language_producer.csv', 'table4b_language_gaps_no_truncation.csv', 'table4c_truncation_rate_by_language.csv', 'table4d_language_gaps_PQI_R.csv', 'table5_identity_gaps.csv', 'table5b_identity_language_interaction.csv', 'table5c_identity_sensitivity.csv', 'table5d_hi_gender_marking_rate.csv', 'table5e_identity_gaps_PQI_R.csv', 'table6_decomposition.csv', 'table7_native_control.csv', 'table7a_block_d_means.csv', 'table8_baselines_vs_pqi.csv', 'table9_repair.csv', 'table9b_repair_identity.csv', 'translated_judging.csv']}
+2026-10-10 14:26:44,794 INFO tlt: stage analysis done in 117.4s
+analysis exit=0
+2026-10-10 14:34:36,135 INFO tlt.checks: acceptance: all_pass=False
+2026-10-10 14:34:36,413 INFO tlt: stage checks done in 471.2s
+checks exit=1

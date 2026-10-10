@@ -104,8 +104,25 @@ the pack: rows whose text changed are imported as `stale` and need a fresh revie
 | C | 200 | 2,400 |
 | D (incl. BN-MT, D2) | 450 | 5,400 |
 | Repair (R1-R5 × 5 languages, + identity R5) | 2,700 cells | 16,200 |
+| Revision E1: R2-L, R2-T (EN/HI/BN) + R2/R5 drift re-runs | 720 cells | 4,320 |
+| Revision E4: full input/output crossing (Block X) | 500 | 3,000 |
+| Revision E3: plan-only realisation ablation | 150 | 450 |
 
-Judge calls (GLM-4.7, DeepSeek-V3.2, Qwen3-Next 80B on AWS Bedrock; deviations D34): 3 per generation, plus 20% translated judging, plus 1,500 for MRBench.
+Judge calls (GPT-4.1 mini on LinkAPI, DeepSeek-V3.2 and Qwen3-Next 80B on AWS Bedrock; deviations
+D34, D47): 3 per generation, plus 20% translated judging, plus 1,500 for MRBench.
+
+## Revision experiments (frozen plan: docs/revision_plan_frozen.md)
+
+```bash
+PYTHONPATH=src ~/venv/bin/python -m tlt repair --allow-unreviewed      # E1 arms (needs IndicTrans2: scripts/vast_translator.py up/down)
+PYTHONPATH=src ~/venv/bin/python scripts/revision_experiments.py all  # E2 challenge set, E3 fidelity + ablation, E4 crossing
+PYTHONPATH=src ~/venv/bin/python scripts/revision_e1_analysis.py      # E1 primary/secondary analysis
+PYTHONPATH=src ~/venv/bin/python scripts/revision_local_analysis.py   # reanalyses without new calls (E2/E3/E5 local parts)
+PYTHONPATH=src ~/venv/bin/python scripts/revision_provenance.py       # model provenance table
+PYTHONPATH=src ~/venv/bin/python scripts/make_supplement.py           # supplementary tables (LaTeX)
+PYTHONPATH=src ~/venv/bin/python scripts/paper_figures.py <out_dir>   # paper figures
+```
+Outputs: `results/tables/revision_*.csv`; logs `runs/revision_*.jsonl`.
 `build_prompts` prints the exact counts. `docs/deviations.md` lists every departure from the
 specification and its reason.
 

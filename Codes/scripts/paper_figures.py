@@ -4,7 +4,7 @@
 
 fig_language_gaps.pdf  language gap per tutor and pooled, one panel per language variety
 fig_decomposition.pdf  Block C: generation vs input component, per rubric component
-fig_repair.pdf         repair arms: quality outside English vs the remaining language gap
+fig_repair.pdf         all eight repair arms on HI+BN: PQI-R vs the remaining language gap
 Filled markers: Holm-adjusted p < .05. Error bars: 95% bootstrap-t intervals.
 """
 import sys
@@ -103,25 +103,27 @@ fig.savefig(OUT / "fig_decomposition.pdf")
 plt.close(fig)
 
 # ---------------------------------------------------------------- Fig. repair
-rp = rd("extra_repair_pooled.csv")
-NAMES = {"R0": "R0 default", "R1": "R1 fairness", "R2": "R2 pedagogy", "R3": "R3 Bridge", "R4": "R4 translate",
-         "R5": "R5 plan-then-realise"}
-OFF = {"R0": (6, -2), "R1": (6, 3), "R2": (0, 11), "R3": (0, -12), "R4": (6, 4), "R5": (-6, -11)}
-fig, ax = plt.subplots(figsize=(3.5, 2.45))
+# every arm on Hindi + Bengali (the languages all eight arms share), PQI-R (E1's primary outcome)
+rp = rd("revision_e1_arms_pooled_HI_BN.csv")
+rp = rp[rp.outcome == "PQI_R"]
+NAMES = {"R0": "R0", "R1": "R1", "R2": "R2", "R2L": "R2-L", "R2T": "R2-T", "R3": "R3", "R4": "R4", "R5": "R5"}
+OFF = {"R0": (5, 5), "R1": (-5, -5), "R2": (5, 5), "R2L": (-5, 5), "R2T": (5, -5), "R3": (5, 5),
+       "R4": (-5, -5), "R5": (-5, -5)}
+fig, ax = plt.subplots(figsize=(3.5, 2.6))
 for _, r in rp.iterrows():
-    col = S2 if r.arm == "R5" else S1
-    ax.plot([r.abs_ci_low, r.abs_ci_high], [r.gap_within_arm] * 2, color=col, lw=1.0, zorder=2)
-    ax.plot([r.abs_pqi_nonEN] * 2, [r.gap_ci_low, r.gap_ci_high], color=col, lw=1.0, zorder=2)
-    ax.plot([r.abs_pqi_nonEN], [r.gap_within_arm], "o" if r.arm != "R5" else "D", ms=4.5, color=col, zorder=3)
+    col = S2 if r.arm in ("R2L", "R2T", "R5") else S1
+    ax.plot([r.q_ci_low, r.q_ci_high], [r.gap] * 2, color=col, lw=1.0, zorder=2)
+    ax.plot([r.quality_HI_BN] * 2, [r.gap_ci_low, r.gap_ci_high], color=col, lw=1.0, zorder=2)
+    ax.plot([r.quality_HI_BN], [r.gap], "D" if r.arm in ("R2L", "R2T", "R5") else "o", ms=4.2, color=col, zorder=3)
     dx, dy = OFF[r.arm]
-    ax.annotate(NAMES[r.arm], (r.abs_pqi_nonEN, r.gap_within_arm), textcoords="offset points", xytext=(dx, dy),
+    ax.annotate(NAMES[r.arm], (r.quality_HI_BN, r.gap), textcoords="offset points", xytext=(dx, dy),
                 ha="left" if dx > 0 else ("right" if dx < 0 else "center"), va="center", fontsize=7, color=INK)
 ax.axhline(0, color=MUTED, lw=0.6, ls=(0, (3, 2)), zorder=1)
-ax.set_xlabel("PQI in Hindi, Bengali, Hinglish and Banglish (pooled)")
-ax.set_ylabel("Language gap within arm\nPQI(EN) $-$ PQI($l$)")
+ax.set_xlabel("PQI-R in Hindi and Bengali (pooled)")
+ax.set_ylabel("Language gap within arm\nPQI-R(EN) $-$ PQI-R($l$)")
 ax.grid(color=GRID, lw=0.5)
 ax.set_axisbelow(True)
-ax.set_xlim(0.62, 0.95)
+ax.set_xlim(0.66, 0.985)
 fig.tight_layout()
 fig.savefig(OUT / "fig_repair.pdf")
 plt.close(fig)

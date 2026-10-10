@@ -1,0 +1,3 @@
+2026-10-10 14:44:23,685 INFO tlt.checks: acceptance: all_pass=True
+2026-10-10 14:44:24,863 INFO tlt: stage checks done in 485.9s
+checks exit=0

@@ -190,7 +190,10 @@ def _anthropic(base: str, key: str, workspace: str | None, body: dict, timeout: 
 
 
 _OUT_OF_CREDIT = ("额度不足", "insufficient_user_quota", "insufficient_quota", "insufficient balance",
-                  "insufficient credits", "out of credits", "exceeded your current quota", "payment required")
+                  "insufficient credits", "out of credits", "exceeded your current quota", "payment required",
+                  # OpenRouter 402 when the balance cannot cover the request (seen 2026-10-10): the
+                  # next credential must be tried, not the call abandoned as a permanent error
+                  "exceed your available credits", "requires more credits", "can only afford")
 
 
 class OutOfCredit(BadCredential):

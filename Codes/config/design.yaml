@@ -94,6 +94,11 @@ repair:
   identity_cues: [S-VER, N-FM]
   identity_arms: [R0, R5]
   samples: 1
+  # Revision experiments (docs/revision_plan_frozen.md, frozen 2026-10-10 before data):
+  # E1 stronger baselines on EN/HI/BN, and a contemporaneous R2/R5 drift reference.
+  revision_arms: [R2L, R2T]
+  revision_languages: [EN, HI, BN]
+  drift_check: {items: 20, seed_offset: 51, languages: [EN, HI, BN], arms: [R2, R5]}
 
 b5:
   languages: [EN, HI, BN]
