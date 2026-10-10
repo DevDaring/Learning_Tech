@@ -1,0 +1,112 @@
+condition                       BN  BN-EN     EN     HI  HI-EN
+PQI                          0.652  0.687  0.714  0.674  0.682
+PQI_R                        0.712  0.752  0.785  0.737  0.743
+pqi_Mistake_Identification   0.882  0.944  0.968  0.917  0.923
+pqi_Mistake_Location         0.869  0.932  0.961  0.903  0.913
+pqi_Providing_Guidance       0.911  0.942  0.979  0.937  0.947
+pqi_Actionability            0.843  0.898  0.938  0.888  0.913
+pqi_Revealing_of_the_Answer  0.033  0.032  0.059  0.032  0.023
+pqi_Cognitive_Demand         0.072  0.097  0.091  0.066  0.082
+pqi_Conceptual_Depth         0.743  0.739  0.755  0.755  0.748
+pqi_Math_Correctness         0.867  0.913  0.959  0.896  0.909
+inflated                     0.176  0.082  0.066  0.140  0.145
+lowered                      0.232  0.137  0.085  0.182  0.136
+{'share_S-VER_switched': 0.308, 'share_S-ENG_switched': 0.001, 'PQI_S-VER_switched': 0.71, 'PQI_S-VER_english': 0.693, 'share_S-VER_switched__gemini_flash': 0.957, 'share_S-VER_switched__kimi_k25': 0.167, 'share_S-VER_switched__ministral_8b': 0.01, 'share_S-VER_switched__nemotron_nano': 0.033, 'share_S-VER_switched__nova_lite': 0.01, 'share_S-VER_switched__sarvam_105b': 0.673}
+                       subset  outcome  estimate  ci_low  ci_high  p_holm
+                  all replies      PQI     0.017   0.011    0.024   0.001
+                  all replies    PQI_R     0.021   0.014    0.028   0.001
+                  all replies  lowered    -0.038  -0.058   -0.021   0.001
+                  all replies inflated    -0.066  -0.083   -0.049   0.001
+S-VER replies kept in English      PQI     0.053   0.010    0.198   0.413
+S-VER replies kept in English    PQI_R     0.057  -0.000    0.206   0.413
+S-VER replies kept in English  lowered    -0.167  -0.545   -0.056   0.413
+S-VER replies kept in English inflated    -0.107  -0.290    0.009   0.413
+language                     outcome  component  estimate  ci_low  ci_high  p_holm
+      HI                         PQI      total     0.039   0.027    0.055   0.002
+      HI                         PQI generation     0.056   0.045    0.068   0.002
+      HI                         PQI      input    -0.017  -0.028   -0.003   0.194
+      HI  pqi_Mistake_Identification      total     0.048   0.030    0.073   0.003
+      HI  pqi_Mistake_Identification generation     0.052   0.035    0.075   0.002
+      HI  pqi_Mistake_Identification      input    -0.004  -0.025    0.020   1.000
+      HI        pqi_Mistake_Location      total     0.058   0.038    0.085   0.002
+      HI        pqi_Mistake_Location generation     0.058   0.039    0.081   0.002
+      HI        pqi_Mistake_Location      input     0.000  -0.022    0.026   1.000
+      HI      pqi_Providing_Guidance      total     0.046   0.030    0.067   0.003
+      HI      pqi_Providing_Guidance generation     0.044   0.029    0.064   0.002
+      HI      pqi_Providing_Guidance      input     0.002  -0.015    0.022   1.000
+      HI           pqi_Actionability      total     0.042   0.025    0.062   0.003
+      HI           pqi_Actionability generation     0.080   0.061    0.101   0.002
+      HI           pqi_Actionability      input    -0.038  -0.059   -0.015   0.016
+      HI pqi_Revealing_of_the_Answer      total     0.022  -0.001    0.037   0.138
+      HI pqi_Revealing_of_the_Answer generation     0.027   0.014    0.041   0.002
+      HI pqi_Revealing_of_the_Answer      input    -0.005  -0.027    0.007   1.000
+      HI        pqi_Cognitive_Demand      total     0.028   0.012    0.042   0.003
+      HI        pqi_Cognitive_Demand generation     0.055   0.043    0.069   0.002
+      HI        pqi_Cognitive_Demand      input    -0.027  -0.040   -0.017   0.006
+      HI        pqi_Conceptual_Depth      total    -0.004  -0.021    0.014   0.708
+      HI        pqi_Conceptual_Depth generation     0.066   0.052    0.080   0.002
+      HI        pqi_Conceptual_Depth      input    -0.069  -0.086   -0.052   0.002
+      HI        pqi_Math_Correctness      total     0.069   0.046    0.100   0.002
+      HI        pqi_Math_Correctness generation     0.062   0.039    0.093   0.002
+      HI        pqi_Math_Correctness      input     0.008  -0.015    0.035   1.000
+      HI                    inflated      total    -0.077  -0.105   -0.056   0.002
+      HI                    inflated generation    -0.090  -0.118   -0.066   0.002
+      HI                    inflated      input     0.013  -0.015    0.038   1.000
+      HI                     lowered      total    -0.095  -0.127   -0.068   0.002
+      HI                     lowered generation    -0.151  -0.181   -0.123   0.002
+      HI                     lowered      input     0.056   0.023    0.087   0.023
+      BN                         PQI      total     0.060   0.046    0.077   0.002
+      BN                         PQI generation     0.065   0.054    0.079   0.002
+      BN                         PQI      input    -0.006  -0.017    0.008   1.000
+      BN  pqi_Mistake_Identification      total     0.079   0.060    0.105   0.002
+      BN  pqi_Mistake_Identification generation     0.078   0.060    0.100   0.002
+      BN  pqi_Mistake_Identification      input     0.002  -0.019    0.024   1.000
+      BN        pqi_Mistake_Location      total     0.085   0.064    0.110   0.002
+      BN        pqi_Mistake_Location generation     0.082   0.065    0.104   0.002
+      BN        pqi_Mistake_Location      input     0.002  -0.019    0.025   1.000
+      BN      pqi_Providing_Guidance      total     0.070   0.051    0.094   0.002
+      BN      pqi_Providing_Guidance generation     0.057   0.041    0.079   0.002
+      BN      pqi_Providing_Guidance      input     0.013  -0.002    0.030   1.000
+      BN           pqi_Actionability      total     0.090   0.067    0.117   0.002
+      BN           pqi_Actionability generation     0.105   0.083    0.128   0.002
+      BN           pqi_Actionability      input    -0.015  -0.037    0.008   1.000
+      BN pqi_Revealing_of_the_Answer      total     0.020   0.006    0.038   0.080
+      BN pqi_Revealing_of_the_Answer generation     0.027   0.014    0.041   0.002
+      BN pqi_Revealing_of_the_Answer      input    -0.007  -0.017    0.003   1.000
+      BN        pqi_Cognitive_Demand      total     0.013  -0.001    0.027   0.216
+      BN        pqi_Cognitive_Demand generation     0.052   0.039    0.066   0.002
+      BN        pqi_Cognitive_Demand      input    -0.039  -0.054   -0.027   0.002
+      BN        pqi_Conceptual_Depth      total     0.015  -0.003    0.034   0.216
+      BN        pqi_Conceptual_Depth generation     0.048   0.033    0.065   0.002
+      BN        pqi_Conceptual_Depth      input    -0.032  -0.048   -0.017   0.004
+      BN        pqi_Math_Correctness      total     0.104   0.077    0.141   0.002
+      BN        pqi_Math_Correctness generation     0.072   0.050    0.102   0.002
+      BN        pqi_Math_Correctness      input     0.032   0.009    0.064   0.450
+      BN                    inflated      total    -0.115  -0.140   -0.092   0.002
+      BN                    inflated generation    -0.118  -0.146   -0.092   0.002
+      BN                    inflated      input     0.003  -0.025    0.029   1.000
+      BN                     lowered      total    -0.144  -0.176   -0.116   0.002
+      BN                     lowered generation    -0.166  -0.196   -0.138   0.002
+      BN                     lowered      input     0.022  -0.004    0.047   1.000
+arm  abs_pqi_nonEN  abs_ci_low  abs_ci_high  gap_within_arm  gap_ci_low  gap_ci_high  gap_p  pqi_EN  language_match_yes_nonEN  improvement  imp_ci_low  imp_ci_high  imp_p
+ R0          0.674       0.661        0.686           0.039       0.031        0.050  0.000   0.713                     0.880          NaN         NaN          NaN    NaN
+ R1          0.682       0.668        0.694           0.032       0.021        0.045  0.000   0.714                     0.773        0.008       0.002        0.013  0.005
+ R2          0.896       0.888        0.904           0.020       0.013        0.027  0.000   0.916                     0.840        0.222       0.211        0.235  0.000
+ R3          0.771       0.762        0.780           0.020       0.010        0.029  0.000   0.791                     0.796        0.097       0.088        0.106  0.000
+ R4          0.720       0.708        0.730          -0.006      -0.015        0.005  0.221   0.714                     0.946        0.046       0.037        0.058  0.000
+ R5          0.877       0.866        0.887          -0.002      -0.013        0.008  0.673   0.874                     0.941        0.202       0.191        0.215  0.000
+              dimension scope   n  exact_agreement  alpha_judges_vs_teachers
+ Mistake_Identification   ALL 289            0.913                     0.669
+       Mistake_Location   ALL 268            0.761                     0.420
+Revealing_of_the_Answer   ALL 293            0.935                     0.628
+     Providing_Guidance   ALL 276            0.812                     0.390
+          Actionability   ALL 234            0.350                    -0.152
+              Coherence   ALL 278            0.813                     0.443
+             Tutor_Tone   ALL 279            0.900                     0.692
+          Humanlikeness   ALL 280            0.871                    -0.067
+       Cognitive_Demand   ALL 265            0.600                     0.163
+       Conceptual_Depth   ALL 272            0.816                     0.647
+     Praise_Calibration   ALL 290            0.797                     0.643
+      Expectation_Level   ALL 293            0.160                    -0.663
+       Math_Correctness   ALL 292            0.880                     0.509
+         Language_Match   ALL 297            0.838                     0.671

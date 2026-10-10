@@ -1,6 +1,7 @@
 {
   "export_human": {
-    "exported": 300,
-    "judged_table_exists": true
+    "exported": 0,
+    "kept_existing": true,
+    "returned_files": 3
   }
 }

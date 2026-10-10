@@ -1,183 +1,183 @@
 result_status,block,condition,dimension,level,n_units,alpha_judges
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Mistake_Identification,ordinal,5400,0.6094449870054383
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Mistake_Location,ordinal,5400,0.5881018410185969
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Revealing_of_the_Answer,nominal,5400,0.7189143996923517
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Providing_Guidance,ordinal,5400,0.7374795034144421
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Actionability,ordinal,5400,0.1397141516282152
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Coherence,ordinal,5400,0.5584687397899304
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Tutor_Tone,ordinal,5400,0.37425935916236663
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Humanlikeness,ordinal,5400,0.5118704836376436
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Cognitive_Demand,ordinal,5400,0.2305791287736665
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Conceptual_Depth,ordinal,5400,0.26130925501209956
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Praise_Calibration,nominal,5400,0.6305366620036834
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Expectation_Level,ordinal,5400,-0.054620578247927876
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Math_Correctness,ordinal,5400,0.7108704857450241
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,Language_Match,ordinal,5400,0.7887046176656123
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Mistake_Identification,ordinal,5400,0.5544554244755117
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Mistake_Location,ordinal,5400,0.5376645405311601
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Revealing_of_the_Answer,nominal,5400,0.6475248757166772
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Providing_Guidance,ordinal,5400,0.708002661712367
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Actionability,ordinal,5400,0.06261865166229996
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Coherence,ordinal,5400,0.5641935361988248
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Tutor_Tone,ordinal,5400,0.36239928541155775
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Humanlikeness,ordinal,5400,0.533348865964026
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Cognitive_Demand,ordinal,5400,0.18410512624878606
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Conceptual_Depth,ordinal,5400,0.2516653515562072
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Praise_Calibration,nominal,5400,0.6634482695597689
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Expectation_Level,ordinal,5400,-0.07007919616949776
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Math_Correctness,ordinal,5400,0.6802502505694477
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,Language_Match,ordinal,5400,0.009924821057034627
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Mistake_Identification,ordinal,5400,0.5925983328135627
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Mistake_Location,ordinal,5400,0.5037419777378589
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Revealing_of_the_Answer,nominal,5400,0.7965434169902802
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Providing_Guidance,ordinal,5400,0.6802253771783989
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Actionability,ordinal,5400,-0.09719154613430203
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Coherence,ordinal,5400,0.44839331142066974
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Tutor_Tone,ordinal,5400,0.5504887845792628
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Humanlikeness,ordinal,5400,0.35570534834857315
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Cognitive_Demand,ordinal,5400,0.16532852975274015
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Conceptual_Depth,ordinal,5400,0.2742055042109114
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Praise_Calibration,nominal,5400,0.6705378492345759
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Expectation_Level,ordinal,5400,-0.15104356949944076
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Math_Correctness,ordinal,5400,0.6895731661117871
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,Language_Match,ordinal,5400,-0.00018524235592853877
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Mistake_Identification,ordinal,5400,0.6120443136344724
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Mistake_Location,ordinal,5400,0.5731407932572976
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Revealing_of_the_Answer,nominal,5400,0.706802354351648
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Providing_Guidance,ordinal,5400,0.7316384235847321
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Actionability,ordinal,5400,0.003142936047094036
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Coherence,ordinal,5400,0.5508227755091429
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Tutor_Tone,ordinal,5400,0.1925753680751855
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Humanlikeness,ordinal,5400,0.4257503355755189
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Cognitive_Demand,ordinal,5400,0.20085081558053164
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Conceptual_Depth,ordinal,5400,0.21701582051613322
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Praise_Calibration,nominal,5400,0.6589815698135366
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Expectation_Level,ordinal,5400,-0.10494627751228136
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Math_Correctness,ordinal,5400,0.7057681383051021
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,Language_Match,ordinal,5400,0.7041453783822943
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Mistake_Identification,ordinal,5400,0.590653147946239
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Mistake_Location,ordinal,5400,0.5553632846064516
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Revealing_of_the_Answer,nominal,5400,0.6790701857773389
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Providing_Guidance,ordinal,5400,0.721274837878042
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Actionability,ordinal,5400,0.0013695275264336004
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Coherence,ordinal,5400,0.5413609347304995
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Tutor_Tone,ordinal,5400,0.3376068216023731
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Humanlikeness,ordinal,5400,0.4362669028020809
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Cognitive_Demand,ordinal,5400,0.19666950484308843
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Conceptual_Depth,ordinal,5400,0.22925405969027512
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Praise_Calibration,nominal,5400,0.6428616603130823
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Expectation_Level,ordinal,5400,-0.10717035199207436
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Math_Correctness,ordinal,5400,0.723184908658909
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,Language_Match,ordinal,5400,0.16947333788605468
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Mistake_Identification,ordinal,10800,0.5841565264353927
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Mistake_Location,ordinal,10800,0.5655455468996106
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Revealing_of_the_Answer,nominal,10800,0.6928292976334854
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Providing_Guidance,ordinal,10800,0.7068224563028241
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Actionability,ordinal,10800,0.10931144519036551
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Coherence,ordinal,10800,0.5487487962499646
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Tutor_Tone,ordinal,10800,0.29620951790867833
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Humanlikeness,ordinal,10800,0.5092651330066404
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Cognitive_Demand,ordinal,10800,0.21551154259352923
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Conceptual_Depth,ordinal,10800,0.27079353344151036
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Praise_Calibration,nominal,10800,0.6080195704234623
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Expectation_Level,ordinal,10800,-0.040112231105757346
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Math_Correctness,ordinal,10800,0.6853692816226147
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,Language_Match,ordinal,10800,0.46623277968458177
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Mistake_Identification,ordinal,10800,0.5611061331567474
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Mistake_Location,ordinal,10800,0.515137664656629
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Revealing_of_the_Answer,nominal,10800,0.7473982526411862
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Providing_Guidance,ordinal,10800,0.6721859645894142
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Actionability,ordinal,10800,-0.07987890716038537
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Coherence,ordinal,10800,0.4581593512876604
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Tutor_Tone,ordinal,10800,0.3259837866318577
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Humanlikeness,ordinal,10800,0.29585406633864686
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Cognitive_Demand,ordinal,10800,0.16051103894713736
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Conceptual_Depth,ordinal,10800,0.2441286983842046
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Praise_Calibration,nominal,10800,0.6159472987095516
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Expectation_Level,ordinal,10800,-0.15961554658891286
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Math_Correctness,ordinal,10800,0.6898154090017183
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,Language_Match,ordinal,10800,0.7106549440674568
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Mistake_Identification,ordinal,10800,0.5985010008030669
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Mistake_Location,ordinal,10800,0.5618234167664793
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Revealing_of_the_Answer,nominal,10800,0.7124695160708852
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Providing_Guidance,ordinal,10800,0.7275700745596734
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Actionability,ordinal,10800,0.0012072473752524626
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Coherence,ordinal,10800,0.553755911966118
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Tutor_Tone,ordinal,10800,0.2063066986299502
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Humanlikeness,ordinal,10800,0.39508616956670306
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Cognitive_Demand,ordinal,10800,0.21576792964028502
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Conceptual_Depth,ordinal,10800,0.24915360329587144
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Praise_Calibration,nominal,10800,0.6584485149338624
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Expectation_Level,ordinal,10800,-0.08038164746357612
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Math_Correctness,ordinal,10800,0.6958251813674512
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,Language_Match,ordinal,10800,0.3615559377807084
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Mistake_Identification,ordinal,1200,0.6079715486256771
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Mistake_Location,ordinal,1200,0.5932907320042291
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Revealing_of_the_Answer,nominal,1200,0.7719185210883679
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Providing_Guidance,ordinal,1200,0.7411310599441115
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Actionability,ordinal,1200,0.1227835251474334
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Coherence,ordinal,1200,0.5674058745850643
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Tutor_Tone,ordinal,1200,0.46946334838677783
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Humanlikeness,ordinal,1200,0.41071028855312053
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Cognitive_Demand,ordinal,1200,0.1627601933939652
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Conceptual_Depth,ordinal,1200,0.2528613035488664
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Praise_Calibration,nominal,1200,0.6350011407543699
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Expectation_Level,ordinal,1200,-0.08496832181436398
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Math_Correctness,ordinal,1200,0.7218647964605189
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,Language_Match,ordinal,1200,-0.10797628657104252
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Mistake_Identification,ordinal,1200,0.617200265561674
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Mistake_Location,ordinal,1200,0.5007918189505919
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Revealing_of_the_Answer,nominal,1200,0.7880086138221529
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Providing_Guidance,ordinal,1200,0.7525959666797086
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Actionability,ordinal,1200,0.03682830475005516
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Coherence,ordinal,1200,0.5592529420268915
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Tutor_Tone,ordinal,1200,0.265587276021384
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Humanlikeness,ordinal,1200,0.3951702256421289
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Cognitive_Demand,ordinal,1200,0.19485004451300436
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Conceptual_Depth,ordinal,1200,0.22103702850708828
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Praise_Calibration,nominal,1200,0.6861890341183019
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Expectation_Level,ordinal,1200,-0.13544208280510528
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Math_Correctness,ordinal,1200,0.7760792213732243
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,Language_Match,ordinal,1200,-0.28981193424825835
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Mistake_Identification,ordinal,1800,0.5712347092075121
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Mistake_Location,ordinal,1800,0.5566283717165112
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Revealing_of_the_Answer,nominal,1800,0.6589410200452182
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Providing_Guidance,ordinal,1800,0.6266533517661492
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Actionability,ordinal,1800,0.1529577999137166
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Coherence,ordinal,1800,0.5123815986275725
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Tutor_Tone,ordinal,1800,0.36648043946948294
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Humanlikeness,ordinal,1800,0.3181393243439117
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Cognitive_Demand,ordinal,1800,0.1817145392792454
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Conceptual_Depth,ordinal,1800,0.2010690476296616
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Praise_Calibration,nominal,1800,0.6297584095451717
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Expectation_Level,ordinal,1800,-0.09725310034655599
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Math_Correctness,ordinal,1800,0.6457957162962662
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,Language_Match,ordinal,1800,0.8522074978168223
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Mistake_Identification,ordinal,1800,0.5637653215206004
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Mistake_Location,ordinal,1800,0.534049016666289
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Revealing_of_the_Answer,nominal,1800,0.6914829807082106
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Providing_Guidance,ordinal,1800,0.6625137215717999
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Actionability,ordinal,1800,0.13399772155539236
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Coherence,ordinal,1800,0.5335886685091284
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Tutor_Tone,ordinal,1800,0.35849426438652576
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Humanlikeness,ordinal,1800,0.43586784801137246
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Cognitive_Demand,ordinal,1800,0.15630792408341798
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Conceptual_Depth,ordinal,1800,0.20907057916932703
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Praise_Calibration,nominal,1800,0.6010169339473774
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Expectation_Level,ordinal,1800,-0.10561865986490404
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Math_Correctness,ordinal,1800,0.7282004104918514
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,Language_Match,ordinal,1800,0.8318071691906279
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Mistake_Identification,ordinal,1800,0.40447096408070204
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Mistake_Location,ordinal,1800,0.35791599255325224
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Revealing_of_the_Answer,nominal,1800,0.6461872282810733
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Providing_Guidance,ordinal,1800,0.5162544851904345
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Actionability,ordinal,1800,-0.1616451290691001
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Coherence,ordinal,1800,0.27327050825919064
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Tutor_Tone,ordinal,1800,0.5553044224307939
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Humanlikeness,ordinal,1800,-0.0012982195845696598
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Cognitive_Demand,ordinal,1800,0.044180801343023046
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Conceptual_Depth,ordinal,1800,0.17187030980909845
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Praise_Calibration,nominal,1800,0.6907593142258652
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Expectation_Level,ordinal,1800,-0.2741740719222523
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Math_Correctness,ordinal,1800,0.6213722862935833
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,Language_Match,ordinal,1800,0.0
+FINAL,A,BN,Mistake_Identification,ordinal,5400,0.6022332306930437
+FINAL,A,BN,Mistake_Location,ordinal,5400,0.5818248300582761
+FINAL,A,BN,Revealing_of_the_Answer,nominal,5400,0.7114631115271228
+FINAL,A,BN,Providing_Guidance,ordinal,5400,0.7364618582124833
+FINAL,A,BN,Actionability,ordinal,5400,0.12896565854562592
+FINAL,A,BN,Coherence,ordinal,5400,0.5443274168020302
+FINAL,A,BN,Tutor_Tone,ordinal,5400,0.37409559524708236
+FINAL,A,BN,Humanlikeness,ordinal,5400,0.5001847305145968
+FINAL,A,BN,Cognitive_Demand,ordinal,5400,0.2225353920852018
+FINAL,A,BN,Conceptual_Depth,ordinal,5400,0.2499371028652866
+FINAL,A,BN,Praise_Calibration,nominal,5400,0.6301400611694432
+FINAL,A,BN,Expectation_Level,ordinal,5400,-0.06333421463545963
+FINAL,A,BN,Math_Correctness,ordinal,5400,0.7094196475677957
+FINAL,A,BN,Language_Match,ordinal,5400,0.7847989286346637
+FINAL,A,BN-EN,Mistake_Identification,ordinal,5400,0.5327891311089783
+FINAL,A,BN-EN,Mistake_Location,ordinal,5400,0.5122644043129557
+FINAL,A,BN-EN,Revealing_of_the_Answer,nominal,5400,0.6411798096474349
+FINAL,A,BN-EN,Providing_Guidance,ordinal,5400,0.6956523322595871
+FINAL,A,BN-EN,Actionability,ordinal,5400,0.05131523677612082
+FINAL,A,BN-EN,Coherence,ordinal,5400,0.5363075324977669
+FINAL,A,BN-EN,Tutor_Tone,ordinal,5400,0.3596957459808995
+FINAL,A,BN-EN,Humanlikeness,ordinal,5400,0.5394330251694341
+FINAL,A,BN-EN,Cognitive_Demand,ordinal,5400,0.177398839680175
+FINAL,A,BN-EN,Conceptual_Depth,ordinal,5400,0.24289451012864371
+FINAL,A,BN-EN,Praise_Calibration,nominal,5400,0.6632115614734595
+FINAL,A,BN-EN,Expectation_Level,ordinal,5400,-0.08111180505914883
+FINAL,A,BN-EN,Math_Correctness,ordinal,5400,0.6823489340346833
+FINAL,A,BN-EN,Language_Match,ordinal,5400,0.009606411616611243
+FINAL,A,EN,Mistake_Identification,ordinal,5400,0.5925983328135627
+FINAL,A,EN,Mistake_Location,ordinal,5400,0.5037419777378589
+FINAL,A,EN,Revealing_of_the_Answer,nominal,5400,0.7965434169902802
+FINAL,A,EN,Providing_Guidance,ordinal,5400,0.6802253771783989
+FINAL,A,EN,Actionability,ordinal,5400,-0.09719154613430203
+FINAL,A,EN,Coherence,ordinal,5400,0.44839331142066974
+FINAL,A,EN,Tutor_Tone,ordinal,5400,0.5504887845792628
+FINAL,A,EN,Humanlikeness,ordinal,5400,0.35570534834857315
+FINAL,A,EN,Cognitive_Demand,ordinal,5400,0.16532852975274015
+FINAL,A,EN,Conceptual_Depth,ordinal,5400,0.2742055042109114
+FINAL,A,EN,Praise_Calibration,nominal,5400,0.6705378492345759
+FINAL,A,EN,Expectation_Level,ordinal,5400,-0.15104356949944076
+FINAL,A,EN,Math_Correctness,ordinal,5400,0.6895731661117871
+FINAL,A,EN,Language_Match,ordinal,5400,-0.00018524235592853877
+FINAL,A,HI,Mistake_Identification,ordinal,5400,0.6096074403843375
+FINAL,A,HI,Mistake_Location,ordinal,5400,0.5695056700118482
+FINAL,A,HI,Revealing_of_the_Answer,nominal,5400,0.7148433913329824
+FINAL,A,HI,Providing_Guidance,ordinal,5400,0.7214521913995542
+FINAL,A,HI,Actionability,ordinal,5400,-0.011598348693917737
+FINAL,A,HI,Coherence,ordinal,5400,0.5522834695592915
+FINAL,A,HI,Tutor_Tone,ordinal,5400,0.1926812972564932
+FINAL,A,HI,Humanlikeness,ordinal,5400,0.41727335674870514
+FINAL,A,HI,Cognitive_Demand,ordinal,5400,0.19090675147442648
+FINAL,A,HI,Conceptual_Depth,ordinal,5400,0.20948931397650472
+FINAL,A,HI,Praise_Calibration,nominal,5400,0.6559341109680202
+FINAL,A,HI,Expectation_Level,ordinal,5400,-0.1126498668945548
+FINAL,A,HI,Math_Correctness,ordinal,5400,0.7082697756742586
+FINAL,A,HI,Language_Match,ordinal,5400,0.712950317574872
+FINAL,A,HI-EN,Mistake_Identification,ordinal,5400,0.5890563350632572
+FINAL,A,HI-EN,Mistake_Location,ordinal,5400,0.5554779583116443
+FINAL,A,HI-EN,Revealing_of_the_Answer,nominal,5400,0.6774695433611843
+FINAL,A,HI-EN,Providing_Guidance,ordinal,5400,0.7198132275354965
+FINAL,A,HI-EN,Actionability,ordinal,5400,-0.006206729510263909
+FINAL,A,HI-EN,Coherence,ordinal,5400,0.5371384318351577
+FINAL,A,HI-EN,Tutor_Tone,ordinal,5400,0.3320972766127491
+FINAL,A,HI-EN,Humanlikeness,ordinal,5400,0.4106688537520605
+FINAL,A,HI-EN,Cognitive_Demand,ordinal,5400,0.1954517658093361
+FINAL,A,HI-EN,Conceptual_Depth,ordinal,5400,0.2266290047391002
+FINAL,A,HI-EN,Praise_Calibration,nominal,5400,0.6399700003592943
+FINAL,A,HI-EN,Expectation_Level,ordinal,5400,-0.1105245043645533
+FINAL,A,HI-EN,Math_Correctness,ordinal,5400,0.7236989240812379
+FINAL,A,HI-EN,Language_Match,ordinal,5400,0.17033823115080393
+FINAL,B,BN,Mistake_Identification,ordinal,10800,0.5708884585530651
+FINAL,B,BN,Mistake_Location,ordinal,10800,0.5511566170037258
+FINAL,B,BN,Revealing_of_the_Answer,nominal,10800,0.6905533232690861
+FINAL,B,BN,Providing_Guidance,ordinal,10800,0.6959850160320749
+FINAL,B,BN,Actionability,ordinal,10800,0.09609482554996895
+FINAL,B,BN,Coherence,ordinal,10800,0.5334181526279274
+FINAL,B,BN,Tutor_Tone,ordinal,10800,0.3016677887259763
+FINAL,B,BN,Humanlikeness,ordinal,10800,0.5184322584418248
+FINAL,B,BN,Cognitive_Demand,ordinal,10800,0.2108117480927192
+FINAL,B,BN,Conceptual_Depth,ordinal,10800,0.26016287682604666
+FINAL,B,BN,Praise_Calibration,nominal,10800,0.6065635246656952
+FINAL,B,BN,Expectation_Level,ordinal,10800,-0.053415932576173164
+FINAL,B,BN,Math_Correctness,ordinal,10800,0.678165017390196
+FINAL,B,BN,Language_Match,ordinal,10800,0.46119583709941325
+FINAL,B,EN,Mistake_Identification,ordinal,10800,0.5611061331567474
+FINAL,B,EN,Mistake_Location,ordinal,10800,0.515137664656629
+FINAL,B,EN,Revealing_of_the_Answer,nominal,10800,0.7473982526411862
+FINAL,B,EN,Providing_Guidance,ordinal,10800,0.6721859645894142
+FINAL,B,EN,Actionability,ordinal,10800,-0.07987890716038537
+FINAL,B,EN,Coherence,ordinal,10800,0.4581593512876604
+FINAL,B,EN,Tutor_Tone,ordinal,10800,0.3259837866318577
+FINAL,B,EN,Humanlikeness,ordinal,10800,0.29585406633864686
+FINAL,B,EN,Cognitive_Demand,ordinal,10800,0.16051103894713736
+FINAL,B,EN,Conceptual_Depth,ordinal,10800,0.2441286983842046
+FINAL,B,EN,Praise_Calibration,nominal,10800,0.6159472987095516
+FINAL,B,EN,Expectation_Level,ordinal,10800,-0.15961554658891286
+FINAL,B,EN,Math_Correctness,ordinal,10800,0.6898154090017183
+FINAL,B,EN,Language_Match,ordinal,10800,0.7106549440674568
+FINAL,B,HI,Mistake_Identification,ordinal,10800,0.5961410071711197
+FINAL,B,HI,Mistake_Location,ordinal,10800,0.5612001835628232
+FINAL,B,HI,Revealing_of_the_Answer,nominal,10800,0.7189234699256604
+FINAL,B,HI,Providing_Guidance,ordinal,10800,0.7274857133977227
+FINAL,B,HI,Actionability,ordinal,10800,-0.004763356047604139
+FINAL,B,HI,Coherence,ordinal,10800,0.5532838277189891
+FINAL,B,HI,Tutor_Tone,ordinal,10800,0.2041053519748669
+FINAL,B,HI,Humanlikeness,ordinal,10800,0.41942585557056744
+FINAL,B,HI,Cognitive_Demand,ordinal,10800,0.21216803499615933
+FINAL,B,HI,Conceptual_Depth,ordinal,10800,0.2439321065093929
+FINAL,B,HI,Praise_Calibration,nominal,10800,0.65900540313121
+FINAL,B,HI,Expectation_Level,ordinal,10800,-0.08477717667337892
+FINAL,B,HI,Math_Correctness,ordinal,10800,0.70504875083454
+FINAL,B,HI,Language_Match,ordinal,10800,0.36641407907394696
+FINAL,C,EN>BN,Mistake_Identification,ordinal,1200,0.6079715486256771
+FINAL,C,EN>BN,Mistake_Location,ordinal,1200,0.5932907320042291
+FINAL,C,EN>BN,Revealing_of_the_Answer,nominal,1200,0.7719185210883679
+FINAL,C,EN>BN,Providing_Guidance,ordinal,1200,0.7411310599441115
+FINAL,C,EN>BN,Actionability,ordinal,1200,0.1227835251474334
+FINAL,C,EN>BN,Coherence,ordinal,1200,0.5674058745850643
+FINAL,C,EN>BN,Tutor_Tone,ordinal,1200,0.46946334838677783
+FINAL,C,EN>BN,Humanlikeness,ordinal,1200,0.41071028855312053
+FINAL,C,EN>BN,Cognitive_Demand,ordinal,1200,0.1627601933939652
+FINAL,C,EN>BN,Conceptual_Depth,ordinal,1200,0.2528613035488664
+FINAL,C,EN>BN,Praise_Calibration,nominal,1200,0.6350011407543699
+FINAL,C,EN>BN,Expectation_Level,ordinal,1200,-0.08496832181436398
+FINAL,C,EN>BN,Math_Correctness,ordinal,1200,0.7218647964605189
+FINAL,C,EN>BN,Language_Match,ordinal,1200,-0.10797628657104252
+FINAL,C,EN>HI,Mistake_Identification,ordinal,1200,0.617200265561674
+FINAL,C,EN>HI,Mistake_Location,ordinal,1200,0.5007918189505919
+FINAL,C,EN>HI,Revealing_of_the_Answer,nominal,1200,0.7880086138221529
+FINAL,C,EN>HI,Providing_Guidance,ordinal,1200,0.7525959666797086
+FINAL,C,EN>HI,Actionability,ordinal,1200,0.03682830475005516
+FINAL,C,EN>HI,Coherence,ordinal,1200,0.5592529420268915
+FINAL,C,EN>HI,Tutor_Tone,ordinal,1200,0.265587276021384
+FINAL,C,EN>HI,Humanlikeness,ordinal,1200,0.3951702256421289
+FINAL,C,EN>HI,Cognitive_Demand,ordinal,1200,0.19485004451300436
+FINAL,C,EN>HI,Conceptual_Depth,ordinal,1200,0.22103702850708828
+FINAL,C,EN>HI,Praise_Calibration,nominal,1200,0.6861890341183019
+FINAL,C,EN>HI,Expectation_Level,ordinal,1200,-0.13544208280510528
+FINAL,C,EN>HI,Math_Correctness,ordinal,1200,0.7760792213732243
+FINAL,C,EN>HI,Language_Match,ordinal,1200,-0.28981193424825835
+FINAL,D,BN-MT,Mistake_Identification,ordinal,1800,0.5835741894836641
+FINAL,D,BN-MT,Mistake_Location,ordinal,1800,0.558537249153139
+FINAL,D,BN-MT,Revealing_of_the_Answer,nominal,1800,0.6456436419895646
+FINAL,D,BN-MT,Providing_Guidance,ordinal,1800,0.6248149056279562
+FINAL,D,BN-MT,Actionability,ordinal,1800,0.1439724756868268
+FINAL,D,BN-MT,Coherence,ordinal,1800,0.5250970583498624
+FINAL,D,BN-MT,Tutor_Tone,ordinal,1800,0.36680712866655973
+FINAL,D,BN-MT,Humanlikeness,ordinal,1800,0.3104365177960211
+FINAL,D,BN-MT,Cognitive_Demand,ordinal,1800,0.17655000708091817
+FINAL,D,BN-MT,Conceptual_Depth,ordinal,1800,0.18760352201730401
+FINAL,D,BN-MT,Praise_Calibration,nominal,1800,0.6208014167092956
+FINAL,D,BN-MT,Expectation_Level,ordinal,1800,-0.10738063515635332
+FINAL,D,BN-MT,Math_Correctness,ordinal,1800,0.6405978853660067
+FINAL,D,BN-MT,Language_Match,ordinal,1800,0.8228910893079329
+FINAL,D,BN-NATIVE,Mistake_Identification,ordinal,1800,0.5637731720108256
+FINAL,D,BN-NATIVE,Mistake_Location,ordinal,1800,0.534059006653886
+FINAL,D,BN-NATIVE,Revealing_of_the_Answer,nominal,1800,0.6914923425497886
+FINAL,D,BN-NATIVE,Providing_Guidance,ordinal,1800,0.6625217390371227
+FINAL,D,BN-NATIVE,Actionability,ordinal,1800,0.13321455719814523
+FINAL,D,BN-NATIVE,Coherence,ordinal,1800,0.5335988789570592
+FINAL,D,BN-NATIVE,Tutor_Tone,ordinal,1800,0.3575621150875191
+FINAL,D,BN-NATIVE,Humanlikeness,ordinal,1800,0.43586912742538286
+FINAL,D,BN-NATIVE,Cognitive_Demand,ordinal,1800,0.15586262902107562
+FINAL,D,BN-NATIVE,Conceptual_Depth,ordinal,1800,0.2091932154062096
+FINAL,D,BN-NATIVE,Praise_Calibration,nominal,1800,0.6010551736118757
+FINAL,D,BN-NATIVE,Expectation_Level,ordinal,1800,-0.10550116645262198
+FINAL,D,BN-NATIVE,Math_Correctness,ordinal,1800,0.7282138282177275
+FINAL,D,BN-NATIVE,Language_Match,ordinal,1800,0.8318065990453064
+FINAL,D,EN-OFFICIAL,Mistake_Identification,ordinal,1800,0.40447096408070204
+FINAL,D,EN-OFFICIAL,Mistake_Location,ordinal,1800,0.35791599255325224
+FINAL,D,EN-OFFICIAL,Revealing_of_the_Answer,nominal,1800,0.6461872282810733
+FINAL,D,EN-OFFICIAL,Providing_Guidance,ordinal,1800,0.5162544851904345
+FINAL,D,EN-OFFICIAL,Actionability,ordinal,1800,-0.1616451290691001
+FINAL,D,EN-OFFICIAL,Coherence,ordinal,1800,0.27327050825919064
+FINAL,D,EN-OFFICIAL,Tutor_Tone,ordinal,1800,0.5553044224307939
+FINAL,D,EN-OFFICIAL,Humanlikeness,ordinal,1800,-0.0012982195845696598
+FINAL,D,EN-OFFICIAL,Cognitive_Demand,ordinal,1800,0.044180801343023046
+FINAL,D,EN-OFFICIAL,Conceptual_Depth,ordinal,1800,0.17187030980909845
+FINAL,D,EN-OFFICIAL,Praise_Calibration,nominal,1800,0.6907593142258652
+FINAL,D,EN-OFFICIAL,Expectation_Level,ordinal,1800,-0.2741740719222523
+FINAL,D,EN-OFFICIAL,Math_Correctness,ordinal,1800,0.6213722862935833
+FINAL,D,EN-OFFICIAL,Language_Match,ordinal,1800,0.0

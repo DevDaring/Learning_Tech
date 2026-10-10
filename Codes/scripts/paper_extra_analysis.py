@@ -109,3 +109,37 @@ for arm in ["R0", "R1", "R2", "R3", "R4", "R5"]:
 rp = pd.DataFrame(rows)
 rp.to_csv(R / "tables" / "extra_repair_pooled.csv", index=False)
 print(rp.round(3).to_string(index=False))
+
+# ---- 5. judges vs teachers pooled over all annotated replies (alpha and exact agreement)
+import glob  # noqa: E402
+
+import numpy as np  # noqa: E402
+
+from tlt.analysis.stats import krippendorff_alpha  # noqa: E402
+from tlt.rubric import ALPHA_LEVEL, DIMENSIONS, norm_label, ordinal_index  # noqa: E402
+from tlt.stages.s09_analysis import _consensus  # noqa: E402
+
+files = sorted(glob.glob(str(run.path("review", "human_returned", "x").parent / "*.csv")))
+if files:
+    raw = [pd.read_csv(f, dtype=str, keep_default_na=False).set_index("row_id") for f in files]
+    key = read_table(run.path("review", "human_annotation_key.csv")).set_index("row_id")
+    anchor = read_table(R / "human_anchor_judgements_aggregated.csv").set_index("target_id")
+    rows = []
+    for d in DIMENSIONS:
+        hum = {rid: _consensus(d, [norm_label(d, r[d].get(rid, "")) if str(r[d].get(rid, "")).strip() else None
+                                   for r in raw]) for rid in key.index}
+        for scope in ["ALL"] + sorted(key.language.unique()):
+            rids = [rid for rid in key.index if scope == "ALL" or key.at[rid, "language"] == scope]
+            pairs = [(hum[rid], anchor.at[key.at[rid, "target_id"], d]) for rid in rids
+                     if hum[rid] is not None and key.at[rid, "target_id"] in anchor.index
+                     and isinstance(anchor.at[key.at[rid, "target_id"], d], str)]
+            if len(pairs) < 5:
+                continue
+            h, j = zip(*pairs)
+            m = np.vstack([[ordinal_index(d, x) for x in h], [ordinal_index(d, x) for x in j]]).astype(float)
+            rows.append({"dimension": d, "scope": scope, "n": len(pairs),
+                         "exact_agreement": float(np.mean([a == b for a, b in pairs])),
+                         "alpha_judges_vs_teachers": krippendorff_alpha(m, ALPHA_LEVEL[d])})
+    hj = pd.DataFrame(rows)
+    hj.to_csv(R / "tables" / "extra_judge_teacher_pooled.csv", index=False)
+    print(hj[hj.scope == "ALL"].round(3).to_string(index=False))

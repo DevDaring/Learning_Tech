@@ -34,3 +34,13 @@ Codes/runs/repair_judgements.jsonl
 Codes/runs/generations.jsonl
 Codes/runs/repair_generations.jsonl
 Codes/runs/translated_judgements.jsonl
+
+# ---- annotator information: never pushed (study owner's instruction, 2026-10-09) ----
+Codes/review/TLT_Annotated/
+Codes/review/name_survey/
+Codes/review/name_survey_summary.csv
+Codes/review/template_review_returns/
+Codes/review/human_returned/
+Codes/review/human_adjudicated/
+Codes/review/*before_import*
+Codes/runs/last_summary_import_review.json

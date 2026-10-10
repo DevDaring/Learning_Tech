@@ -11,10 +11,12 @@
     "pass": true
   },
   "masking_scan": {
-    "judge_records_scanned": 328362,
+    "judge_records_scanned": 343128,
     "residual_hits": [],
     "n_residual": 0,
-    "loose_candidates_for_review": [],
+    "loose_candidates_for_review": [
+      "Mukharji"
+    ],
     "pass": true
   },
   "refusals_and_empty_counted": {

@@ -1,0 +1,9 @@
+prompts: 300
+generation: {'submitted': 1800, 'already_done_or_exhausted': 0, 'ok': 1800, 'error': 0}
+judging: {'submitted': 5400, 'already_done_or_exhausted': 0, 'ok': 5400, 'error': 0}
+ outcome  estimate  ci_low  ci_high  p_holm
+     PQI    0.0009 -0.0062   0.0080     1.0
+   PQI_R    0.0049 -0.0033   0.0129     1.0
+inflated    0.0044 -0.0121   0.0211     1.0
+ lowered   -0.0111 -0.0298   0.0076     1.0
+mean PQI original 0.673 suggested 0.672

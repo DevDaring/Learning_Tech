@@ -1,6 +1,6 @@
 {
-  "A": "ok (cached fit, identical input)",
   "B_EN": "ok (cached fit, identical input)",
-  "B_HI": "ok (cached fit, identical input)",
-  "B_BN": "ok (cached fit, identical input)"
+  "A": "ok",
+  "B_HI": "ok",
+  "B_BN": "ok"
 }

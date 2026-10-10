@@ -1,79 +1,88 @@
 result_status,block,condition,model,route_used,model_returned,n
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,BN-EN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,EN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,900
-PRELIMINARY (human review of translations/templates/names outstanding),A,HI-EN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,900
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,BN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,EN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,1800
-PRELIMINARY (human review of translations/templates/names outstanding),B,HI,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,1800
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,200
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,200
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,200
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,200
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,200
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>BN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,200
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,200
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,200
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,200
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,200
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,200
-PRELIMINARY (human review of translations/templates/names outstanding),C,EN>HI,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,200
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-MT,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,BN-NATIVE,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,300
-PRELIMINARY (human review of translations/templates/names outstanding),D,EN-OFFICIAL,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,300
+FINAL,A,BN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,900
+FINAL,A,BN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,900
+FINAL,A,BN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,899
+FINAL,A,BN,ministral_8b,openrouter:mistralai/ministral-8b-2512,mistralai/ministral-8b-2512,1
+FINAL,A,BN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,900
+FINAL,A,BN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,899
+FINAL,A,BN,nova_lite,openrouter:amazon/nova-lite-v1,amazon/nova-lite-v1,1
+FINAL,A,BN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,900
+FINAL,A,BN-EN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,900
+FINAL,A,BN-EN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,900
+FINAL,A,BN-EN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,900
+FINAL,A,BN-EN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,900
+FINAL,A,BN-EN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,900
+FINAL,A,BN-EN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,900
+FINAL,A,EN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,900
+FINAL,A,EN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,900
+FINAL,A,EN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,900
+FINAL,A,EN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,900
+FINAL,A,EN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,900
+FINAL,A,EN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,900
+FINAL,A,HI,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,900
+FINAL,A,HI,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,900
+FINAL,A,HI,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,900
+FINAL,A,HI,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,900
+FINAL,A,HI,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,899
+FINAL,A,HI,nova_lite,openrouter:amazon/nova-lite-v1,amazon/nova-lite-v1,1
+FINAL,A,HI,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,900
+FINAL,A,HI-EN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,900
+FINAL,A,HI-EN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,900
+FINAL,A,HI-EN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,900
+FINAL,A,HI-EN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,900
+FINAL,A,HI-EN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,898
+FINAL,A,HI-EN,nova_lite,openrouter:amazon/nova-lite-v1,amazon/nova-lite-v1,2
+FINAL,A,HI-EN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,900
+FINAL,B,BN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,1800
+FINAL,B,BN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,1800
+FINAL,B,BN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,1796
+FINAL,B,BN,ministral_8b,openrouter:mistralai/ministral-8b-2512,mistralai/ministral-8b-2512,4
+FINAL,B,BN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,1800
+FINAL,B,BN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,1797
+FINAL,B,BN,nova_lite,openrouter:amazon/nova-lite-v1,amazon/nova-lite-v1,3
+FINAL,B,BN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,1800
+FINAL,B,EN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,1800
+FINAL,B,EN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,1800
+FINAL,B,EN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,1800
+FINAL,B,EN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,1800
+FINAL,B,EN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,1800
+FINAL,B,EN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,1800
+FINAL,B,HI,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,1800
+FINAL,B,HI,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,1800
+FINAL,B,HI,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,1797
+FINAL,B,HI,ministral_8b,openrouter:mistralai/ministral-8b-2512,mistralai/ministral-8b-2512,3
+FINAL,B,HI,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,1800
+FINAL,B,HI,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,1796
+FINAL,B,HI,nova_lite,openrouter:amazon/nova-lite-v1,amazon/nova-lite-v1,4
+FINAL,B,HI,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,1800
+FINAL,C,EN>BN,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,200
+FINAL,C,EN>BN,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,200
+FINAL,C,EN>BN,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,200
+FINAL,C,EN>BN,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,200
+FINAL,C,EN>BN,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,200
+FINAL,C,EN>BN,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,200
+FINAL,C,EN>HI,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,200
+FINAL,C,EN>HI,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,200
+FINAL,C,EN>HI,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,200
+FINAL,C,EN>HI,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,200
+FINAL,C,EN>HI,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,200
+FINAL,C,EN>HI,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,200
+FINAL,D,BN-MT,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,300
+FINAL,D,BN-MT,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,300
+FINAL,D,BN-MT,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,300
+FINAL,D,BN-MT,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,300
+FINAL,D,BN-MT,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,299
+FINAL,D,BN-MT,nova_lite,openrouter:amazon/nova-lite-v1,amazon/nova-lite-v1,1
+FINAL,D,BN-MT,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,300
+FINAL,D,BN-NATIVE,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,300
+FINAL,D,BN-NATIVE,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,300
+FINAL,D,BN-NATIVE,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,300
+FINAL,D,BN-NATIVE,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,300
+FINAL,D,BN-NATIVE,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,300
+FINAL,D,BN-NATIVE,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,300
+FINAL,D,EN-OFFICIAL,gemini_flash,gemini:gemini-3.8-flash,gemini-3.8-flash,300
+FINAL,D,EN-OFFICIAL,kimi_k25,bedrock:moonshotai.kimi-k2.5,moonshotai.kimi-k2.5,300
+FINAL,D,EN-OFFICIAL,ministral_8b,bedrock:mistral.ministral-3-8b-instruct,mistral.ministral-3-8b-instruct,300
+FINAL,D,EN-OFFICIAL,nemotron_nano,bedrock:nvidia.nemotron-nano-3-30b,nvidia.nemotron-nano-3-30b,300
+FINAL,D,EN-OFFICIAL,nova_lite,bedrock:amazon.nova-lite-v1:0,amazon.nova-lite-v1:0,300
+FINAL,D,EN-OFFICIAL,sarvam_105b,sarvam:sarvam-105b,sarvam-105b,300

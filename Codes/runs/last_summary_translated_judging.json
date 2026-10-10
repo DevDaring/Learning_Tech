@@ -1,12 +1,12 @@
 {
   "translated_judging": {
-    "submitted": 0,
-    "already_done_or_exhausted": 29517,
-    "ok": 0,
+    "submitted": 2058,
+    "already_done_or_exhausted": 27459,
+    "ok": 2058,
     "error": 0,
     "pool": 49200,
     "sampled": 9840,
     "translation_failed_excluded": 1,
-    "utility_routed": 1923
+    "utility_routed": 1922
   }
 }

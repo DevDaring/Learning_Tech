@@ -152,6 +152,9 @@ def run_stage(run: Run) -> dict:
             f"Full run blocked by human gates {gates}. Complete review/template_approval.csv, "
             "review/translation_review.csv and docs/name_validation.md (STATUS: CONFIRMED), "
             "or use --pilot.")
+    marker = run.path("results", "PRELIMINARY_human_gates_outstanding.json")
+    if run.mode == "full" and not outstanding and marker.exists():
+        marker.unlink()  # every gate is closed: results are no longer preliminary
     if any(gates.values()) and run.mode != "full":
         log.warning("human gates outstanding (allowed in %s mode): %s", run.mode, gates)
     prompts = make_prompts(run, items)

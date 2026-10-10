@@ -154,10 +154,15 @@ def table3_human(ctx: Ctx, agg: pd.DataFrame) -> pd.DataFrame:
     if not files or key.empty:
         return ctx.write(pd.DataFrame([{"note": "human annotations not yet returned; table pending"}]),
                          "table3_judge_human_agreement")
-    raw = {f.stem: pd.read_csv(f, dtype=str, keep_default_na=False).set_index("row_id") for f in files}
+    # Annotators are labelled teacher_1, teacher_2, ... in every output: no annotator identity
+    # (not even the file name) leaves review/human_returned/.
+    raw = {f"teacher_{i}": pd.read_csv(f, dtype=str, keep_default_na=False).set_index("row_id")
+           for i, f in enumerate(files, start=1)}
     names = sorted(raw)
     key = key.set_index("row_id")
-    aggi = agg.set_index("target_id")
+    # judge labels for the very replies the teachers rated (see s05.write_anchor_table)
+    anchor = _read(run, "results", "human_anchor_judgements_aggregated.csv")
+    aggi = (anchor if not anchor.empty else agg).set_index("target_id")
     invalid = {}
     rows = []
 

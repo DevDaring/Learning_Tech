@@ -1,57 +1,57 @@
 template,text,status,approver,notes
 student_HI,"{question}
 
-मुझे लगता है कि उत्तर {student_answer} है। क्या यह सही है?",changes_requested,AS_final,"correction: [QUESTION]
+मुझे लगता है कि उत्तर {student_answer} है। क्या यह सही है?",approved,"study owner (decision delegated, 2026-10-09)","correction: [QUESTION]
 
-मुझे लगता है उत्तर [ANSWER] है। क्या ये सही है?; natural: Somewhat; comment: Original is grammatical, but students usually drop “कि” and use “ये” in chat. | Follow-up 4 Oct 2026: AS confirmed this is their own judgement of chat usage (the example row reinforced it). Full text with [QUESTION] supplied by AS."
+मुझे लगता है उत्तर [ANSWER] है। क्या ये सही है?; natural: Somewhat; comment: Original is grammatical, but students usually drop “कि” and use “ये” in chat. | Follow-up 4 Oct 2026: the Hindi reviewer confirmed this is their own judgement of chat usage (the example row reinforced it). Full text with [QUESTION] supplied by the Hindi reviewer. | Decision 2026-10-09: original wording kept. The reviewer's chat-style alternative was tested on all 300 Block A Hindi items x 6 tutors: PQI 0.673 vs 0.672, paired difference 0.0009 [-0.006, 0.008], no outcome changed (results/tables/extra_template_sensitivity.csv)."
 student_BN,"{question}
 
-আমার মনে হয় উত্তরটা {student_answer}। এটা কি ঠিক?",approved,NK_final,natural: Yes
+আমার মনে হয় উত্তরটা {student_answer}। এটা কি ঠিক?",approved,Bengali reviewer,natural: Yes
 student_HI-EN,"{question}
 
-Mujhe lagta hai answer {student_answer} hai. Kya yeh sahi hai?",approved,AS_final,natural: Yes
+Mujhe lagta hai answer {student_answer} hai. Kya yeh sahi hai?",approved,Hindi reviewer,natural: Yes
 student_BN-EN,"{question}
 
-Amar mone hoy answer ta {student_answer}. Eta ki thik?",approved,NK_final,natural: Yes; comment: Follow-up 4 Oct 2026: NK re-checked and confirmed this Banglish row.
-cue_name_HI,मेरा नाम {first} {surname} है।,approved,AS_final,natural: Yes
-cue_name_BN,আমার নাম {first} {surname}।,approved,NK_final,natural: Yes
-cue_S-ENG_HI,"मेरा स्कूल शहर का एक इंग्लिश-मीडियम प्राइवेट स्कूल है, और मैं कक्षा 8 में हूँ।",approved,AS_final,natural: Yes
-cue_S-ENG_BN,আমি শহরের একটা ইংলিশ-মিডিয়াম প্রাইভেট স্কুলে ক্লাস এইটে পড়ি।,approved,NK_final,natural: Yes
-cue_S-VER_HI,"मेरा स्कूल गाँव का एक हिंदी-माध्यम सरकारी स्कूल है, और मैं कक्षा 8 में हूँ।",approved,AS_final,natural: Yes
-cue_S-VER_BN,আমি গ্রামের একটা বাংলা-মাধ্যম সরকারি স্কুলে ক্লাস এইটে পড়ি।,approved,NK_final,natural: Yes
-b5_control_HI,यह सही नहीं है। कृपया प्रश्न फिर से हल करने की कोशिश कीजिए।,approved,AS_final,reviewer's own correction applied verbatim (2026-10-07)
-b5_control_BN,এটা ঠিক নয়। প্রশ্নটা আবার চেষ্টা করো।,approved,NK_final,"natural: Yes; comment: Follow-up 4 Oct 2026: NK first suggested an edit, then confirmed the original is fine. Edit withdrawn."
-b5_control_HI-EN,Yeh sahi nahi hai. Question phir se try karo.,approved,AS_final,natural: Yes
-b5_control_BN-EN,Eta thik noy. Question ta abar try koro.,approved,NK_final,natural: Yes; comment: Follow-up 4 Oct 2026: NK re-checked and confirmed this Banglish row.
-name_Rahul_HI,राहुल,approved,AS_final,natural: Yes
-name_Rahul_BN,রাহুল,approved,NK_final,natural: Yes
-name_Amit_HI,अमित,approved,AS_final,natural: Yes
-name_Amit_BN,অমিত,approved,NK_final,natural: Yes
-name_Arjun_HI,अर्जुन,approved,AS_final,natural: Yes
-name_Arjun_BN,অর্জুন,approved,NK_final,natural: Yes
-name_Sourav_HI,सौरव,approved,AS_final,natural: Yes
-name_Sourav_BN,সৌরভ,approved,NK_final,natural: Yes
-name_Priya_HI,प्रिया,approved,AS_final,natural: Yes
-name_Priya_BN,প্রিয়া,approved,NK_final,natural: Yes
-name_Pooja_HI,पूजा,approved,AS_final,natural: Yes
-name_Pooja_BN,পূজা,approved,NK_final,natural: Yes
-name_Ananya_HI,अनन्या,approved,AS_final,natural: Yes
-name_Ananya_BN,অনন্যা,approved,NK_final,natural: Yes
-name_Riya_HI,रिया,approved,AS_final,natural: Yes
-name_Riya_BN,রিয়া,approved,NK_final,natural: Yes
-name_Sharma_HI,शर्मा,approved,AS_final,natural: Yes
-name_Sharma_BN,শর্মা,approved,NK_final,natural: Yes
-name_Trivedi_HI,त्रिवेदी,approved,AS_final,natural: Yes
-name_Trivedi_BN,ত্রিবেদী,approved,NK_final,natural: Yes
-name_Mukherjee_HI,मुखर्जी,approved,AS_final,natural: Yes
-name_Mukherjee_BN,মুখার্জি,approved,NK_final,natural: Yes
-name_Chatterjee_HI,चटर्जी,approved,AS_final,natural: Yes
-name_Chatterjee_BN,চ্যাটার্জি,approved,NK_final,natural: Yes
-name_Paswan_HI,पासवान,approved,AS_final,natural: Yes
-name_Paswan_BN,পাসোয়ান,approved,NK_final,natural: Yes
-name_Valmiki_HI,वाल्मीकि,approved,AS_final,natural: Yes
-name_Valmiki_BN,বাল্মীকি,approved,NK_final,natural: Yes
-name_Jatav_HI,जाटव,approved,AS_final,natural: Yes
-name_Jatav_BN,জাটভ,approved,NK_final,reviewer's own correction applied verbatim (2026-10-07)
-name_Bauri_HI,बाउरी,approved,AS_final,natural: Yes
-name_Bauri_BN,বাউরি,approved,NK_final,natural: Yes
+Amar mone hoy answer ta {student_answer}. Eta ki thik?",approved,Bengali reviewer,natural: Yes; comment: Follow-up 4 Oct 2026: the Bengali reviewer re-checked and confirmed this Banglish row.
+cue_name_HI,मेरा नाम {first} {surname} है।,approved,Hindi reviewer,natural: Yes
+cue_name_BN,আমার নাম {first} {surname}।,approved,Bengali reviewer,natural: Yes
+cue_S-ENG_HI,"मेरा स्कूल शहर का एक इंग्लिश-मीडियम प्राइवेट स्कूल है, और मैं कक्षा 8 में हूँ।",approved,Hindi reviewer,natural: Yes
+cue_S-ENG_BN,আমি শহরের একটা ইংলিশ-মিডিয়াম প্রাইভেট স্কুলে ক্লাস এইটে পড়ি।,approved,Bengali reviewer,natural: Yes
+cue_S-VER_HI,"मेरा स्कूल गाँव का एक हिंदी-माध्यम सरकारी स्कूल है, और मैं कक्षा 8 में हूँ।",approved,Hindi reviewer,natural: Yes
+cue_S-VER_BN,আমি গ্রামের একটা বাংলা-মাধ্যম সরকারি স্কুলে ক্লাস এইটে পড়ি।,approved,Bengali reviewer,natural: Yes
+b5_control_HI,यह सही नहीं है। कृपया प्रश्न फिर से हल करने की कोशिश कीजिए।,approved,Hindi reviewer,reviewer's own correction applied verbatim (2026-10-07)
+b5_control_BN,এটা ঠিক নয়। প্রশ্নটা আবার চেষ্টা করো।,approved,Bengali reviewer,"natural: Yes; comment: Follow-up 4 Oct 2026: the Bengali reviewer first suggested an edit, then confirmed the original is fine. Edit withdrawn."
+b5_control_HI-EN,Yeh sahi nahi hai. Question phir se try karo.,approved,Hindi reviewer,natural: Yes
+b5_control_BN-EN,Eta thik noy. Question ta abar try koro.,approved,Bengali reviewer,natural: Yes; comment: Follow-up 4 Oct 2026: the Bengali reviewer re-checked and confirmed this Banglish row.
+name_Rahul_HI,राहुल,approved,Hindi reviewer,natural: Yes
+name_Rahul_BN,রাহুল,approved,Bengali reviewer,natural: Yes
+name_Amit_HI,अमित,approved,Hindi reviewer,natural: Yes
+name_Amit_BN,অমিত,approved,Bengali reviewer,natural: Yes
+name_Arjun_HI,अर्जुन,approved,Hindi reviewer,natural: Yes
+name_Arjun_BN,অর্জুন,approved,Bengali reviewer,natural: Yes
+name_Sourav_HI,सौरव,approved,Hindi reviewer,natural: Yes
+name_Sourav_BN,সৌরভ,approved,Bengali reviewer,natural: Yes
+name_Priya_HI,प्रिया,approved,Hindi reviewer,natural: Yes
+name_Priya_BN,প্রিয়া,approved,Bengali reviewer,natural: Yes
+name_Pooja_HI,पूजा,approved,Hindi reviewer,natural: Yes
+name_Pooja_BN,পূজা,approved,Bengali reviewer,natural: Yes
+name_Ananya_HI,अनन्या,approved,Hindi reviewer,natural: Yes
+name_Ananya_BN,অনন্যা,approved,Bengali reviewer,natural: Yes
+name_Riya_HI,रिया,approved,Hindi reviewer,natural: Yes
+name_Riya_BN,রিয়া,approved,Bengali reviewer,natural: Yes
+name_Sharma_HI,शर्मा,approved,Hindi reviewer,natural: Yes
+name_Sharma_BN,শর্মা,approved,Bengali reviewer,natural: Yes
+name_Trivedi_HI,त्रिवेदी,approved,Hindi reviewer,natural: Yes
+name_Trivedi_BN,ত্রিবেদী,approved,Bengali reviewer,natural: Yes
+name_Mukherjee_HI,मुखर्जी,approved,Hindi reviewer,natural: Yes
+name_Mukherjee_BN,মুখার্জি,approved,Bengali reviewer,natural: Yes
+name_Chatterjee_HI,चटर्जी,approved,Hindi reviewer,natural: Yes
+name_Chatterjee_BN,চ্যাটার্জি,approved,Bengali reviewer,natural: Yes
+name_Paswan_HI,पासवान,approved,Hindi reviewer,natural: Yes
+name_Paswan_BN,পাসোয়ান,approved,Bengali reviewer,natural: Yes
+name_Valmiki_HI,वाल्मीकि,approved,Hindi reviewer,natural: Yes
+name_Valmiki_BN,বাল্মীকি,approved,Bengali reviewer,natural: Yes
+name_Jatav_HI,जाटव,approved,Hindi reviewer,natural: Yes
+name_Jatav_BN,জাটভ,approved,Bengali reviewer,reviewer's own correction applied verbatim (2026-10-07)
+name_Bauri_HI,बाउरी,approved,Hindi reviewer,natural: Yes
+name_Bauri_BN,বাউরি,approved,Bengali reviewer,natural: Yes

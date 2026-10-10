@@ -1,31 +1,31 @@
 block,outcome,model_type,test,chisq,df,p_value,note,family,p_holm,significant_holm_05
-A,PQI,lmm,condition:model,580.712847337676,20,3.3117147188402104e-110,,lmm | condition:model,3.3117147188402104e-110,True
-A,PQI,lmm,condition (main),669.033459398488,4,1.76581160763583e-143,,lmm | condition (main),1.76581160763583e-143,True
-A,Mistake_Identification,clmm,condition:model,263.218522536092,20,2.43863482984513e-44,,clmm | condition:model,1.950907863876104e-43,True
-A,Mistake_Identification,clmm,condition (main),480.07746314707,4,1.36329633702066e-102,,clmm | condition (main),8.179778022123961e-102,True
-A,Mistake_Location,clmm,condition:model,275.520727464707,20,7.81447690085776e-47,,clmm | condition:model,7.033029210771984e-46,True
-A,Mistake_Location,clmm,condition (main),506.782010174773,4,2.28658040695101e-108,,clmm | condition (main),1.600606284865707e-107,True
-A,Providing_Guidance,clmm,condition:model,182.744789403159,20,2.81525488650873e-28,,clmm | condition:model,8.445764659526189e-28,True
-A,Providing_Guidance,clmm,condition (main),576.1669416562,4,2.22823787599972e-123,,clmm | condition (main),2.0054140883997479e-122,True
-A,Actionability,clmm,condition:model,191.7646151353,20,4.75366362079984e-30,,clmm | condition:model,2.3768318103999202e-29,True
-A,Actionability,clmm,condition (main),510.955126152643,4,2.86123470706864e-109,,clmm | condition (main),2.288987765654912e-108,True
-A,Coherence,clmm,condition:model,191.705969562301,20,4.8818122064343e-30,,clmm | condition:model,2.3768318103999202e-29,True
-A,Coherence,clmm,condition (main),641.607751966596,4,1.52840397304704e-137,,clmm | condition (main),1.52840397304704e-136,True
-A,Tutor_Tone,clmm,condition:model,841.746711774464,20,1.9230413761901201e-165,,clmm | condition:model,2.3076496514281444e-164,True
-A,Tutor_Tone,clmm,condition (main),451.505398826586,4,2.05305619101424e-96,,clmm | condition (main),1.02652809550712e-95,True
-A,Humanlikeness,clmm,condition:model,79.3123221252827,20,5.134997145282241e-09,,clmm | condition:model,5.134997145282241e-09,True
-A,Humanlikeness,clmm,condition (main),155.429148463291,4,1.39651112068995e-32,,clmm | condition (main),2.7930222413799e-32,True
-A,Cognitive_Demand,clmm,condition:model,428.29324386581,20,2.70705275155888e-78,,clmm | condition:model,2.977758026714768e-77,True
-A,Cognitive_Demand,clmm,condition (main),291.506683174179,4,7.3572587255989695e-62,,clmm | condition (main),2.2071776176796908e-61,True
-A,Conceptual_Depth,clmm,condition:model,231.015438367031,20,7.48623196332896e-38,,clmm | condition:model,5.240362374330272e-37,True
-A,Conceptual_Depth,clmm,condition (main),28.9839959954952,4,7.87612626784707e-06,,clmm | condition (main),7.87612626784707e-06,True
-A,Expectation_Level,clmm,condition:model,295.847733179096,20,5.69015586239124e-51,,clmm | condition:model,5.690155862391241e-50,True
-A,Expectation_Level,clmm,condition (main),724.89989791506,4,1.41394271233473e-155,,clmm | condition (main),1.555336983568203e-154,True
-A,Math_Correctness,clmm,condition:model,134.439576701272,20,5.69961968178742e-19,,clmm | condition:model,1.139923936357484e-18,True
-A,Math_Correctness,clmm,condition (main),450.299017900474,4,3.74288349287336e-96,,clmm | condition (main),1.497153397149344e-95,True
-A,Language_Match,clmm,condition:model,198.01279317899,20,2.78095240070685e-31,,clmm | condition:model,1.66857144042411e-30,True
-A,Language_Match,clmm,condition (main),4188.46800188254,4,0.0,,clmm | condition (main),0.0,True
-A,Revealing__bad,glmm,condition:model,568.241020323278,20,1.39225518937016e-107,,glmm | condition:model,2.78451037874032e-107,True
-A,Revealing__bad,glmm,condition (main),140.204789969386,4,2.55153141321451e-29,,glmm | condition (main),2.55153141321451e-29,True
-A,Inflated__bad,glmm,condition:model,476.539423101589,20,2.35117012168207e-88,,glmm | condition:model,2.35117012168207e-88,True
-A,Inflated__bad,glmm,condition (main),626.718494999177,4,2.55407824616754e-134,,glmm | condition (main),5.10815649233508e-134,True
+A,PQI,lmm,condition:model,598.273609945903,20,6.65001787544087e-114,,lmm | condition:model,6.65001787544087e-114,True
+A,PQI,lmm,condition (main),659.162742662345,4,2.42051327969543e-141,,lmm | condition (main),2.42051327969543e-141,True
+A,Mistake_Identification,clmm,condition:model,262.851493498621,20,2.89358263154475e-44,,clmm | condition:model,2.3148661052358e-43,True
+A,Mistake_Identification,clmm,condition (main),481.663352043233,4,6.18935256351895e-103,,clmm | condition (main),3.71361153811137e-102,True
+A,Mistake_Location,clmm,condition:model,281.437562106585,20,4.90340916115218e-48,,clmm | condition:model,4.413068245036962e-47,True
+A,Mistake_Location,clmm,condition (main),494.510111630258,4,1.03131595995021e-105,,clmm | condition (main),8.25052767960168e-105,True
+A,Providing_Guidance,clmm,condition:model,201.851831589414,20,4.83956160872507e-32,,clmm | condition:model,2.4197808043625347e-31,True
+A,Providing_Guidance,clmm,condition (main),539.488389866192,4,1.92372845413847e-115,,clmm | condition (main),1.7313556087246228e-114,True
+A,Actionability,clmm,condition:model,201.179304211943,20,6.57563708707319e-32,,clmm | condition:model,2.630254834829276e-31,True
+A,Actionability,clmm,condition (main),492.480462499669,4,2.83364530002021e-105,,clmm | condition (main),1.983551710014147e-104,True
+A,Coherence,clmm,condition:model,211.333731928029,20,6.35919044396425e-34,,clmm | condition:model,3.81551426637855e-33,True
+A,Coherence,clmm,condition (main),610.676629866226,4,7.576280232345e-131,,clmm | condition (main),7.576280232344999e-130,True
+A,Tutor_Tone,clmm,condition:model,866.179501256254,20,1.2304040597864e-170,,clmm | condition:model,1.47648487174368e-169,True
+A,Tutor_Tone,clmm,condition (main),426.057005343027,4,6.506814336063911e-91,,clmm | condition (main),3.2534071680319555e-90,True
+A,Humanlikeness,clmm,condition:model,76.7871586819233,20,1.36866640487635e-08,,clmm | condition:model,1.36866640487635e-08,True
+A,Humanlikeness,clmm,condition (main),156.561927506925,4,7.98322417337529e-33,,clmm | condition (main),1.596644834675058e-32,True
+A,Cognitive_Demand,clmm,condition:model,430.944625739627,20,7.59910826680269e-79,,clmm | condition:model,8.359019093482958e-78,True
+A,Cognitive_Demand,clmm,condition (main),301.512295236746,4,5.1119108310289e-64,,clmm | condition (main),1.53357324930867e-63,True
+A,Conceptual_Depth,clmm,condition:model,219.494975184647,20,1.5060641801894502e-35,,clmm | condition:model,1.054244926132615e-34,True
+A,Conceptual_Depth,clmm,condition (main),21.0250364436106,4,0.000313070160547,,clmm | condition (main),0.000313070160547,True
+A,Expectation_Level,clmm,condition:model,303.469879567627,20,1.58025276940284e-52,,clmm | condition:model,1.58025276940284e-51,True
+A,Expectation_Level,clmm,condition (main),713.757378522881,4,3.65839321532306e-153,,clmm | condition (main),4.024232536855366e-152,True
+A,Math_Correctness,clmm,condition:model,137.408374901048,20,1.56732601112661e-19,,clmm | condition:model,3.13465202225322e-19,True
+A,Math_Correctness,clmm,condition (main),424.587735322892,4,1.35183318110751e-90,,clmm | condition (main),5.40733272443004e-90,True
+A,Language_Match,clmm,condition:model,193.546207680902,20,2.1178852239015297e-30,,clmm | condition:model,6.353655671704589e-30,True
+A,Language_Match,clmm,condition (main),4131.25796003606,4,0.0,,clmm | condition (main),0.0,True
+A,Revealing__bad,glmm,condition:model,571.320046490479,20,3.13446011415875e-108,,glmm | condition:model,6.2689202283175e-108,True
+A,Revealing__bad,glmm,condition (main),148.692978752552,4,3.87965347715113e-31,,glmm | condition (main),3.87965347715113e-31,True
+A,Inflated__bad,glmm,condition:model,448.807114944895,20,1.44534429111104e-82,,glmm | condition:model,1.44534429111104e-82,True
+A,Inflated__bad,glmm,condition (main),632.435334904671,4,1.47832292756555e-135,,glmm | condition (main),2.9566458551311e-135,True

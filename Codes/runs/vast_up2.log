@@ -1,0 +1,15 @@
+trying offer 53194863: RTX 3090 $0.296/h
+{"event": "rented", "contract": 55048851, "gpu": "RTX 3090", "dph": 0.29555555555555557}
+CUDA True NVIDIA GeForce RTX 3090
+install: ok
+flash-attn: WHEEL https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
+PIP 0 unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+FA_OK True
+
+download: 6.15s/it]
+Fetching 16 files: 100%|██████████| 16/16 [00:42<00:00,  2.68s/it]
+/root/.cache/huggingface/hub/models--ai4bharat--indictrans2-indic-en-1B/snapshots/ac3daf0ecd37be3b6957764a9179ab2b07fa9d6a
+
+{"event": "ready", "device": "cuda:0 float16 flash_attention_2", "models": ["ai4bharat/indictrans2-en-indic-1B@10e65a9951a1e922cd109a95e8aba9357b62144b", "ai4bharat/indictrans2-indic-en-1B@ac3daf0ecd37be3b6957764a9179ab2b07fa9d6a"]}
+export TLT_TRANSLATE_URL=http://127.0.0.1:18000  # token is read from vast_translator.json

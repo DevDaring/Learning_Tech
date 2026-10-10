@@ -24,6 +24,12 @@ log = logging.getLogger("tlt.s12")
 
 
 def run_stage(run: Run) -> dict:
+    # Never re-draw the sample once teachers have returned ratings: a new sample would replace
+    # the export and the private key that their ratings refer to.
+    returned = sorted(run.path("review", "human_returned", "x").parent.glob("*.csv"))
+    if returned and run.path("review", "human_annotation_key.csv").exists():
+        log.info("human export kept: %d returned annotation files refer to the existing export", len(returned))
+        return {"exported": 0, "kept_existing": True, "returned_files": len(returned)}
     agg_path = run.path("results", "judgements_aggregated.csv")
     gens = {g["call_id"]: g for g in current_generations(run, ok_only=True)}
     prompts = {p["prompt_id"]: p for p in read_jsonl(run.path("data", "prompts.jsonl"))}

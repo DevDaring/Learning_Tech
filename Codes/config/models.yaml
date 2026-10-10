@@ -70,11 +70,12 @@ models:
     routes:
       # Thinking cannot be switched off for Gemini 3 models (Google OpenAI-compatibility docs,
       # checked 2026-10-02); "low" is the lowest documented level. Budget covers thinking.
-      # Primary: the same model through LinkAPI (cheaper; returns model "gemini-3.8-flash",
-      # accepts seed; probed 2026-10-04). Fallback: Google's own API (rejects `seed`).
-      - {kind: openai_compat, provider: linkapi_gemini, model: gemini-3.8-flash, seed: true,
-         extra: {reasoning_effort: low}, min_tokens: 4000, verify: true}
+      # Google's own API first: every Gemini reply of the full run (2026-10-07/08) came from it
+      # while LinkAPI was out of credit, so regenerated replies use the same route (D49).
+      # LinkAPI (same model string, accepts seed) is the fallback.
       - {kind: openai_compat, provider: gemini, model: gemini-3.8-flash, seed: false,
+         extra: {reasoning_effort: low}, min_tokens: 4000, verify: true}
+      - {kind: openai_compat, provider: linkapi_gemini, model: gemini-3.8-flash, seed: true,
          extra: {reasoning_effort: low}, min_tokens: 4000, verify: true}
       - {kind: openai_compat, provider: openrouter, model: google/gemini-3.8-flash, seed: true,
          extra: {reasoning: {effort: low}}, min_tokens: 4000, verify: true}

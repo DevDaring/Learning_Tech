@@ -139,6 +139,22 @@ def merge_word_lines(lines: list[str], word_idx: list[int], out: str) -> str:
     return "\n".join(r for r in res if r is not None)
 
 
+# LaTeX control words that begin with "n"; any other "\n" typed by a reviewer is a line break.
+_LATEX_N = {"ne", "neq", "nabla", "neg", "ni", "nu", "not", "notin", "nmid", "nleq", "ngeq", "nless", "ngtr",
+            "nsubseteq", "nsupseteq", "newline", "noindent", "nexists", "natural", "nearrow", "nwarrow", "nolimits",
+            "nonumber", "normalsize", "nleqslant", "ngeqslant", "nparallel", "nprec", "nsucc", "nsim", "ncong"}
+
+
+def unescape_newlines(text: str) -> str:
+    """Turn a literal backslash-n typed in a spreadsheet cell into a line break, unless it starts a
+    LaTeX control word (\\neq, \\nabla, ...). TeX reads a control word as the backslash plus every
+    following ASCII letter, so the letters after the backslash decide."""
+    def sub(m: re.Match) -> str:
+        word = m.group(1)
+        return m.group(0) if word in _LATEX_N else "\n" + word[1:]
+    return re.sub(r"\\(n[A-Za-z]*)", sub, text or "")
+
+
 def protect_math(text: str, start: int = 101) -> tuple[str, dict[str, str]]:
     """Replace LaTeX spans (and roman-numeral statement labels) with <IDn> placeholders
     (n >= 101, clear of IndicTransToolkit's own numbering) so a translation or rewriting

@@ -157,6 +157,21 @@ def write_tables(run: Run, applog: AppendLog, stem: str, keep_ids: set[str]) -> 
     return agg
 
 
+def write_anchor_table(run: Run, applog: AppendLog) -> None:
+    """Judge labels for exactly the replies in the teacher annotation export (by target id),
+    whether or not a reply was later superseded by a regenerated one: agreement must be
+    computed on the reply the teachers saw. Uses the current judge panel only."""
+    kp = run.path("review", "human_annotation_key.csv")
+    if not kp.exists():
+        return
+    tids = set(pd.read_csv(kp, dtype=str, keep_default_na=False).target_id)
+    recs = [r for r in applog.records() if r.get("target_id") in tids and r.get("judge") in run.judges
+            and r.get("variant", "original") == "original"]
+    if recs:
+        aggregate_table(long_table(recs), run.design["primary_judge"], run.judges).to_csv(
+            run.path("results", "human_anchor_judgements_aggregated.csv"), index=False)
+
+
 def run_stage(run: Run) -> dict:
     gens = current_generations(run)
     prompts = {p["prompt_id"]: p for p in read_jsonl(run.path("data", "prompts.jsonl"))}
@@ -167,6 +182,7 @@ def run_stage(run: Run) -> dict:
     targets = targets_from_generations(gens, prompts)
     counts, ids = judge_targets(run, llm, targets, applog, "judge")
     agg = write_tables(run, applog, "judgements", ids)
+    write_anchor_table(run, applog)
     recs = [r for r in applog.records() if r["call_id"] in ids]
     counts.update({"targets": len(targets), "judge_records": len(recs),
                    "unparseable": sum(r["status"] == "unparseable" for r in recs),

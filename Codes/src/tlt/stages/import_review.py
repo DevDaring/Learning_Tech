@@ -22,6 +22,7 @@ import pandas as pd
 from openpyxl import load_workbook
 
 from ..config import Run, stable_hash
+from ..textutil import unescape_newlines
 from ..names import FIRST_FEMALE, FIRST_MALE, SURNAME_DALIT, SURNAME_DOMINANT
 from .s03_build_prompts import check_template_approval, template_text
 
@@ -137,12 +138,12 @@ def import_translation_review(run: Run, path: Path, wb, meta: dict) -> dict:
     translation has changed since the pack was built is skipped (its hash no longer
     matches); 'Needs correction' without a corrected text is left pending and reported."""
     df = _sheet_df(wb, "Check")
-    who = reviewer_code(path)
+    who = f"{meta['kind'].rsplit('_', 1)[1]} reviewer"  # generic label: no reviewer identity is stored
     p = run.path("review", "translation_review.csv")
     tr = pd.read_csv(p, dtype=str, keep_default_na=False)
     tr["row_id"] = tr.item_id + "|" + tr.lang + "|" + tr.field
     pos = {rid: i for i, rid in enumerate(tr.row_id)}
-    out = {"file": path.name, "reviewer": who, "approved": 0, "corrected": 0, "no_decision": 0,
+    out = {"file": meta["kind"], "reviewer": who, "approved": 0, "corrected": 0, "no_decision": 0,
            "correction_missing": 0, "stale": 0, "unknown_row": 0}
     for _, r in df.iterrows():
         rid, dec = str(r["Row"]).strip(), str(r["Decision"]).strip()
@@ -158,7 +159,8 @@ def import_translation_review(run: Run, path: Path, wb, meta: dict) -> dict:
             tr.at[i, "status"], tr.at[i, "corrected_text"] = "approved", ""
             out["approved"] += 1
         elif dec == "Needs correction" and txt:
-            tr.at[i, "status"], tr.at[i, "corrected_text"] = "corrected", txt
+            # a reviewer who types \n in a spreadsheet cell means a line break (LaTeX kept)
+            tr.at[i, "status"], tr.at[i, "corrected_text"] = "corrected", unescape_newlines(txt)
             out["corrected"] += 1
         elif dec == "Needs correction":
             out["correction_missing"] += 1
@@ -167,7 +169,7 @@ def import_translation_review(run: Run, path: Path, wb, meta: dict) -> dict:
             out["no_decision"] += 1
             continue
         tr.at[i, "reviewer"] = who
-        tr.at[i, "notes"] = str(r["Comment (optional)"]).strip()
+        tr.at[i, "notes"] = unescape_newlines(str(r["Comment (optional)"]).strip())
     tr.drop(columns=["row_id"]).to_csv(p, index=False)
     return out
 
@@ -183,14 +185,14 @@ def import_teacher_annotation(run: Run, path: Path, wb, meta: dict) -> dict:
     fresh = [meta.get(rid) == stable_hash(reply, n=12) for rid, reply in zip(keep.row_id, df["Tutor's reply"])]
     stale = int(len(fresh) - sum(fresh))
     keep = keep[fresh]
-    keep["annotator"], keep["notes"] = who, df.loc[fresh, "Notes (optional)"].values
+    keep["annotator"], keep["notes"] = "teacher", df.loc[fresh, "Notes (optional)"].values
     rated = int((keep[[d for d in DIMENSIONS if d in keep]].astype(str).apply(lambda s: s.str.strip()) != "").any(axis=1).sum())
     invalid = sum(int(((keep[d].astype(str).str.strip() != "") &
                        keep[d].map(lambda x, d=d: norm_label(d, x) is None)).sum()) for d in DIMENSIONS if d in keep)
     out_dir = run.path("review", "human_returned", "x").parent
     out_dir.mkdir(parents=True, exist_ok=True)
     keep.to_csv(out_dir / f"{who}.csv", index=False)
-    return {"file": path.name, "annotator": None, "teacher": who, "rows_rated": rated, "stale": stale,
+    return {"file": meta["kind"], "annotator": None, "rows_rated": rated, "stale": stale,
             "invalid_labels": invalid}
 
 

@@ -1,0 +1,7 @@
+2026-10-10 02:25:00,769 INFO tlt.s09: analysis: {'status': 'FINAL', 'mixed_models': {'B_EN': 'ok (cached fit, identical input)', 'A': 'ok', 'B_HI': 'ok', 'B_BN': 'ok'}, 'tables': ['expectation_indicator_tests.csv', 'expectation_indicators.csv', 'extra_component_profile.csv', 'extra_decomposition_components.csv', 'extra_judge_teacher_pooled.csv', 'extra_named_vs_unnamed.csv', 'extra_repair_pooled.csv', 'extra_schooling_switch.csv', 'extra_template_sensitivity.csv', 'inter_judge_alpha.csv', 'operational_counts.csv', 'route_by_block_condition.csv', 'table1_models.csv', 'table2_judge_validation_mrbench.csv', 'table3_judge_human_agreement.csv', 'table3b_human_invalid_labels.csv', 'table4_language_gaps.csv', 'table4a_pqi_by_language_producer.csv', 'table4b_language_gaps_no_truncation.csv', 'table4c_truncation_rate_by_language.csv', 'table4d_language_gaps_PQI_R.csv', 'table5_identity_gaps.csv', 'table5b_identity_language_interaction.csv', 'table5c_identity_sensitivity.csv', 'table5d_hi_gender_marking_rate.csv', 'table5e_identity_gaps_PQI_R.csv', 'table6_decomposition.csv', 'table7_native_control.csv', 'table7a_block_d_means.csv', 'table8_baselines_vs_pqi.csv', 'table9_repair.csv', 'table9b_repair_identity.csv', 'translated_judging.csv']}
+2026-10-10 02:25:00,818 INFO tlt: stage analysis done in 2581.0s
+2026-10-10 02:32:38,669 INFO tlt.checks: acceptance: all_pass=True
+2026-10-10 02:32:38,994 INFO tlt: stage checks done in 448.7s
+checks exit=0
+FINAL ANALYSIS COMPLETE
+exit=0
