@@ -329,6 +329,29 @@ cs2 = cs2[cs2.arm.isin(["R2", "R2L", "R2T", "R4", "R5"])].pivot_table(
 parts.append(table(cs2, "Estimated cost per 1,000 replies (USD; mean tutor price, GPU translation included) under "
                         "price multipliers", fmt={c: "{:.2f}" for c in cs2.columns}))
 
+# ------------------------------------------------------------------ S11 human repair evaluation
+hr_summary = T / "human_repair_summary.csv"
+if hr_summary.exists():
+    parts.append(r"""\section{Blinded teacher evaluation of R2-T versus R5}
+A mathematics teacher fluent in Hindi and Bengali rated 24 blinded, matched pairs of R2-T and
+R5 replies (two per tutor and language, randomised within each pair). The teacher rated each
+reply on five PQI-R dimensions plus language naturalness, then compared each pair.
+""")
+    hs = rd("human_repair_arm_summary.csv")
+    hs["arm"] = hs.arm.map({"R2T": "R2-T", "R5": "R5"})
+    parts.append(table(hs, "Human rating means by arm (24 replies each)"))
+    hl = rd("human_repair_by_language.csv")
+    hl["arm"] = hl.arm.map({"R2T": "R2-T", "R5": "R5"})
+    parts.append(table(hl, "Human PQI-R and language naturalness by language and arm"))
+    hm = rd("human_repair_by_model.csv")
+    hm["model"] = hm.model.map(TUT)
+    parts.append(table(hm, "Teacher pair preferences by tutor model"))
+    hv = T / "human_repair_vs_auto.csv"
+    if hv.exists():
+        ha = rd("human_repair_vs_auto.csv")
+        ha["arm"] = ha.arm.map({"R2T": "R2-T", "R5": "R5"})
+        parts.append(table(ha, "Human versus automated PQI-R per reply (48 replies)"))
+
 parts.append(r"\end{document}")
 OUT.write_text("\n".join(parts), encoding="utf-8")
 print("written", OUT)

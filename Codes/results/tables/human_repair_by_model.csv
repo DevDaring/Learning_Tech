@@ -1,0 +1,7 @@
+model,pairs,prefer_R2T,prefer_R5,mean_PQI_R_diff
+gemini_flash,4,2,2,-0.1
+kimi_k25,4,3,1,0.0
+ministral_8b,4,3,1,0.09999999999999998
+nemotron_nano,4,3,1,0.17500000000000002
+nova_lite,4,3,1,0.024999999999999994
+sarvam_105b,4,4,0,0.275
