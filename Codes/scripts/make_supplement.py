@@ -57,7 +57,7 @@ TUT = {"gemini_flash": "Gemini 3.8 Flash", "sarvam_105b": "Sarvam 105B", "kimi_k
        "utility": "GPT-5 mini (utility)", "student": "Llama 3.1 8B (sim. student)"}
 parts = [r"""\documentclass[10pt]{article}
 \usepackage[margin=2cm]{geometry}
-\usepackage{booktabs,amsmath,amssymb,longtable}
+\usepackage{booktabs,amsmath,amssymb,longtable,graphicx}
 \usepackage[T1]{fontenc}
 \usepackage{newtxtext,newtxmath}
 \usepackage[hidelinks]{hyperref}
@@ -123,7 +123,7 @@ simpler arm matches or exceeds R5, narrow the contribution to it (applied). E2: 
 60 replies per edit (2 per language $\times$ tutor), 540 judge calls. E3: structural checks,
 semantic check of 60 plan/reply pairs (180 calls), plan-only ablation (50 items, Gemini, Sarvam,
 Nova Lite, EN/HI/BN; 450 replies). E4: full crossing (3,000 replies). Not run: identity repair in
-English and a learner trial. Deviations: an OpenRouter out-of-credit response was misclassified
+English and a learner trial (a second addendum added E8 and E9, Section S10). Deviations: an OpenRouter out-of-credit response was misclassified
 as a permanent error during E1 and E4 judging (affected calls were re-run with the corrected
 client; none was dropped); canonical-message answer loss was found by reading the stated-rule
 example and is reported, not fixed.
@@ -207,6 +207,42 @@ pr = ha[ha.language == "ALL"][["dimension"] + [c for c in ha.columns if c.starts
                                               (c.startswith("exact_teacher"))]]
 parts.append(table(pr, "Per-rater exact agreement, all languages (panel vs each teacher; teacher pairs)",
                    size=r"\tiny"))
+# figure: teacher consensus by panel label, row-normalised, four dimensions
+import matplotlib  # noqa: E402
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt  # noqa: E402
+
+cfa = rd("revision_human_confusion.csv")
+DIMS4 = [("Revealing_of_the_Answer", ["No", "Yes (correct)", "Yes (incorrect)"]),
+         ("Mistake_Location", ["Yes", "To some extent", "No"]),
+         ("Actionability", ["Yes", "To some extent", "No"]),
+         ("Expectation_Level", ["At level", "Simplified below", "Condescending"])]
+fig, axes = plt.subplots(1, 4, figsize=(11, 3.2))
+for ax, (dim, labs) in zip(axes, DIMS4):
+    sub = cfa[cfa.dimension == dim].pivot_table(index="teacher_consensus", columns="judge_panel", values="count",
+                                                 aggfunc="sum").reindex(index=labs, columns=labs).fillna(0)
+    shares = sub.div(sub.sum(axis=1).where(sub.sum(axis=1) > 0), axis=0).fillna(0)
+    ax.imshow(shares.values, cmap="Blues", vmin=0, vmax=1)
+    for i in range(len(labs)):
+        for j in range(len(labs)):
+            n = int(sub.values[i, j])
+            ax.text(j, i, str(n), ha="center", va="center", fontsize=8,
+                    color="white" if shares.values[i, j] > 0.6 else "#1F2933")
+    ax.set_xticks(range(len(labs)), labs, fontsize=7, rotation=30, ha="right")
+    ax.set_yticks(range(len(labs)), labs, fontsize=7)
+    ax.set_title(dim.replace("_", " "), fontsize=9)
+    ax.set_xlabel("judge panel", fontsize=8)
+axes[0].set_ylabel("teacher consensus", fontsize=8)
+fig.tight_layout()
+fig.savefig(ROOT / "Submission1" / "figures" / "figS_teacher_judge.pdf")
+plt.close(fig)
+parts.append(r"""\begin{figure}[!ht]\centering
+\includegraphics[width=\textwidth]{figures/figS_teacher_judge}
+\caption{Teacher consensus against the judge panel on the 300 default replies (counts; shading
+by share of the teacher row). Revealing the answer is dominated by one label; the judges rated
+as actionable and at the expected level many replies the teachers did not.}
+\end{figure}
+""")
 cf = rd("revision_human_confusion.csv")
 cf = cf[cf.dimension.isin(["Revealing_of_the_Answer", "Actionability", "Expectation_Level", "Mistake_Location"])]
 parts.append(table(cf, "Confusion counts, teacher consensus by panel label (all languages)", colspec="lllr"))
@@ -253,6 +289,45 @@ parts.append(table(cl, "Resampling items, constructs or misconceptions (percenti
                    size=r"\tiny"))
 nb = rd("revision_name_balance.csv")[["condition", "cue", "field", "n_prompts", "distinct", "min_count", "max_count"]]
 parts.append(table(nb, "Name frequencies per cue and language (Block B, 150 items)", fmt={}))
+
+# ------------------------------------------------------------------ S10 second revision
+parts.append(r"""\section{Second revision: translation system, cue factors and further diagnostics}
+Frozen in the second addendum of \texttt{docs/revision\_plan\_frozen.md} (13 October 2026) before
+any call. E8 re-translates the English replies of R2-T with NLLB-200 distilled 1.3B; E9 separates
+the school-background cue into single-factor cues in English (five cues collected together).
+""")
+e8 = rd("revision_e8_mt_sensitivity.csv")
+e8 = ci(e8[(e8.model == "ALL") & e8.outcome.isin(["PQI_R", "PQI", "withheld", "math_ok"])])
+parts.append(table(e8[["outcome", "contrast", "language", "Estimate [95\\% CI]", "p_holm"]],
+                   "E8: R2-T with NLLB-200 instead of IndicTrans2", fmt={"p_holm": "{:.4f}"}, colspec="lllrr"))
+e9 = rd("revision_e9_cue_factors.csv")
+e9 = e9[e9.model.isin(["ALL", "sarvam_105b"])].copy()
+e9["model"] = e9.model.map(TUT)
+e9 = ci(e9)[["outcome", "contrast", "model", "mean_S-ENG", "mean_cue", "Estimate [95\\% CI]", "p_holm"]]
+parts.append(table(e9, "E9: S-ENG minus each school cue (English messages; S-MED Hindi-medium, S-TYPE government "
+                       "school, S-LOC village, S-VER all three)", fmt={"p_holm": "{:.4f}"}, colspec="lllrrrr"))
+xd = rd("revision2_crossing_by_dimension.csv")
+xd = xd.pivot_table(index="dimension", columns=["language", "effect"], values="estimate")
+xd.columns = [f"{a} {b}" for a, b in xd.columns]
+parts.append(table(xd.reset_index(), "Block X effects by rubric dimension (positive = worse for the student "
+                                     "writing in $l$; inflated praise sign reversed)"))
+cl2 = rd("revision2_canonical_loss_downstream.csv")
+cl2 = cl2[["contrast", "canonical_answer", "item_language_pairs", "mean_R5", "estimate", "min_pair", "max_pair",
+           "ci_low", "ci_high"]]
+parts.append(table(cl2, "R5 relative to R2-T and R2-L on HI/BN items whose canonical message kept or lost the "
+                        "student's answer (C0; intervals only with enough pairs)"))
+lid = rd("revision2_script_lid.csv")
+lid = lid[lid.condition.isin(["HI", "BN"])]
+parts.append(table(lid, "Unicode-script language identification against the panel's Language\\_Match (HI/BN)",
+                   colspec="llrrrrrr"))
+cba = rd("revision2_components_by_arm.csv")
+cba = cba.pivot_table(index="component", columns="arm", values="HI_BN").reset_index()
+parts.append(table(cba, "Rubric components on Hindi and Bengali by arm"))
+cs2 = rd("revision2_cost_sensitivity.csv")
+cs2 = cs2[cs2.arm.isin(["R2", "R2L", "R2T", "R4", "R5"])].pivot_table(
+    index=["input_price_x", "output_price_x"], columns="arm", values="total").reset_index()
+parts.append(table(cs2, "Estimated cost per 1,000 replies (USD; mean tutor price, GPU translation included) under "
+                        "price multipliers", fmt={c: "{:.2f}" for c in cs2.columns}))
 
 parts.append(r"\end{document}")
 OUT.write_text("\n".join(parts), encoding="utf-8")

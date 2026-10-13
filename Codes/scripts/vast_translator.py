@@ -19,6 +19,7 @@ import secrets as pysecrets
 import subprocess
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -84,10 +85,14 @@ def up() -> None:
     st = load()
     if st.get("contract"):
         raise SystemExit(f"an instance is already recorded ({st['contract']}); run `down` first")
-    for o in offers()[:6]:
+    for o in offers()[:10]:
         print(f"trying offer {o['id']}: {o['gpu_name']} ${o['dph_total']:.3f}/h", flush=True)
-        r = api(f"/asks/{o['id']}/", {"client_id": "me", "image": IMAGE, "disk": 50, "label": "tlt-indictrans",
-                                       "runtype": "ssh_direc ssh_proxy", "onstart": "touch /root/.ready"}, "PUT")
+        try:
+            r = api(f"/asks/{o['id']}/", {"client_id": "me", "image": IMAGE, "disk": 50, "label": "tlt-indictrans",
+                                           "runtype": "ssh_direc ssh_proxy", "onstart": "touch /root/.ready"}, "PUT")
+        except urllib.error.HTTPError as e:  # offer taken meanwhile (400): nothing was rented
+            print(f"offer {o['id']} not rentable (HTTP {e.code}); next", flush=True)
+            continue
         cid = r.get("new_contract")
         if not cid:
             continue
@@ -99,6 +104,9 @@ def up() -> None:
             break
         print(f"destroying {cid} and trying the next offer", flush=True)
         down(quiet=True)
+        badf = ROOT / "runs" / "vast_bad_machines.json"  # never retry a host that failed readiness
+        bad = set(json.loads(badf.read_text())) if badf.exists() else set()
+        badf.write_text(json.dumps(sorted(bad | {o.get("machine_id")})))
         st = {}
     if not st.get("ip"):
         raise SystemExit("no offer passed verification")

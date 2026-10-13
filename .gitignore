@@ -44,3 +44,6 @@ Codes/review/human_returned/
 Codes/review/human_adjudicated/
 Codes/review/*before_import*
 Codes/runs/last_summary_import_review.json
+
+# ---- blinding key for the optional repair rating pack (keep raters blind) ----
+Codes/review/repair_rating_key.csv

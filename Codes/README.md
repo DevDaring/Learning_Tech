@@ -107,6 +107,8 @@ the pack: rows whose text changed are imported as `stale` and need a fresh revie
 | Revision E1: R2-L, R2-T (EN/HI/BN) + R2/R5 drift re-runs | 720 cells | 4,320 |
 | Revision E4: full input/output crossing (Block X) | 500 | 3,000 |
 | Revision E3: plan-only realisation ablation | 150 | 450 |
+| Second revision E9: school-cue factors (EN) | 750 | 4,500 |
+| Second revision E8: R2-T re-translated with NLLB-200 | (no tutor calls) | 1,200 translations |
 
 Judge calls (GPT-4.1 mini on LinkAPI, DeepSeek-V3.2 and Qwen3-Next 80B on AWS Bedrock; deviations
 D34, D47): 3 per generation, plus 20% translated judging, plus 1,500 for MRBench.
@@ -121,8 +123,12 @@ PYTHONPATH=src ~/venv/bin/python scripts/revision_local_analysis.py   # reanalys
 PYTHONPATH=src ~/venv/bin/python scripts/revision_provenance.py       # model provenance table
 PYTHONPATH=src ~/venv/bin/python scripts/make_supplement.py           # supplementary tables (LaTeX)
 PYTHONPATH=src ~/venv/bin/python scripts/paper_figures.py <out_dir>   # paper figures
+PYTHONPATH=src ~/venv/bin/python scripts/revision2_experiments.py e9               # school-cue factors
+PYTHONPATH=src ~/venv/bin/python scripts/revision2_experiments.py e8prep|e8remote|e8 # NLLB sensitivity (GPU)
+PYTHONPATH=src ~/venv/bin/python scripts/revision2_local.py                         # second-revision reanalyses
+PYTHONPATH=src ~/venv/bin/python scripts/make_repair_rating_pack.py                 # optional blinded teacher pack
 ```
-Outputs: `results/tables/revision_*.csv`; logs `runs/revision_*.jsonl`.
+Outputs: `results/tables/revision_*.csv` and `revision2_*.csv`; logs `runs/revision_*.jsonl`.
 `build_prompts` prints the exact counts. `docs/deviations.md` lists every departure from the
 specification and its reason.
 
