@@ -1,7 +1,15 @@
 # Same Question, Lesser Lesson — pipeline
 
-Code for the study specified in `TLT_Expectation_Gap_Project.md`: measuring and repairing
-pedagogical disparity in multilingual LLM tutors (target: IEEE TLT).
+Code, prompts, frozen analysis plans and results for the study *Same Question, Lesser Lesson:
+Measuring and Reducing Pedagogical Disparity in Multilingual LLM Maths Tutors* (K. Deb and
+A. Basu; submitted to IEEE Transactions on Learning Technologies). Six LLMs prompted as maths
+tutors are audited on the same misconception-labelled items in English, Hindi, Bengali,
+Hinglish and Banglish, with school-background and name cues; eight repair designs are compared.
+
+Status: all stages and human review steps are complete, and the analysis is final. The Eedi
+competition rules do not permit redistribution of the items or their translations, so
+`data/` holds item identifiers and the steps below show how to obtain the source data.
+Annotator workbooks and identities are not part of the repository.
 
 ## Layout
 
@@ -45,7 +53,7 @@ confirm no key value was written.
 python -m tlt <stage> [--pilot | --dry-run]
 python -m tlt all --dry-run     # whole pipeline, mock models, no network, no cost (synthetic Eedi)
 python -m tlt all --pilot       # 30 items, 1 sample, 2 producers, 3 judges, real calls
-python -m tlt all               # full run (blocked until the human gates below are complete)
+python -m tlt all               # full run (needs the completed human review files)
 ```
 
 | # | Stage | Writes |
@@ -88,6 +96,11 @@ the pack: rows whose text changed are imported as `stale` and need a fresh revie
 
 ## Human steps (Section 4.2, 4.3, 6.7, 7.3)
 
+All steps below were completed for the reported study: translation review (109 corrections,
+prompts regenerated and rescored), template approval, surname validation by two annotators,
+ratings of 300 default replies by three maths teachers, and a blinded rating of 24 matched
+R2-T/R5 reply pairs by one teacher. Outputs label raters only as `teacher_1..3`.
+
 | File | Who | What |
 |---|---|---|
 | `review/template_approval.csv` | native speaker | set `status` to `approved` for every Hindi, Bengali and code-mixed template and name rendering |
@@ -126,9 +139,12 @@ PYTHONPATH=src ~/venv/bin/python scripts/paper_figures.py <out_dir>   # paper fi
 PYTHONPATH=src ~/venv/bin/python scripts/revision2_experiments.py e9               # school-cue factors
 PYTHONPATH=src ~/venv/bin/python scripts/revision2_experiments.py e8prep|e8remote|e8 # NLLB sensitivity (GPU)
 PYTHONPATH=src ~/venv/bin/python scripts/revision2_local.py                         # second-revision reanalyses
-PYTHONPATH=src ~/venv/bin/python scripts/make_repair_rating_pack.py                 # optional blinded teacher pack
+PYTHONPATH=src ~/venv/bin/python scripts/make_repair_rating_pack.py                 # blinded R2-T vs R5 teacher pack
+PYTHONPATH=src ~/venv/bin/python scripts/human_repair_analysis.py                   # analysis of the returned blinded ratings
 ```
-Outputs: `results/tables/revision_*.csv` and `revision2_*.csv`; logs `runs/revision_*.jsonl`.
+Outputs: `results/tables/revision_*.csv`, `revision2_*.csv` and `human_repair_*.csv`; logs
+`runs/revision_*.jsonl`. The blinding key (`review/repair_rating_key.csv`) is kept out of the
+repository.
 `build_prompts` prints the exact counts. `docs/deviations.md` lists every departure from the
 specification and its reason.
 
