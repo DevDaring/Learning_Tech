@@ -1,0 +1,19 @@
+Round 2 Human Rating Summary
+========================================
+
+Rater A: 96 replies (48 pairs: 24 R2T-vs-R5, 24 R2T-vs-R2L)
+Rater B: 48 replies (24 pairs: 24 R2T-vs-R2L)
+Double-rated reply slots (Part 2): 48
+
+R2T vs R5 preference: R2T 12, R5 9, tie 3 (n=24)
+R2T vs R2L preference: R2T 22, R2L 20, tie 6 (n=48)
+
+Inter-rater agreement (Part 2):
+  Mistake_Identification: 62.50% exact, kappa=0.278
+  Mistake_Location: 31.25% exact, kappa=0.089
+  Revealing_of_the_Answer: 93.75% exact, kappa=0.636
+  Providing_Guidance: 89.58% exact, kappa=0.564
+  Math_Correctness: 79.17% exact, kappa=0.104
+  Language_Naturalness: 60.42% exact, kappa=0.012
+
+  Pair preference agreement: 14/24 = 58.33%

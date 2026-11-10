@@ -9,7 +9,7 @@ import json
 
 import pandas as pd
 
-from tlt.config import load_run
+from gaptrace.config import load_run
 
 run = load_run("full")
 LOGS = ["generations", "repair_generations", "repair_steps", "judgements", "repair_judgements",

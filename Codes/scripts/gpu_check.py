@@ -16,15 +16,15 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-from tlt.config import load_run, stable_hash
-from tlt.io import read_jsonl
-from tlt.names import mask_names
-from tlt.stages.s02_translate import CM_SOURCE
-from tlt.stages.s04_generate import current_generations
-from tlt.stages.s05_mask_and_judge import targets_from_generations
-from tlt.stages.s07_translated_judging import eligible
-from tlt.textutil import dominant_script, has_words, protect_math
-from tlt.translate import make_translator, split_segments
+from gaptrace.config import load_run, stable_hash
+from gaptrace.io import read_jsonl
+from gaptrace.names import mask_names
+from gaptrace.stages.s02_translate import CM_SOURCE
+from gaptrace.stages.s04_generate import current_generations
+from gaptrace.stages.s05_mask_and_judge import targets_from_generations
+from gaptrace.stages.s07_translated_judging import eligible
+from gaptrace.textutil import dominant_script, has_words, protect_math
+from gaptrace.translate import make_translator, split_segments
 
 ROOT = Path(__file__).resolve().parents[1]
 PH = re.compile(r"<\s*(?:ID|আই\.?\s*ডি\.?|आ[ईइ]\.?\s*डी\.?)\s*[\d০-৯०-९]+\s*>", re.I)
@@ -84,7 +84,7 @@ for line in open(run.path("runs", "utility_calls.jsonl")):
 print(f"== 3. Code-mixed back-translations logged: {sum(f'tj_backtr|{c}' in ok_cm for c in cm)}/{len(cm)}")
 
 log = (ROOT / "after_gen.log").read_text(errors="ignore").splitlines()
-prog = [l for l in log if "INFO tlt.runner:" in l]
+prog = [l for l in log if "INFO gaptrace.runner:" in l]
 print("== 4. Pipeline:", prog[-1][20:140] if prog else "no progress line",
       "| tracebacks:", sum("Traceback" in l for l in log),
       "| failed stages:", [l.split(":")[-1].strip() for l in log if "STAGE FAILED" in l])

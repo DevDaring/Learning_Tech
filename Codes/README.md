@@ -1,10 +1,13 @@
-# Same Question, Lesser Lesson — pipeline
+# Same Question, Lesser Lesson — GapTrace and PivotPed
 
 Code, prompts, frozen analysis plans and results for the study *Same Question, Lesser Lesson:
-Measuring and Reducing Pedagogical Disparity in Multilingual LLM Maths Tutors* (K. Deb and
-A. Basu; submitted to IEEE Transactions on Learning Technologies). Six LLMs prompted as maths
-tutors are audited on the same misconception-labelled items in English, Hindi, Bengali,
-Hinglish and Banglish, with school-background and name cues; eight repair designs are compared.
+GapTrace and PivotPed for Locating and Repairing Language Disparity in LLM Maths Tutors*
+(K. Deb and A. Basu). **GapTrace** is the audit framework: six LLMs prompted as maths tutors
+answer the same misconception-labelled items in English, Hindi, Bengali, Hinglish and Banglish,
+with school-background and name cues, and the message language, reply language and cues are
+varied separately. **PivotPed** (arm R2-T) is the repair design: a pedagogy instruction applied to
+an English translation of the student's message, with the reply translated back. Eight repair
+designs are compared.
 
 Status: all stages and human review steps are complete, and the analysis is final. The Eedi
 competition rules do not permit redistribution of the items or their translations, so
@@ -15,8 +18,8 @@ Annotator workbooks and identities are not part of the repository.
 
 ```
 config/    design.yaml (every count, seed and condition), models.yaml (models, routes, keys by NAME)
-prompts/   every prompt as a text file, loaded by name (quote these in the appendix)
-src/tlt/   the package: stages/ (one module per stage), analysis/, baselines/
+prompts/   every prompt as a text file, loaded by name
+src/gaptrace/  the package: stages/ (one module per stage), analysis/, baselines/
 data/      items, translations, prompts            runs/     append-only JSONL call logs
 results/   tables/, figures/, baselines/, mixed/   review/   human review and annotation files
 docs/      verification_log.md, deviations.md, name_validation.md, learner_study_protocol.md
@@ -30,7 +33,7 @@ external/  cloned MRBench, MathDial and BEnQA repositories
 cd Codes
 ~/venv/bin/pip install -r requirements.txt
 # R for the mixed models (user-space, no sudo); stage 9 finds it automatically:
-#   ~/.local/micromamba/bin/micromamba create -r ~/.local/micromamba/root -n tlt_r -c conda-forge r-base=4.4 r-ordinal r-lme4 r-jsonlite
+#   ~/.local/micromamba/bin/micromamba create -r ~/.local/micromamba/root -n gaptrace_r -c conda-forge r-base=4.4 r-ordinal r-lme4 r-jsonlite
 export PYTHONPATH=src
 ```
 
@@ -50,10 +53,10 @@ confirm no key value was written.
 ## Running
 
 ```bash
-python -m tlt <stage> [--pilot | --dry-run]
-python -m tlt all --dry-run     # whole pipeline, mock models, no network, no cost (synthetic Eedi)
-python -m tlt all --pilot       # 30 items, 1 sample, 2 producers, 3 judges, real calls
-python -m tlt all               # full run (needs the completed human review files)
+python -m gaptrace <stage> [--pilot | --dry-run]
+python -m gaptrace all --dry-run     # whole pipeline, mock models, no network, no cost (synthetic Eedi)
+python -m gaptrace all --pilot       # 30 items, 1 sample, 2 producers, 3 judges, real calls
+python -m gaptrace all               # full run (needs the completed human review files)
 ```
 
 | # | Stage | Writes |
@@ -81,8 +84,8 @@ most 3 attempts in total).
 ## Review pack for human reviewers
 
 ```bash
-python -m tlt review_pack      # -> review/outgoing/TLT_human_review_pack_<date>.zip
-python -m tlt import_review --files Hindi_template_review_AB.xlsx Bengali_template_review_CD.xlsx Name_survey_EF.xlsx Name_survey_GH.xlsx
+python -m gaptrace review_pack      # -> review/outgoing/human_review_pack_<date>.zip
+python -m gaptrace import_review --files Hindi_template_review_AB.xlsx Bengali_template_review_CD.xlsx Name_survey_EF.xlsx Name_survey_GH.xlsx
 ```
 
 The zip holds `INSTRUCTIONS.md` (for the reviewers), Hindi and Bengali template-review workbooks
@@ -98,8 +101,10 @@ the pack: rows whose text changed are imported as `stale` and need a fresh revie
 
 All steps below were completed for the reported study: translation review (109 corrections,
 prompts regenerated and rescored), template approval, surname validation by two annotators,
-ratings of 300 default replies by three maths teachers, and a blinded rating of 24 matched
-R2-T/R5 reply pairs by one teacher. Outputs label raters only as `teacher_1..3`.
+ratings of 300 default replies by three maths teachers, a blinded rating of 24 matched
+R2-T/R5 reply pairs by one teacher, and a second blinded round by two volunteer raters
+(24 R2-T/R5 pairs again and 24 new R2-T/R2-L pairs). Outputs label raters only as
+`teacher_1..3` and `Rater_A`/`Rater_B`; no rater identities are stored.
 
 | File | Who | What |
 |---|---|---|
@@ -122,6 +127,9 @@ R2-T/R5 reply pairs by one teacher. Outputs label raters only as `teacher_1..3`.
 | Revision E3: plan-only realisation ablation | 150 | 450 |
 | Second revision E9: school-cue factors (EN) | 750 | 4,500 |
 | Second revision E8: R2-T re-translated with NLLB-200 | (no tutor calls) | 1,200 translations |
+| Third follow-up E10: reply-language policy (Block Z) | 150 items | 3,600 |
+| Third follow-up E11: R2-T on Hinglish/Banglish + drift (Block R'') | 100 items | 2,040 |
+| Third follow-up E12: response time (Block T) | 20 items | 960 |
 
 Judge calls (GPT-4.1 mini on LinkAPI, DeepSeek-V3.2 and Qwen3-Next 80B on AWS Bedrock; deviations
 D34, D47): 3 per generation, plus 20% translated judging, plus 1,500 for MRBench.
@@ -129,7 +137,7 @@ D34, D47): 3 per generation, plus 20% translated judging, plus 1,500 for MRBench
 ## Revision experiments (frozen plan: docs/revision_plan_frozen.md)
 
 ```bash
-PYTHONPATH=src ~/venv/bin/python -m tlt repair --allow-unreviewed      # E1 arms (needs IndicTrans2: scripts/vast_translator.py up/down)
+PYTHONPATH=src ~/venv/bin/python -m gaptrace repair --allow-unreviewed      # E1 arms (needs IndicTrans2: scripts/vast_translator.py up/down)
 PYTHONPATH=src ~/venv/bin/python scripts/revision_experiments.py all  # E2 challenge set, E3 fidelity + ablation, E4 crossing
 PYTHONPATH=src ~/venv/bin/python scripts/revision_e1_analysis.py      # E1 primary/secondary analysis
 PYTHONPATH=src ~/venv/bin/python scripts/revision_local_analysis.py   # reanalyses without new calls (E2/E3/E5 local parts)
@@ -141,10 +149,14 @@ PYTHONPATH=src ~/venv/bin/python scripts/revision2_experiments.py e8prep|e8remot
 PYTHONPATH=src ~/venv/bin/python scripts/revision2_local.py                         # second-revision reanalyses
 PYTHONPATH=src ~/venv/bin/python scripts/make_repair_rating_pack.py                 # blinded R2-T vs R5 teacher pack
 PYTHONPATH=src ~/venv/bin/python scripts/human_repair_analysis.py                   # analysis of the returned blinded ratings
+bash scripts/run_revision3.sh                                                       # E10 -> E11 -> E12 tutor timing
+PYTHONPATH=src ~/venv/bin/python scripts/revision3_experiments.py e12prep|e12gpu|e12 # E12 translation timing (GPU)
+PYTHONPATH=src ~/venv/bin/python scripts/make_rater_round2_pack.py                  # second blinded rating round
+PYTHONPATH=src ~/venv/bin/python scripts/analyse_round2_ratings.py                  # its analysis
 ```
-Outputs: `results/tables/revision_*.csv`, `revision2_*.csv` and `human_repair_*.csv`; logs
-`runs/revision_*.jsonl`. The blinding key (`review/repair_rating_key.csv`) is kept out of the
-repository.
+Outputs: `results/tables/revision_*.csv`, `revision2_*.csv`, `human_repair_*.csv` and
+`round2_*.csv`; logs `runs/revision_*.jsonl`. The blinding keys (`review/repair_rating_key*.csv`)
+and the returned rating workbooks are kept out of the repository.
 `build_prompts` prints the exact counts. `docs/deviations.md` lists every departure from the
 specification and its reason.
 

@@ -22,7 +22,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]          # Learning_Tech/
 sys.path.insert(0, str(REPO / "Codes" / "src"))
-from tlt import secrets  # noqa: E402
+from gaptrace import secrets  # noqa: E402
 
 REMOTE = "https://github.com/DevDaring/Learning_Tech.git"
 AUTHOR = ("DevDaring", "koushikdeb2009@gmail.com")

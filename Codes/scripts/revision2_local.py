@@ -9,10 +9,10 @@ import re
 import numpy as np
 import pandas as pd
 
-from tlt.analysis.stats import add_holm, bootstrap_mean, gap
-from tlt.config import CONFIG_DIR, load_run, load_yaml
-from tlt.io import read_jsonl, read_table
-from tlt.rubric import PQI_RELIABLE, PQI_SCORES
+from gaptrace.analysis.stats import add_holm, bootstrap_mean, gap
+from gaptrace.config import CONFIG_DIR, load_run, load_yaml
+from gaptrace.io import read_jsonl, read_table
+from gaptrace.rubric import PQI_RELIABLE, PQI_SCORES
 
 run = load_run("full")
 R = run.path("results")

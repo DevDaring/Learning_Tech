@@ -10,13 +10,13 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from tlt import names, rubric, textutil  # noqa: E402
-from tlt.analysis import stats  # noqa: E402
-from tlt.baselines import b1_mab_mdb, b2_marked, b3_semantic_shift, b5_simstudent  # noqa: E402
-from tlt.io import fill  # noqa: E402
-from tlt.jsonfix import extract_json  # noqa: E402
-from tlt.stages.s11_repair import parse_bridge  # noqa: E402
-from tlt.translate import join_segments, split_segments  # noqa: E402
+from gaptrace import names, rubric, textutil  # noqa: E402
+from gaptrace.analysis import stats  # noqa: E402
+from gaptrace.baselines import b1_mab_mdb, b2_marked, b3_semantic_shift, b5_simstudent  # noqa: E402
+from gaptrace.io import fill  # noqa: E402
+from gaptrace.jsonfix import extract_json  # noqa: E402
+from gaptrace.stages.s11_repair import parse_bridge  # noqa: E402
+from gaptrace.translate import join_segments, split_segments  # noqa: E402
 
 
 # ------------------------------------------------------------------ names / masking
@@ -232,7 +232,7 @@ def test_parse_bridge():
 
 
 def test_plan_schema():
-    from tlt.stages.s11_repair import plan_schema_ok
+    from gaptrace.stages.s11_repair import plan_schema_ok
     good = {"diagnosis": "a", "next_step": "b", "question_to_ask": "c?", "do_not_reveal": "11", "cognitive_level": "High"}
     assert plan_schema_ok(good)
     assert not plan_schema_ok({"potential_misunderstanding": "x", "common_error": "y"})
@@ -244,7 +244,7 @@ def test_b5_equation_answer():
 
 
 def test_name_gate_requires_exact_status_line(tmp_path, monkeypatch):
-    from tlt.stages import s03_build_prompts as s03
+    from gaptrace.stages import s03_build_prompts as s03
     monkeypatch.setattr(s03, "DOCS_DIR", tmp_path)
     (tmp_path / "name_validation.md").write_text("STATUS: PENDING - blocked until this reads `STATUS: CONFIRMED`.\n")
     assert not s03.names_confirmed()
@@ -253,7 +253,7 @@ def test_name_gate_requires_exact_status_line(tmp_path, monkeypatch):
 
 
 def test_aws_credit_balancing(tmp_path, monkeypatch):
-    from tlt import aws_credit
+    from gaptrace import aws_credit
     monkeypatch.setattr(aws_credit, "LOG_DIRS", [tmp_path])
     acc = [{"label": "big", "access": "A", "secret": "a", "credit_usd": 300.0, "as_of": "2026-10-04T00:00:00+00:00"},
            {"label": "small", "access": "B", "secret": "b", "credit_usd": 100.0, "as_of": "2026-10-04T00:00:00+00:00"}]
@@ -287,7 +287,7 @@ def test_bare_latex_and_pure_maths():
 
 
 def test_lenient_json_latex_evidence():
-    from tlt.jsonfix import extract_json, extract_json_lenient
+    from gaptrace.jsonfix import extract_json, extract_json_lenient
     raw = '{"Math_Correctness": "Yes", "evidence": "so \\( 3^2 \\times 4^2 = 144 \\)"}'
     assert extract_json(raw) is None
     obj = extract_json_lenient(raw)
@@ -325,7 +325,7 @@ class _EchoTranslator:
 
 def test_translator_never_sends_pure_maths():
     import threading
-    from tlt.translate import IndicTrans2
+    from gaptrace.translate import IndicTrans2
     tr = IndicTrans2.__new__(IndicTrans2)
     tr._tlock = threading.Lock()
     tr._translate_segments = _EchoTranslator()
@@ -345,7 +345,7 @@ def test_dotted_tags_optional_args_and_number_check():
 
 
 def test_extract_json_never_returns_nested_fragment():
-    from tlt.jsonfix import extract_json, extract_json_lenient
+    from gaptrace.jsonfix import extract_json, extract_json_lenient
     raw = '```json\n{"diagnosis": {"note": "uses \\( \\sqrt{9} \\)"}, "next_step": "x",\n "question_to_ask": "y"}\n```'
     assert extract_json(raw) is None            # outer invalid: no inner object returned
     obj = extract_json_lenient(raw)
@@ -357,8 +357,8 @@ def test_extract_json_never_returns_nested_fragment():
 
 
 def test_credit_routing_uses_funded_account_while_it_cools_down():
-    from tlt.clients import _Pool
-    from tlt.aws_credit import AwsCredit
+    from gaptrace.clients import _Pool
+    from gaptrace.aws_credit import AwsCredit
     cr = AwsCredit.__new__(AwsCredit)
     import threading
     cr._lock = threading.Lock(); cr.accounts = {"A": {}, "B": {}}
@@ -374,8 +374,8 @@ def test_credit_routing_uses_funded_account_while_it_cools_down():
 
 def test_execute_no_head_of_line_blocking(tmp_path):
     import time as _t
-    from tlt.io import AppendLog
-    from tlt.runner import execute
+    from gaptrace.io import AppendLog
+    from gaptrace.runner import execute
     log = AppendLog(tmp_path / "x.jsonl")
     jobs = [{"call_id": f"slow{i}", "model": "slow"} for i in range(8)] + \
            [{"call_id": f"fast{i}", "model": "fast"} for i in range(40)]
@@ -392,7 +392,7 @@ def test_execute_no_head_of_line_blocking(tmp_path):
 
 
 def test_none_label_survives_csv_round_trip(tmp_path):
-    from tlt.io import read_table
+    from gaptrace.io import read_table
     df = pd.DataFrame({"Praise_Calibration": ["None", "Inflated", None], "Cognitive_Demand": ["None", "High", "Low"],
                        "PQI": [0.5, None, 0.25]})
     p = tmp_path / "x.csv"

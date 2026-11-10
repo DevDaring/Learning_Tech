@@ -1,0 +1,25 @@
+comparison,part,arm,dimension,n,n_good,good_rate
+R2T vs R5,1,R2T,Mistake_Identification,24,8,0.3333333333333333
+R2T vs R5,1,R5,Mistake_Identification,24,13,0.5416666666666666
+R2T vs R5,1,R2T,Mistake_Location,24,5,0.20833333333333334
+R2T vs R5,1,R5,Mistake_Location,24,4,0.16666666666666666
+R2T vs R5,1,R2T,Revealing_of_the_Answer,24,24,1.0
+R2T vs R5,1,R5,Revealing_of_the_Answer,24,22,0.9166666666666666
+R2T vs R5,1,R2T,Providing_Guidance,24,22,0.9166666666666666
+R2T vs R5,1,R5,Providing_Guidance,24,17,0.7083333333333334
+R2T vs R5,1,R2T,Math_Correctness,24,24,1.0
+R2T vs R5,1,R5,Math_Correctness,24,22,0.9166666666666666
+R2T vs R5,1,R2T,Language_Naturalness,24,24,1.0
+R2T vs R5,1,R5,Language_Naturalness,24,23,0.9583333333333334
+R2T vs R2L,2,R2T,Mistake_Identification,48,34,0.7083333333333334
+R2T vs R2L,2,R2L,Mistake_Identification,48,30,0.625
+R2T vs R2L,2,R2T,Mistake_Location,48,25,0.5208333333333334
+R2T vs R2L,2,R2L,Mistake_Location,48,21,0.4375
+R2T vs R2L,2,R2T,Revealing_of_the_Answer,48,44,0.9166666666666666
+R2T vs R2L,2,R2L,Revealing_of_the_Answer,48,43,0.8958333333333334
+R2T vs R2L,2,R2T,Providing_Guidance,48,45,0.9375
+R2T vs R2L,2,R2L,Providing_Guidance,48,38,0.7916666666666666
+R2T vs R2L,2,R2T,Math_Correctness,48,45,0.9375
+R2T vs R2L,2,R2L,Math_Correctness,48,39,0.8125
+R2T vs R2L,2,R2T,Language_Naturalness,48,38,0.7916666666666666
+R2T vs R2L,2,R2L,Language_Naturalness,48,38,0.7916666666666666

@@ -14,15 +14,15 @@ import sys
 import numpy as np
 import pandas as pd
 
-from tlt.analysis.stats import add_holm, bootstrap_mean, gap
-from tlt.clients import make_llm
-from tlt.config import load_run, stable_hash
-from tlt.io import AppendLog, fill, prompt, read_jsonl, read_table
-from tlt.jsonfix import parse_with_repair
-from tlt.rubric import PQI_RELIABLE, PQI_SCORES
-from tlt.runner import call_record, execute
-from tlt.stages.s04_generate import generation_jobs, make_fn, workers
-from tlt.stages.s05_mask_and_judge import aggregate_table, judge_targets, long_table, targets_from_generations
+from gaptrace.analysis.stats import add_holm, bootstrap_mean, gap
+from gaptrace.clients import make_llm
+from gaptrace.config import load_run, stable_hash
+from gaptrace.io import AppendLog, fill, prompt, read_jsonl, read_table
+from gaptrace.jsonfix import parse_with_repair
+from gaptrace.rubric import PQI_RELIABLE, PQI_SCORES
+from gaptrace.runner import call_record, execute
+from gaptrace.stages.s04_generate import generation_jobs, make_fn, workers
+from gaptrace.stages.s05_mask_and_judge import aggregate_table, judge_targets, long_table, targets_from_generations
 
 run = load_run("full")
 R = run.path("results")

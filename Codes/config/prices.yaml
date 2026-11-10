@@ -35,7 +35,7 @@ models:
 
 # Tokens per call (input, output). Output includes hidden reasoning, which is billed as output.
 # Defaults come from the live probes and smoke test of 2026-10-02 (docs/verification_log.md);
-# `python -m tlt estimate_cost --pilot` replaces them with the pilot's measured means.
+# `python -m gaptrace estimate_cost --pilot` replaces them with the pilot's measured means.
 token_profile:
   producer_reply:   {input: 160, output: 420}     # tutor reply; Indic replies are longer
   producer_reasoning_extra: {gemini_flash: 330}   # Gemini 3 thinking cannot be disabled (D11)

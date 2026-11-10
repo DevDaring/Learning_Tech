@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """IndicTrans2 translation service for a rented GPU (run there, reached via an SSH tunnel).
 
-    TLT_TOKEN=<random> python indictrans_server.py --port 8000
+    GAPTRACE_TOKEN=<random> python indictrans_server.py --port 8000
 
 POST /translate  {"model": <hf id>, "revision": <commit>, "src": "eng_Latn", "tgt": "hin_Deva",
                   "segments": [...], "num_beams": 5, "max_length": 256}
   -> {"translations": [...], "device": "cuda:0 NVIDIA ...", "dtype": "float32"}
 GET  /health     -> {"ok": true, "models": [...]}
 
-Same pre/post-processing and decoding as the local CPU path in src/tlt/translate.py
+Same pre/post-processing and decoding as the local CPU path in src/gaptrace/translate.py
 (IndicProcessor, beam search, no sampling). On the GPU it runs float16 with FlashAttention-2,
 as the IndicTrans2 model card recommends; the device, dtype and attention backend are
 returned with every response and cached with every translation. Listens on 127.0.0.1 only; every request must carry the X-Token header.
@@ -25,9 +25,9 @@ import torch
 from IndicTransToolkit.processor import IndicProcessor
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
-TOKEN = os.environ["TLT_TOKEN"]
-DTYPE = {"float16": torch.float16, "bfloat16": torch.bfloat16, "float32": torch.float32}[os.environ.get("TLT_DTYPE", "float16")]
-ATTN = os.environ.get("TLT_ATTN", "flash_attention_2")
+TOKEN = os.environ["GAPTRACE_TOKEN"]
+DTYPE = {"float16": torch.float16, "bfloat16": torch.bfloat16, "float32": torch.float32}[os.environ.get("GAPTRACE_DTYPE", "float16")]
+ATTN = os.environ.get("GAPTRACE_ATTN", "flash_attention_2")
 MODELS: dict[str, tuple] = {}
 LOCK = threading.Lock()
 DEV = "cuda:0" if torch.cuda.is_available() else "cpu"

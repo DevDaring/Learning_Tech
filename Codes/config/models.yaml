@@ -1,5 +1,5 @@
 # Models, roles and routes. Model IDs marked `verify: true` are checked by stage 0
-# (`python -m tlt verify`), which writes what it found to docs/verification_log.md.
+# (`python -m gaptrace verify`), which writes what it found to docs/verification_log.md.
 # Keys are referenced by .env variable NAME only; values are never logged.
 
 credentials:
@@ -14,7 +14,7 @@ credentials:
   linkapi: [LINKAPI_AzureOpenAI_KEY]
   linkapi_gemini: [LINKAPI_Gemini_Cheap_KEY]   # LinkAPI "Discounted Gemini" group
   # Bedrock calls go to the account with the largest remaining SHARE of its credit
-  # (src/tlt/aws_credit.py). credit_usd = Billing console "Total estimated amount remaining"
+  # (src/gaptrace/aws_credit.py). credit_usd = Billing console "Total estimated amount remaining"
   # read at as_of; update both fields whenever credits are checked or topped up.
   aws_accounts:
     - {label: "Deb (276496751642)", access: AWS_ACCESS_KEY, secret: AWS_SECRET_KEY,

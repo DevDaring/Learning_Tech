@@ -7,7 +7,7 @@
 
 State (contract id, tunnel pid, access token) is written to runs/vast_translator.json
 the moment the contract exists, so the instance can always be destroyed. The pipeline
-uses the service when TLT_TRANSLATE_URL and TLT_TRANSLATE_TOKEN are set (scripts print
+uses the service when GAPTRACE_TRANSLATE_URL and GAPTRACE_TRANSLATE_TOKEN are set (scripts print
 the export line), otherwise it translates on the local CPU.
 Credentials are read from Codes/.env by name and never printed. The Hugging Face token is
 sent to the box over SSH only to download the gated models, then deleted there.
@@ -26,8 +26,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from tlt import secrets  # noqa: E402
-from tlt.config import load_yaml  # noqa: E402
+from gaptrace import secrets  # noqa: E402
+from gaptrace.config import load_yaml  # noqa: E402
 
 STATE = ROOT / "runs" / "vast_translator.json"
 API = "https://console.vast.ai/api/v0"
@@ -88,7 +88,7 @@ def up() -> None:
     for o in offers()[:10]:
         print(f"trying offer {o['id']}: {o['gpu_name']} ${o['dph_total']:.3f}/h", flush=True)
         try:
-            r = api(f"/asks/{o['id']}/", {"client_id": "me", "image": IMAGE, "disk": 50, "label": "tlt-indictrans",
+            r = api(f"/asks/{o['id']}/", {"client_id": "me", "image": IMAGE, "disk": 50, "label": "gaptrace-indictrans",
                                            "runtype": "ssh_direc ssh_proxy", "onstart": "touch /root/.ready"}, "PUT")
         except urllib.error.HTTPError as e:  # offer taken meanwhile (400): nothing was rented
             print(f"offer {o['id']} not rentable (HTTP {e.code}); next", flush=True)
@@ -218,7 +218,7 @@ def serve(st: dict | None = None, attn: str | None = None) -> None:
     revs = tcfg.get("revisions", {})
     preload = " ".join(f"{m}@{revs.get(m, '')}" for m in models)
     try:  # ssh may keep the channel open on the detached job; the health check below decides
-        ssh(st, f"cd /root && TLT_TOKEN={st['token']} TLT_DTYPE=float16 TLT_ATTN={attn} HF_HUB_OFFLINE=1 "
+        ssh(st, f"cd /root && GAPTRACE_TOKEN={st['token']} GAPTRACE_DTYPE=float16 GAPTRACE_ATTN={attn} HF_HUB_OFFLINE=1 "
                 f"setsid nohup python indictrans_server.py "
                 f"--port 8000 --preload {preload} > /root/server.log 2>&1 < /dev/null &", 30)
     except subprocess.TimeoutExpired:
@@ -235,7 +235,7 @@ def serve(st: dict | None = None, attn: str | None = None) -> None:
                 f"http://127.0.0.1:{LOCAL_PORT}/health", headers={"X-Token": st["token"]}), timeout=10).read())
             if len(h.get("models", [])) == len(models):
                 print(json.dumps({"event": "ready", "device": h["device"], "models": h["models"]}), flush=True)
-                print(f"export TLT_TRANSLATE_URL=http://127.0.0.1:{LOCAL_PORT}  # token is read from {STATE.name}")
+                print(f"export GAPTRACE_TRANSLATE_URL=http://127.0.0.1:{LOCAL_PORT}  # token is read from {STATE.name}")
                 return
         except Exception:
             pass

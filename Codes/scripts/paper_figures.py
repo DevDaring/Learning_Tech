@@ -1,4 +1,4 @@
-"""Paper figures (IEEE TLT, vector PDF) from the result tables.
+"""Paper figures (vector PDF) from the result tables.
 
     PYTHONPATH=src python scripts/paper_figures.py <out_dir>
 

@@ -1,0 +1,52 @@
+dimension,arm,label,count,share
+Mistake_Identification,R2L,Yes,30,0.625
+Mistake_Identification,R2L,To some extent,11,0.22916666666666666
+Mistake_Identification,R2L,No,7,0.14583333333333334
+Mistake_Identification,R2T,Yes,42,0.5833333333333334
+Mistake_Identification,R2T,To some extent,25,0.3472222222222222
+Mistake_Identification,R2T,No,5,0.06944444444444445
+Mistake_Identification,R5,Yes,13,0.5416666666666666
+Mistake_Identification,R5,To some extent,8,0.3333333333333333
+Mistake_Identification,R5,No,3,0.125
+Mistake_Location,R2L,Yes,21,0.4375
+Mistake_Location,R2L,To some extent,15,0.3125
+Mistake_Location,R2L,No,12,0.25
+Mistake_Location,R2T,Yes,30,0.4166666666666667
+Mistake_Location,R2T,To some extent,28,0.3888888888888889
+Mistake_Location,R2T,No,14,0.19444444444444445
+Mistake_Location,R5,Yes,4,0.16666666666666666
+Mistake_Location,R5,To some extent,14,0.5833333333333334
+Mistake_Location,R5,No,6,0.25
+Revealing_of_the_Answer,R2L,Yes (correct),4,0.08333333333333333
+Revealing_of_the_Answer,R2L,Yes (incorrect),1,0.020833333333333332
+Revealing_of_the_Answer,R2L,No,43,0.8958333333333334
+Revealing_of_the_Answer,R2T,Yes (correct),4,0.05555555555555555
+Revealing_of_the_Answer,R2T,Yes (incorrect),0,0.0
+Revealing_of_the_Answer,R2T,No,68,0.9444444444444444
+Revealing_of_the_Answer,R5,Yes (correct),2,0.08333333333333333
+Revealing_of_the_Answer,R5,Yes (incorrect),0,0.0
+Revealing_of_the_Answer,R5,No,22,0.9166666666666666
+Providing_Guidance,R2L,Yes,38,0.7916666666666666
+Providing_Guidance,R2L,To some extent,8,0.16666666666666666
+Providing_Guidance,R2L,No,2,0.041666666666666664
+Providing_Guidance,R2T,Yes,67,0.9305555555555556
+Providing_Guidance,R2T,To some extent,5,0.06944444444444445
+Providing_Guidance,R2T,No,0,0.0
+Providing_Guidance,R5,Yes,17,0.7083333333333334
+Providing_Guidance,R5,To some extent,6,0.25
+Providing_Guidance,R5,No,1,0.041666666666666664
+Math_Correctness,R2L,Yes,39,0.8125
+Math_Correctness,R2L,No,9,0.1875
+Math_Correctness,R2T,Yes,69,0.9583333333333334
+Math_Correctness,R2T,No,3,0.041666666666666664
+Math_Correctness,R5,Yes,22,0.9166666666666666
+Math_Correctness,R5,No,2,0.08333333333333333
+Language_Naturalness,R2L,Natural,38,0.7916666666666666
+Language_Naturalness,R2L,Understandable but unnatural,10,0.20833333333333334
+Language_Naturalness,R2L,Hard to understand,0,0.0
+Language_Naturalness,R2T,Natural,62,0.8611111111111112
+Language_Naturalness,R2T,Understandable but unnatural,9,0.125
+Language_Naturalness,R2T,Hard to understand,1,0.013888888888888888
+Language_Naturalness,R5,Natural,23,0.9583333333333334
+Language_Naturalness,R5,Understandable but unnatural,0,0.0
+Language_Naturalness,R5,Hard to understand,1,0.041666666666666664

@@ -16,11 +16,11 @@ import re
 import numpy as np
 import pandas as pd
 
-from tlt.analysis.stats import add_holm, bootstrap_mean, gap, paired_diff
-from tlt.config import load_run
-from tlt.io import read_jsonl, read_table
-from tlt.rubric import DIMENSIONS, PQI_RELIABLE, PQI_SCORES, norm_label
-from tlt.stages.s09_analysis import _consensus
+from gaptrace.analysis.stats import add_holm, bootstrap_mean, gap, paired_diff
+from gaptrace.config import load_run
+from gaptrace.io import read_jsonl, read_table
+from gaptrace.rubric import DIMENSIONS, PQI_RELIABLE, PQI_SCORES, norm_label
+from gaptrace.stages.s09_analysis import _consensus
 
 run = load_run("full")
 R = run.path("results")
@@ -295,7 +295,7 @@ print(t6c.to_string(index=False))
 
 # ---------------------------------------------------------------- 7. cost and latency per final reply
 P = run.models  # noqa: F841  (prices below)
-from tlt.config import CONFIG_DIR, load_yaml  # noqa: E402
+from gaptrace.config import CONFIG_DIR, load_yaml  # noqa: E402
 
 PR = load_yaml(CONFIG_DIR / "prices.yaml")
 inr = float(PR["inr_per_usd"])

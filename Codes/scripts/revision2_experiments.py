@@ -15,16 +15,16 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from tlt.analysis.stats import add_holm, gap
-from tlt.clients import make_llm
-from tlt.config import load_run, stable_hash
-from tlt.io import AppendLog, prompt, read_jsonl, read_table
-from tlt.runner import execute
-from tlt.stages.s03_build_prompts import student_message, with_cue
-from tlt.stages.s04_generate import generation_jobs, make_fn, workers
-from tlt.stages.s05_mask_and_judge import aggregate_table, judge_targets, long_table, targets_from_generations
-from tlt.textutil import has_words, protect_math, restore_math
-from tlt.translate import join_segments, split_segments
+from gaptrace.analysis.stats import add_holm, gap
+from gaptrace.clients import make_llm
+from gaptrace.config import load_run, stable_hash
+from gaptrace.io import AppendLog, prompt, read_jsonl, read_table
+from gaptrace.runner import execute
+from gaptrace.stages.s03_build_prompts import student_message, with_cue
+from gaptrace.stages.s04_generate import generation_jobs, make_fn, workers
+from gaptrace.stages.s05_mask_and_judge import aggregate_table, judge_targets, long_table, targets_from_generations
+from gaptrace.textutil import has_words, protect_math, restore_math
+from gaptrace.translate import join_segments, split_segments
 
 run = load_run("full")
 R = run.path("results")

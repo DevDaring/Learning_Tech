@@ -1,5 +1,5 @@
 """Additional analyses for the paper, on the same aggregated judgements and with the same
-paired item bootstrap as stage 9 (tlt.analysis.stats.gap). Writes results/tables/extra_*.csv.
+paired item bootstrap as stage 9 (gaptrace.analysis.stats.gap). Writes results/tables/extra_*.csv.
 
 1. extra_decomposition_components.csv: the Block C decomposition (generation / input) for
    every PQI component and for the expectation indicators, so it is visible WHICH aspects of
@@ -10,9 +10,9 @@ paired item bootstrap as stage 9 (tlt.analysis.stats.gap). Writes results/tables
 """
 import pandas as pd
 
-from tlt.analysis.stats import add_holm, gap
-from tlt.config import load_run
-from tlt.io import read_table
+from gaptrace.analysis.stats import add_holm, gap
+from gaptrace.config import load_run
+from gaptrace.io import read_table
 
 run = load_run("full")
 B, seed = int(run.design["bootstrap"]["resamples"]), run.seed
@@ -74,7 +74,7 @@ print(dec[dec.outcome.isin(["PQI", "inflated", "lowered"] + COMP)][["language", 
                                                                     "ci_low", "ci_high", "p_holm"]].round(3).to_string(index=False))
 
 # ---- 4. repair arms pooled over the four non-English varieties (same data as table 9)
-from tlt.analysis.stats import bootstrap_mean  # noqa: E402
+from gaptrace.analysis.stats import bootstrap_mean  # noqa: E402
 
 rep = read_table(R / "repair_judgements_aggregated.csv", low_memory=False)
 rep = rep[rep.variant == "original"]
@@ -115,9 +115,9 @@ import glob  # noqa: E402
 
 import numpy as np  # noqa: E402
 
-from tlt.analysis.stats import krippendorff_alpha  # noqa: E402
-from tlt.rubric import ALPHA_LEVEL, DIMENSIONS, norm_label, ordinal_index  # noqa: E402
-from tlt.stages.s09_analysis import _consensus  # noqa: E402
+from gaptrace.analysis.stats import krippendorff_alpha  # noqa: E402
+from gaptrace.rubric import ALPHA_LEVEL, DIMENSIONS, norm_label, ordinal_index  # noqa: E402
+from gaptrace.stages.s09_analysis import _consensus  # noqa: E402
 
 files = sorted(glob.glob(str(run.path("review", "human_returned", "x").parent / "*.csv")))
 if files:

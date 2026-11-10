@@ -1,4 +1,4 @@
-"""Build the supplementary material (Submission1/TLT_Supplement.tex) from the result tables, so
+"""Build the supplementary material (Submission1/Supplementary_Material.tex) from the result tables, so
 no number is copied by hand. Compile with pdflatex afterwards.
 
     PYTHONPATH=src python scripts/make_supplement.py
@@ -9,7 +9,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 T = ROOT / "results" / "tables"
-OUT = ROOT / "Submission1" / "TLT_Supplement.tex"
+OUT = ROOT / "Submission1" / "Supplementary_Material.tex"
 
 
 def rd(name, **kw):
@@ -50,6 +50,9 @@ def ci(df, est="estimate", lo="ci_low", hi="ci_high", name="Estimate [95\\% CI]"
     return df
 
 
+SHORT = {"Mistake_Identification": "Identif.", "Mistake_Location": "Location",
+         "Revealing_of_the_Answer": "Reveal", "Providing_Guidance": "Guidance",
+         "Math_Correctness": "Math", "Language_Naturalness": "Natural."}
 TUT = {"gemini_flash": "Gemini 3.8 Flash", "sarvam_105b": "Sarvam 105B", "kimi_k25": "Kimi K2.5",
        "nova_lite": "Nova Lite", "ministral_8b": "Ministral 3 8B", "nemotron_nano": "Nemotron 3 Nano",
        "ALL": "Pooled", "gpt41_mini": "GPT-4.1 mini", "deepseek_v32": "DeepSeek-V3.2",
@@ -63,20 +66,20 @@ parts = [r"""\documentclass[10pt]{article}
 \usepackage[hidelinks]{hyperref}
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thesection}{S\arabic{section}}
-\title{Supplementary Material\\[4pt]\large Same Question, Lesser Lesson: Measuring and Reducing
-Pedagogical Disparity in Multilingual LLM Maths Tutors}
+\title{Supplementary Material\\[4pt]\large Same Question, Lesser Lesson: GapTrace and PivotPed for
+Locating and Repairing Language Disparity in LLM Maths Tutors}
 \author{Koushik Deb and Abhinaba Basu}
 \date{}
 \begin{document}
 \maketitle
 Every table below is generated from the released result files by
-\texttt{scripts/make\_supplement.py}; per-call logs, prompts and the frozen revision plan are in
-the repository.
+\texttt{scripts/make\_supplement.py}; per-call logs, prompts and the frozen follow-up plan are in
+the repository. Arm R2-T is the PivotPed design of the main paper.
 """]
 
 # ------------------------------------------------------------------ S1 provenance
 parts.append(r"\section{Model provenance}")
-parts.append(r"""All calls of the main study and the revision experiments, from the per-call logs
+parts.append(r"""All calls of the main study and the follow-up experiments, from the per-call logs
 (including calls later superseded, for example replies regenerated after a translation
 correction, so counts exceed final replies). Routes: share of calls per provider route. Returned
 identifier: the model string the provider returned. Dates are UTC. Settings: tutors temperature
@@ -113,7 +116,7 @@ differences; equivalence at margin $\delta$ requires $\max(p_{\text{lower}},p_{\
 """)
 
 # ------------------------------------------------------------------ S3 frozen plan
-parts.append(r"""\section{Revision experiments: frozen plan}
+parts.append(r"""\section{Follow-up experiments: frozen plan}
 The plan (\texttt{docs/revision\_plan\_frozen.md}) was written on 10 October 2026 before any new
 reply was generated, with an implementation addendum fixed before any E2--E4 call. E1: R2-L and
 R2-T on the 100 repair items, six tutors, EN/HI/BN, one sample (3,600 replies), plus R2 and R5
@@ -291,7 +294,7 @@ nb = rd("revision_name_balance.csv")[["condition", "cue", "field", "n_prompts", 
 parts.append(table(nb, "Name frequencies per cue and language (Block B, 150 items)", fmt={}))
 
 # ------------------------------------------------------------------ S10 second revision
-parts.append(r"""\section{Second revision: translation system, cue factors and further diagnostics}
+parts.append(r"""\section{Second follow-up: translation system, cue factors and further diagnostics}
 Frozen in the second addendum of \texttt{docs/revision\_plan\_frozen.md} (13 October 2026) before
 any call. E8 re-translates the English replies of R2-T with NLLB-200 distilled 1.3B; E9 separates
 the school-background cue into single-factor cues in English (five cues collected together).
@@ -329,28 +332,139 @@ cs2 = cs2[cs2.arm.isin(["R2", "R2L", "R2T", "R4", "R5"])].pivot_table(
 parts.append(table(cs2, "Estimated cost per 1,000 replies (USD; mean tutor price, GPU translation included) under "
                         "price multipliers", fmt={c: "{:.2f}" for c in cs2.columns}))
 
-# ------------------------------------------------------------------ S11 human repair evaluation
-hr_summary = T / "human_repair_summary.csv"
-if hr_summary.exists():
-    parts.append(r"""\section{Blinded teacher evaluation of R2-T versus R5}
-A mathematics teacher fluent in Hindi and Bengali rated 24 blinded, matched pairs of R2-T and
-R5 replies (two per tutor and language, randomised within each pair). The teacher rated each
-reply on five PQI-R dimensions plus language naturalness, then compared each pair.
+# ------------------------------------------------------------------ S11 human repair evaluation (round 2)
+r2_agree = T / "round2_interrater_agreement.csv"
+if r2_agree.exists():
+    parts.append(r"""\section{Blinded human evaluation of repair designs}
+Two volunteer raters from Indian institutions, fluent in Hindi and Bengali, independently rated
+144~replies in 72~blinded, matched pairs. Twenty-four pairs compared R2-T and R5 (one rater);
+48~pairs compared R2-T and R2-L (both raters, 24~items double-rated). Each reply was rated on
+five pedagogical dimensions plus language naturalness, and each pair received an overall
+preference judgement. No rater identities are stored.
 """)
-    hs = rd("human_repair_arm_summary.csv")
-    hs["arm"] = hs.arm.map({"R2T": "R2-T", "R5": "R5"})
-    parts.append(table(hs, "Human rating means by arm (24 replies each)"))
-    hl = rd("human_repair_by_language.csv")
-    hl["arm"] = hl.arm.map({"R2T": "R2-T", "R5": "R5"})
-    parts.append(table(hl, "Human PQI-R and language naturalness by language and arm"))
-    hm = rd("human_repair_by_model.csv")
-    hm["model"] = hm.model.map(TUT)
-    parts.append(table(hm, "Teacher pair preferences by tutor model"))
-    hv = T / "human_repair_vs_auto.csv"
-    if hv.exists():
-        ha = rd("human_repair_vs_auto.csv")
-        ha["arm"] = ha.arm.map({"R2T": "R2-T", "R5": "R5"})
-        parts.append(table(ha, "Human versus automated PQI-R per reply (48 replies)"))
+    r2_cmp = rd("round2_arm_comparisons.csv")
+    r2_cmp = r2_cmp.rename(columns={"comparison": "Comparison", "dimension": "Dimension",
+                                     "n_a": "$n_A$", "mean_a": "Mean$_A$",
+                                     "n_b": "$n_B$", "mean_b": "Mean$_B$",
+                                     "diff": "Diff", "p": "$p$"})
+    r2_cmp["Dimension"] = r2_cmp["Dimension"].map(SHORT)
+    parts.append(table(r2_cmp[["Comparison", "Dimension", "$n_A$", "Mean$_A$", "$n_B$", "Mean$_B$", "Diff", "$p$"]],
+                       "Ordinal means by arm and Mann--Whitney $U$ $p$-values (higher is better except Reveal)",
+                       fmt={"Mean$_A$": "{:.3f}", "Mean$_B$": "{:.3f}", "Diff": "{:.3f}", "$p$": "{:.4f}"}))
+    r2_bin = rd("round2_binary_good_rates.csv")
+    r2_bin["arm"] = r2_bin.arm.map({"R2T": "R2-T", "R5": "R5", "R2L": "R2-L"})
+    r2_bin["dimension"] = r2_bin["dimension"].map(SHORT)
+    piv = r2_bin.pivot_table(index=["comparison", "dimension"], columns="arm", values="good_rate")
+    piv = piv.reset_index().rename(columns={"comparison": "Comparison", "dimension": "Dimension"})
+    parts.append(table(piv, "Share of replies rated at the best label per dimension",
+                       fmt={c: "{:.3f}" for c in piv.columns if c not in ("Comparison", "Dimension")}))
+    r2_ag = rd("round2_interrater_agreement.csv")
+    r2_ag["dimension"] = r2_ag["dimension"].map(SHORT)
+    r2_ag = r2_ag.rename(columns={"dimension": "Dimension", "n": "$n$",
+                                   "exact_agreement": "Exact", "kappa": "$\\kappa$"})
+    parts.append(table(r2_ag, "Inter-rater agreement on the 48 double-rated replies (Part 2, R2-T vs R2-L)",
+                       fmt={"Exact": "{:.3f}", "$\\kappa$": "{:.3f}"}))
+
+# ------------------------------------------------------------------ S12 third follow-up
+if (T / "revision_e10_policy.csv").exists():
+    parts.append(r"""\section{Third follow-up: reply-language policy, code-mixed pivot and response time}
+Frozen in the third addendum of \texttt{docs/revision\_plan\_frozen.md} (2 November 2026) before
+any call. Gemini 3.8 Flash was served through LinkAPI (same model identifier). Block~Z (E10)
+adds to the default system prompt (P0) the line \emph{``Always reply in the same language and
+script that the student used in their message.''} (P1), for English messages with the S-ENG and
+S-VER cues. Block~R$''$ (E11) runs R2-T on Hinglish and Banglish messages, translating with the
+utility model in both directions, with English as a reference; R2, R4 and R5 come from the
+original repair run. Block~T (E12) times the designs on 20 items in Hindi and Bengali.
+""")
+    e10 = rd("revision_e10_policy.csv")
+    e10 = e10[(e10.model == "ALL") & e10.outcome.isin(["PQI", "PQI_R", "inflated", "devanagari"])]
+    e10 = ci(e10)[["family", "outcome", "contrast", "Estimate [95\\% CI]", "p_value", "p_holm"]]
+    parts.append(table(e10, "E10: reply-language policy, pooled over tutors (150 items; family e10\\_primary is "
+                            "Holm-adjusted)", fmt={"p_value": "{:.4f}", "p_holm": "{:.4f}"}, colspec="llllrr"))
+    e10c = rd("revision_e10_cells.csv")
+    parts.append(table(e10c, "E10: cell means by policy arm and cue (900 replies per cell)"))
+    e10t = rd("revision_e10_devanagari_by_tutor.csv", header=[0, 1], index_col=0)
+    e10t.columns = [f"{a} {b}" for a, b in e10t.columns]
+    e10t = e10t.reset_index().rename(columns={e10t.index.name or "index": "model"})
+    e10t = e10t[e10t.iloc[:, 0].isin(TUT)]
+    e10t.iloc[:, 0] = e10t.iloc[:, 0].map(TUT)
+    parts.append(table(e10t, "E10: share of replies containing Devanagari, by tutor, arm and cue",
+                       fmt={c: "{:.2f}" for c in e10t.columns}))
+    e11 = rd("revision_e11_codemix.csv")
+    e11 = e11[(e11.model == "ALL") & e11.outcome.isin(["PQI_R", "PQI", "withheld", "lang_match"])]
+    e11 = ci(e11)[["family", "outcome", "contrast", "language", "Estimate [95\\% CI]", "p_holm"]]
+    parts.append(table(e11, "E11: R2-T on code-mixed messages, pooled over tutors (100 items; family e11\\_primary "
+                            "is Holm-adjusted)", fmt={"p_holm": "{:.4f}"}, colspec="lllllr"))
+    e11c = rd("revision_e11_cells.csv")
+    e11c["arm"] = e11c.arm.replace({"R2T-new": "R2-T (new)", "R2-new": "R2 drift (new)"})
+    parts.append(table(e11c, "E11: cell means by arm and language (R2, R4, R5 from the original repair run)"))
+if (T / "revision_e12_latency.csv").exists():
+    e12 = rd("revision_e12_latency.csv")
+    parts.append(table(e12, "E12: response time per message in seconds (240 messages; R2-T and R5 include "
+                            "IndicTrans2 on one GPU, one message per batch)", fmt={"n": "{:.0f}"}))
+    e12t = rd("revision_e12_latency_by_tutor.csv")
+    e12t["model"] = e12t.model.map(TUT)
+    parts.append(table(e12t, "E12: median end-to-end seconds per message by tutor and design"))
+    e12d = rd("revision_e12_mt_device.csv")
+    parts.append(table(e12d, "E12: translation hardware and median IndicTrans2 seconds per message",
+                       fmt={"jobs": "{:.0f}"}, colspec="lrrr"))
+
+parts.append(r"""\section{Further limitations}
+The main text lists the four main limitations. The following points complete them.
+
+\paragraph{Measurement.} Two-teacher varieties reduce the effective size of the teacher anchor,
+and its high agreement partly reflects dominant labels. Judges and teachers alike disagreed about
+actionability. The expectation-level rating failed validation and is not interpreted, and
+inflated praise is observed behaviour, not a measure of expectations. The rubric judges did not
+notice a plan built on a mistranslated answer. The rubric operationalises guided misconception
+remediation, and withholding the answer is not always the best move. The equivalence margin is
+not an established educational threshold and is post hoc for the original repair arms.
+
+\paragraph{Human evaluation.} The blinded human evaluation used two raters, which limits
+inter-rater reliability estimates; a larger panel would narrow the confidence intervals on the
+dimension-level comparisons. The blinded rating protocol for matched replies is released with the
+code, so further raters can extend the evaluation.
+
+\paragraph{Cues and translation.} Two dominant-caste surnames are Bengali while only one
+Dalit-associated surname is, so in Bengali the caste contrast is partly regional. Trivedi is
+mainly a Gujarati surname that North Indian readers may not place. Only a sample of the
+unflagged translations was reviewed, and about a quarter of the reviewed unflagged fields needed
+correction; correction severity was not graded, and the reviewed-subset results agreed with the
+full ones. R2-T replies are machine translations whose naturalness the LLM judges cannot assess.
+
+\paragraph{Repair designs.} The follow-up arms were collected two days after the original ones,
+and the drift re-runs cover 20 items. For code-mixed messages R2-T was tested only with an LLM
+translator, on one sample per message, and retrieval-augmented tutors were not tested. Block~Z
+tested one wording of a mirroring policy, on English messages with the two school cues only. The
+simulated student sends a single message, not a dialogue, and it rewarded answer-giving;
+multi-turn simulation with several student models is needed.
+
+\paragraph{Result details not interpreted in the main text.} Asking for a Hindi or Bengali
+reply to an English message (Block C) does not isolate an input effect, because the $l\to l$
+cell of Block A carries no language instruction and an instruction to answer in Bengali can itself
+signal a Bengali-speaking student; the fully crossed Block X replaces that contrast. Among
+compliant replies alone, English replies to Hindi or Bengali messages scored about 0.04 PQI-R
+below English replies to English messages; this selected comparison is a diagnostic only. Sarvam's
+schooling gap remained among replies kept in English, but conditioning on the reply language,
+which the cue itself changed, can introduce selection. Replies to a named student scored slightly
+lower than replies to an unnamed one in English and Hindi, by less than 0.01; names were masked as
+\texttt{[STUDENT]} for the judges, so this may be a masking artefact. The bias metrics of Weissburg
+et al.\ are constant for any two-group contrast after their within-group standardisation and are
+uninformative here. In the translated-judging check, translation also changes content, so it
+cannot isolate a judge's language preference. NLLB-200 lost 18 maths spans in 1,200 replies.
+Canonicalisation lost or garbled the student's answer in 4 of the 200 Hindi and Bengali repair
+messages, which fed about 1\% of R5 outputs; on the remaining messages R5 still trailed R2-T by
+0.058 PQI-R. In the semantic check of 60 plan/reply pairs, judges flagged 17\% of replies as
+revealing what the plan said not to reveal, and single judges disagreed widely on this question.
+R2 and R5 re-run on the 20 reference items alongside the follow-up arms showed no drift.
+
+\paragraph{Scope.} Languages in other scripts and families, such as Tamil or Telugu, and subjects
+with more open-ended answers may behave differently, and IndicTrans2 coverage of those languages
+would have to be checked before reusing the pivot. The Eedi items reflect a UK curriculum, which
+the BEnQA control only partly offsets, and an Eedi wrong option is associated with a
+misconception rather than revealing a learner's reasoning. Route and version strings are logged
+per call. One tutor (Gemini) could not run with reasoning switched off.
+""")
 
 parts.append(r"\end{document}")
 OUT.write_text("\n".join(parts), encoding="utf-8")

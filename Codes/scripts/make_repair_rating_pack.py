@@ -17,8 +17,8 @@ from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.worksheet.datavalidation import DataValidation
 
-from tlt.config import load_run
-from tlt.io import read_jsonl, read_table
+from gaptrace.config import load_run
+from gaptrace.io import read_jsonl, read_table
 
 run = load_run("full")
 rng = random.Random(run.seed + 71)

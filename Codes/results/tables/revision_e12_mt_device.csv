@@ -1,0 +1,2 @@
+device,jobs,median_in_s,median_out_s
+NVIDIA GeForce RTX 3090 float16 flash_attention_2,480,0.28709463286213577,0.68112783273682

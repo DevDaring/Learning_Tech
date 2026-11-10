@@ -4,17 +4,17 @@ import random
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
-from tlt.clients import make_llm
-from tlt.config import load_run
-from tlt.io import AppendLog, read_jsonl
-from tlt.names import mask_names
-from tlt.runner import protected_utility
-from tlt.stages.s02_translate import CM_SOURCE
-from tlt.textutil import dominant_script
-from tlt.stages.s04_generate import current_generations
-from tlt.stages.s05_mask_and_judge import targets_from_generations
-from tlt.stages.s07_translated_judging import back_translate, eligible
-from tlt.translate import make_translator
+from gaptrace.clients import make_llm
+from gaptrace.config import load_run
+from gaptrace.io import AppendLog, read_jsonl
+from gaptrace.names import mask_names
+from gaptrace.runner import protected_utility
+from gaptrace.stages.s02_translate import CM_SOURCE
+from gaptrace.textutil import dominant_script
+from gaptrace.stages.s04_generate import current_generations
+from gaptrace.stages.s05_mask_and_judge import targets_from_generations
+from gaptrace.stages.s07_translated_judging import back_translate, eligible
+from gaptrace.translate import make_translator
 
 run = load_run("full")
 gens = current_generations(run)

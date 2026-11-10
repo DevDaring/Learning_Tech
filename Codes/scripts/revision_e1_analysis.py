@@ -15,10 +15,10 @@ import math
 import numpy as np
 import pandas as pd
 
-from tlt.analysis.stats import add_holm, gap, paired_diff
-from tlt.config import CONFIG_DIR, load_run, load_yaml
-from tlt.io import read_table
-from tlt.rubric import PQI_SCORES
+from gaptrace.analysis.stats import add_holm, gap, paired_diff
+from gaptrace.config import CONFIG_DIR, load_run, load_yaml
+from gaptrace.io import read_table
+from gaptrace.rubric import PQI_SCORES
 
 run = load_run("full")
 R = run.path("results")
@@ -140,7 +140,7 @@ tcomp["family"] = "e1_component_" + tcomp.contrast  # Holm across the eight comp
 add_holm(tcomp).to_csv(T / "revision_e1_components.csv", index=False)
 
 # pooled HI+BN quality and within-arm gap for every arm (Fig. repair), PQI-R and PQI
-from tlt.analysis.stats import bootstrap_mean  # noqa: E402
+from gaptrace.analysis.stats import bootstrap_mean  # noqa: E402
 
 rows = []
 HB = ["HI", "BN"]

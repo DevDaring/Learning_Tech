@@ -1,7 +1,7 @@
 """Analyse the blinded human ratings of R2-T vs R5 repair replies (reviewer Q1).
 
     PYTHONPATH=src python scripts/human_repair_analysis.py
-Reads review/human_returned/TLT_Reviewed_Another_Round/repair_rating_AGT-43.xlsx
+Reads review/human_returned/Reviewed_Another_Round/repair_rating_AGT-43.xlsx
 and review/repair_rating_key.csv.  Writes results/tables/human_repair_*.csv.
 """
 import csv
@@ -11,8 +11,8 @@ import numpy as np
 import openpyxl
 from scipy.stats import binomtest, wilcoxon
 
-from tlt.analysis.stats import add_holm, bootstrap_mean
-from tlt.config import load_run
+from gaptrace.analysis.stats import add_holm, bootstrap_mean
+from gaptrace.config import load_run
 
 run = load_run("full")
 B = int(run.design["bootstrap"]["resamples"])
@@ -39,7 +39,7 @@ with open(run.path("review", "repair_rating_key.csv")) as f:
         key[row["row_id"]] = row
 
 wb = openpyxl.load_workbook(
-    run.path("review", "human_returned", "TLT_Reviewed_Another_Round", "repair_rating_AGT-43.xlsx"))
+    run.path("review", "human_returned", "Reviewed_Another_Round", "repair_rating_AGT-43.xlsx"))
 ws = wb["Ratings"]
 headers = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
 dim_cols = {d: headers.index(d) + 1 for d in DIMS}
